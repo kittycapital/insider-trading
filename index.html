@@ -593,8 +593,31 @@
                 </div>`;
 
             try {
-                const symbols = Object.keys(SP500);
                 let allTx = [];
+
+                // Strategy 1: Fetch latest transactions (no symbol = all companies)
+                const updateMsg = (msg, pct) => {
+                    const m = document.getElementById('loadingMsg');
+                    const b = document.getElementById('progressBar');
+                    if (m) m.textContent = msg;
+                    if (b) b.style.width = pct + '%';
+                };
+
+                updateMsg('최신 내부자 거래 데이터 로딩 중...', 10);
+
+                // Fetch without symbol = latest across all companies
+                try {
+                    const latest = await fetchFinnhub('/stock/insider-transactions?symbol=');
+                    if (latest && latest.data && latest.data.length > 0) {
+                        allTx.push(...latest.data);
+                        console.log(`Latest batch: ${latest.data.length} transactions`);
+                    }
+                } catch(e) { console.warn('Latest fetch failed:', e); }
+
+                updateMsg('주요 S&P 500 종목 로딩 중...', 30);
+
+                // Strategy 2: Also fetch top S&P 500 symbols for better coverage
+                const symbols = Object.keys(SP500);
                 const batchSize = 25;
                 const totalBatches = Math.ceil(symbols.length / batchSize);
 
@@ -602,41 +625,61 @@
                     const batch = symbols.slice(b * batchSize, (b + 1) * batchSize);
                     const promises = batch.map(sym =>
                         fetchFinnhub(`/stock/insider-transactions?symbol=${sym}`)
-                            .then(data => (data && data.data) ? data.data.map(tx => ({ ...tx, _sym: sym })) : [])
+                            .then(data => {
+                                if (data && data.data && data.data.length > 0) {
+                                    console.log(`${sym}: ${data.data.length} transactions, codes: ${[...new Set(data.data.map(t=>t.transactionCode))].join(',')}`);
+                                    return data.data.map(tx => ({ ...tx, _sym: sym }));
+                                }
+                                return [];
+                            })
                             .catch(() => [])
                     );
 
                     const results = await Promise.all(promises);
                     results.forEach(arr => allTx.push(...arr));
 
-                    const pct = Math.round(((b + 1) / totalBatches) * 100);
-                    const msgEl = document.getElementById('loadingMsg');
-                    const barEl = document.getElementById('progressBar');
-                    if (msgEl) msgEl.textContent = `데이터 로딩 중... ${pct}% (${Math.min((b+1)*batchSize, symbols.length)}/${symbols.length} 종목)`;
-                    if (barEl) barEl.style.width = pct + '%';
+                    const pct = 30 + Math.round(((b + 1) / totalBatches) * 65);
+                    updateMsg(`데이터 로딩 중... ${pct}% (${Math.min((b+1)*batchSize, symbols.length)}/${symbols.length} 종목)`, pct);
 
                     if (b < totalBatches - 1) await sleep(1500);
                 }
+
+                console.log(`Total raw transactions: ${allTx.length}`);
+                console.log('Sample transaction:', allTx[0]);
+                console.log('All transaction codes:', [...new Set(allTx.map(t => t.transactionCode))]);
+
+                // Deduplicate by key
+                const seen = new Set();
+                const deduped = allTx.filter(tx => {
+                    const key = `${tx.name}-${tx.transactionDate}-${tx.change}-${tx.symbol || tx._sym}`;
+                    if (seen.has(key)) return false;
+                    seen.add(key);
+                    return true;
+                });
 
                 // Filter & sort
                 const now = Date.now();
                 const dayMs = 86400000;
 
-                allTransactions = allTx
+                allTransactions = deduped
                     .filter(tx => {
-                        const t = (tx.transactionType || '').toUpperCase();
-                        const isRelevant = t === 'P' || t === 'S' || t === 'P - PURCHASE' || t === 'S - SALE'
-                            || t.includes('PURCHASE') || t.includes('SALE');
+                        const code = (tx.transactionCode || '').toUpperCase();
+                        // P = Purchase, S = Sale (skip M=option exercise, G=gift, A=award, etc.)
+                        const isRelevant = code === 'P' || code === 'S';
                         const txDate = new Date(tx.transactionDate || tx.filingDate);
-                        const isRecent = (now - txDate.getTime()) < (currentPeriod * dayMs);
-                        return isRelevant && isRecent && tx.share && tx.share !== 0;
+                        const isRecent = !isNaN(txDate.getTime()) && (now - txDate.getTime()) < (currentPeriod * dayMs);
+                        return isRelevant && isRecent && tx.change && tx.change !== 0;
                     })
                     .sort((a, b) => new Date(b.transactionDate || b.filingDate) - new Date(a.transactionDate || a.filingDate));
 
+                console.log(`Filtered transactions (P/S only, ${currentPeriod}d): ${allTransactions.length}`);
+
+                updateMsg('렌더링 중...', 100);
                 renderAll();
                 document.getElementById('sumUpdated').textContent = new Date().toLocaleTimeString('ko-KR');
 
             } catch (err) {
+                console.error('Load error:', err);
                 document.getElementById('txArea').innerHTML = `
                     <div class="error-box">
                         <div class="emoji">⚠️</div>
@@ -651,10 +694,12 @@
         // ============================================================
         // BUY/SELL CLASSIFY
         // ============================================================
+        // Finnhub transactionCode: P=Purchase, S=Sale, M=Option Exercise, etc.
         function isBuy(tx) {
-            const t = (tx.transactionType || '').toUpperCase();
-            if (t === 'P' || t.includes('PURCHASE') || t.includes('BUY') || t === 'P - PURCHASE') return true;
-            if (t === 'S' || t.includes('SALE') || t.includes('SELL') || t === 'S - SALE') return false;
+            const code = (tx.transactionCode || '').toUpperCase();
+            if (code === 'P') return true;
+            if (code === 'S') return false;
+            // Fallback: positive change = buy
             return (tx.change || 0) > 0;
         }
 
@@ -709,8 +754,8 @@
         function renderStats() {
             const buys = allTransactions.filter(isBuy);
             const sells = allTransactions.filter(tx => !isBuy(tx));
-            const buyVal = buys.reduce((s, tx) => s + Math.abs((tx.share||0) * (tx.transactionPrice||0)), 0);
-            const sellVal = sells.reduce((s, tx) => s + Math.abs((tx.share||0) * (tx.transactionPrice||0)), 0);
+            const buyVal = buys.reduce((s, tx) => s + Math.abs((tx.change||0) * (tx.transactionPrice||0)), 0);
+            const sellVal = sells.reduce((s, tx) => s + Math.abs((tx.change||0) * (tx.transactionPrice||0)), 0);
             const ratio = sells.length > 0 ? (buys.length / sells.length).toFixed(2) : '∞';
             const uniqueSyms = new Set(allTransactions.map(tx => tx.symbol || tx._sym)).size;
 
@@ -729,8 +774,8 @@
         function renderDonut() {
             const buys = allTransactions.filter(isBuy);
             const sells = allTransactions.filter(tx => !isBuy(tx));
-            const buyVal = buys.reduce((s, tx) => s + Math.abs((tx.share||0) * (tx.transactionPrice||0)), 0);
-            const sellVal = sells.reduce((s, tx) => s + Math.abs((tx.share||0) * (tx.transactionPrice||0)), 0);
+            const buyVal = buys.reduce((s, tx) => s + Math.abs((tx.change||0) * (tx.transactionPrice||0)), 0);
+            const sellVal = sells.reduce((s, tx) => s + Math.abs((tx.change||0) * (tx.transactionPrice||0)), 0);
 
             if (donutChart) donutChart.destroy();
             const ctx = document.getElementById('donutChart').getContext('2d');
@@ -780,14 +825,15 @@
                 const sym = tx.symbol || tx._sym || '—';
                 const info = SP500[sym] || { n: sym, s: '' };
                 const buy = isBuy(tx);
-                const val = Math.abs((tx.share||0) * (tx.transactionPrice||0));
-                const shares = Math.abs(tx.share||0);
+                const val = Math.abs((tx.change||0) * (tx.transactionPrice||0));
+                const shares = Math.abs(tx.change||0);
                 const name = tx.name || 'Unknown';
                 const date = tx.transactionDate || tx.filingDate || '';
+                const code = tx.transactionCode || '';
 
                 html += `<tr>
                     <td><span class="tx-sym">${sym}</span><span class="tx-company">${info.n}</span></td>
-                    <td><span class="tx-name">${truncate(name, 24)}</span><span class="tx-role">${info.s}</span></td>
+                    <td><span class="tx-name">${truncate(name, 24)}</span><span class="tx-role">${info.s || code}</span></td>
                     <td><span class="tx-badge ${buy ? 'buy' : 'sell'}">${buy ? 'BUY' : 'SELL'}</span></td>
                     <td class="tx-value">$${fmtNum(val)}<span class="tx-shares">${fmtNum(shares)} shares</span></td>
                     <td class="tx-date">${fmtDate(date)}</td>
@@ -804,7 +850,7 @@
 
             allTransactions.forEach(tx => {
                 const name = tx.name || 'Unknown';
-                const val = Math.abs((tx.share||0) * (tx.transactionPrice||0));
+                const val = Math.abs((tx.change||0) * (tx.transactionPrice||0));
                 const sym = tx.symbol || tx._sym || '';
                 if (isBuy(tx)) {
                     if (!buyMap[name]) buyMap[name] = { total: 0, sym };
@@ -848,7 +894,7 @@
                 if (!info) return;
                 const sec = info.s;
                 if (!sectors[sec]) sectors[sec] = { buys: 0, sells: 0 };
-                const val = Math.abs((tx.share||0) * (tx.transactionPrice||0));
+                const val = Math.abs((tx.change||0) * (tx.transactionPrice||0));
                 if (isBuy(tx)) sectors[sec].buys += val;
                 else sectors[sec].sells += val;
             });
