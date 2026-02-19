@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fetch S&P 500 insider trading data + price candles from Finnhub API.
+Fetch S&P 500 insider trading data from Finnhub + price candles from Yahoo Finance.
 Saves static JSON files for GitHub Pages dashboard.
 Runs daily via GitHub Actions.
 """
@@ -17,6 +17,13 @@ except ImportError:
     import subprocess, sys
     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
     import requests
+
+try:
+    import yfinance as yf
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "yfinance"])
+    import yfinance as yf
 
 API_KEY = os.environ.get("FINNHUB_API_KEY", "")
 BASE = "https://finnhub.io/api/v1"
@@ -192,33 +199,43 @@ def fetch_insider_transactions():
 
 
 def fetch_candles(symbols_needed):
-    """Fetch 200 days of daily candles for symbols that have insider activity."""
+    """Fetch 200 days of daily candles using Yahoo Finance (free, no rate limit)."""
     print("\n" + "=" * 60)
-    print("Fetching price candles...")
+    print("Fetching price candles via Yahoo Finance...")
     print("=" * 60)
-
-    now = int(time.time())
-    from_ts = now - (200 * 86400)
 
     for i, sym in enumerate(symbols_needed):
         print(f"  [{i+1}/{len(symbols_needed)}] {sym}...", end=" ")
-        data = api_call(f"/stock/candle?symbol={sym}&resolution=D&from={from_ts}&to={now}")
+        try:
+            ticker = yf.Ticker(sym)
+            df = ticker.history(period="200d", interval="1d")
 
-        if data and data.get("s") == "ok" and data.get("c"):
+            if df.empty:
+                print("no data")
+                continue
+
+            # Convert to same format as before: timestamps + close prices
+            timestamps = [int(ts.timestamp()) for ts in df.index]
+            closes = [round(float(p), 2) for p in df["Close"]]
+            highs = [round(float(p), 2) for p in df["High"]]
+            lows = [round(float(p), 2) for p in df["Low"]]
+
             candle = {
-                "t": data["t"],  # timestamps
-                "c": data["c"],  # close prices
-                "h": data.get("h", []),
-                "l": data.get("l", []),
+                "t": timestamps,
+                "c": closes,
+                "h": highs,
+                "l": lows,
             }
+
             out_path = CANDLES_DIR / f"{sym}.json"
             with open(out_path, "w") as f:
                 json.dump(candle, f, separators=(",", ":"))
-            print(f"{len(data['c'])} days")
-        else:
-            print("no data")
+            print(f"{len(closes)} days")
 
-        time.sleep(RATE_LIMIT_DELAY)
+        except Exception as e:
+            print(f"error: {e}")
+
+        time.sleep(0.3)  # Light delay to be polite
 
 
 def build_summary(transactions):
