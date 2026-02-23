@@ -98,7 +98,7 @@
             padding:10px 12px;border-bottom:1px solid #3a3a3a;text-align:left;
             font-family:'JetBrains Mono',monospace;position:sticky;top:0;background:var(--bg-secondary);z-index:2;
         }
-        .tx-table tbody tr{border-bottom:1px solid rgba(42,42,42,.5);transition:background .15s}
+        .tx-table tbody tr{border-bottom:1px solid rgba(42,42,42,.5);transition:background .15s;cursor:pointer}
         .tx-table tbody tr:hover{background:var(--bg-tertiary)}
         .tx-table td{padding:10px 12px;font-size:.78rem;vertical-align:middle}
 
@@ -406,9 +406,9 @@ function renderTransactions(){
         const buy=isBuy(tx);
         const v=txVal(tx);
         const sh=Math.abs(tx.change||0);
-        h+=`<tr>
+        h+=`<tr onclick="openChart('${tx.sym}')">
             <td>
-                <span class="tx-sym-link" onclick="openChart('${tx.sym}')">${tx.sym}${CHART_ICON}</span>
+                <span class="tx-sym-link">${tx.sym}${CHART_ICON}</span>
                 <span class="tx-company">${inf.n}</span>
             </td>
             <td><span class="tx-name">${truncate(tx.name,24)}</span><span class="tx-role">${inf.s}</span></td>
