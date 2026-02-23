@@ -142,8 +142,11 @@
         .insider-amt.buy-c{color:var(--bid-color)}
         .insider-amt.sell-c{color:var(--ask-color)}
         /* Insider chart icon on hover */
-        .insider-row .chart-hint{font-size:.58rem;color:var(--text-muted);opacity:0;transition:opacity .2s;margin-left:4px}
-        .insider-row:hover .chart-hint{opacity:1}
+        .insider-row .chart-hint{font-size:.58rem;color:var(--text-muted);opacity:.45;transition:all .2s;margin-left:auto;white-space:nowrap;display:flex;align-items:center;gap:3px}
+        .insider-row:hover .chart-hint{opacity:1;color:var(--bid-color)}
+        .top-stock-row .chart-icon{width:14px;height:14px;opacity:.3;transition:opacity .2s;margin-left:auto;flex-shrink:0;color:var(--text-muted)}
+        .top-stock-row:hover .chart-icon{opacity:1;color:var(--bid-color)}
+        .top-stock-row:hover .top-stock-sym{text-decoration:underline;text-underline-offset:2px}
 
         /* Sectors */
         .sector-row{margin-bottom:10px}
@@ -181,6 +184,8 @@
             .insiders-grid,.top-stocks-grid{grid-template-columns:1fr}
             .tx-table td:nth-child(5),.tx-table thead th:nth-child(5){display:none}
             .price-modal{max-width:100%}.price-chart-wrap{height:260px}
+            .insider-row .chart-hint{opacity:.6}
+            .top-stock-row .chart-icon{opacity:.5}
         }
         @media(max-width:480px){.chart-container{height:220px}.stats-grid{grid-template-columns:repeat(2,1fr)}}
     </style>
@@ -388,8 +393,8 @@ function renderTopStocks(){
     const tB=Object.entries(bm).sort((a,b)=>b[1].total-a[1].total).slice(0,5);
     const tS=Object.entries(sm).sort((a,b)=>b[1].total-a[1].total).slice(0,5);
 
-    document.getElementById('topBuyStocks').innerHTML=tB.length===0?'<div class="no-data">데이터 없음</div>':tB.map(([sy,d],i)=>{const inf=SP500[sy]||{n:sy};return`<div class="top-stock-row" onclick="openChart('${sy}')"><div class="top-stock-rank">${i+1}</div><div class="top-stock-sym" style="color:var(--bid-color)">${sy}</div><div class="top-stock-name">${inf.n}</div><div class="top-stock-val" style="color:var(--bid-color)">+$${fmtNum(d.total)}</div><div class="top-stock-count">${d.count}건</div></div>`;}).join('');
-    document.getElementById('topSellStocks').innerHTML=tS.length===0?'<div class="no-data">데이터 없음</div>':tS.map(([sy,d],i)=>{const inf=SP500[sy]||{n:sy};return`<div class="top-stock-row" onclick="openChart('${sy}')"><div class="top-stock-rank">${i+1}</div><div class="top-stock-sym" style="color:var(--ask-color)">${sy}</div><div class="top-stock-name">${inf.n}</div><div class="top-stock-val" style="color:var(--ask-color)">-$${fmtNum(d.total)}</div><div class="top-stock-count">${d.count}건</div></div>`;}).join('');
+    document.getElementById('topBuyStocks').innerHTML=tB.length===0?'<div class="no-data">데이터 없음</div>':tB.map(([sy,d],i)=>{const inf=SP500[sy]||{n:sy};return`<div class="top-stock-row" onclick="openChart('${sy}')"><div class="top-stock-rank">${i+1}</div><div class="top-stock-sym" style="color:var(--bid-color)">${sy}</div><div class="top-stock-name">${inf.n}</div><div class="top-stock-val" style="color:var(--bid-color)">+$${fmtNum(d.total)}</div><div class="top-stock-count">${d.count}건</div><svg class="chart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>`;}).join('');
+    document.getElementById('topSellStocks').innerHTML=tS.length===0?'<div class="no-data">데이터 없음</div>':tS.map(([sy,d],i)=>{const inf=SP500[sy]||{n:sy};return`<div class="top-stock-row" onclick="openChart('${sy}')"><div class="top-stock-rank">${i+1}</div><div class="top-stock-sym" style="color:var(--ask-color)">${sy}</div><div class="top-stock-name">${inf.n}</div><div class="top-stock-val" style="color:var(--ask-color)">-$${fmtNum(d.total)}</div><div class="top-stock-count">${d.count}건</div><svg class="chart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>`;}).join('');
 }
 
 function renderTransactions(){
@@ -440,7 +445,7 @@ function renderTopInsiders(){
             <div class="insider-avatar buy-av">${nm.charAt(0)}</div>
             <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${[...d.syms].join(', ')}</div></div>
             <div class="insider-amt buy-c">+$${fmtNum(d.total)}</div>
-            <span class="chart-hint">차트 보기</span>
+            <span class="chart-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 차트</span>
         </div>`;
     }).join('');
 
@@ -450,7 +455,7 @@ function renderTopInsiders(){
             <div class="insider-avatar sell-av">${nm.charAt(0)}</div>
             <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${[...d.syms].join(', ')}</div></div>
             <div class="insider-amt sell-c">-$${fmtNum(d.total)}</div>
-            <span class="chart-hint">차트 보기</span>
+            <span class="chart-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 차트</span>
         </div>`;
     }).join('');
 }
