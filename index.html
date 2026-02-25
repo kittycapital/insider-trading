@@ -125,10 +125,10 @@
         .tx-date{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--text-muted);text-align:right}
 
         /* ===== INSIDERS ===== */
-        .insiders-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-        .insider-card{background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:8px;padding:16px}
+        .insiders-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;overflow:hidden}
+        .insider-card{background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:8px;padding:16px;overflow:hidden;min-width:0}
         .insider-card h3{font-size:.8rem;font-weight:600;margin-bottom:12px}
-        .insider-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(42,42,42,.4);cursor:pointer;transition:background .15s;border-radius:4px;padding-left:4px;padding-right:4px}
+        .insider-row{display:flex;align-items:center;gap:10px;min-width:0;padding:8px 0;border-bottom:1px solid rgba(42,42,42,.4);cursor:pointer;transition:background .15s;border-radius:4px;padding-left:4px;padding-right:4px}
         .insider-row:hover{background:rgba(255,255,255,.03)}
         .insider-row:last-child{border-bottom:none}
         .insider-rank{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--text-muted);width:18px;text-align:center}
@@ -182,10 +182,15 @@
         @media(max-width:768px){
             .container{padding:10px 12px 30px}.header h1{font-size:1.3rem}
             .insiders-grid,.top-stocks-grid{grid-template-columns:1fr}
+            #insidersSection{background:none;border:none;padding:0;margin-bottom:12px}
+            #insidersSection .section-title{padding:0 4px;margin-bottom:12px}
+            #insidersSection .insiders-grid{gap:12px}
+            #insidersSection .insider-card{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;padding:16px;overflow:hidden}
             .tx-table td:nth-child(5),.tx-table thead th:nth-child(5){display:none}
             .price-modal{max-width:100%}.price-chart-wrap{height:260px}
             .insider-row .chart-hint{opacity:.6}
             .top-stock-row .chart-icon{opacity:.5}
+            .insider-amt{font-size:.65rem}
         }
         @media(max-width:480px){.chart-container{height:220px}.stats-grid{grid-template-columns:repeat(2,1fr)}}
     </style>
@@ -245,7 +250,7 @@
         <div id="txArea"><div class="loading-box"><div class="spinner"></div><div class="msg">데이터 로딩 중...</div></div></div>
     </section>
 
-    <section class="section">
+    <section class="section" id="insidersSection">
         <div class="section-title"><h2>Top 내부자</h2><p>거래 금액 기준 상위 5명 · 클릭 시 거래 차트</p></div>
         <div class="insiders-grid">
             <div class="insider-card"><h3><span style="color:var(--bid-color)">▲</span> Top 매수자</h3><div id="topBuyers"><div class="no-data">로딩 중...</div></div></div>
