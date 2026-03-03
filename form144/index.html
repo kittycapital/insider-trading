@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Form 144 내부자 매도 신고 | Herdvibe</title>
+    <meta property="og:title" content="SEC Form 144 내부자 매도 신고 트래커 | Herdvibe">
+    <meta property="og:description" content="SEC Form 144 기반 내부자 매도 예정 신고 실시간 추적 - 매도 전 시그널 포착">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        ::-webkit-scrollbar{display:none}
+        *{-ms-overflow-style:none;scrollbar-width:none}
+        :root{
+            --bg-primary:#0a0a0a;--bg-secondary:#111111;--bg-tertiary:#1a1a1a;
+            --text-primary:#ffffff;--text-secondary:#888888;--text-muted:#555555;
+            --border-color:#2a2a2a;--bid-color:#00d4aa;--ask-color:#ff4757;
+            --warn-color:#ffb347;--signal-color:#ff6b6b;
+        }
+        html,body{overflow-x:hidden}
+        body{font-family:'Noto Sans KR',sans-serif;background:var(--bg-primary);color:var(--text-primary);min-height:100vh}
+        .container{max-width:1400px;margin:0 auto;padding:20px 20px 40px}
+
+        /* Header */
+        .header{text-align:center;padding:30px 0 20px;border-bottom:1px solid var(--border-color);margin-bottom:20px}
+        .header h1{font-size:1.8rem;font-weight:700;letter-spacing:-0.5px;margin-bottom:6px;background:linear-gradient(135deg,#ff6b6b 0%,#ffb347 50%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .header p{color:var(--text-secondary);font-size:0.85rem}
+        .header .badge{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 12px;background:rgba(255,107,107,.1);border:1px solid rgba(255,107,107,.25);border-radius:20px;font-size:.7rem;color:var(--signal-color);font-family:'JetBrains Mono',monospace}
+        .header .badge .dot{width:6px;height:6px;background:var(--signal-color);border-radius:50%;animation:pulse 2s ease infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+        /* Info Banner */
+        .info-banner{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:14px 18px;margin-bottom:20px;display:flex;align-items:flex-start;gap:10px}
+        .info-banner .icon{font-size:1.1rem;flex-shrink:0;margin-top:1px}
+        .info-banner .text{font-size:.75rem;color:var(--text-secondary);line-height:1.7}
+        .info-banner .text strong{color:var(--warn-color);font-weight:500}
+        .info-banner .flow{display:flex;align-items:center;gap:6px;margin-top:6px;font-family:'JetBrains Mono',monospace;font-size:.68rem}
+        .info-banner .flow .step{padding:3px 8px;border-radius:4px;border:1px solid var(--border-color);background:var(--bg-tertiary)}
+        .info-banner .flow .arrow{color:var(--text-muted)}
+        .info-banner .flow .step.active{border-color:var(--signal-color);color:var(--signal-color);background:rgba(255,107,107,.08)}
+
+        /* Controls */
+        .controls{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+        .control-group{display:flex;align-items:center;gap:6px}
+        .control-label{font-size:0.72rem;color:var(--text-secondary)}
+        .ctrl-btn{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:6px 12px;background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:6px;color:var(--text-secondary);cursor:pointer;transition:all .2s}
+        .ctrl-btn:hover{border-color:#3a3a3a}
+        .ctrl-btn.active{border-color:var(--signal-color);color:var(--signal-color);background:rgba(255,107,107,.08)}
+
+        /* Summary */
+        .summary-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:20px;font-family:'JetBrains Mono',monospace;font-size:.8rem}
+        .summary-item{display:flex;align-items:center;gap:6px}
+        .summary-item .label{color:var(--text-muted);font-size:.7rem}
+
+        /* Stats */
+        .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+        .stat-card{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:18px;text-align:center;position:relative;overflow:hidden}
+        .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--signal-color),transparent);opacity:.5}
+        .stat-card .stat-label{font-size:.68rem;color:var(--text-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+        .stat-card .stat-value{font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:600}
+        .stat-card .stat-sub{font-size:.68rem;color:var(--text-muted);margin-top:4px;font-family:'JetBrains Mono',monospace}
+
+        /* Section */
+        .section{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;padding:20px;margin-bottom:20px}
+        .section-title{text-align:center;margin-bottom:15px}
+        .section-title h2{font-size:1.1rem;font-weight:600}
+        .section-title p{font-size:.75rem;color:var(--text-muted);margin-top:4px}
+
+        /* Chart */
+        .chart-container{position:relative;height:300px;width:100%}
+
+        /* Top Grid */
+        .top-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        .top-card{background:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:8px;padding:16px}
+        .top-card h3{font-size:.8rem;font-weight:600;margin-bottom:12px;color:var(--signal-color);display:flex;align-items:center;gap:6px}
+        .top-row{display:flex;align-items:center;gap:10px;padding:8px 4px;border-bottom:1px solid rgba(42,42,42,.4);cursor:pointer;transition:background .15s;border-radius:4px}
+        .top-row:hover{background:rgba(255,255,255,.03)}
+        .top-row:last-child{border-bottom:none}
+        .top-rank{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--text-muted);width:18px;text-align:center}
+        .top-sym{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82rem;color:var(--signal-color);width:55px}
+        .top-name{flex:1;font-size:.7rem;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+        .top-val{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:500;text-align:right;color:var(--ask-color)}
+        .top-count{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--text-muted);width:35px;text-align:right}
+
+        /* Table */
+        .table-scroll{max-height:600px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#2a2a2a transparent}
+        .table-scroll::-webkit-scrollbar{display:block;width:4px}
+        .table-scroll::-webkit-scrollbar-track{background:transparent}
+        .table-scroll::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:2px}
+        .tx-table{width:100%;border-collapse:collapse}
+        .tx-table thead th{font-size:.68rem;color:#bbb;text-transform:uppercase;letter-spacing:.8px;font-weight:600;padding:10px 12px;border-bottom:1px solid #3a3a3a;text-align:left;font-family:'JetBrains Mono',monospace;position:sticky;top:0;background:var(--bg-secondary);z-index:2}
+        .tx-table tbody tr{border-bottom:1px solid rgba(42,42,42,.5);transition:background .15s;cursor:pointer}
+        .tx-table tbody tr:hover{background:var(--bg-tertiary)}
+        .tx-table td{padding:10px 12px;font-size:.78rem;vertical-align:middle}
+
+        .tx-sym-link{display:inline-flex;align-items:center;gap:4px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82rem;color:var(--signal-color);cursor:pointer;transition:all .2s;text-decoration:none;border-bottom:1px dashed rgba(255,107,107,.3);padding-bottom:1px}
+        .tx-sym-link:hover{color:#fff;border-bottom-color:#fff}
+        .tx-sym-link svg{width:12px;height:12px;opacity:.5;transition:opacity .2s}
+        .tx-sym-link:hover svg{opacity:1}
+        .tx-company{font-size:.65rem;color:var(--text-muted);display:block;margin-top:2px}
+        .tx-name{color:var(--text-secondary);font-size:.75rem}
+        .tx-role{font-size:.62rem;color:var(--text-muted);display:block;margin-top:1px}
+        .tx-value{font-family:'JetBrains Mono',monospace;font-size:.75rem;text-align:right;color:var(--ask-color)}
+        .tx-shares{font-size:.62rem;color:var(--text-muted);display:block;margin-top:1px;text-align:right}
+        .tx-date{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--text-muted);text-align:right}
+
+        .sell-badge{display:inline-block;padding:3px 10px;border-radius:4px;font-size:.68rem;font-weight:600;font-family:'JetBrains Mono',monospace;letter-spacing:.3px;background:rgba(255,71,87,.1);color:var(--ask-color);border:1px solid rgba(255,71,87,.3)}
+
+        /* Price Modal */
+        .price-modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.78);z-index:1000;align-items:center;justify-content:center;padding:20px}
+        .price-modal-overlay.open{display:flex}
+        .price-modal{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;width:100%;max-width:900px;max-height:90vh;overflow-y:auto}
+        .price-modal-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border-color)}
+        .price-modal-header h3{font-size:1rem;font-weight:600;display:flex;align-items:center;gap:8px}
+        .price-modal-header .sym{font-family:'JetBrains Mono',monospace;color:var(--signal-color)}
+        .price-modal-close{background:var(--bg-tertiary);border:1px solid var(--border-color);color:var(--text-secondary);width:32px;height:32px;border-radius:6px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+        .price-modal-close:hover{border-color:var(--ask-color);color:var(--ask-color)}
+        .price-modal-body{padding:20px}
+        .price-chart-wrap{position:relative;height:350px;width:100%;margin-bottom:16px}
+        .price-legend{display:flex;gap:16px;justify-content:center;font-size:.72rem;color:var(--text-secondary);margin-bottom:12px}
+        .price-legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:middle}
+        .modal-loading{display:flex;align-items:center;justify-content:center;height:350px;gap:12px;color:var(--text-muted);font-size:.8rem}
+
+        /* Timeline */
+        .timeline-chart{position:relative;height:200px;width:100%}
+
+        /* Utility */
+        .loading-box{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 20px;gap:14px}
+        .spinner{width:28px;height:28px;border:3px solid var(--border-color);border-top-color:var(--signal-color);border-radius:50%;animation:spin .7s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+        .loading-box .msg{font-size:.78rem;color:var(--text-muted)}
+        .no-data{text-align:center;padding:30px;font-size:.78rem;color:var(--text-muted)}
+
+        /* Share */
+        .share-bar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+        .share-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:transparent;border:1px solid var(--border-color);border-radius:8px;color:var(--text-secondary);font-size:.72rem;font-family:'Noto Sans KR',sans-serif;cursor:pointer;transition:all .2s}
+        .share-btn svg{width:14px;height:14px}
+        .share-btn:hover{background:var(--bg-tertiary)}
+        .share-btn.twitter:hover{border-color:#1da1f2;color:#1da1f2}
+        .share-btn.kakao:hover{border-color:#fee500;color:#fee500}
+        .share-btn.telegram:hover{border-color:#26a5e4;color:#26a5e4}
+        .share-btn.instagram:hover{border-color:#E4405F;color:#E4405F}
+        .share-btn.copy-link:hover{border-color:var(--bid-color);color:var(--bid-color)}
+
+        .footer{text-align:center;padding:15px 0;border-top:1px solid var(--border-color);font-size:.7rem;color:var(--text-muted);line-height:1.8}
+        .footer a{color:var(--signal-color);text-decoration:none}
+
+        /* Disclaimer */
+        .disclaimer{background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:10px;padding:16px;margin-bottom:20px;font-size:.7rem;color:var(--text-muted);line-height:1.7;text-align:center}
+
+        @media(max-width:768px){
+            .container{padding:10px 12px 30px}
+            .header h1{font-size:1.3rem}
+            .top-grid{grid-template-columns:1fr}
+            .info-banner{flex-direction:column}
+            .info-banner .flow{flex-wrap:wrap}
+            .tx-table td:nth-child(5),.tx-table thead th:nth-child(5){display:none}
+            .price-modal{max-width:100%}.price-chart-wrap{height:260px}
+        }
+        @media(max-width:480px){.chart-container{height:220px}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>SEC Form 144 매도 신고 트래커</h1>
+        <p>내부자(임원/이사/대주주) 매도 예정 신고 추적 · SEC EDGAR 기반 · 매일 자동 업데이트</p>
+        <div class="badge"><span class="dot"></span>SELL INTENT SIGNAL</div>
+    </header>
+
+    <div class="info-banner">
+        <div class="icon">📋</div>
+        <div class="text">
+            <strong>Form 144</strong>는 내부자가 주식을 매도하기 <strong>전에</strong> SEC에 제출하는 신고서입니다.<br>
+            신고 = 즉시 매도는 아니지만, <strong>90일 이내 매도 의사</strong>를 의미합니다. 실제 매도 완료는 Form 4에서 확인됩니다.
+            <div class="flow">
+                <span class="step active">Form 144 제출 (매도 의사)</span>
+                <span class="arrow">→</span>
+                <span class="step">90일 내 매도 진행</span>
+                <span class="arrow">→</span>
+                <span class="step">Form 4 제출 (매도 완료)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="control-group">
+            <span class="control-label">기간:</span>
+            <button class="ctrl-btn" data-period="7" onclick="setPeriod(7,this)">7일</button>
+            <button class="ctrl-btn active" data-period="30" onclick="setPeriod(30,this)">30일</button>
+            <button class="ctrl-btn" data-period="90" onclick="setPeriod(90,this)">90일</button>
+            <button class="ctrl-btn" data-period="180" onclick="setPeriod(180,this)">180일</button>
+        </div>
+    </div>
+
+    <div class="summary-row">
+        <div class="summary-item"><span class="label">총 신고</span><span id="sumTotal" style="color:var(--signal-color)">—</span></div>
+        <div class="summary-item"><span class="label">추정 금액</span><span id="sumValue" style="color:var(--ask-color)">—</span></div>
+        <div class="summary-item"><span class="label">기업 수</span><span id="sumCompanies">—</span></div>
+        <div class="summary-item"><span class="label">Updated</span><span id="sumUpdated" style="color:var(--text-muted)">—</span></div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">최근 7일 신고</div>
+            <div class="stat-value" style="color:var(--signal-color)" id="stat7d">—</div>
+            <div class="stat-sub" id="stat7dSub">건</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">최근 30일 신고</div>
+            <div class="stat-value" style="color:var(--warn-color)" id="stat30d">—</div>
+            <div class="stat-sub" id="stat30dSub">건</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">총 추정 매도 금액</div>
+            <div class="stat-value" style="color:var(--ask-color)" id="statTotalVal">—</div>
+            <div class="stat-sub" id="statTotalValSub">—</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">관련 기업 수</div>
+            <div class="stat-value" id="statCompanies">—</div>
+            <div class="stat-sub">S&P 500 + 주요종목</div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-title"><h2>📊 Form 144 신고 타임라인</h2><p>일별 매도 신고 건수 · 금액 규모</p></div>
+        <div class="chart-container"><canvas id="timelineChart"></canvas></div>
+    </section>
+
+    <section class="section">
+        <div class="section-title"><h2>🔥 최대 규모 매도 신고</h2><p>추정 매도 금액 기준 Top 10</p></div>
+        <div id="topFilingsArea"><div class="loading-box"><div class="spinner"></div><div class="msg">데이터 로딩 중...</div></div></div>
+    </section>
+
+    <section class="section">
+        <div class="section-title"><h2>종목별 · 내부자별 Top</h2><p>매도 신고 총액 기준</p></div>
+        <div class="top-grid">
+            <div class="top-card">
+                <h3><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg> Top 종목</h3>
+                <div id="topCompanies"><div class="no-data">로딩 중...</div></div>
+            </div>
+            <div class="top-card">
+                <h3><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Top 내부자</h3>
+                <div id="topInsiders"><div class="no-data">로딩 중...</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title"><h2>전체 Form 144 신고 내역</h2><p>최신순 정렬 · 종목 클릭 시 주가 차트</p></div>
+        <div id="txArea"><div class="loading-box"><div class="spinner"></div><div class="msg">데이터 로딩 중...</div></div></div>
+    </section>
+
+    <div class="disclaimer">
+        ⚠️ 본 대시보드는 정보 제공 목적이며 투자 권유가 아닙니다. Form 144 신고가 반드시 매도로 이어지지 않습니다.<br>
+        투자 판단 시 다양한 정보를 종합적으로 고려하시기 바랍니다.
+    </div>
+
+    <div class="share-bar">
+        <button class="share-btn twitter" onclick="shareTwitter()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>트위터</button>
+        <button class="share-btn kakao" onclick="shareKakao()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.477 3 2 6.463 2 10.691c0 2.724 1.8 5.116 4.508 6.482-.144.525-.925 3.388-.958 3.603 0 0-.02.157.083.217.103.06.224.013.224.013.296-.041 3.434-2.263 3.973-2.652.703.098 1.428.15 2.17.15 5.523 0 10-3.463 10-7.813C22 6.463 17.523 3 12 3z"/></svg>카카오톡</button>
+        <button class="share-btn telegram" onclick="shareTelegram()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>텔레그램</button>
+        <button class="share-btn instagram" onclick="shareInstagram()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>인스타그램</button>
+        <button class="share-btn copy-link" onclick="copyLink()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>링크 복사</button>
+    </div>
+
+    <footer class="footer">
+        SEC Form 144 내부자 매도 신고 트래커 — 100% 무료 SEC EDGAR 데이터<br>
+        매일 자동 업데이트 · 내부자(임원/이사/대주주) 매도 예정 추적<br>
+        <a href="https://herdvibe.com" target="_blank">herdvibe.com</a>
+    </footer>
+</div>
+
+<!-- Price Chart Modal -->
+<div class="price-modal-overlay" id="priceModal">
+    <div class="price-modal">
+        <div class="price-modal-header">
+            <h3><span class="sym" id="modalSym"></span> <span id="modalName"></span></h3>
+            <button class="price-modal-close" onclick="closeModal()">✕</button>
+        </div>
+        <div class="price-modal-body">
+            <div class="price-legend">
+                <span><span class="dot" style="background:#666"></span>주가</span>
+                <span><span class="dot" style="background:var(--signal-color)"></span>Form 144 신고일</span>
+            </div>
+            <div class="price-chart-wrap" id="priceChartWrap"><canvas id="priceChart"></canvas></div>
+            <div id="modalTxList"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js" crossorigin="anonymous"></script>
+<script>
+// ============================================================
+// CONFIG
+// ============================================================
+const KAKAO_KEY = 'a43ed7b39fac35458f4f9df925a279b5';
+const SHARE_URL = 'https://herdvibe.com/form144';  // Update with actual URL
+const DATA_BASE = './data';
+const CHART_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>';
+
+let allFilings = [], currentPeriod = 30, timelineChart = null, priceChartInstance = null;
+
+// ============================================================
+// HELPERS
+// ============================================================
+function fmtNum(n) {
+    if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+    return Math.round(n).toLocaleString();
+}
+function fmtDate(d) {
+    if (!d) return '—';
+    const dt = new Date(d);
+    return `${dt.getFullYear()}.${String(dt.getMonth() + 1).padStart(2, '0')}.${String(dt.getDate()).padStart(2, '0')}`;
+}
+function truncate(s, m) { return (!s) ? '' : s.length > m ? s.slice(0, m) + '…' : s; }
+function daysBetween(d1, d2) { return Math.floor((d2 - d1) / 86400000); }
+
+// ============================================================
+// LOAD DATA
+// ============================================================
+async function loadData() {
+    try {
+        const [filingsRes, summaryRes] = await Promise.all([
+            fetch(`${DATA_BASE}/form144.json`),
+            fetch(`${DATA_BASE}/form144_summary.json`)
+        ]);
+
+        if (!filingsRes.ok || !summaryRes.ok) throw new Error('데이터 파일을 찾을 수 없습니다');
+
+        const filingsData = await filingsRes.json();
+        const summary = await summaryRes.json();
+
+        // Filter by period
+        const now = Date.now(), dayMs = 86400000;
+        allFilings = filingsData.filter(f => {
+            const d = new Date(f.fileDate);
+            return !isNaN(d.getTime()) && (now - d.getTime()) < (currentPeriod * dayMs);
+        });
+
+        renderAll(summary);
+
+        document.getElementById('sumUpdated').textContent = summary.updated
+            ? new Date(summary.updated).toLocaleString('ko-KR', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+            : '—';
+    } catch (err) {
+        document.getElementById('txArea').innerHTML = `<div class="no-data" style="padding:40px">
+            <div style="font-size:1.2rem;margin-bottom:8px">📋</div>
+            <div>데이터를 불러오지 못했습니다</div>
+            <div style="font-size:.68rem;color:var(--text-muted);margin-top:6px;font-family:'JetBrains Mono'">${err.message}</div>
+            <div style="font-size:.68rem;color:var(--text-muted);margin-top:4px">GitHub Actions에서 fetch_form144.py를 실행한 후 데이터가 생성됩니다</div>
+        </div>`;
+    }
+}
+
+// ============================================================
+// CONTROLS
+// ============================================================
+function setPeriod(d, b) {
+    document.querySelectorAll('[data-period]').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    currentPeriod = d;
+    loadData();
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+function renderAll(summary) {
+    renderSummary(summary);
+    renderStats(summary);
+    renderTimeline();
+    renderTopFilings();
+    renderTopCompanies();
+    renderTopInsiders();
+    renderTransactions();
+}
+
+function renderSummary(summary) {
+    const totalVal = allFilings.reduce((a, f) => a + (f.totalValue || 0), 0);
+    const companies = new Set(allFilings.map(f => f.ticker)).size;
+    document.getElementById('sumTotal').textContent = allFilings.length + '건';
+    document.getElementById('sumValue').textContent = '$' + fmtNum(totalVal);
+    document.getElementById('sumCompanies').textContent = companies + '개';
+}
+
+function renderStats(summary) {
+    const now = Date.now(), dayMs = 86400000;
+    const f7 = allFilings.filter(f => (now - new Date(f.fileDate).getTime()) < 7 * dayMs).length;
+    const f30 = allFilings.filter(f => (now - new Date(f.fileDate).getTime()) < 30 * dayMs).length;
+    const totalVal = allFilings.reduce((a, f) => a + (f.totalValue || 0), 0);
+    const companies = new Set(allFilings.map(f => f.ticker)).size;
+
+    document.getElementById('stat7d').textContent = f7;
+    document.getElementById('stat30d').textContent = f30;
+    document.getElementById('statTotalVal').textContent = '$' + fmtNum(totalVal);
+    document.getElementById('statTotalValSub').textContent = `${currentPeriod}일 기준`;
+    document.getElementById('statCompanies').textContent = companies;
+}
+
+function renderTimeline() {
+    // Group filings by date
+    const dateMap = {};
+    allFilings.forEach(f => {
+        const d = f.fileDate;
+        if (!d) return;
+        dateMap[d] = dateMap[d] || { count: 0, value: 0 };
+        dateMap[d].count++;
+        dateMap[d].value += f.totalValue || 0;
+    });
+
+    const sorted = Object.entries(dateMap).sort((a, b) => a[0].localeCompare(b[0]));
+    const labels = sorted.map(([d]) => new Date(d).getTime());
+    const counts = sorted.map(([, v]) => v.count);
+    const values = sorted.map(([, v]) => v.value);
+
+    if (timelineChart) timelineChart.destroy();
+
+    const ctx = document.getElementById('timelineChart').getContext('2d');
+    timelineChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels,
+            datasets: [
+                {
+                    label: '신고 건수',
+                    data: counts,
+                    backgroundColor: 'rgba(255,107,107,.6)',
+                    borderColor: 'rgba(255,107,107,.8)',
+                    borderWidth: 1,
+                    borderRadius: 3,
+                    yAxisID: 'y',
+                    order: 2,
+                },
+                {
+                    label: '추정 금액',
+                    data: values,
+                    type: 'line',
+                    borderColor: 'rgba(255,179,71,.8)',
+                    backgroundColor: 'rgba(255,179,71,.1)',
+                    borderWidth: 2,
+                    pointRadius: 3,
+                    pointBackgroundColor: 'rgba(255,179,71,.8)',
+                    fill: true,
+                    tension: .3,
+                    yAxisID: 'y1',
+                    order: 1,
+                }
+            ]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            interaction: { intersect: false, mode: 'index' },
+            scales: {
+                x: {
+                    type: 'time', time: { unit: 'day', displayFormats: { day: 'MM.dd' } },
+                    grid: { color: 'rgba(42,42,42,.5)' },
+                    ticks: { color: '#555', font: { family: 'JetBrains Mono', size: 10 }, maxTicksLimit: 10 }
+                },
+                y: {
+                    position: 'left',
+                    grid: { color: 'rgba(42,42,42,.5)' },
+                    ticks: { color: '#ff6b6b', font: { family: 'JetBrains Mono', size: 10 }, stepSize: 1 },
+                    title: { display: true, text: '건수', color: '#555', font: { size: 10 } }
+                },
+                y1: {
+                    position: 'right',
+                    grid: { display: false },
+                    ticks: { color: '#ffb347', font: { family: 'JetBrains Mono', size: 10 }, callback: v => '$' + fmtNum(v) },
+                    title: { display: true, text: '금액', color: '#555', font: { size: 10 } }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: { color: '#888', font: { family: 'Noto Sans KR', size: 11 }, padding: 20, usePointStyle: true }
+                },
+                tooltip: {
+                    backgroundColor: '#1a1a1a', borderColor: '#2a2a2a', borderWidth: 1,
+                    titleFont: { family: 'JetBrains Mono', size: 11 },
+                    bodyFont: { family: 'JetBrains Mono', size: 11 },
+                    callbacks: {
+                        title: items => new Date(items[0].parsed.x).toLocaleDateString('ko-KR'),
+                        label: ctx => {
+                            if (ctx.datasetIndex === 0) return ` ${ctx.parsed.y}건 신고`;
+                            return ` $${fmtNum(ctx.parsed.y)}`;
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
+function renderTopFilings() {
+    const valued = allFilings.filter(f => f.totalValue > 0).sort((a, b) => b.totalValue - a.totalValue).slice(0, 10);
+
+    if (valued.length === 0) {
+        document.getElementById('topFilingsArea').innerHTML = '<div class="no-data">데이터 없음</div>';
+        return;
+    }
+
+    let h = `<div class="table-scroll"><table class="tx-table"><thead><tr>
+        <th>순위</th><th>종목</th><th>내부자</th><th>주식 수</th><th>추정 금액</th><th>신고일</th>
+    </tr></thead><tbody>`;
+
+    valued.forEach((f, i) => {
+        h += `<tr onclick="openChart('${f.ticker}')">
+            <td style="font-family:'JetBrains Mono';color:var(--text-muted);text-align:center">${i + 1}</td>
+            <td>
+                <span class="tx-sym-link">${f.ticker}${CHART_ICON}</span>
+                <span class="tx-company">${truncate(f.company, 20)}</span>
+            </td>
+            <td><span class="tx-name">${truncate(f.insiderName || '—', 22)}</span><span class="tx-role">${f.relationship || ''}</span></td>
+            <td style="font-family:'JetBrains Mono';font-size:.75rem;text-align:right">${f.shares ? f.shares.toLocaleString() : '—'}</td>
+            <td class="tx-value">$${fmtNum(f.totalValue)}<span class="tx-shares">@$${f.approxPrice ? f.approxPrice.toLocaleString() : '—'}/주</span></td>
+            <td class="tx-date">${fmtDate(f.fileDate)}</td>
+        </tr>`;
+    });
+
+    h += '</tbody></table></div>';
+    document.getElementById('topFilingsArea').innerHTML = h;
+}
+
+function renderTopCompanies() {
+    const map = {};
+    allFilings.forEach(f => {
+        map[f.ticker] = map[f.ticker] || { total: 0, count: 0, name: f.company };
+        map[f.ticker].total += f.totalValue || 0;
+        map[f.ticker].count++;
+    });
+
+    const sorted = Object.entries(map).sort((a, b) => b[1].total - a[1].total).slice(0, 7);
+
+    if (sorted.length === 0) {
+        document.getElementById('topCompanies').innerHTML = '<div class="no-data">데이터 없음</div>';
+        return;
+    }
+
+    document.getElementById('topCompanies').innerHTML = sorted.map(([sym, d], i) =>
+        `<div class="top-row" onclick="openChart('${sym}')">
+            <div class="top-rank">${i + 1}</div>
+            <div class="top-sym">${sym}</div>
+            <div class="top-name">${truncate(d.name, 18)}</div>
+            <div class="top-val">$${fmtNum(d.total)}</div>
+            <div class="top-count">${d.count}건</div>
+        </div>`
+    ).join('');
+}
+
+function renderTopInsiders() {
+    const map = {};
+    allFilings.forEach(f => {
+        const name = f.insiderName;
+        if (!name) return;
+        map[name] = map[name] || { total: 0, count: 0, ticker: f.ticker, company: f.company };
+        map[name].total += f.totalValue || 0;
+        map[name].count++;
+    });
+
+    const sorted = Object.entries(map).sort((a, b) => b[1].total - a[1].total).slice(0, 7);
+
+    if (sorted.length === 0) {
+        document.getElementById('topInsiders').innerHTML = '<div class="no-data">데이터 없음</div>';
+        return;
+    }
+
+    document.getElementById('topInsiders').innerHTML = sorted.map(([name, d], i) =>
+        `<div class="top-row" onclick="openChart('${d.ticker}')">
+            <div class="top-rank">${i + 1}</div>
+            <div class="top-sym">${d.ticker}</div>
+            <div class="top-name">${truncate(name, 18)}</div>
+            <div class="top-val">$${fmtNum(d.total)}</div>
+            <div class="top-count">${d.count}건</div>
+        </div>`
+    ).join('');
+}
+
+function renderTransactions() {
+    if (allFilings.length === 0) {
+        document.getElementById('txArea').innerHTML = '<div class="no-data">해당 기간의 Form 144 신고 데이터가 없습니다</div>';
+        return;
+    }
+
+    let h = `<div class="table-scroll"><table class="tx-table"><thead><tr>
+        <th>종목</th><th>내부자</th><th>유형</th><th>추정 금액</th><th>신고일</th>
+    </tr></thead><tbody>`;
+
+    allFilings.slice(0, 200).forEach(f => {
+        const val = f.totalValue || 0;
+        const shares = f.shares || 0;
+        h += `<tr onclick="openChart('${f.ticker}')">
+            <td>
+                <span class="tx-sym-link">${f.ticker}${CHART_ICON}</span>
+                <span class="tx-company">${truncate(f.company, 20)}</span>
+            </td>
+            <td><span class="tx-name">${truncate(f.insiderName || '—', 24)}</span><span class="tx-role">${f.relationship || ''}</span></td>
+            <td><span class="sell-badge">SELL</span></td>
+            <td class="tx-value">${val > 0 ? '$' + fmtNum(val) : '—'}<span class="tx-shares">${shares > 0 ? shares.toLocaleString() + '주' : ''}</span></td>
+            <td class="tx-date">${fmtDate(f.fileDate)}</td>
+        </tr>`;
+    });
+
+    h += '</tbody></table></div>';
+    document.getElementById('txArea').innerHTML = h;
+}
+
+// ============================================================
+// PRICE CHART MODAL
+// ============================================================
+async function openChart(symbol) {
+    const modal = document.getElementById('priceModal');
+    const wrap = document.getElementById('priceChartWrap');
+
+    document.getElementById('modalSym').textContent = symbol;
+    document.getElementById('modalName').textContent = 'Form 144 신고 내역';
+    modal.classList.add('open');
+    wrap.innerHTML = '<div class="modal-loading"><div class="spinner"></div>차트 로딩 중...</div>';
+
+    try {
+        // Load candles (shared with insider trading page)
+        const candleRes = await fetch(`${DATA_BASE}/candles/${symbol}.json`);
+        if (!candleRes.ok) throw new Error('캔들 데이터 없음');
+        const candles = await candleRes.json();
+
+        wrap.innerHTML = '<canvas id="priceChart"></canvas>';
+
+        // Find Form 144 filing dates for this symbol
+        const symFilings = allFilings.filter(f => f.ticker === symbol);
+        const filePts = [];
+
+        symFilings.forEach(f => {
+            const fTs = new Date(f.fileDate).getTime() / 1000;
+            let ci = -1, cd = Infinity;
+            candles.t.forEach((t, i) => {
+                const d = Math.abs(t - fTs);
+                if (d < cd) { cd = d; ci = i; }
+            });
+            if (ci >= 0 && cd < 5 * 86400) {
+                filePts.push({ x: candles.t[ci] * 1000, y: candles.c[ci], filing: f });
+            }
+        });
+
+        if (priceChartInstance) priceChartInstance.destroy();
+        priceChartInstance = new Chart(document.getElementById('priceChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: candles.t.map(t => t * 1000),
+                datasets: [
+                    {
+                        label: '주가', data: candles.c,
+                        borderColor: '#666', backgroundColor: 'rgba(102,102,102,.05)',
+                        borderWidth: 1.5, pointRadius: 0, fill: true, tension: .1, order: 2
+                    },
+                    {
+                        label: 'Form 144 신고',
+                        data: filePts.map(p => ({ x: p.x, y: p.y })),
+                        type: 'scatter',
+                        backgroundColor: '#ff6b6b', borderColor: '#ff6b6b',
+                        pointRadius: 9, pointStyle: 'triangle', rotation: 180,
+                        pointHoverRadius: 12, order: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                interaction: { intersect: false, mode: 'nearest' },
+                scales: {
+                    x: {
+                        type: 'time', time: { unit: 'month', displayFormats: { month: 'yy.MM' } },
+                        grid: { color: 'rgba(42,42,42,.5)' },
+                        ticks: { color: '#555', font: { family: 'JetBrains Mono', size: 10 }, maxTicksLimit: 6 }
+                    },
+                    y: {
+                        grid: { color: 'rgba(42,42,42,.5)' },
+                        ticks: { color: '#555', font: { family: 'JetBrains Mono', size: 10 }, callback: v => '$' + v.toLocaleString() }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a', borderColor: '#2a2a2a', borderWidth: 1,
+                        titleFont: { family: 'JetBrains Mono', size: 11 },
+                        bodyFont: { family: 'JetBrains Mono', size: 11 },
+                        callbacks: {
+                            title: items => new Date(items[0].parsed.x || items[0].label).toLocaleDateString('ko-KR'),
+                            label: ctx => {
+                                if (ctx.datasetIndex === 0) return ` $${ctx.parsed.y.toLocaleString()}`;
+                                const pt = filePts[ctx.dataIndex];
+                                if (pt && pt.filing) {
+                                    const f = pt.filing;
+                                    return ` SELL신고 ${f.insiderName || ''} ${f.shares ? f.shares.toLocaleString() + '주' : ''} $${fmtNum(f.totalValue || 0)}`;
+                                }
+                                return '';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Filing list below chart
+        if (symFilings.length > 0) {
+            let listH = `<h4 style="font-size:.78rem;color:var(--text-secondary);margin-bottom:8px;font-weight:500">${symbol} Form 144 신고 내역 (${symFilings.length}건)</h4>`;
+            symFilings.slice(0, 15).forEach(f => {
+                listH += `<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(42,42,42,.4);font-size:.75rem">
+                    <span class="sell-badge" style="min-width:42px;text-align:center">SELL</span>
+                    <span style="flex:1;color:var(--text-secondary)">${truncate(f.insiderName || '—', 22)}</span>
+                    <span style="font-family:'JetBrains Mono';font-size:.72rem;color:var(--text-muted)">${f.relationship || ''}</span>
+                    <span style="font-family:'JetBrains Mono';font-size:.72rem">${f.totalValue ? '$' + fmtNum(f.totalValue) : '—'}</span>
+                    <span style="font-family:'JetBrains Mono';font-size:.68rem;color:var(--text-muted)">${fmtDate(f.fileDate)}</span>
+                </div>`;
+            });
+            document.getElementById('modalTxList').innerHTML = listH;
+        }
+    } catch (err) {
+        wrap.innerHTML = `<div class="modal-loading">차트 로딩 실패: ${err.message}</div>`;
+    }
+}
+
+function closeModal() {
+    document.getElementById('priceModal').classList.remove('open');
+    if (priceChartInstance) { priceChartInstance.destroy(); priceChartInstance = null; }
+}
+document.getElementById('priceModal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ============================================================
+// SHARING
+// ============================================================
+function shareTwitter() { window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent('SEC Form 144 내부자 매도 신고 트래커\n내부자가 팔기 전에 알 수 있는 시그널')}&url=${encodeURIComponent(SHARE_URL)}`, '_blank'); }
+function shareKakao() { if (!Kakao.isInitialized()) Kakao.init(KAKAO_KEY); Kakao.Share.sendDefault({ objectType: 'feed', content: { title: 'SEC Form 144 매도 신고 트래커', description: '내부자 매도 예정 신고 추적 - SEC EDGAR 기반', imageUrl: '', link: { mobileWebUrl: SHARE_URL, webUrl: SHARE_URL } }, buttons: [{ title: '대시보드 보기', link: { mobileWebUrl: SHARE_URL, webUrl: SHARE_URL } }] }); }
+function shareTelegram() { window.open(`https://t.me/share/url?url=${encodeURIComponent(SHARE_URL)}&text=${encodeURIComponent('SEC Form 144 내부자 매도 신고 트래커')}`, '_blank'); }
+function clipCopy(t) { const a = document.createElement('textarea'); a.value = t; a.style.position = 'fixed'; a.style.left = '-9999px'; document.body.appendChild(a); a.select(); try { document.execCommand('copy'); } catch (e) { } document.body.removeChild(a); return Promise.resolve(); }
+function shareInstagram() { clipCopy(SHARE_URL).then(() => { const b = document.querySelector('.instagram'), o = b.innerHTML; b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 링크 복사됨!'; b.style.borderColor = '#E4405F'; b.style.color = '#E4405F'; setTimeout(() => { b.innerHTML = o; b.style.borderColor = ''; b.style.color = ''; }, 2500); }); }
+function copyLink() { clipCopy(SHARE_URL).then(() => { const b = document.querySelector('.copy-link'), o = b.innerHTML; b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 복사됨!'; b.style.borderColor = 'var(--bid-color)'; b.style.color = 'var(--bid-color)'; setTimeout(() => { b.innerHTML = o; b.style.borderColor = ''; b.style.color = ''; }, 2000); }); }
+
+// ============================================================
+// BOOT
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => { loadData(); });
+</script>
+</body>
+</html>
