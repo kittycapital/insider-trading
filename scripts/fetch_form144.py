@@ -414,9 +414,13 @@ def fetch_form144_from_submissions():
             accession = accessions[j] if j < len(accessions) else ""
             primary_doc = primary_docs[j] if j < len(primary_docs) else ""
             
-            # Build EDGAR URL
+            # Build EDGAR URL - primary_doc may have xsl prefix like "xsl144X01/primary_doc.xml"
+            # We need the raw XML: just "primary_doc.xml" in the accession directory
             acc_clean = accession.replace("-", "")
-            doc_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/{primary_doc}" if primary_doc else ""
+            # Raw XML URL (always primary_doc.xml directly)
+            xml_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/primary_doc.xml"
+            # Display URL (with XSLT rendering)
+            doc_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/{primary_doc}" if primary_doc else xml_url
             
             filing_entry = {
                 "ticker": ticker,
@@ -425,6 +429,7 @@ def fetch_form144_from_submissions():
                 "fileDate": file_date,
                 "accession": accession,
                 "docUrl": doc_url,
+                "xmlUrl": xml_url,
                 "insiderName": "",
                 "shares": 0,
                 "approxPrice": 0,
@@ -448,10 +453,10 @@ def fetch_form144_from_submissions():
     return all_form144
 
 
-def parse_form144_details(filings, max_parse=300):
+def parse_form144_details(filings, max_parse=500):
     """
-    Parse individual Form 144 documents to extract insider name, shares, price.
-    First tries the filing index to find the XML doc, then parses it.
+    Parse individual Form 144 XML documents to extract insider name, shares, value.
+    Uses the raw XML URL (primary_doc.xml) directly.
     """
     print("\n" + "=" * 60)
     print(f"Parsing Form 144 details (up to {max_parse} filings)...")
@@ -460,38 +465,15 @@ def parse_form144_details(filings, max_parse=300):
     parsed_count = 0
     
     for i, filing in enumerate(filings[:max_parse]):
-        doc_url = filing.get("docUrl", "")
-        if not doc_url:
+        # Use raw XML URL
+        url = filing.get("xmlUrl", "")
+        if not url:
             continue
         
         print(f"  [{i+1}/{min(len(filings), max_parse)}] {filing['ticker']} {filing['fileDate']}...", end=" ")
         
-        # Try to get the filing index page first (to find the XML document)
-        accession = filing.get("accession", "")
-        cik = filing.get("cik", "")
-        xml_url = None
-        
-        if accession and cik:
-            acc_clean = accession.replace("-", "")
-            index_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/"
-            resp = sec_get(index_url)
-            if resp and resp.status_code == 200:
-                # Look for XML document in the index
-                idx_text = resp.text
-                # Find .xml files that are Form 144 documents
-                xml_matches = re.findall(r'href="([^"]+\.xml)"', idx_text, re.IGNORECASE)
-                for xm in xml_matches:
-                    if '144' in xm.lower() or 'primary' in xm.lower() or 'doc' in xm.lower():
-                        xml_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/{xm}"
-                        break
-                if not xml_url and xml_matches:
-                    xml_url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc_clean}/{xml_matches[0]}"
-                time.sleep(RATE_LIMIT_DELAY)
-        
-        # Fetch the document (prefer XML, fallback to primary doc)
-        fetch_url = xml_url or doc_url
-        resp = sec_get(fetch_url)
-        if not resp:
+        resp = sec_get(url)
+        if not resp or resp.status_code != 200:
             print("skip")
             time.sleep(RATE_LIMIT_DELAY)
             continue
@@ -499,7 +481,7 @@ def parse_form144_details(filings, max_parse=300):
         text = resp.text
         
         try:
-            parsed = parse_form144_doc(text)
+            parsed = parse_form144_xml(text)
             
             if parsed and (parsed.get("name") or parsed.get("shares")):
                 filing["insiderName"] = parsed.get("name", "")
@@ -507,6 +489,7 @@ def parse_form144_details(filings, max_parse=300):
                 filing["approxPrice"] = parsed.get("price", 0)
                 filing["relationship"] = parsed.get("relationship", "")
                 filing["totalValue"] = parsed.get("totalValue", 0)
+                filing["remarks"] = parsed.get("remarks", "")
                 
                 val_str = f"${filing['totalValue']:,.0f}" if filing['totalValue'] else "?"
                 shares_str = f"{filing['shares']:,}" if filing['shares'] else "?"
@@ -523,188 +506,125 @@ def parse_form144_details(filings, max_parse=300):
     return filings
 
 
-def parse_form144_doc(text):
+def parse_form144_xml(text):
     """
-    Parse Form 144 document - handles both XML and HTML formats.
-    EDGAR Form 144 XML uses nested <value> tags for data.
+    Parse Form 144 XML using actual EDGAR tag structure.
+    
+    Actual tags (from real filings):
+      <nameOfPersonForWhoseAccountTheSecuritiesAreToBeSold>Peter Thiel</...>
+      <relationshipToIssuer>Officer</relationshipToIssuer>
+      <noOfUnitsSold>2000000</noOfUnitsSold>
+      <aggregateMarketValue>280000000</aggregateMarketValue>
+      <approxSaleDate>03/02/2026</approxSaleDate>
+      <remarks>...</remarks>
     """
     result = {}
     
-    # ===== EXTRACT NAME =====
-    # Pattern 1: EDGAR XML with <value> wrapper
-    # <nameOfPersonForWhoseAccountSecuritiesToBeSold><value>THIEL PETER</value>
-    name_patterns_xml = [
-        r'<nameOfPerson[^>]*>.*?<value>\s*([^<]+?)\s*</value>',
-        r'<reportingOwner[Nn]ame>.*?<value>\s*([^<]+?)\s*</value>',
-        r'<rptOwnerName>\s*([^<]+?)\s*</rptOwnerName>',
-        r'<reportingPersonName>.*?<value>\s*([^<]+?)\s*</value>',
-        r'<personName>.*?<value>\s*([^<]+?)\s*</value>',
-    ]
-    
-    for pat in name_patterns_xml:
-        m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-        if m:
-            name = m.group(1).strip()
-            # Clean up: remove any tag remnants or noise
-            name = re.sub(r'<[^>]+>', '', name).strip()
-            if len(name) > 2 and len(name) < 80:
-                result["name"] = name.title()
+    # ===== NAME =====
+    # Primary: exact EDGAR tag
+    name_match = re.search(
+        r'<nameOfPersonForWhoseAccountTheSecuritiesAreToBeSold>\s*([^<]+?)\s*</nameOfPersonForWhoseAccountTheSecuritiesAreToBeSold>',
+        text, re.IGNORECASE
+    )
+    if not name_match:
+        # Fallback: shorter tag variants
+        for pat in [
+            r'<nameOfPerson[^>]*>\s*([^<]+?)\s*</nameOfPerson[^>]*>',
+            r'<reportingOwnerName>\s*([^<]+?)\s*</reportingOwnerName>',
+            r'<rptOwnerName>\s*([^<]+?)\s*</rptOwnerName>',
+        ]:
+            name_match = re.search(pat, text, re.IGNORECASE)
+            if name_match:
                 break
     
-    # Pattern 2: HTML table - look for the specific cell after "Name of Person"
-    if "name" not in result:
-        # Match table structure: <td>Name of Person...</td><td>VALUE</td>
-        html_name_pats = [
-            r'Name of Person[^<]*?Account[^<]*?(?:Sold|Sale)[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*([A-Z][A-Za-z\s.\-\']+?)(?:\s*</(?:td|div|span)>)',
-            r'(?:Reporting|Filing)\s*Person[^<]*</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*([A-Z][A-Za-z\s.\-\']+?)\s*</(?:td|div|span)>',
-        ]
-        for pat in html_name_pats:
-            m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-            if m:
-                name = re.sub(r'<[^>]+>', '', m.group(1)).strip()
-                name = re.sub(r'\s+', ' ', name)
-                # Filter out noise phrases
-                noise = ['see ', 'the definition', 'paragraph', 'information', 'not only', 'person for']
-                if not any(n in name.lower() for n in noise) and len(name) > 2 and len(name) < 80:
-                    result["name"] = name.title()
-                    break
+    if name_match:
+        name = name_match.group(1).strip()
+        name = re.sub(r'<[^>]+>', '', name).strip()
+        if len(name) > 1 and len(name) < 100:
+            result["name"] = name.title()
     
-    # ===== EXTRACT SHARES =====
-    shares_patterns_xml = [
-        r'<noOfUnitOrShares[^>]*>.*?<value>\s*([0-9,]+)\s*</value>',
-        r'<numberOfSharesOrUnits[^>]*>.*?<value>\s*([0-9,]+)\s*</value>',
-        r'<amountOfSecurities[^>]*>.*?<value>\s*([0-9,]+)\s*</value>',
-        r'<securitiesToBeSold>.*?<noOfUnitOrShares[^>]*>.*?<value>\s*([0-9,]+)\s*</value>',
-        # Direct XML without <value> wrapper
-        r'<noOfUnitOrShares[^>]*>\s*([0-9,]+)\s*</noOfUnitOrShares>',
-        r'<numberOfSharesOrUnits[^>]*>\s*([0-9,]+)\s*</numberOfSharesOrUnits>',
-    ]
-    
-    for pat in shares_patterns_xml:
-        m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-        if m:
-            try:
-                result["shares"] = int(m.group(1).replace(",", "").strip())
+    # ===== SHARES (noOfUnitsSold) =====
+    shares_match = re.search(
+        r'<noOfUnitsSold>\s*([0-9,]+)\s*</noOfUnitsSold>',
+        text, re.IGNORECASE
+    )
+    if not shares_match:
+        for pat in [
+            r'<noOfUnits[^>]*>\s*([0-9,]+)\s*</noOfUnits[^>]*>',
+            r'<numberOfSharesOrUnits[^>]*>\s*([0-9,]+)\s*</numberOfSharesOrUnits>',
+            r'<amountOfSecurities[^>]*>\s*([0-9,]+)\s*</amountOfSecurities[^>]*>',
+        ]:
+            shares_match = re.search(pat, text, re.IGNORECASE)
+            if shares_match:
                 break
-            except ValueError:
-                pass
     
-    # HTML fallback for shares
-    if "shares" not in result:
-        shares_html_pats = [
-            r'(?:Number|Amount|No\.?)\s*(?:of)?\s*(?:Shares|Units|Securities)[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*([0-9,]+)',
-            r'(?:shares|units)\s*(?:to be sold)?[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*([0-9,]+)',
-            r'>([0-9,]{3,})\s*(?:shares|units)',
-        ]
-        for pat in shares_html_pats:
-            m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-            if m:
-                try:
-                    val = int(m.group(1).replace(",", ""))
-                    if val > 0:
-                        result["shares"] = val
-                        break
-                except ValueError:
-                    pass
+    if shares_match:
+        try:
+            result["shares"] = int(shares_match.group(1).replace(",", ""))
+        except ValueError:
+            pass
     
-    # ===== EXTRACT PRICE =====
-    price_patterns_xml = [
-        r'<approx(?:imate)?(?:Sale)?Price[^>]*>.*?<value>\s*\$?\s*([0-9,.]+)\s*</value>',
-        r'<pricePerUnit[^>]*>.*?<value>\s*\$?\s*([0-9,.]+)\s*</value>',
-        r'<aggregateMarketValue[^>]*>.*?<value>\s*\$?\s*([0-9,.]+)\s*</value>',
-        # Direct value
-        r'<approx(?:imate)?(?:Sale)?Price[^>]*>\s*\$?\s*([0-9,.]+)\s*</',
-        r'<pricePerUnit[^>]*>\s*\$?\s*([0-9,.]+)\s*</',
-    ]
+    # ===== AGGREGATE MARKET VALUE =====
+    value_match = re.search(
+        r'<aggregateMarketValue>\s*([0-9,.]+)\s*</aggregateMarketValue>',
+        text, re.IGNORECASE
+    )
+    if value_match:
+        try:
+            result["totalValue"] = float(value_match.group(1).replace(",", ""))
+        except ValueError:
+            pass
     
-    for pat in price_patterns_xml:
-        m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-        if m:
-            try:
-                price = float(m.group(1).replace(",", "").strip())
-                if price > 0:
-                    result["price"] = price
-                    break
-            except ValueError:
-                pass
+    # Calculate price per share from aggregate value
+    if result.get("totalValue") and result.get("shares"):
+        result["price"] = round(result["totalValue"] / result["shares"], 2)
     
-    # Check for aggregate market value (might be total, not per-share)
+    # ===== APPROXIMATE SALE PRICE (fallback if no aggregate value) =====
     if "price" not in result:
-        agg_pats = [
-            r'<aggregateMarketValue[^>]*>.*?<value>\s*\$?\s*([0-9,.]+)\s*</value>',
-            r'[Aa]ggregate\s*[Mm]arket\s*[Vv]alue[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*\$?\s*([0-9,.]+)',
-        ]
-        for pat in agg_pats:
-            m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-            if m:
-                try:
-                    val = float(m.group(1).replace(",", ""))
-                    if val > 0 and result.get("shares", 0) > 0:
-                        result["price"] = round(val / result["shares"], 2)
-                        result["totalValue"] = val
-                    elif val > 0:
-                        result["totalValue"] = val
-                    break
-                except ValueError:
-                    pass
-    
-    # HTML fallback for price
-    if "price" not in result:
-        price_html_pats = [
-            r'(?:Approximate|Estimated)\s*(?:Sale\s*)?(?:Price|Value)[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*\$?\s*([0-9,.]+)',
-            r'(?:Price|Value)\s*(?:per|/)\s*(?:share|unit)[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*\$?\s*([0-9,.]+)',
-        ]
-        for pat in price_html_pats:
-            m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-            if m:
-                try:
-                    price = float(m.group(1).replace(",", ""))
-                    if price > 0:
-                        result["price"] = price
-                        break
-                except ValueError:
-                    pass
-    
-    # ===== EXTRACT RELATIONSHIP =====
-    rel_patterns = [
-        r'<relationshipToIssuer>.*?<value>\s*([^<]+?)\s*</value>',
-        r'<isOfficer>.*?<value>\s*(?:true|1|yes)\s*</value>',
-        r'<isDirector>.*?<value>\s*(?:true|1|yes)\s*</value>',
-        r'<isTenPercentOwner>.*?<value>\s*(?:true|1|yes)\s*</value>',
-    ]
-    
-    for j, pat in enumerate(rel_patterns):
-        m = re.search(pat, text, re.DOTALL | re.IGNORECASE)
-        if m:
-            if j == 0:
-                result["relationship"] = m.group(1).strip()
-            elif j == 1:
-                result["relationship"] = "Officer"
-            elif j == 2:
-                result["relationship"] = "Director"
-            elif j == 3:
-                result["relationship"] = "10% Owner"
-            break
-    
-    if "relationship" not in result:
-        # HTML fallback
-        rel_html = re.search(
-            r'[Rr]elationship[^<]*?[Ii]ssuer[^<]*?</(?:td|div|span)>\s*<(?:td|div|span)[^>]*>\s*([^<]+)',
-            text, re.DOTALL
+        price_match = re.search(
+            r'<approxSalePrice>\s*\$?\s*([0-9,.]+)\s*</approxSalePrice>',
+            text, re.IGNORECASE
         )
-        if rel_html:
-            rel = rel_html.group(1).strip()
-            if len(rel) < 40:
-                result["relationship"] = rel
+        if not price_match:
+            price_match = re.search(
+                r'<approximatePricePerUnit>\s*\$?\s*([0-9,.]+)\s*</approximatePricePerUnit>',
+                text, re.IGNORECASE
+            )
+        if price_match:
+            try:
+                result["price"] = float(price_match.group(1).replace(",", ""))
+            except ValueError:
+                pass
     
-    # ===== CALCULATE TOTAL VALUE =====
+    # ===== RELATIONSHIP =====
+    rel_match = re.search(
+        r'<relationshipToIssuer>\s*([^<]+?)\s*</relationshipToIssuer>',
+        text, re.IGNORECASE
+    )
+    if rel_match:
+        result["relationship"] = rel_match.group(1).strip()
+    else:
+        # Check boolean flags
+        if re.search(r'<isOfficer>\s*(?:true|1|Y)\s*</isOfficer>', text, re.IGNORECASE):
+            result["relationship"] = "Officer"
+        elif re.search(r'<isDirector>\s*(?:true|1|Y)\s*</isDirector>', text, re.IGNORECASE):
+            result["relationship"] = "Director"
+        elif re.search(r'<isTenPercentOwner>\s*(?:true|1|Y)\s*</isTenPercentOwner>', text, re.IGNORECASE):
+            result["relationship"] = "10% Owner"
+    
+    # ===== REMARKS =====
+    remarks_match = re.search(
+        r'<remarks>\s*([^<]+?)\s*</remarks>',
+        text, re.DOTALL | re.IGNORECASE
+    )
+    if remarks_match:
+        result["remarks"] = remarks_match.group(1).strip()[:500]
+    
+    # ===== CALCULATE TOTAL VALUE if not from aggregateMarketValue =====
     if "totalValue" not in result:
         shares = result.get("shares", 0)
         price = result.get("price", 0)
-        if shares and price:
-            result["totalValue"] = round(shares * price, 2)
-        else:
-            result["totalValue"] = 0
+        result["totalValue"] = round(shares * price, 2) if shares and price else 0
     
     return result if result else None
 
