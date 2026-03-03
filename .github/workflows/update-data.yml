@@ -24,10 +24,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests yfinance
 
-      - name: Fetch data from Finnhub
+      - name: Fetch insider trading data (Form 4)
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: python scripts/fetch_data.py
+
+      - name: Fetch Form 144 data (SEC EDGAR - no key needed)
+        env:
+          SEC_USER_AGENT: "HerdVibe/1.0 (contact@herdvibe.com)"
+        run: python scripts/fetch_form144.py
 
       - name: Commit and push
         run: |
