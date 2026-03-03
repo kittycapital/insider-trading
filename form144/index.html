@@ -301,14 +301,19 @@
 // ============================================================
 const KAKAO_KEY = 'a43ed7b39fac35458f4f9df925a279b5';
 const SHARE_URL = 'https://herdvibe.com/form144';  // Update with actual URL
-const DATA_BASE = './data';
+const DATA_BASE = '../data';  // data/ is at repo root, page is in form144/
 const CHART_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>';
 
-let allFilings = [], currentPeriod = 30, timelineChart = null, priceChartInstance = null;
+let allFilings = [], currentPeriod = 30, timelineChart = null, priceChartInstance = null, usingDemo = false;
 
 // ============================================================
-// HELPERS
+// DEMO DATA (shown until fetch_form144.py generates real data)
 // ============================================================
+function generateDemoData() {
+    const now = new Date();
+    const demos = [
+        { ticker:'PLTR', company:'Palantir Technologies Inc', insiderName:'Peter Thiel', shares:2000000, approxPrice:140, relationship:'Officer', daysAgo:1 },
+        { ticker:'NVDA', company:'NVIDIA Corp', insiderName:'Jensen
 function fmtNum(n) {
     if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
     if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
