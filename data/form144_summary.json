@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-03T12:18:51Z",
-  "totalFilings": 985,
-  "filings7d": 69,
-  "filings30d": 264,
-  "filings90d": 519,
-  "totalValue": 4234564892.09,
+  "updated": "2026-03-03T23:26:54Z",
+  "totalFilings": 994,
+  "filings7d": 78,
+  "filings30d": 273,
+  "filings90d": 528,
+  "totalValue": 4097600540.79,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -40,14 +40,6 @@
       }
     ],
     [
-      "AVGO",
-      {
-        "total": 267446602.10000002,
-        "count": 26,
-        "name": "Broadcom Inc"
-      }
-    ],
-    [
       "AMT",
       {
         "total": 188318361.61,
@@ -74,9 +66,17 @@
     [
       "SNOW",
       {
-        "total": 158630551.33,
+        "total": 157881346.28,
         "count": 48,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 139149409.61,
+        "count": 26,
+        "name": "Broadcom Inc"
       }
     ],
     [
@@ -135,15 +135,6 @@
       }
     ],
     [
-      "D95Gt, Llc",
-      {
-        "total": 128297192.49,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
-      }
-    ],
-    [
       "Reed Hastings",
       {
         "total": 111601672.62,
@@ -164,8 +155,8 @@
     [
       "Slootman Frank",
       {
-        "total": 105497974.15999998,
-        "count": 5,
+        "total": 105052917.32999998,
+        "count": 4,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -177,6 +168,15 @@
         "count": 2,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Li Susan J",
+      {
+        "total": 83977168.0,
+        "count": 3,
+        "ticker": "META",
+        "company": "Meta Platforms Inc"
       }
     ]
   ],
@@ -230,16 +230,6 @@
       "totalValue": 169357954.0,
       "fileDate": "2025-12-09",
       "relationship": "Member of 10% owner group"
-    },
-    {
-      "ticker": "AVGO",
-      "company": "Broadcom Inc",
-      "insiderName": "D95Gt, Llc",
-      "shares": 320316,
-      "approxPrice": 400.53,
-      "totalValue": 128297192.49,
-      "fileDate": "2025-12-08",
-      "relationship": "Affiliate"
     },
     {
       "ticker": "TMUS",
@@ -379,6 +369,16 @@
       "approxPrice": 115.21,
       "totalValue": 43203750.0,
       "fileDate": "2026-01-05",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 200000,
+      "approxPrice": 206.77,
+      "totalValue": 41353996.03,
+      "fileDate": "2026-01-20",
       "relationship": "Director"
     }
   ]
