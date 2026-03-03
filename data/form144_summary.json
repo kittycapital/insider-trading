@@ -1,0 +1,215 @@
+{
+  "updated": "2026-03-03T11:12:41Z",
+  "totalFilings": 985,
+  "filings7d": 69,
+  "filings30d": 264,
+  "filings90d": 519,
+  "totalValue": 35760878.88,
+  "uniqueCompanies": 63,
+  "topCompanies": [
+    [
+      "NFLX",
+      {
+        "total": 23490342.96,
+        "count": 23,
+        "name": "Netflix Inc"
+      }
+    ],
+    [
+      "VZ",
+      {
+        "total": 11245500.0,
+        "count": 3,
+        "name": "Verizon"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 1025035.9199999999,
+        "count": 60,
+        "name": "Airbnb Inc"
+      }
+    ],
+    [
+      "GOOGL",
+      {
+        "total": 0,
+        "count": 46,
+        "name": "Alphabet Inc"
+      }
+    ],
+    [
+      "META",
+      {
+        "total": 0,
+        "count": 62,
+        "name": "Meta Platforms Inc"
+      }
+    ],
+    [
+      "ABBV",
+      {
+        "total": 0,
+        "count": 2,
+        "name": "AbbVie Inc"
+      }
+    ],
+    [
+      "CVX",
+      {
+        "total": 0,
+        "count": 27,
+        "name": "Chevron Corp"
+      }
+    ],
+    [
+      "KO",
+      {
+        "total": 0,
+        "count": 12,
+        "name": "Coca-Cola Co"
+      }
+    ],
+    [
+      "PLTR",
+      {
+        "total": 0,
+        "count": 23,
+        "name": "Palantir Technologies"
+      }
+    ],
+    [
+      "PEP",
+      {
+        "total": 0,
+        "count": 4,
+        "name": "PepsiCo Inc"
+      }
+    ]
+  ],
+  "topInsiders": [
+    [
+      "Reed Hastings See",
+      {
+        "total": 23490342.96,
+        "count": 1,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
+      }
+    ],
+    [
+      "Hans Erik Vestberg",
+      {
+        "total": 11245500.0,
+        "count": 1,
+        "ticker": "VZ",
+        "company": "Verizon"
+      }
+    ],
+    [
+      "Blecharczyk Nathan See",
+      {
+        "total": 1025035.9199999999,
+        "count": 2,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
+      }
+    ],
+    [
+      "Arnold Frances See",
+      {
+        "total": 0,
+        "count": 1,
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc"
+      }
+    ],
+    [
+      "Olivan Javier See",
+      {
+        "total": 0,
+        "count": 3,
+        "ticker": "META",
+        "company": "Meta Platforms Inc"
+      }
+    ],
+    [
+      "But Also As",
+      {
+        "total": 0,
+        "count": 31,
+        "ticker": "ABBV",
+        "company": "AbbVie Inc"
+      }
+    ],
+    [
+      "Eimear Bonner See",
+      {
+        "total": 0,
+        "count": 2,
+        "ticker": "CVX",
+        "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Spencer Neumann See",
+      {
+        "total": 0,
+        "count": 2,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
+      }
+    ],
+    [
+      "John Murphy See",
+      {
+        "total": 0,
+        "count": 2,
+        "ticker": "KO",
+        "company": "Coca-Cola Co"
+      }
+    ],
+    [
+      "Quincey James See",
+      {
+        "total": 0,
+        "count": 1,
+        "ticker": "KO",
+        "company": "Coca-Cola Co"
+      }
+    ]
+  ],
+  "topFilings": [
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings See",
+      "shares": 241944,
+      "approxPrice": 97.09,
+      "totalValue": 23490342.96,
+      "fileDate": "2026-03-02",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "VZ",
+      "company": "Verizon",
+      "insiderName": "Hans Erik Vestberg",
+      "shares": 225000,
+      "approxPrice": 49.98,
+      "totalValue": 11245500.0,
+      "fileDate": "2026-02-24",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Blecharczyk Nathan See",
+      "shares": 7692,
+      "approxPrice": 133.26,
+      "totalValue": 1025035.9199999999,
+      "fileDate": "2026-02-27",
+      "relationship": "Officer"
+    }
+  ]
+}
