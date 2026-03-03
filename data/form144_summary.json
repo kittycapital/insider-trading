@@ -1,215 +1,385 @@
 {
-  "updated": "2026-03-03T11:12:41Z",
+  "updated": "2026-03-03T12:18:51Z",
   "totalFilings": 985,
   "filings7d": 69,
   "filings30d": 264,
   "filings90d": 519,
-  "totalValue": 35760878.88,
+  "totalValue": 4234564892.09,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
-      "NFLX",
+      "NVDA",
       {
-        "total": 23490342.96,
-        "count": 23,
-        "name": "Netflix Inc"
-      }
-    ],
-    [
-      "VZ",
-      {
-        "total": 11245500.0,
-        "count": 3,
-        "name": "Verizon"
-      }
-    ],
-    [
-      "ABNB",
-      {
-        "total": 1025035.9199999999,
-        "count": 60,
-        "name": "Airbnb Inc"
-      }
-    ],
-    [
-      "GOOGL",
-      {
-        "total": 0,
-        "count": 46,
-        "name": "Alphabet Inc"
-      }
-    ],
-    [
-      "META",
-      {
-        "total": 0,
-        "count": 62,
-        "name": "Meta Platforms Inc"
-      }
-    ],
-    [
-      "ABBV",
-      {
-        "total": 0,
-        "count": 2,
-        "name": "AbbVie Inc"
-      }
-    ],
-    [
-      "CVX",
-      {
-        "total": 0,
-        "count": 27,
-        "name": "Chevron Corp"
-      }
-    ],
-    [
-      "KO",
-      {
-        "total": 0,
-        "count": 12,
-        "name": "Coca-Cola Co"
+        "total": 502287149.85,
+        "count": 56,
+        "name": "NVIDIA Corp"
       }
     ],
     [
       "PLTR",
       {
-        "total": 0,
+        "total": 428833259.09,
         "count": 23,
         "name": "Palantir Technologies"
       }
     ],
     [
-      "PEP",
+      "TMUS",
       {
-        "total": 0,
-        "count": 4,
-        "name": "PepsiCo Inc"
+        "total": 328148750.88,
+        "count": 15,
+        "name": "T-Mobile US"
+      }
+    ],
+    [
+      "LLY",
+      {
+        "total": 322944000.0,
+        "count": 13,
+        "name": "Eli Lilly"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 267446602.10000002,
+        "count": 26,
+        "name": "Broadcom Inc"
+      }
+    ],
+    [
+      "AMT",
+      {
+        "total": 188318361.61,
+        "count": 6,
+        "name": "American Tower"
+      }
+    ],
+    [
+      "GOOGL",
+      {
+        "total": 184847201.99,
+        "count": 46,
+        "name": "Alphabet Inc"
+      }
+    ],
+    [
+      "CVX",
+      {
+        "total": 175908035.69000003,
+        "count": 27,
+        "name": "Chevron Corp"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 158630551.33,
+        "count": 48,
+        "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "NFLX",
+      {
+        "total": 136602420.2,
+        "count": 23,
+        "name": "Netflix Inc"
       }
     ]
   ],
   "topInsiders": [
     [
-      "Reed Hastings See",
+      "Lilly Endowment, Inc.",
       {
-        "total": 23490342.96,
+        "total": 322944000.0,
         "count": 1,
+        "ticker": "LLY",
+        "company": "Eli Lilly"
+      }
+    ],
+    [
+      "Mark A Stevens",
+      {
+        "total": 307700000.0,
+        "count": 1,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
+      }
+    ],
+    [
+      "Peter Thiel",
+      {
+        "total": 280000000.0,
+        "count": 1,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
+      }
+    ],
+    [
+      "Claure Mobile Llc",
+      {
+        "total": 219000000.0,
+        "count": 1,
+        "ticker": "TMUS",
+        "company": "T-Mobile US"
+      }
+    ],
+    [
+      "American Tower Corp /Ma/",
+      {
+        "total": 169357954.0,
+        "count": 1,
+        "ticker": "AMT",
+        "company": "American Tower"
+      }
+    ],
+    [
+      "D95Gt, Llc",
+      {
+        "total": 128297192.49,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Reed Hastings",
+      {
+        "total": 111601672.62,
+        "count": 3,
         "ticker": "NFLX",
         "company": "Netflix Inc"
       }
     ],
     [
-      "Hans Erik Vestberg",
+      "Mdc Trust I",
       {
-        "total": 11245500.0,
-        "count": 1,
-        "ticker": "VZ",
-        "company": "Verizon"
-      }
-    ],
-    [
-      "Blecharczyk Nathan See",
-      {
-        "total": 1025035.9199999999,
+        "total": 106049025.2,
         "count": 2,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
-      }
-    ],
-    [
-      "Arnold Frances See",
-      {
-        "total": 0,
-        "count": 1,
         "ticker": "GOOGL",
         "company": "Alphabet Inc"
       }
     ],
     [
-      "Olivan Javier See",
+      "Slootman Frank",
       {
-        "total": 0,
-        "count": 3,
-        "ticker": "META",
-        "company": "Meta Platforms Inc"
+        "total": 105497974.15999998,
+        "count": 5,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
       }
     ],
     [
-      "But Also As",
+      "Michael K Wirth",
       {
-        "total": 0,
-        "count": 31,
-        "ticker": "ABBV",
-        "company": "AbbVie Inc"
-      }
-    ],
-    [
-      "Eimear Bonner See",
-      {
-        "total": 0,
+        "total": 84006126.0,
         "count": 2,
         "ticker": "CVX",
         "company": "Chevron Corp"
-      }
-    ],
-    [
-      "Spencer Neumann See",
-      {
-        "total": 0,
-        "count": 2,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
-      }
-    ],
-    [
-      "John Murphy See",
-      {
-        "total": 0,
-        "count": 2,
-        "ticker": "KO",
-        "company": "Coca-Cola Co"
-      }
-    ],
-    [
-      "Quincey James See",
-      {
-        "total": 0,
-        "count": 1,
-        "ticker": "KO",
-        "company": "Coca-Cola Co"
       }
     ]
   ],
   "topFilings": [
     {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings See",
-      "shares": 241944,
-      "approxPrice": 97.09,
-      "totalValue": 23490342.96,
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 300000,
+      "approxPrice": 1076.48,
+      "totalValue": 322944000.0,
+      "fileDate": "2025-12-23",
+      "relationship": "10% Stockholder"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Mark A Stevens",
+      "shares": 1700000,
+      "approxPrice": 181.0,
+      "totalValue": 307700000.0,
+      "fileDate": "2025-12-19",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Peter Thiel",
+      "shares": 2000000,
+      "approxPrice": 140.0,
+      "totalValue": 280000000.0,
       "fileDate": "2026-03-02",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "VZ",
-      "company": "Verizon",
-      "insiderName": "Hans Erik Vestberg",
-      "shares": 225000,
-      "approxPrice": 49.98,
-      "totalValue": 11245500.0,
-      "fileDate": "2026-02-24",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Blecharczyk Nathan See",
-      "shares": 7692,
-      "approxPrice": 133.26,
-      "totalValue": 1025035.9199999999,
-      "fileDate": "2026-02-27",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "TMUS",
+      "company": "T-Mobile US",
+      "insiderName": "Claure Mobile Llc",
+      "shares": 1000000,
+      "approxPrice": 219.0,
+      "totalValue": 219000000.0,
+      "fileDate": "2026-02-12",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "AMT",
+      "company": "American Tower",
+      "insiderName": "American Tower Corp /Ma/",
+      "shares": 2288621,
+      "approxPrice": 74.0,
+      "totalValue": 169357954.0,
+      "fileDate": "2025-12-09",
+      "relationship": "Member of 10% owner group"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "D95Gt, Llc",
+      "shares": 320316,
+      "approxPrice": 400.53,
+      "totalValue": 128297192.49,
+      "fileDate": "2025-12-08",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "TMUS",
+      "company": "T-Mobile US",
+      "insiderName": "Deutsche Telekom Ag",
+      "shares": 400000,
+      "approxPrice": 196.73,
+      "totalValue": 78692000.0,
+      "fileDate": "2025-12-22",
+      "relationship": "10% Stockholder"
+    },
+    {
+      "ticker": "GS",
+      "company": "Goldman Sachs",
+      "insiderName": "Viniar David A",
+      "shares": 68186,
+      "approxPrice": 975.86,
+      "totalValue": 66539990.0,
+      "fileDate": "2026-01-16",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "BLK",
+      "company": "BlackRock Inc",
+      "insiderName": "Goldstein Robert L.",
+      "shares": 54190,
+      "approxPrice": 1087.29,
+      "totalValue": 58920187.96,
+      "fileDate": "2026-02-10",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Debora C Shoquist Rev Tr 2002 U/A Dtd 06/13/2002",
+      "shares": 309840,
+      "approxPrice": 185.55,
+      "totalValue": 57490812.0,
+      "fileDate": "2025-12-09",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "COIN",
+      "company": "Coinbase Global",
+      "insiderName": "Alesia Haas",
+      "shares": 364600,
+      "approxPrice": 152.21,
+      "totalValue": 55495799.51,
+      "fileDate": "2026-02-06",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Alexander Karp",
+      "shares": 403025,
+      "approxPrice": 133.72,
+      "totalValue": 53891858.16,
+      "fileDate": "2026-02-20",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "Mdc Trust I",
+      "shares": 172000,
+      "approxPrice": 308.5,
+      "totalValue": 53062223.6,
+      "fileDate": "2026-02-27",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "Mdc Trust I",
+      "shares": 172000,
+      "approxPrice": 308.06,
+      "totalValue": 52986801.6,
+      "fileDate": "2026-02-27",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corp",
+      "insiderName": "Michael K Wirth",
+      "shares": 320700,
+      "approxPrice": 155.9,
+      "totalValue": 49997130.0,
+      "fileDate": "2026-01-05",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "insiderName": "Qualcomm Inc",
+      "shares": 4526715,
+      "approxPrice": 10.39,
+      "totalValue": 47032569.0,
+      "fileDate": "2026-02-19",
+      "relationship": "Holder of more than 10% of voting power"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 200000,
+      "approxPrice": 221.83,
+      "totalValue": 44366305.18,
+      "fileDate": "2025-12-18",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Harvey C Jones",
+      "shares": 250000,
+      "approxPrice": 177.29,
+      "totalValue": 44323451.25,
+      "fileDate": "2025-12-15",
+      "relationship": "DIRECTOR"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Stephen A Cohen",
+      "shares": 327088,
+      "approxPrice": 133.72,
+      "totalValue": 43737684.02,
+      "fileDate": "2026-02-20",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "insiderName": "Vladimir Tenev",
+      "shares": 375000,
+      "approxPrice": 115.21,
+      "totalValue": 43203750.0,
+      "fileDate": "2026-01-05",
+      "relationship": "Director"
     }
   ]
 }
