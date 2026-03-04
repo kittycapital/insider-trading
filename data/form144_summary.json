@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-03T23:26:54Z",
-  "totalFilings": 994,
-  "filings7d": 78,
-  "filings30d": 273,
-  "filings90d": 528,
-  "totalValue": 4097600540.79,
+  "updated": "2026-03-04T23:31:03Z",
+  "totalFilings": 998,
+  "filings7d": 77,
+  "filings30d": 284,
+  "filings90d": 533,
+  "totalValue": 3810589233.64,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
-        "total": 502287149.85,
-        "count": 56,
+        "total": 444796337.85,
+        "count": 55,
         "name": "NVIDIA Corp"
       }
     ],
@@ -26,8 +26,8 @@
     [
       "TMUS",
       {
-        "total": 328148750.88,
-        "count": 15,
+        "total": 328876384.63,
+        "count": 16,
         "name": "T-Mobile US"
       }
     ],
@@ -40,18 +40,10 @@
       }
     ],
     [
-      "AMT",
-      {
-        "total": 188318361.61,
-        "count": 6,
-        "name": "American Tower"
-      }
-    ],
-    [
       "GOOGL",
       {
-        "total": 184847201.99,
-        "count": 46,
+        "total": 195927141.99,
+        "count": 48,
         "name": "Alphabet Inc"
       }
     ],
@@ -67,16 +59,8 @@
       "SNOW",
       {
         "total": 157881346.28,
-        "count": 48,
+        "count": 47,
         "name": "Snowflake Inc"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 139149409.61,
-        "count": 26,
-        "name": "Broadcom Inc"
       }
     ],
     [
@@ -85,6 +69,22 @@
         "total": 136602420.2,
         "count": 23,
         "name": "Netflix Inc"
+      }
+    ],
+    [
+      "BLK",
+      {
+        "total": 123999020.54,
+        "count": 10,
+        "name": "BlackRock Inc"
+      }
+    ],
+    [
+      "GS",
+      {
+        "total": 112951780.6,
+        "count": 12,
+        "name": "Goldman Sachs"
       }
     ]
   ],
@@ -123,15 +123,6 @@
         "count": 1,
         "ticker": "TMUS",
         "company": "T-Mobile US"
-      }
-    ],
-    [
-      "American Tower Corp /Ma/",
-      {
-        "total": 169357954.0,
-        "count": 1,
-        "ticker": "AMT",
-        "company": "American Tower"
       }
     ],
     [
@@ -178,6 +169,15 @@
         "ticker": "META",
         "company": "Meta Platforms Inc"
       }
+    ],
+    [
+      "Deutsche Telekom Ag",
+      {
+        "total": 78692000.0,
+        "count": 1,
+        "ticker": "TMUS",
+        "company": "T-Mobile US"
+      }
     ]
   ],
   "topFilings": [
@@ -222,16 +222,6 @@
       "relationship": "Director"
     },
     {
-      "ticker": "AMT",
-      "company": "American Tower",
-      "insiderName": "American Tower Corp /Ma/",
-      "shares": 2288621,
-      "approxPrice": 74.0,
-      "totalValue": 169357954.0,
-      "fileDate": "2025-12-09",
-      "relationship": "Member of 10% owner group"
-    },
-    {
       "ticker": "TMUS",
       "company": "T-Mobile US",
       "insiderName": "Deutsche Telekom Ag",
@@ -259,16 +249,6 @@
       "approxPrice": 1087.29,
       "totalValue": 58920187.96,
       "fileDate": "2026-02-10",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Debora C Shoquist Rev Tr 2002 U/A Dtd 06/13/2002",
-      "shares": 309840,
-      "approxPrice": 185.55,
-      "totalValue": 57490812.0,
-      "fileDate": "2025-12-09",
       "relationship": "Officer"
     },
     {
@@ -379,6 +359,26 @@
       "approxPrice": 206.77,
       "totalValue": 41353996.03,
       "fileDate": "2026-01-20",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings",
+      "shares": 410550,
+      "approxPrice": 97.01,
+      "totalValue": 39828614.48,
+      "fileDate": "2026-03-02",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "insiderName": "The Tenev 2017 Irrevocable Trust",
+      "shares": 327500,
+      "approxPrice": 119.67,
+      "totalValue": 39191925.0,
+      "fileDate": "2026-01-15",
       "relationship": "Director"
     }
   ]
