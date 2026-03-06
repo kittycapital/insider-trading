@@ -1,11 +1,11 @@
 {
-  "updated": "2026-03-05T23:52:47Z",
-  "totalFilings": 998,
-  "filings7d": 72,
+  "updated": "2026-03-06T23:28:04Z",
+  "totalFilings": 1007,
+  "filings7d": 79,
   "filings30d": 274,
-  "filings90d": 533,
-  "totalValue": 3810373454.42,
-  "uniqueCompanies": 63,
+  "filings90d": 535,
+  "totalValue": 3818676402.51,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
@@ -18,7 +18,7 @@
     [
       "PLTR",
       {
-        "total": 428833259.09,
+        "total": 427145399.09,
         "count": 22,
         "name": "Palantir Technologies"
       }
@@ -50,16 +50,16 @@
     [
       "CVX",
       {
-        "total": 175908035.69000003,
-        "count": 27,
+        "total": 184871315.69000003,
+        "count": 28,
         "name": "Chevron Corp"
       }
     ],
     [
       "SNOW",
       {
-        "total": 157881346.28,
-        "count": 46,
+        "total": 166770662.07,
+        "count": 47,
         "name": "Snowflake Inc"
       }
     ],
