@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-06T23:28:04Z",
-  "totalFilings": 1007,
-  "filings7d": 79,
-  "filings30d": 274,
-  "filings90d": 535,
-  "totalValue": 3818676402.51,
+  "updated": "2026-03-09T23:28:55Z",
+  "totalFilings": 1005,
+  "filings7d": 65,
+  "filings30d": 251,
+  "filings90d": 537,
+  "totalValue": 3867632383.9,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 444796337.85,
-        "count": 54,
+        "count": 52,
         "name": "NVIDIA Corp"
       }
     ],
@@ -59,7 +59,7 @@
       "SNOW",
       {
         "total": 166770662.07,
-        "count": 47,
+        "count": 44,
         "name": "Snowflake Inc"
       }
     ],
@@ -312,6 +312,16 @@
       "relationship": "Holder of more than 10% of voting power"
     },
     {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Joseph Gebbia",
+      "shares": 348000,
+      "approxPrice": 133.23,
+      "totalValue": 46364040.0,
+      "fileDate": "2026-03-09",
+      "relationship": "Director"
+    },
+    {
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
@@ -369,16 +379,6 @@
       "approxPrice": 97.01,
       "totalValue": 39828614.48,
       "fileDate": "2026-03-02",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "insiderName": "The Tenev 2017 Irrevocable Trust",
-      "shares": 327500,
-      "approxPrice": 119.67,
-      "totalValue": 39191925.0,
-      "fileDate": "2026-01-15",
       "relationship": "Director"
     }
   ]
