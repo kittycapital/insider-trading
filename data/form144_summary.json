@@ -1,16 +1,16 @@
 {
-  "updated": "2026-03-09T23:28:55Z",
-  "totalFilings": 1005,
-  "filings7d": 65,
-  "filings30d": 251,
-  "filings90d": 537,
-  "totalValue": 3867632383.9,
+  "updated": "2026-03-10T23:34:54Z",
+  "totalFilings": 1003,
+  "filings7d": 48,
+  "filings30d": 258,
+  "filings90d": 531,
+  "totalValue": 3872092429.33,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
-        "total": 444796337.85,
+        "total": 455228924.6,
         "count": 52,
         "name": "NVIDIA Corp"
       }
@@ -26,7 +26,7 @@
     [
       "TMUS",
       {
-        "total": 328876384.63,
+        "total": 329094634.73,
         "count": 16,
         "name": "T-Mobile US"
       }
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 195927141.99,
+        "total": 195739551.99,
         "count": 48,
         "name": "Alphabet Inc"
       }
@@ -58,8 +58,8 @@
     [
       "SNOW",
       {
-        "total": 166770662.07,
-        "count": 44,
+        "total": 165958675.07,
+        "count": 47,
         "name": "Snowflake Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "HOOD",
       {
         "total": 113255845.83,
-        "count": 25,
+        "count": 24,
         "name": "Robinhood Markets"
       }
     ]
@@ -126,6 +126,15 @@
       }
     ],
     [
+      "Puri Ajay K",
+      {
+        "total": 128326822.0,
+        "count": 3,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
+      }
+    ],
+    [
       "Reed Hastings",
       {
         "total": 111601672.62,
@@ -146,7 +155,7 @@
     [
       "Slootman Frank",
       {
-        "total": 105052917.32999998,
+        "total": 103783646.21000001,
         "count": 4,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
@@ -168,15 +177,6 @@
         "count": 3,
         "ticker": "META",
         "company": "Meta Platforms Inc"
-      }
-    ],
-    [
-      "Deutsche Telekom Ag",
-      {
-        "total": 78692000.0,
-        "count": 1,
-        "ticker": "TMUS",
-        "company": "T-Mobile US"
       }
     ]
   ],
@@ -262,6 +262,16 @@
       "relationship": "Officer"
     },
     {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Puri Ajay K",
+      "shares": 300000,
+      "approxPrice": 182.52,
+      "totalValue": 54756038.0,
+      "fileDate": "2026-03-10",
+      "relationship": "Officer"
+    },
+    {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Alexander Karp",
@@ -330,16 +340,6 @@
       "totalValue": 44366305.18,
       "fileDate": "2025-12-18",
       "relationship": "Director"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Harvey C Jones",
-      "shares": 250000,
-      "approxPrice": 177.29,
-      "totalValue": 44323451.25,
-      "fileDate": "2025-12-15",
-      "relationship": "DIRECTOR"
     },
     {
       "ticker": "PLTR",
