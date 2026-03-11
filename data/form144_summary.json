@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-10T23:34:54Z",
-  "totalFilings": 1003,
-  "filings7d": 48,
-  "filings30d": 258,
-  "filings90d": 531,
-  "totalValue": 3872092429.33,
-  "uniqueCompanies": 64,
+  "updated": "2026-03-11T23:30:13Z",
+  "totalFilings": 1001,
+  "filings7d": 43,
+  "filings30d": 262,
+  "filings90d": 534,
+  "totalValue": 3870552408.98,
+  "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 455228924.6,
-        "count": 52,
+        "count": 50,
         "name": "NVIDIA Corp"
       }
     ],
@@ -19,7 +19,7 @@
       "PLTR",
       {
         "total": 427145399.09,
-        "count": 22,
+        "count": 21,
         "name": "Palantir Technologies"
       }
     ],
@@ -58,7 +58,7 @@
     [
       "SNOW",
       {
-        "total": 165958675.07,
+        "total": 165326636.32,
         "count": 47,
         "name": "Snowflake Inc"
       }
