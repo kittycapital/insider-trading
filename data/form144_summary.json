@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-11T23:30:13Z",
-  "totalFilings": 1001,
+  "updated": "2026-03-12T23:28:15Z",
+  "totalFilings": 1000,
   "filings7d": 43,
-  "filings30d": 262,
-  "filings90d": 534,
-  "totalValue": 3870552408.98,
+  "filings30d": 259,
+  "filings90d": 540,
+  "totalValue": 3936686320.81,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 455228924.6,
-        "count": 50,
+        "count": 48,
         "name": "NVIDIA Corp"
       }
     ],
@@ -42,8 +42,8 @@
     [
       "GOOGL",
       {
-        "total": 195739551.99,
-        "count": 48,
+        "total": 272276335.99,
+        "count": 51,
         "name": "Alphabet Inc"
       }
     ],
@@ -232,6 +232,16 @@
       "relationship": "10% Stockholder"
     },
     {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "The Lawrence Page Trust",
+      "shares": 225360,
+      "approxPrice": 308.7,
+      "totalValue": 69568632.0,
+      "fileDate": "2026-03-12",
+      "relationship": "Affiliate"
+    },
+    {
       "ticker": "GS",
       "company": "Goldman Sachs",
       "insiderName": "Viniar David A",
@@ -369,16 +379,6 @@
       "approxPrice": 206.77,
       "totalValue": 41353996.03,
       "fileDate": "2026-01-20",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings",
-      "shares": 410550,
-      "approxPrice": 97.01,
-      "totalValue": 39828614.48,
-      "fileDate": "2026-03-02",
       "relationship": "Director"
     }
   ]
