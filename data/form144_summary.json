@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-12T23:28:15Z",
-  "totalFilings": 1000,
-  "filings7d": 43,
-  "filings30d": 259,
-  "filings90d": 540,
-  "totalValue": 3936686320.81,
+  "updated": "2026-03-13T23:28:03Z",
+  "totalFilings": 1007,
+  "filings7d": 45,
+  "filings30d": 256,
+  "filings90d": 539,
+  "totalValue": 3887523120.0,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
-        "total": 455228924.6,
-        "count": 48,
+        "total": 455784364.6,
+        "count": 49,
         "name": "NVIDIA Corp"
       }
     ],
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 272276335.99,
+        "total": 262275110.98999998,
         "count": 51,
         "name": "Alphabet Inc"
       }
@@ -53,14 +53,6 @@
         "total": 184871315.69000003,
         "count": 28,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "SNOW",
-      {
-        "total": 165326636.32,
-        "count": 47,
-        "name": "Snowflake Inc"
       }
     ],
     [
@@ -77,6 +69,14 @@
         "total": 123999020.54,
         "count": 10,
         "name": "BlackRock Inc"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 120960331.14,
+        "count": 47,
+        "name": "Snowflake Inc"
       }
     ],
     [
@@ -153,15 +153,6 @@
       }
     ],
     [
-      "Slootman Frank",
-      {
-        "total": 103783646.21000001,
-        "count": 4,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
-      }
-    ],
-    [
       "Michael K Wirth",
       {
         "total": 84006126.0,
@@ -177,6 +168,15 @@
         "count": 3,
         "ticker": "META",
         "company": "Meta Platforms Inc"
+      }
+    ],
+    [
+      "Deutsche Telekom Ag",
+      {
+        "total": 78692000.0,
+        "count": 1,
+        "ticker": "TMUS",
+        "company": "T-Mobile US"
       }
     ]
   ],
@@ -342,16 +342,6 @@
       "relationship": "Director"
     },
     {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Slootman Frank",
-      "shares": 200000,
-      "approxPrice": 221.83,
-      "totalValue": 44366305.18,
-      "fileDate": "2025-12-18",
-      "relationship": "Director"
-    },
-    {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Stephen A Cohen",
@@ -379,6 +369,16 @@
       "approxPrice": 206.77,
       "totalValue": 41353996.03,
       "fileDate": "2026-01-20",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings",
+      "shares": 410550,
+      "approxPrice": 97.01,
+      "totalValue": 39828614.48,
+      "fileDate": "2026-03-02",
       "relationship": "Director"
     }
   ]
