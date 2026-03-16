@@ -1,34 +1,18 @@
 {
-  "updated": "2026-03-13T23:28:03Z",
-  "totalFilings": 1007,
-  "filings7d": 45,
-  "filings30d": 256,
-  "filings90d": 539,
-  "totalValue": 3887523120.0,
+  "updated": "2026-03-16T23:33:14Z",
+  "totalFilings": 992,
+  "filings7d": 50,
+  "filings30d": 240,
+  "filings90d": 541,
+  "totalValue": 3522398862.4,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
-      "NVDA",
-      {
-        "total": 455784364.6,
-        "count": 49,
-        "name": "NVIDIA Corp"
-      }
-    ],
-    [
       "PLTR",
       {
-        "total": 427145399.09,
-        "count": 21,
+        "total": 436806199.09,
+        "count": 22,
         "name": "Palantir Technologies"
-      }
-    ],
-    [
-      "TMUS",
-      {
-        "total": 329094634.73,
-        "count": 16,
-        "name": "T-Mobile US"
       }
     ],
     [
@@ -42,9 +26,17 @@
     [
       "GOOGL",
       {
-        "total": 262275110.98999998,
+        "total": 262593890.98999998,
         "count": 51,
         "name": "Alphabet Inc"
+      }
+    ],
+    [
+      "TMUS",
+      {
+        "total": 250402634.73,
+        "count": 16,
+        "name": "T-Mobile US"
       }
     ],
     [
@@ -53,6 +45,14 @@
         "total": 184871315.69000003,
         "count": 28,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "NVDA",
+      {
+        "total": 143802262.0,
+        "count": 47,
+        "name": "NVIDIA Corp"
       }
     ],
     [
@@ -72,18 +72,18 @@
       }
     ],
     [
-      "SNOW",
+      "AVGO",
       {
-        "total": 120960331.14,
-        "count": 47,
-        "name": "Snowflake Inc"
+        "total": 123686524.13999999,
+        "count": 26,
+        "name": "Broadcom Inc"
       }
     ],
     [
       "HOOD",
       {
         "total": 113255845.83,
-        "count": 24,
+        "count": 23,
         "name": "Robinhood Markets"
       }
     ]
@@ -96,15 +96,6 @@
         "count": 1,
         "ticker": "LLY",
         "company": "Eli Lilly"
-      }
-    ],
-    [
-      "Mark A Stevens",
-      {
-        "total": 307700000.0,
-        "count": 1,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
       }
     ],
     [
@@ -171,12 +162,21 @@
       }
     ],
     [
-      "Deutsche Telekom Ag",
+      "The Lawrence Page Trust",
       {
-        "total": 78692000.0,
+        "total": 69568632.0,
         "count": 1,
-        "ticker": "TMUS",
-        "company": "T-Mobile US"
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc"
+      }
+    ],
+    [
+      "Viniar David A",
+      {
+        "total": 66539990.0,
+        "count": 1,
+        "ticker": "GS",
+        "company": "Goldman Sachs"
       }
     ]
   ],
@@ -190,16 +190,6 @@
       "totalValue": 322944000.0,
       "fileDate": "2025-12-23",
       "relationship": "10% Stockholder"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Mark A Stevens",
-      "shares": 1700000,
-      "approxPrice": 181.0,
-      "totalValue": 307700000.0,
-      "fileDate": "2025-12-19",
-      "relationship": "Director"
     },
     {
       "ticker": "PLTR",
@@ -220,16 +210,6 @@
       "totalValue": 219000000.0,
       "fileDate": "2026-02-12",
       "relationship": "Director"
-    },
-    {
-      "ticker": "TMUS",
-      "company": "T-Mobile US",
-      "insiderName": "Deutsche Telekom Ag",
-      "shares": 400000,
-      "approxPrice": 196.73,
-      "totalValue": 78692000.0,
-      "fileDate": "2025-12-22",
-      "relationship": "10% Stockholder"
     },
     {
       "ticker": "GOOGL",
@@ -379,6 +359,26 @@
       "approxPrice": 97.01,
       "totalValue": 39828614.48,
       "fileDate": "2026-03-02",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "insiderName": "The Tenev 2017 Irrevocable Trust",
+      "shares": 327500,
+      "approxPrice": 119.67,
+      "totalValue": 39191925.0,
+      "fileDate": "2026-01-15",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings",
+      "shares": 426290,
+      "approxPrice": 91.67,
+      "totalValue": 39077465.47,
+      "fileDate": "2026-01-02",
       "relationship": "Director"
     }
   ]
