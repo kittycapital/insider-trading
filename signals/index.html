@@ -98,7 +98,24 @@ html,body{overflow-x:hidden}body{font-family:var(--font);background:var(--bg);co
 .toast-wrap{position:fixed;bottom:20px;right:20px;z-index:200;display:flex;flex-direction:column;gap:8px}
 .toast{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;font-size:.78rem;color:var(--text);box-shadow:0 8px 32px rgba(0,0,0,.7);animation:toastIn .3s ease;border-left:3px solid var(--signal)}
 @keyframes toastIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:768px){.container{padding:10px 12px 30px}.header h1{font-size:1.2rem}.stats-grid{grid-template-columns:repeat(2,1fr)}.chart-container{height:220px}.price-modal{max-width:100%}.price-chart-wrap{height:260px}}
+@media(max-width:768px){
+  .container{padding:10px 12px 30px}.header h1{font-size:1.2rem}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .chart-container{height:220px}
+  .price-modal{max-width:100%}.price-chart-wrap{height:260px}
+  .conv-name{display:none}
+  .conv-bar,.conv-bar-hdr{display:none}
+  .conv-row{gap:6px}
+  .conv-sym{width:48px;font-size:.78rem}
+  .ret-buy-col{display:none}
+  .return-row{gap:6px}
+  .return-sym{width:48px;font-size:.78rem}
+  .return-name-col{min-width:0}
+  .return-insider{font-size:.68rem}
+  .unusual-row{gap:6px}
+  .unusual-sym{width:44px;font-size:.78rem}
+  .cluster-card{padding:12px}
+}
 </style>
 </head>
 <body>
@@ -255,7 +272,7 @@ function renderConversion(){
     var totalFiled=results.reduce(function(a,r){return a+r.filed;},0),totalExec=results.reduce(function(a,r){return a+r.executed;},0);
     document.getElementById('sConversion').textContent=(totalFiled>0?(totalExec/totalFiled*100):0).toFixed(0)+'%';
     if(top.length===0){document.getElementById('conversionArea').innerHTML='<div class="no-data">매칭 데이터 없음</div>';return;}
-    var h='<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;padding:0 4px;font-size:.68rem;color:var(--text3)"><span style="width:55px">종목</span><span style="flex:1">기업</span><span style="width:50px;text-align:center">144 신고</span><span style="width:50px;text-align:center">4 매도</span><span style="width:80px;text-align:center">진행률</span><span style="width:55px;text-align:right">전환율</span></div>';
+    var h='<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;padding:0 4px;font-size:.68rem;color:var(--text3)"><span style="width:55px">종목</span><span class="conv-name" style="flex:1">기업</span><span style="width:50px;text-align:center">144 신고</span><span style="width:50px;text-align:center">4 매도</span><span class="conv-bar-hdr" style="width:80px;text-align:center">진행률</span><span style="width:55px;text-align:right">전환율</span></div>';
     top.forEach(function(r){var inf=SP500[r.sym]||{n:r.sym};var barW=Math.min(r.rate,100);var rateColor=r.rate>=70?'var(--sell)':r.rate>=40?'var(--warn)':'var(--text3)';
         h+='<div class="conv-row" onclick="openChart(\''+r.sym+'\')"><div class="conv-sym">'+r.sym+'</div><div class="conv-name">'+inf.n+'</div><div class="conv-filed">'+r.filed+'건</div><div class="conv-exec">'+r.executed+'건</div><div class="conv-bar"><div class="conv-bar-fill" style="width:'+barW+'%;background:'+rateColor+'"></div></div><div class="conv-rate" style="color:'+rateColor+'">'+r.rate.toFixed(0)+'%</div></div>';});
     document.getElementById('conversionArea').innerHTML=h;
@@ -277,9 +294,9 @@ async function renderReturns(){
         rows.push({sym:tx.sym,name:tx.name,title:tx.title||'',txDate:tx.txDate,buyPrice:buyPrice,currentPrice:currentPrice,pctReturn:((currentPrice-buyPrice)/buyPrice*100),val:txVal(tx)});});
     rows.sort(function(a,b){return b.pctReturn-a.pctReturn;});
     if(rows.length===0){document.getElementById('returnArea').innerHTML='<div class="no-data">캔들 데이터 없음 — data/candles/ 폴더에 주가 데이터가 필요합니다</div>';return;}
-    var h='<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:0 4px;font-size:.68rem;color:var(--text3)"><span style="width:55px">종목</span><span style="flex:1">내부자</span><span style="text-align:right;width:70px">매수가</span><span style="text-align:right;width:70px">현재가</span><span style="width:65px;text-align:right">수익률</span></div>';
+    var h='<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:0 4px;font-size:.68rem;color:var(--text3)"><span style="width:55px">종목</span><span style="flex:1">내부자</span><span class="ret-buy-col" style="text-align:right;width:70px">매수가</span><span style="text-align:right;width:70px">현재가</span><span style="width:65px;text-align:right">수익률</span></div>';
     rows.forEach(function(r){var up=r.pctReturn>=0;
-        h+='<div class="return-row" onclick="openChart(\''+r.sym+'\')"><div class="return-sym">'+r.sym+'</div><div class="return-name-col"><div class="return-insider">'+truncate(r.name||'—',22)+(r.title?'<span style="font-size:.6rem;color:var(--text3);margin-left:4px">'+r.title+'</span>':'')+'</div><div class="return-date">'+fmtDate(r.txDate)+' · $'+fmtNum(r.val)+'</div></div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text2)">$'+r.buyPrice.toFixed(1)+'</div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text)">$'+r.currentPrice.toFixed(1)+'</div><div class="return-pct" style="color:'+(up?'var(--buy)':'var(--sell)')+'">'+(up?'+':'')+r.pctReturn.toFixed(1)+'%</div></div>';});
+        h+='<div class="return-row" onclick="openChart(\''+r.sym+'\')"><div class="return-sym">'+r.sym+'</div><div class="return-name-col"><div class="return-insider">'+truncate(r.name||'—',22)+(r.title?'<span style="font-size:.6rem;color:var(--text3);margin-left:4px">'+r.title+'</span>':'')+'</div><div class="return-date">'+fmtDate(r.txDate)+' · $'+fmtNum(r.val)+'</div></div><div class="ret-buy-col" style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text2)">$'+r.buyPrice.toFixed(1)+'</div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text)">$'+r.currentPrice.toFixed(1)+'</div><div class="return-pct" style="color:'+(up?'var(--buy)':'var(--sell)')+'">'+(up?'+':'')+r.pctReturn.toFixed(1)+'%</div></div>';});
     document.getElementById('returnArea').innerHTML=h;
 }
 
