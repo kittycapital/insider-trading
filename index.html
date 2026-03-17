@@ -416,7 +416,7 @@ function renderTransactions(){
                 <span class="tx-sym-link">${tx.sym}${CHART_ICON}</span>
                 <span class="tx-company">${inf.n}</span>
             </td>
-            <td><span class="tx-name">${truncate(tx.name,24)}</span><span class="tx-role">${inf.s}</span></td>
+            <td><span class="tx-name">${truncate(tx.name,24)}</span><span class="tx-role">${tx.title||inf.s}</span></td>
             <td><span class="tx-badge ${buy?'buy':'sell'}">${buy?'BUY':'SELL'}</span></td>
             <td class="tx-value">$${fmtNum(v)}<span class="tx-shares">${fmtNum(sh)} shares</span></td>
             <td class="tx-date">${fmtDate(tx.txDate)}</td>
@@ -431,11 +431,11 @@ function renderTopInsiders(){
     allTransactions.forEach(tx=>{
         const v=txVal(tx),nm=tx.name||'Unknown';
         if(isBuy(tx)){
-            if(!bm[nm])bm[nm]={total:0,sym:tx.sym,syms:new Set()};
-            bm[nm].total+=v;bm[nm].syms.add(tx.sym);
+            if(!bm[nm])bm[nm]={total:0,sym:tx.sym,syms:new Set(),title:''};
+            bm[nm].total+=v;bm[nm].syms.add(tx.sym);if(tx.title)bm[nm].title=tx.title;
         }else{
-            if(!sm[nm])sm[nm]={total:0,sym:tx.sym,syms:new Set()};
-            sm[nm].total+=v;sm[nm].syms.add(tx.sym);
+            if(!sm[nm])sm[nm]={total:0,sym:tx.sym,syms:new Set(),title:''};
+            sm[nm].total+=v;sm[nm].syms.add(tx.sym);if(tx.title)sm[nm].title=tx.title;
         }
     });
 
@@ -448,7 +448,7 @@ function renderTopInsiders(){
         return`<div class="insider-row" onclick="openInsiderChart('${esc(nm)}','P')">
             <div class="insider-rank">${i+1}</div>
             <div class="insider-avatar buy-av">${nm.charAt(0)}</div>
-            <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${[...d.syms].join(', ')}</div></div>
+            <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${d.title?d.title+' · ':''}${[...d.syms].join(', ')}</div></div>
             <div class="insider-amt buy-c">+$${fmtNum(d.total)}</div>
             <span class="chart-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 차트</span>
         </div>`;
@@ -458,7 +458,7 @@ function renderTopInsiders(){
         return`<div class="insider-row" onclick="openInsiderChart('${esc(nm)}','S')">
             <div class="insider-rank">${i+1}</div>
             <div class="insider-avatar sell-av">${nm.charAt(0)}</div>
-            <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${[...d.syms].join(', ')}</div></div>
+            <div class="insider-info"><div class="name">${truncate(nm,18)}</div><div class="meta">${d.title?d.title+' · ':''}${[...d.syms].join(', ')}</div></div>
             <div class="insider-amt sell-c">-$${fmtNum(d.total)}</div>
             <span class="chart-hint"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 차트</span>
         </div>`;
@@ -569,7 +569,7 @@ async function openChart(symbol, highlightName){
                 th+=`<div class="price-tx-row">
                     <span class="tx-badge ${buy?'buy':'sell'}" style="min-width:42px;text-align:center">${buy?'BUY':'SELL'}</span>
                     <span style="font-family:'JetBrains Mono';font-size:.72rem;color:var(--bid-color);width:50px">${tx.sym}</span>
-                    <span style="flex:1;color:var(--text-secondary)">${truncate(tx.name||'',22)}</span>
+                    <span style="flex:1;color:var(--text-secondary)">${truncate(tx.name||'',22)}${tx.title?'<span style="font-size:.62rem;color:var(--text-muted);margin-left:6px">'+tx.title+'</span>':''}</span>
                     <span style="font-family:'JetBrains Mono';font-size:.72rem">$${fmtNum(txVal(tx))}</span>
                     <span style="font-family:'JetBrains Mono';font-size:.68rem;color:var(--text-muted)">${fmtDate(tx.txDate)}</span>
                 </div>`;
