@@ -560,9 +560,10 @@ function renderTopInsiders() {
     allFilings.forEach(f => {
         const name = f.insiderName;
         if (!name) return;
-        map[name] = map[name] || { total: 0, count: 0, ticker: f.ticker, company: f.company };
+        map[name] = map[name] || { total: 0, count: 0, ticker: f.ticker, company: f.company, relationship: '' };
         map[name].total += f.totalValue || 0;
         map[name].count++;
+        if(f.relationship) map[name].relationship = f.relationship;
     });
 
     const sorted = Object.entries(map).sort((a, b) => b[1].total - a[1].total).slice(0, 7);
@@ -576,7 +577,7 @@ function renderTopInsiders() {
         `<div class="top-row" onclick="openChart('${d.ticker}')">
             <div class="top-rank">${i + 1}</div>
             <div class="top-sym">${d.ticker}</div>
-            <div class="top-name">${truncate(name, 18)}</div>
+            <div class="top-name">${truncate(name, 18)}${d.relationship?'<span style="font-size:.58rem;color:var(--text-muted);margin-left:4px">'+d.relationship+'</span>':''}</div>
             <div class="top-val">$${fmtNum(d.total)}</div>
             <div class="top-count">${d.count}건</div>
         </div>`
