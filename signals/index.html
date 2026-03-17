@@ -179,7 +179,7 @@ async function openChart(symbol){
         });
         if(symTx.length>0){
             var th='<h4 style="font-size:.78rem;color:var(--text2);margin-bottom:8px;font-weight:500">'+symbol+' 내부자 거래 ('+symTx.length+'건)</h4>';
-            symTx.slice(0,15).forEach(tx=>{var buy=isBuy(tx);th+='<div class="price-tx-row"><span class="tx-badge '+(buy?'buy':'sell')+'">'+(buy?'BUY':'SELL')+'</span><span style="font-family:var(--mono);font-size:.72rem;color:var(--signal);width:50px">'+tx.sym+'</span><span style="flex:1;color:var(--text2)">'+truncate(tx.name||'',22)+'</span><span style="font-family:var(--mono);font-size:.72rem">$'+fmtNum(txVal(tx))+'</span><span style="font-family:var(--mono);font-size:.68rem;color:var(--text3)">'+fmtDate(tx.txDate)+'</span></div>';});
+            symTx.slice(0,15).forEach(tx=>{var buy=isBuy(tx);th+='<div class="price-tx-row"><span class="tx-badge '+(buy?'buy':'sell')+'">'+(buy?'BUY':'SELL')+'</span><span style="font-family:var(--mono);font-size:.72rem;color:var(--signal);width:50px">'+tx.sym+'</span><span style="flex:1;color:var(--text2)">'+truncate(tx.name||'',22)+(tx.title?'<span style="font-size:.6rem;color:var(--text3);margin-left:4px">'+tx.title+'</span>':'')+'</span><span style="font-family:var(--mono);font-size:.72rem">$'+fmtNum(txVal(tx))+'</span><span style="font-family:var(--mono);font-size:.68rem;color:var(--text3)">'+fmtDate(tx.txDate)+'</span></div>';});
             document.getElementById('modalTxList').innerHTML=th;
         }
     }catch(err){wrap.innerHTML='<div class="modal-loading">차트 로딩 실패: '+err.message+'</div>';}
@@ -219,14 +219,14 @@ function renderClusters(){
             if(arr.length<2)return;arr.sort(function(a,b){return new Date(a.txDate)-new Date(b.txDate);});
             for(var i=0;i<arr.length;i++){var group=[arr[i]];var t0=new Date(arr[i].txDate).getTime();
                 for(var j=i+1;j<arr.length;j++){if(new Date(arr[j].txDate).getTime()-t0<=dayMs(WINDOW))group.push(arr[j]);}
-                var names=new Set(group.map(function(g){return g.name;}));
-                if(names.size>=2){clusters.push({sym:sym,type:isS?'sell':'buy',count:names.size,names:Array.from(names),totalVal:group.reduce(function(a,g){return a+txVal(g);},0),start:group[0].txDate,end:group[group.length-1].txDate,txCount:group.length});}}});});
+                var names=new Set(group.map(function(g){return g.name;}));var nameTitle={};group.forEach(function(g){if(g.title)nameTitle[g.name]=g.title;});
+                if(names.size>=2){clusters.push({sym:sym,type:isS?'sell':'buy',count:names.size,names:Array.from(names),nameTitle:nameTitle,totalVal:group.reduce(function(a,g){return a+txVal(g);},0),start:group[0].txDate,end:group[group.length-1].txDate,txCount:group.length});}}});});
     var dedup={};clusters.forEach(function(c){var k=c.sym+'_'+c.type;if(!dedup[k]||c.count>dedup[k].count||c.totalVal>dedup[k].totalVal)dedup[k]=c;});
     var result=Object.values(dedup).sort(function(a,b){return b.count-a.count||b.totalVal-a.totalVal;}).slice(0,10);
     document.getElementById('sCluster').textContent=result.length+'건';
     if(result.length===0){document.getElementById('clusterArea').innerHTML='<div class="no-data">감지된 클러스터 없음</div>';return;}
     document.getElementById('clusterArea').innerHTML=result.map(function(c){var inf=SP500[c.sym]||{n:c.sym,s:''};
-        return'<div class="cluster-card" onclick="openChart(\''+c.sym+'\')"><div class="cluster-head"><span class="cluster-sym '+c.type+'">'+c.sym+' <span style="font-size:.7rem;font-weight:400;color:var(--text3)">'+inf.n+'</span></span><span class="cluster-badge '+c.type+'">'+(c.type==='buy'?'CLUSTER BUY':'CLUSTER SELL')+'</span></div><div class="cluster-detail"><strong>'+c.count+'명</strong>의 내부자가 <strong>'+c.txCount+'건</strong> 거래 · 총 <strong style="color:'+(c.type==='buy'?'var(--buy)':'var(--sell)')+'">$'+fmtNum(c.totalVal)+'</strong><br>기간: '+fmtDate(c.start)+' ~ '+fmtDate(c.end)+'</div><div class="cluster-names">'+c.names.map(function(n){return truncate(n,16);}).join(' · ')+'</div><div class="cluster-chart-hint"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 주가 차트 보기</div></div>';}).join('');
+        return'<div class="cluster-card" onclick="openChart(\''+c.sym+'\')"><div class="cluster-head"><span class="cluster-sym '+c.type+'">'+c.sym+' <span style="font-size:.7rem;font-weight:400;color:var(--text3)">'+inf.n+'</span></span><span class="cluster-badge '+c.type+'">'+(c.type==='buy'?'CLUSTER BUY':'CLUSTER SELL')+'</span></div><div class="cluster-detail"><strong>'+c.count+'명</strong>의 내부자가 <strong>'+c.txCount+'건</strong> 거래 · 총 <strong style="color:'+(c.type==='buy'?'var(--buy)':'var(--sell)')+'">$'+fmtNum(c.totalVal)+'</strong><br>기간: '+fmtDate(c.start)+' ~ '+fmtDate(c.end)+'</div><div class="cluster-names">'+c.names.map(function(n){var t=c.nameTitle&&c.nameTitle[n]?' ('+c.nameTitle[n]+')':'';return truncate(n,16)+t;}).join(' · ')+'</div><div class="cluster-chart-hint"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> 주가 차트 보기</div></div>';}).join('');
 }
 
 // === 3. UNUSUAL ===
@@ -239,7 +239,7 @@ function renderUnusual(){
     document.getElementById('sUnusual').textContent=unusual.length+'건';
     if(top.length===0){document.getElementById('unusualArea').innerHTML='<div class="no-data">감지된 이상 거래 없음 (기준: 평균 대비 3배 이상, $100K 이상)</div>';return;}
     document.getElementById('unusualArea').innerHTML=top.map(function(u){var inf=SP500[u.sym]||{n:u.sym};var buy=isBuy(u);
-        return'<div class="unusual-row" onclick="openChart(\''+u.sym+'\')"><span class="unusual-flag">⚡ '+u.mult.toFixed(1)+'x</span><span class="unusual-sym" style="color:'+(buy?'var(--buy)':'var(--sell)')+'">'+u.sym+'</span><div class="unusual-name-col"><div class="unusual-insider">'+truncate(u.name||'—',22)+'</div><div class="unusual-meta">'+inf.n+' · '+(buy?'매수':'매도')+' · '+fmtDate(u.txDate)+'</div></div><div style="text-align:right"><div class="unusual-val" style="color:'+(buy?'var(--buy)':'var(--sell)')+'">$'+fmtNum(u.val)+'</div><div class="unusual-mult">avg $'+fmtNum(u.meanVal)+'</div></div></div>';}).join('');
+        return'<div class="unusual-row" onclick="openChart(\''+u.sym+'\')"><span class="unusual-flag">⚡ '+u.mult.toFixed(1)+'x</span><span class="unusual-sym" style="color:'+(buy?'var(--buy)':'var(--sell)')+'">'+u.sym+'</span><div class="unusual-name-col"><div class="unusual-insider">'+truncate(u.name||'—',22)+(u.title?'<span style="font-size:.6rem;color:var(--text3);margin-left:4px">'+u.title+'</span>':'')+'</div><div class="unusual-meta">'+inf.n+' · '+(buy?'매수':'매도')+' · '+fmtDate(u.txDate)+'</div></div><div style="text-align:right"><div class="unusual-val" style="color:'+(buy?'var(--buy)':'var(--sell)')+'">$'+fmtNum(u.val)+'</div><div class="unusual-mult">avg $'+fmtNum(u.meanVal)+'</div></div></div>';}).join('');
 }
 
 // === 4. CONVERSION ===
@@ -274,12 +274,12 @@ async function renderReturns(){
         candles.t.forEach(function(t,i){var d=Math.abs(t-txTime);if(d<minDist){minDist=d;buyIdx=i;}});
         if(buyIdx<0||minDist>5*86400)return;
         var buyPrice=candles.c[buyIdx],currentPrice=candles.c[candles.c.length-1];
-        rows.push({sym:tx.sym,name:tx.name,txDate:tx.txDate,buyPrice:buyPrice,currentPrice:currentPrice,pctReturn:((currentPrice-buyPrice)/buyPrice*100),val:txVal(tx)});});
+        rows.push({sym:tx.sym,name:tx.name,title:tx.title||'',txDate:tx.txDate,buyPrice:buyPrice,currentPrice:currentPrice,pctReturn:((currentPrice-buyPrice)/buyPrice*100),val:txVal(tx)});});
     rows.sort(function(a,b){return b.pctReturn-a.pctReturn;});
     if(rows.length===0){document.getElementById('returnArea').innerHTML='<div class="no-data">캔들 데이터 없음 — data/candles/ 폴더에 주가 데이터가 필요합니다</div>';return;}
     var h='<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding:0 4px;font-size:.68rem;color:var(--text3)"><span style="width:55px">종목</span><span style="flex:1">내부자</span><span style="text-align:right;width:70px">매수가</span><span style="text-align:right;width:70px">현재가</span><span style="width:65px;text-align:right">수익률</span></div>';
     rows.forEach(function(r){var up=r.pctReturn>=0;
-        h+='<div class="return-row" onclick="openChart(\''+r.sym+'\')"><div class="return-sym">'+r.sym+'</div><div class="return-name-col"><div class="return-insider">'+truncate(r.name||'—',22)+'</div><div class="return-date">'+fmtDate(r.txDate)+' · $'+fmtNum(r.val)+'</div></div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text2)">$'+r.buyPrice.toFixed(1)+'</div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text)">$'+r.currentPrice.toFixed(1)+'</div><div class="return-pct" style="color:'+(up?'var(--buy)':'var(--sell)')+'">'+(up?'+':'')+r.pctReturn.toFixed(1)+'%</div></div>';});
+        h+='<div class="return-row" onclick="openChart(\''+r.sym+'\')"><div class="return-sym">'+r.sym+'</div><div class="return-name-col"><div class="return-insider">'+truncate(r.name||'—',22)+(r.title?'<span style="font-size:.6rem;color:var(--text3);margin-left:4px">'+r.title+'</span>':'')+'</div><div class="return-date">'+fmtDate(r.txDate)+' · $'+fmtNum(r.val)+'</div></div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text2)">$'+r.buyPrice.toFixed(1)+'</div><div style="font-family:var(--mono);font-size:.72rem;text-align:right;width:70px;color:var(--text)">$'+r.currentPrice.toFixed(1)+'</div><div class="return-pct" style="color:'+(up?'var(--buy)':'var(--sell)')+'">'+(up?'+':'')+r.pctReturn.toFixed(1)+'%</div></div>';});
     document.getElementById('returnArea').innerHTML=h;
 }
 
