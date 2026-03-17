@@ -167,6 +167,7 @@ def fetch_insider_transactions():
                 filtered.append({
                     "sym": sym,
                     "name": tx.get("name", "Unknown"),
+                    "title": tx.get("officerTitle", ""),
                     "code": code,
                     "change": tx["change"],
                     "price": tx.get("transactionPrice", 0),
