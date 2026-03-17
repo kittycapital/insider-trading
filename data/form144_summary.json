@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-16T23:33:14Z",
-  "totalFilings": 992,
-  "filings7d": 50,
-  "filings30d": 240,
-  "filings90d": 541,
-  "totalValue": 3522398862.4,
+  "updated": "2026-03-17T23:33:07Z",
+  "totalFilings": 998,
+  "filings7d": 55,
+  "filings30d": 253,
+  "filings90d": 540,
+  "totalValue": 3216892510.29,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -16,18 +16,10 @@
       }
     ],
     [
-      "LLY",
-      {
-        "total": 322944000.0,
-        "count": 13,
-        "name": "Eli Lilly"
-      }
-    ],
-    [
       "GOOGL",
       {
         "total": 262593890.98999998,
-        "count": 51,
+        "count": 49,
         "name": "Alphabet Inc"
       }
     ],
@@ -51,8 +43,16 @@
       "NVDA",
       {
         "total": 143802262.0,
-        "count": 47,
+        "count": 46,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 142585305.14,
+        "count": 27,
+        "name": "Broadcom Inc"
       }
     ],
     [
@@ -72,32 +72,23 @@
       }
     ],
     [
-      "AVGO",
-      {
-        "total": 123686524.13999999,
-        "count": 26,
-        "name": "Broadcom Inc"
-      }
-    ],
-    [
       "HOOD",
       {
         "total": 113255845.83,
         "count": 23,
         "name": "Robinhood Markets"
       }
+    ],
+    [
+      "GS",
+      {
+        "total": 112951780.6,
+        "count": 12,
+        "name": "Goldman Sachs"
+      }
     ]
   ],
   "topInsiders": [
-    [
-      "Lilly Endowment, Inc.",
-      {
-        "total": 322944000.0,
-        "count": 1,
-        "ticker": "LLY",
-        "company": "Eli Lilly"
-      }
-    ],
     [
       "Peter Thiel",
       {
@@ -178,19 +169,18 @@
         "ticker": "GS",
         "company": "Goldman Sachs"
       }
+    ],
+    [
+      "Alexander Karp",
+      {
+        "total": 66031958.16,
+        "count": 2,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
+      }
     ]
   ],
   "topFilings": [
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 300000,
-      "approxPrice": 1076.48,
-      "totalValue": 322944000.0,
-      "fileDate": "2025-12-23",
-      "relationship": "10% Stockholder"
-    },
     {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
@@ -380,6 +370,16 @@
       "totalValue": 39077465.47,
       "fileDate": "2026-01-02",
       "relationship": "Director"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Puri Ajay K",
+      "shares": 200000,
+      "approxPrice": 187.82,
+      "totalValue": 37563625.0,
+      "fileDate": "2026-01-07",
+      "relationship": "Officer"
     }
   ]
 }
