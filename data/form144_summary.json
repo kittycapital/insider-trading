@@ -1,25 +1,25 @@
 {
-  "updated": "2026-03-17T23:33:07Z",
-  "totalFilings": 998,
-  "filings7d": 55,
-  "filings30d": 253,
-  "filings90d": 540,
-  "totalValue": 3216892510.29,
+  "updated": "2026-03-18T23:32:15Z",
+  "totalFilings": 992,
+  "filings7d": 54,
+  "filings30d": 258,
+  "filings90d": 538,
+  "totalValue": 3284227433.84,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "PLTR",
       {
         "total": 436806199.09,
-        "count": 22,
+        "count": 21,
         "name": "Palantir Technologies"
       }
     ],
     [
       "GOOGL",
       {
-        "total": 262593890.98999998,
-        "count": 49,
+        "total": 268282096.67999998,
+        "count": 51,
         "name": "Alphabet Inc"
       }
     ],
@@ -32,27 +32,19 @@
       }
     ],
     [
+      "NVDA",
+      {
+        "total": 198478415.0,
+        "count": 45,
+        "name": "NVIDIA Corp"
+      }
+    ],
+    [
       "CVX",
       {
         "total": 184871315.69000003,
         "count": 28,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "NVDA",
-      {
-        "total": 143802262.0,
-        "count": 46,
-        "name": "NVIDIA Corp"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 142585305.14,
-        "count": 27,
-        "name": "Broadcom Inc"
       }
     ],
     [
@@ -64,6 +56,14 @@
       }
     ],
     [
+      "AVGO",
+      {
+        "total": 133459236.13999999,
+        "count": 27,
+        "name": "Broadcom Inc"
+      }
+    ],
+    [
       "BLK",
       {
         "total": 123999020.54,
@@ -72,19 +72,19 @@
       }
     ],
     [
+      "SNOW",
+      {
+        "total": 115621108.15,
+        "count": 47,
+        "name": "Snowflake Inc"
+      }
+    ],
+    [
       "HOOD",
       {
         "total": 113255845.83,
         "count": 23,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "GS",
-      {
-        "total": 112951780.6,
-        "count": 12,
-        "name": "Goldman Sachs"
       }
     ]
   ],
@@ -110,8 +110,8 @@
     [
       "Puri Ajay K",
       {
-        "total": 128326822.0,
-        "count": 3,
+        "total": 183002975.0,
+        "count": 4,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
       }
@@ -153,6 +153,15 @@
       }
     ],
     [
+      "Slootman Frank",
+      {
+        "total": 76403360.7,
+        "count": 5,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "The Lawrence Page Trust",
       {
         "total": 69568632.0,
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "GS",
         "company": "Goldman Sachs"
-      }
-    ],
-    [
-      "Alexander Karp",
-      {
-        "total": 66031958.16,
-        "count": 2,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
       }
     ]
   ],
@@ -249,6 +249,16 @@
       "approxPrice": 182.52,
       "totalValue": 54756038.0,
       "fileDate": "2026-03-10",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Puri Ajay K",
+      "shares": 300000,
+      "approxPrice": 182.25,
+      "totalValue": 54676153.0,
+      "fileDate": "2026-03-18",
       "relationship": "Officer"
     },
     {
@@ -370,16 +380,6 @@
       "totalValue": 39077465.47,
       "fileDate": "2026-01-02",
       "relationship": "Director"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Puri Ajay K",
-      "shares": 200000,
-      "approxPrice": 187.82,
-      "totalValue": 37563625.0,
-      "fileDate": "2026-01-07",
-      "relationship": "Officer"
     }
   ]
 }
