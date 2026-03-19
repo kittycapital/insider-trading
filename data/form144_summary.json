@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-18T23:32:15Z",
-  "totalFilings": 992,
+  "updated": "2026-03-19T23:30:16Z",
+  "totalFilings": 991,
   "filings7d": 54,
-  "filings30d": 258,
-  "filings90d": 538,
-  "totalValue": 3284227433.84,
+  "filings30d": 262,
+  "filings90d": 536,
+  "totalValue": 3281023318.13,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -34,8 +34,8 @@
     [
       "NVDA",
       {
-        "total": 198478415.0,
-        "count": 45,
+        "total": 201835964.0,
+        "count": 42,
         "name": "NVIDIA Corp"
       }
     ],
@@ -56,14 +56,6 @@
       }
     ],
     [
-      "AVGO",
-      {
-        "total": 133459236.13999999,
-        "count": 27,
-        "name": "Broadcom Inc"
-      }
-    ],
-    [
       "BLK",
       {
         "total": 123999020.54,
@@ -72,10 +64,18 @@
       }
     ],
     [
+      "AVGO",
+      {
+        "total": 123024585.53999999,
+        "count": 27,
+        "name": "Broadcom Inc"
+      }
+    ],
+    [
       "SNOW",
       {
-        "total": 115621108.15,
-        "count": 47,
+        "total": 114999923.07,
+        "count": 48,
         "name": "Snowflake Inc"
       }
     ],
@@ -155,8 +155,8 @@
     [
       "Slootman Frank",
       {
-        "total": 76403360.7,
-        "count": 5,
+        "total": 78383529.06,
+        "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
