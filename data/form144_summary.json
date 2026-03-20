@@ -1,12 +1,20 @@
 {
-  "updated": "2026-03-19T23:30:16Z",
-  "totalFilings": 991,
-  "filings7d": 54,
-  "filings30d": 262,
-  "filings90d": 536,
-  "totalValue": 3281023318.13,
+  "updated": "2026-03-20T23:29:42Z",
+  "totalFilings": 997,
+  "filings7d": 48,
+  "filings30d": 243,
+  "filings90d": 535,
+  "totalValue": 3638498648.55,
   "uniqueCompanies": 63,
   "topCompanies": [
+    [
+      "NVDA",
+      {
+        "total": 506351473.76,
+        "count": 45,
+        "name": "NVIDIA Corp"
+      }
+    ],
     [
       "PLTR",
       {
@@ -18,7 +26,7 @@
     [
       "GOOGL",
       {
-        "total": 268282096.67999998,
+        "total": 268250124.67999998,
         "count": 51,
         "name": "Alphabet Inc"
       }
@@ -29,14 +37,6 @@
         "total": 250402634.73,
         "count": 16,
         "name": "T-Mobile US"
-      }
-    ],
-    [
-      "NVDA",
-      {
-        "total": 201835964.0,
-        "count": 42,
-        "name": "NVIDIA Corp"
       }
     ],
     [
@@ -72,23 +72,32 @@
       }
     ],
     [
-      "SNOW",
+      "HOOD",
       {
-        "total": 114999923.07,
-        "count": 48,
-        "name": "Snowflake Inc"
+        "total": 118255861.35,
+        "count": 24,
+        "name": "Robinhood Markets"
       }
     ],
     [
-      "HOOD",
+      "GS",
       {
-        "total": 113255845.83,
-        "count": 23,
-        "name": "Robinhood Markets"
+        "total": 112951780.6,
+        "count": 12,
+        "name": "Goldman Sachs"
       }
     ]
   ],
   "topInsiders": [
+    [
+      "Mark A Stevens",
+      {
+        "total": 303552000.0,
+        "count": 1,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
+      }
+    ],
     [
       "Peter Thiel",
       {
@@ -169,18 +178,19 @@
         "ticker": "GOOGL",
         "company": "Alphabet Inc"
       }
-    ],
-    [
-      "Viniar David A",
-      {
-        "total": 66539990.0,
-        "count": 1,
-        "ticker": "GS",
-        "company": "Goldman Sachs"
-      }
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "insiderName": "Mark A Stevens",
+      "shares": 1700000,
+      "approxPrice": 178.56,
+      "totalValue": 303552000.0,
+      "fileDate": "2026-03-20",
+      "relationship": "Director"
+    },
     {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
@@ -220,6 +230,16 @@
       "totalValue": 66539990.0,
       "fileDate": "2026-01-16",
       "relationship": "Director"
+    },
+    {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "insiderName": "Lance Ryan Michael",
+      "shares": 506800,
+      "approxPrice": 127.26,
+      "totalValue": 64493598.52,
+      "fileDate": "2026-03-20",
+      "relationship": "Officer"
     },
     {
       "ticker": "BLK",
@@ -359,26 +379,6 @@
       "approxPrice": 97.01,
       "totalValue": 39828614.48,
       "fileDate": "2026-03-02",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "insiderName": "The Tenev 2017 Irrevocable Trust",
-      "shares": 327500,
-      "approxPrice": 119.67,
-      "totalValue": 39191925.0,
-      "fileDate": "2026-01-15",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings",
-      "shares": 426290,
-      "approxPrice": 91.67,
-      "totalValue": 39077465.47,
-      "fileDate": "2026-01-02",
       "relationship": "Director"
     }
   ]
