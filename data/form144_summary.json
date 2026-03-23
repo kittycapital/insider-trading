@@ -1,24 +1,24 @@
 {
-  "updated": "2026-03-20T23:29:42Z",
-  "totalFilings": 997,
-  "filings7d": 48,
-  "filings30d": 243,
-  "filings90d": 535,
-  "totalValue": 3638498648.55,
+  "updated": "2026-03-23T23:32:14Z",
+  "totalFilings": 989,
+  "filings7d": 47,
+  "filings30d": 202,
+  "filings90d": 536,
+  "totalValue": 3631257731.34,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 506351473.76,
-        "count": 45,
+        "count": 43,
         "name": "NVIDIA Corp"
       }
     ],
     [
       "PLTR",
       {
-        "total": 436806199.09,
+        "total": 429091849.09,
         "count": 21,
         "name": "Palantir Technologies"
       }
@@ -67,7 +67,7 @@
       "AVGO",
       {
         "total": 123024585.53999999,
-        "count": 27,
+        "count": 26,
         "name": "Broadcom Inc"
       }
     ],
