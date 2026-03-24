@@ -1,24 +1,24 @@
 {
-  "updated": "2026-03-23T23:32:14Z",
-  "totalFilings": 989,
-  "filings7d": 47,
-  "filings30d": 202,
-  "filings90d": 536,
-  "totalValue": 3631257731.34,
+  "updated": "2026-03-24T23:32:44Z",
+  "totalFilings": 988,
+  "filings7d": 36,
+  "filings30d": 205,
+  "filings90d": 530,
+  "totalValue": 3587170743.45,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 506351473.76,
-        "count": 43,
+        "count": 42,
         "name": "NVIDIA Corp"
       }
     ],
     [
       "PLTR",
       {
-        "total": 429091849.09,
+        "total": 426958849.09,
         "count": 21,
         "name": "Palantir Technologies"
       }
@@ -48,14 +48,6 @@
       }
     ],
     [
-      "NFLX",
-      {
-        "total": 136602420.2,
-        "count": 23,
-        "name": "Netflix Inc"
-      }
-    ],
-    [
       "BLK",
       {
         "total": 123999020.54,
@@ -67,7 +59,7 @@
       "AVGO",
       {
         "total": 123024585.53999999,
-        "count": 26,
+        "count": 25,
         "name": "Broadcom Inc"
       }
     ],
@@ -85,6 +77,14 @@
         "total": 112951780.6,
         "count": 12,
         "name": "Goldman Sachs"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 101594825.02,
+        "count": 46,
+        "name": "Snowflake Inc"
       }
     ]
   ],
@@ -126,15 +126,6 @@
       }
     ],
     [
-      "Reed Hastings",
-      {
-        "total": 111601672.62,
-        "count": 3,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
-      }
-    ],
-    [
       "Mdc Trust I",
       {
         "total": 106049025.2,
@@ -168,6 +159,15 @@
         "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
+      }
+    ],
+    [
+      "Reed Hastings",
+      {
+        "total": 72524207.15,
+        "count": 2,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
       }
     ],
     [
