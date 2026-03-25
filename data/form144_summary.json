@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-24T23:32:44Z",
-  "totalFilings": 988,
-  "filings7d": 36,
-  "filings30d": 205,
-  "filings90d": 530,
-  "totalValue": 3587170743.45,
+  "updated": "2026-03-25T23:34:49Z",
+  "totalFilings": 985,
+  "filings7d": 25,
+  "filings30d": 207,
+  "filings90d": 532,
+  "totalValue": 3552271601.4,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
-        "total": 506351473.76,
-        "count": 42,
+        "total": 491431473.76,
+        "count": 41,
         "name": "NVIDIA Corp"
       }
     ],
@@ -59,7 +59,7 @@
       "AVGO",
       {
         "total": 123024585.53999999,
-        "count": 25,
+        "count": 24,
         "name": "Broadcom Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "SNOW",
       {
         "total": 101594825.02,
-        "count": 46,
+        "count": 45,
         "name": "Snowflake Inc"
       }
     ]
