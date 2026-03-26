@@ -1,18 +1,26 @@
 {
-  "updated": "2026-03-25T23:34:49Z",
-  "totalFilings": 985,
-  "filings7d": 25,
-  "filings30d": 207,
-  "filings90d": 532,
-  "totalValue": 3552271601.4,
+  "updated": "2026-03-26T23:32:24Z",
+  "totalFilings": 988,
+  "filings7d": 27,
+  "filings30d": 198,
+  "filings90d": 539,
+  "totalValue": 3791369509.77,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 491431473.76,
-        "count": 41,
+        "count": 40,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 452826322.36,
+        "count": 28,
+        "name": "Broadcom Inc"
       }
     ],
     [
@@ -42,7 +50,7 @@
     [
       "CVX",
       {
-        "total": 184871315.69000003,
+        "total": 129216574.69000003,
         "count": 28,
         "name": "Chevron Corp"
       }
@@ -53,22 +61,6 @@
         "total": 123999020.54,
         "count": 10,
         "name": "BlackRock Inc"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 123024585.53999999,
-        "count": 24,
-        "name": "Broadcom Inc"
-      }
-    ],
-    [
-      "HOOD",
-      {
-        "total": 118255861.35,
-        "count": 24,
-        "name": "Robinhood Markets"
       }
     ],
     [
@@ -83,8 +75,16 @@
       "SNOW",
       {
         "total": 101594825.02,
-        "count": 45,
+        "count": 44,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "META",
+      {
+        "total": 99625704.0,
+        "count": 59,
+        "name": "Meta Platforms Inc"
       }
     ]
   ],
@@ -126,21 +126,21 @@
       }
     ],
     [
+      "H&Amp;S Investments I Lp",
+      {
+        "total": 170000150.06,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
       "Mdc Trust I",
       {
         "total": 106049025.2,
         "count": 2,
         "ticker": "GOOGL",
         "company": "Alphabet Inc"
-      }
-    ],
-    [
-      "Michael K Wirth",
-      {
-        "total": 84006126.0,
-        "count": 2,
-        "ticker": "CVX",
-        "company": "Chevron Corp"
       }
     ],
     [
@@ -153,6 +153,15 @@
       }
     ],
     [
+      "D95Gt, Llc",
+      {
+        "total": 80000154.82,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
       "Slootman Frank",
       {
         "total": 78383529.06,
@@ -162,21 +171,12 @@
       }
     ],
     [
-      "Reed Hastings",
+      "Samueli Foundation",
       {
-        "total": 72524207.15,
-        "count": 2,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
-      }
-    ],
-    [
-      "The Lawrence Page Trust",
-      {
-        "total": 69568632.0,
+        "total": 76786822.76,
         "count": 1,
-        "ticker": "GOOGL",
-        "company": "Alphabet Inc"
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
@@ -210,6 +210,36 @@
       "totalValue": 219000000.0,
       "fileDate": "2026-02-12",
       "relationship": "Director"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "H&Amp;S Investments I Lp",
+      "shares": 531741,
+      "approxPrice": 319.7,
+      "totalValue": 170000150.06,
+      "fileDate": "2026-03-25",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "D95Gt, Llc",
+      "shares": 250226,
+      "approxPrice": 319.71,
+      "totalValue": 80000154.82,
+      "fileDate": "2026-03-25",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "Samueli Foundation",
+      "shares": 240095,
+      "approxPrice": 319.82,
+      "totalValue": 76786822.76,
+      "fileDate": "2026-03-25",
+      "relationship": "Affiliate"
     },
     {
       "ticker": "GOOGL",
@@ -312,16 +342,6 @@
       "relationship": "Affiliate"
     },
     {
-      "ticker": "CVX",
-      "company": "Chevron Corp",
-      "insiderName": "Michael K Wirth",
-      "shares": 320700,
-      "approxPrice": 155.9,
-      "totalValue": 49997130.0,
-      "fileDate": "2026-01-05",
-      "relationship": "Officer"
-    },
-    {
       "ticker": "QCOM",
       "company": "Qualcomm",
       "insiderName": "Qualcomm Inc",
@@ -352,16 +372,6 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "insiderName": "Vladimir Tenev",
-      "shares": 375000,
-      "approxPrice": 115.21,
-      "totalValue": 43203750.0,
-      "fileDate": "2026-01-05",
-      "relationship": "Director"
-    },
-    {
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
@@ -369,16 +379,6 @@
       "approxPrice": 206.77,
       "totalValue": 41353996.03,
       "fileDate": "2026-01-20",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings",
-      "shares": 410550,
-      "approxPrice": 97.01,
-      "totalValue": 39828614.48,
-      "fileDate": "2026-03-02",
       "relationship": "Director"
     }
   ]
