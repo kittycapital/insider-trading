@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-26T23:32:24Z",
-  "totalFilings": 988,
-  "filings7d": 27,
-  "filings30d": 198,
-  "filings90d": 539,
-  "totalValue": 3791369509.77,
+  "updated": "2026-03-27T23:33:40Z",
+  "totalFilings": 991,
+  "filings7d": 26,
+  "filings30d": 189,
+  "filings90d": 542,
+  "totalValue": 3771758992.94,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "AVGO",
       {
-        "total": 452826322.36,
+        "total": 428515620.82,
         "count": 28,
         "name": "Broadcom Inc"
       }
@@ -34,8 +34,8 @@
     [
       "GOOGL",
       {
-        "total": 268250124.67999998,
-        "count": 51,
+        "total": 270774819.5,
+        "count": 52,
         "name": "Alphabet Inc"
       }
     ],
@@ -80,11 +80,11 @@
       }
     ],
     [
-      "META",
+      "CAT",
       {
-        "total": 99625704.0,
-        "count": 59,
-        "name": "Meta Platforms Inc"
+        "total": 99484350.85000001,
+        "count": 19,
+        "name": "Caterpillar Inc"
       }
     ]
   ],
