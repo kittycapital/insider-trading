@@ -1,26 +1,18 @@
 {
-  "updated": "2026-03-27T23:33:40Z",
-  "totalFilings": 991,
-  "filings7d": 26,
-  "filings30d": 189,
-  "filings90d": 542,
-  "totalValue": 3771758992.94,
+  "updated": "2026-03-30T23:35:13Z",
+  "totalFilings": 973,
+  "filings7d": 24,
+  "filings30d": 160,
+  "filings90d": 537,
+  "totalValue": 3730244998.41,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "NVDA",
       {
-        "total": 491431473.76,
-        "count": 40,
+        "total": 453867848.76,
+        "count": 38,
         "name": "NVIDIA Corp"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 428515620.82,
-        "count": 28,
-        "name": "Broadcom Inc"
       }
     ],
     [
@@ -32,10 +24,18 @@
       }
     ],
     [
+      "AVGO",
+      {
+        "total": 418101928.82,
+        "count": 28,
+        "name": "Broadcom Inc"
+      }
+    ],
+    [
       "GOOGL",
       {
-        "total": 270774819.5,
-        "count": 52,
+        "total": 259321813.49999997,
+        "count": 51,
         "name": "Alphabet Inc"
       }
     ],
@@ -50,8 +50,8 @@
     [
       "CVX",
       {
-        "total": 129216574.69000003,
-        "count": 28,
+        "total": 137704804.69,
+        "count": 29,
         "name": "Chevron Corp"
       }
     ],
@@ -75,7 +75,7 @@
       "SNOW",
       {
         "total": 101594825.02,
-        "count": 44,
+        "count": 42,
         "name": "Snowflake Inc"
       }
     ],
@@ -117,21 +117,21 @@
       }
     ],
     [
-      "Puri Ajay K",
-      {
-        "total": 183002975.0,
-        "count": 4,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
-      }
-    ],
-    [
       "H&Amp;S Investments I Lp",
       {
         "total": 170000150.06,
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Puri Ajay K",
+      {
+        "total": 145439350.0,
+        "count": 3,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
       }
     ],
     [
