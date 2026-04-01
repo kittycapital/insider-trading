@@ -1,17 +1,17 @@
 {
-  "updated": "2026-03-31T23:35:46Z",
-  "totalFilings": 963,
-  "filings7d": 23,
-  "filings30d": 164,
+  "updated": "2026-04-01T23:37:52Z",
+  "totalFilings": 959,
+  "filings7d": 25,
+  "filings30d": 169,
   "filings90d": 538,
-  "totalValue": 3708892043.21,
-  "uniqueCompanies": 63,
+  "totalValue": 3744679662.35,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 37,
+        "count": 36,
         "name": "NVIDIA Corp"
       }
     ],
@@ -34,7 +34,7 @@
     [
       "GOOGL",
       {
-        "total": 259321813.49999997,
+        "total": 259120843.49999997,
         "count": 49,
         "name": "Alphabet Inc"
       }
@@ -56,6 +56,14 @@
       }
     ],
     [
+      "NFLX",
+      {
+        "total": 137681412.88000003,
+        "count": 22,
+        "name": "Netflix Inc"
+      }
+    ],
+    [
       "BLK",
       {
         "total": 123999020.54,
@@ -74,17 +82,9 @@
     [
       "SNOW",
       {
-        "total": 101594825.02,
+        "total": 102187077.82,
         "count": 41,
         "name": "Snowflake Inc"
-      }
-    ],
-    [
-      "CAT",
-      {
-        "total": 99484350.85000001,
-        "count": 19,
-        "name": "Caterpillar Inc"
       }
     ]
   ],
@@ -135,6 +135,15 @@
       }
     ],
     [
+      "Reed Hastings",
+      {
+        "total": 112680665.3,
+        "count": 3,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
+      }
+    ],
+    [
       "Mdc Trust I",
       {
         "total": 106049025.2,
@@ -168,15 +177,6 @@
         "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
-      }
-    ],
-    [
-      "Samueli Foundation",
-      {
-        "total": 76786822.76,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
       }
     ]
   ],
