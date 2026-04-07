@@ -1,17 +1,17 @@
 {
-  "updated": "2026-04-06T23:35:04Z",
-  "totalFilings": 954,
-  "filings7d": 20,
-  "filings30d": 118,
-  "filings90d": 523,
-  "totalValue": 3799170262.01,
+  "updated": "2026-04-07T23:38:22Z",
+  "totalFilings": 953,
+  "filings7d": 17,
+  "filings30d": 119,
+  "filings90d": 520,
+  "totalValue": 3794409803.21,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 33,
+        "count": 32,
         "name": "NVIDIA Corp"
       }
     ],
@@ -83,7 +83,7 @@
       "SNOW",
       {
         "total": 109707132.82,
-        "count": 41,
+        "count": 40,
         "name": "Snowflake Inc"
       }
     ]
