@@ -1,18 +1,26 @@
 {
-  "updated": "2026-04-07T23:38:22Z",
-  "totalFilings": 953,
-  "filings7d": 17,
-  "filings30d": 119,
-  "filings90d": 520,
-  "totalValue": 3794409803.21,
+  "updated": "2026-04-08T23:38:30Z",
+  "totalFilings": 956,
+  "filings7d": 18,
+  "filings30d": 124,
+  "filings90d": 522,
+  "totalValue": 3760039527.0,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 32,
+        "count": 31,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 432629901.01,
+        "count": 31,
+        "name": "Broadcom Inc"
       }
     ],
     [
@@ -21,14 +29,6 @@
         "total": 426958849.09,
         "count": 19,
         "name": "Palantir Technologies"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 418101928.82,
-        "count": 28,
-        "name": "Broadcom Inc"
       }
     ],
     [
@@ -50,7 +50,7 @@
     [
       "NFLX",
       {
-        "total": 140417009.38,
+        "total": 137602004.88,
         "count": 23,
         "name": "Netflix Inc"
       }
