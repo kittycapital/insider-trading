@@ -1,17 +1,17 @@
 {
-  "updated": "2026-04-10T23:35:33Z",
-  "totalFilings": 954,
-  "filings7d": 13,
-  "filings30d": 114,
-  "filings90d": 523,
-  "totalValue": 3762961385.88,
+  "updated": "2026-04-13T23:43:28Z",
+  "totalFilings": 950,
+  "filings7d": 17,
+  "filings30d": 96,
+  "filings90d": 526,
+  "totalValue": 3665488848.88,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 30,
+        "count": 28,
         "name": "NVIDIA Corp"
       }
     ],
@@ -19,7 +19,7 @@
       "AVGO",
       {
         "total": 435952390.01,
-        "count": 33,
+        "count": 32,
         "name": "Broadcom Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "GOOGL",
       {
         "total": 259120843.49999997,
-        "count": 49,
+        "count": 48,
         "name": "Alphabet Inc"
       }
     ],
@@ -48,14 +48,6 @@
       }
     ],
     [
-      "NFLX",
-      {
-        "total": 137602004.88,
-        "count": 23,
-        "name": "Netflix Inc"
-      }
-    ],
-    [
       "CVX",
       {
         "total": 137180420.69,
@@ -64,19 +56,11 @@
       }
     ],
     [
-      "BLK",
+      "NFLX",
       {
-        "total": 123999020.54,
-        "count": 10,
-        "name": "BlackRock Inc"
-      }
-    ],
-    [
-      "GS",
-      {
-        "total": 112951780.6,
-        "count": 12,
-        "name": "Goldman Sachs"
+        "total": 135536798.5,
+        "count": 23,
+        "name": "Netflix Inc"
       }
     ],
     [
@@ -85,6 +69,22 @@
         "total": 109707132.82,
         "count": 40,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "META",
+      {
+        "total": 101190841.0,
+        "count": 54,
+        "name": "Meta Platforms Inc"
+      }
+    ],
+    [
+      "CAT",
+      {
+        "total": 99484350.85000001,
+        "count": 18,
+        "name": "Caterpillar Inc"
       }
     ]
   ],
@@ -252,16 +252,6 @@
       "relationship": "Affiliate"
     },
     {
-      "ticker": "GS",
-      "company": "Goldman Sachs",
-      "insiderName": "Viniar David A",
-      "shares": 68186,
-      "approxPrice": 975.86,
-      "totalValue": 66539990.0,
-      "fileDate": "2026-01-16",
-      "relationship": "Director"
-    },
-    {
       "ticker": "COP",
       "company": "ConocoPhillips",
       "insiderName": "Lance Ryan Michael",
@@ -379,6 +369,16 @@
       "approxPrice": 206.77,
       "totalValue": 41353996.03,
       "fileDate": "2026-01-20",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings",
+      "shares": 420550,
+      "approxPrice": 95.49,
+      "totalValue": 40156458.15,
+      "fileDate": "2026-04-01",
       "relationship": "Director"
     }
   ]
