@@ -1,17 +1,17 @@
 {
-  "updated": "2026-04-13T23:43:28Z",
-  "totalFilings": 950,
+  "updated": "2026-04-14T23:44:30Z",
+  "totalFilings": 944,
   "filings7d": 17,
-  "filings30d": 96,
-  "filings90d": 526,
-  "totalValue": 3665488848.88,
+  "filings30d": 99,
+  "filings90d": 527,
+  "totalValue": 3669733051.13,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 28,
+        "count": 27,
         "name": "NVIDIA Corp"
       }
     ],
@@ -35,7 +35,7 @@
       "GOOGL",
       {
         "total": 259120843.49999997,
-        "count": 48,
+        "count": 46,
         "name": "Alphabet Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "META",
       {
         "total": 101190841.0,
-        "count": 54,
+        "count": 53,
         "name": "Meta Platforms Inc"
       }
     ],
