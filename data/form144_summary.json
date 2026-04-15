@@ -1,17 +1,17 @@
 {
-  "updated": "2026-04-14T23:44:30Z",
-  "totalFilings": 944,
-  "filings7d": 17,
-  "filings30d": 99,
-  "filings90d": 527,
-  "totalValue": 3669733051.13,
+  "updated": "2026-04-15T23:42:09Z",
+  "totalFilings": 958,
+  "filings7d": 34,
+  "filings30d": 117,
+  "filings90d": 537,
+  "totalValue": 3635015690.36,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "NVDA",
       {
         "total": 453867848.76,
-        "count": 27,
+        "count": 26,
         "name": "NVIDIA Corp"
       }
     ],
@@ -34,8 +34,8 @@
     [
       "GOOGL",
       {
-        "total": 259120843.49999997,
-        "count": 46,
+        "total": 259467931.49999997,
+        "count": 47,
         "name": "Alphabet Inc"
       }
     ],
@@ -64,18 +64,10 @@
       }
     ],
     [
-      "SNOW",
-      {
-        "total": 109707132.82,
-        "count": 40,
-        "name": "Snowflake Inc"
-      }
-    ],
-    [
       "META",
       {
-        "total": 101190841.0,
-        "count": 53,
+        "total": 101261967.0,
+        "count": 54,
         "name": "Meta Platforms Inc"
       }
     ],
@@ -85,6 +77,14 @@
         "total": 99484350.85000001,
         "count": 18,
         "name": "Caterpillar Inc"
+      }
+    ],
+    [
+      "BLK",
+      {
+        "total": 92323381.56,
+        "count": 10,
+        "name": "BlackRock Inc"
       }
     ]
   ],
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Slootman Frank",
+      "Samueli Foundation",
       {
-        "total": 78383529.06,
-        "count": 6,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
+        "total": 76786822.76,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
@@ -362,16 +362,6 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Slootman Frank",
-      "shares": 200000,
-      "approxPrice": 206.77,
-      "totalValue": 41353996.03,
-      "fileDate": "2026-01-20",
-      "relationship": "Director"
-    },
-    {
       "ticker": "NFLX",
       "company": "Netflix Inc",
       "insiderName": "Reed Hastings",
@@ -379,6 +369,16 @@
       "approxPrice": 95.49,
       "totalValue": 40156458.15,
       "fileDate": "2026-04-01",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "NFLX",
+      "company": "Netflix Inc",
+      "insiderName": "Reed Hastings",
+      "shares": 410550,
+      "approxPrice": 97.01,
+      "totalValue": 39828614.48,
+      "fileDate": "2026-03-02",
       "relationship": "Director"
     }
   ]
