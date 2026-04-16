@@ -1,20 +1,12 @@
 {
-  "updated": "2026-04-15T23:42:09Z",
-  "totalFilings": 958,
-  "filings7d": 34,
-  "filings30d": 117,
-  "filings90d": 537,
-  "totalValue": 3635015690.36,
+  "updated": "2026-04-16T23:40:50Z",
+  "totalFilings": 963,
+  "filings7d": 37,
+  "filings30d": 111,
+  "filings90d": 535,
+  "totalValue": 3591252305.36,
   "uniqueCompanies": 64,
   "topCompanies": [
-    [
-      "NVDA",
-      {
-        "total": 453867848.76,
-        "count": 26,
-        "name": "NVIDIA Corp"
-      }
-    ],
     [
       "AVGO",
       {
@@ -32,11 +24,11 @@
       }
     ],
     [
-      "GOOGL",
+      "NVDA",
       {
-        "total": 259467931.49999997,
-        "count": 47,
-        "name": "Alphabet Inc"
+        "total": 417860689.76,
+        "count": 25,
+        "name": "NVIDIA Corp"
       }
     ],
     [
@@ -45,6 +37,14 @@
         "total": 250402634.73,
         "count": 16,
         "name": "T-Mobile US"
+      }
+    ],
+    [
+      "GOOGL",
+      {
+        "total": 247709091.49999997,
+        "count": 47,
+        "name": "Alphabet Inc"
       }
     ],
     [
@@ -66,7 +66,7 @@
     [
       "META",
       {
-        "total": 101261967.0,
+        "total": 100947450.0,
         "count": 54,
         "name": "Meta Platforms Inc"
       }
@@ -80,11 +80,11 @@
       }
     ],
     [
-      "BLK",
+      "HOOD",
       {
-        "total": 92323381.56,
-        "count": 10,
-        "name": "BlackRock Inc"
+        "total": 91631630.47000001,
+        "count": 27,
+        "name": "Robinhood Markets"
       }
     ]
   ],
@@ -126,21 +126,21 @@
       }
     ],
     [
-      "Puri Ajay K",
-      {
-        "total": 145439350.0,
-        "count": 3,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
-      }
-    ],
-    [
       "Reed Hastings",
       {
         "total": 112680665.3,
         "count": 3,
         "ticker": "NFLX",
         "company": "Netflix Inc"
+      }
+    ],
+    [
+      "Puri Ajay K",
+      {
+        "total": 109432191.0,
+        "count": 2,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
       }
     ],
     [
