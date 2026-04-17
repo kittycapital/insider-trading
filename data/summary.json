@@ -1,9 +1,9 @@
 {
-  "updated": "2026-04-16T23:37:23Z",
+  "updated": "2026-04-17T23:35:55Z",
   "buyCount": 38,
-  "sellCount": 2499,
+  "sellCount": 2502,
   "buyVal": 53475482.51,
-  "sellVal": 85028179271.45,
+  "sellVal": 85034047531.45,
   "uniqueSymbols": 70,
   "topBuyStocks": [
     [
@@ -338,14 +338,14 @@
       "Healthcare",
       {
         "buys": 3358985.8219999997,
-        "sells": 78762012336.44226
+        "sells": 78762858096.44226
       }
     ],
     [
       "Consumer",
       {
         "buys": 11298135.5394,
-        "sells": 2541368903.821999
+        "sells": 2546391403.821999
       }
     ],
     [
