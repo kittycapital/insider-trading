@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-20T23:44:07Z",
-  "totalFilings": 960,
-  "filings7d": 40,
-  "filings30d": 90,
-  "filings90d": 527,
-  "totalValue": 3580227761.4,
+  "updated": "2026-04-21T23:37:11Z",
+  "totalFilings": 961,
+  "filings7d": 39,
+  "filings30d": 93,
+  "filings90d": 517,
+  "totalValue": 3593151694.52,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "NVDA",
       {
         "total": 417860689.76,
-        "count": 23,
+        "count": 22,
         "name": "NVIDIA Corp"
       }
     ],
