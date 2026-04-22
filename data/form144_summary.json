@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-21T23:37:11Z",
-  "totalFilings": 961,
-  "filings7d": 39,
-  "filings30d": 93,
-  "filings90d": 517,
-  "totalValue": 3593151694.52,
+  "updated": "2026-04-22T23:46:40Z",
+  "totalFilings": 960,
+  "filings7d": 40,
+  "filings30d": 97,
+  "filings90d": 516,
+  "totalValue": 3585136552.71,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "NVDA",
       {
         "total": 417860689.76,
-        "count": 22,
+        "count": 21,
         "name": "NVIDIA Corp"
       }
     ],
@@ -80,11 +80,11 @@
       }
     ],
     [
-      "HOOD",
+      "ABNB",
       {
-        "total": 91631630.47000001,
-        "count": 26,
-        "name": "Robinhood Markets"
+        "total": 91783271.98,
+        "count": 58,
+        "name": "Airbnb Inc"
       }
     ]
   ],
