@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-23T23:45:04Z",
-  "totalFilings": 951,
-  "filings7d": 25,
-  "filings30d": 95,
-  "filings90d": 512,
-  "totalValue": 3563161782.56,
+  "updated": "2026-04-24T23:40:14Z",
+  "totalFilings": 955,
+  "filings7d": 21,
+  "filings30d": 96,
+  "filings90d": 507,
+  "totalValue": 3575125076.21,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -82,8 +82,8 @@
     [
       "ABNB",
       {
-        "total": 91783271.98,
-        "count": 56,
+        "total": 93400553.44000001,
+        "count": 57,
         "name": "Airbnb Inc"
       }
     ]
