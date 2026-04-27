@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-24T23:40:14Z",
-  "totalFilings": 955,
-  "filings7d": 21,
-  "filings30d": 96,
-  "filings90d": 507,
-  "totalValue": 3575125076.21,
+  "updated": "2026-04-27T23:53:12Z",
+  "totalFilings": 952,
+  "filings7d": 24,
+  "filings30d": 89,
+  "filings90d": 509,
+  "totalValue": 3583689316.49,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "NVDA",
       {
         "total": 417860689.76,
-        "count": 20,
+        "count": 18,
         "name": "NVIDIA Corp"
       }
     ],
@@ -66,8 +66,8 @@
     [
       "META",
       {
-        "total": 101661185.0,
-        "count": 53,
+        "total": 102354276.0,
+        "count": 52,
         "name": "Meta Platforms Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "ABNB",
       {
         "total": 93400553.44000001,
-        "count": 57,
+        "count": 56,
         "name": "Airbnb Inc"
       }
     ]
