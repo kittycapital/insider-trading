@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-28T23:56:06Z",
-  "totalFilings": 953,
-  "filings7d": 24,
-  "filings30d": 94,
-  "filings90d": 507,
-  "totalValue": 3636372832.77,
+  "updated": "2026-04-29T23:55:28Z",
+  "totalFilings": 951,
+  "filings7d": 22,
+  "filings30d": 95,
+  "filings90d": 502,
+  "totalValue": 3638299010.68,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -43,16 +43,8 @@
       "GOOGL",
       {
         "total": 247709091.49999997,
-        "count": 47,
+        "count": 46,
         "name": "Alphabet Inc"
-      }
-    ],
-    [
-      "NFLX",
-      {
-        "total": 135536798.5,
-        "count": 23,
-        "name": "Netflix Inc"
       }
     ],
     [
@@ -61,6 +53,14 @@
         "total": 135365837.99,
         "count": 29,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "NFLX",
+      {
+        "total": 126763772.35000001,
+        "count": 23,
+        "name": "Netflix Inc"
       }
     ],
     [
