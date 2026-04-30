@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-29T23:55:28Z",
-  "totalFilings": 951,
-  "filings7d": 22,
-  "filings30d": 95,
-  "filings90d": 502,
-  "totalValue": 3638299010.68,
+  "updated": "2026-04-30T23:52:13Z",
+  "totalFilings": 949,
+  "filings7d": 25,
+  "filings30d": 98,
+  "filings90d": 506,
+  "totalValue": 3633849486.11,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -42,8 +42,8 @@
     [
       "GOOGL",
       {
-        "total": 247709091.49999997,
-        "count": 46,
+        "total": 247712253.49999997,
+        "count": 47,
         "name": "Alphabet Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "NFLX",
       {
         "total": 126763772.35000001,
-        "count": 23,
+        "count": 22,
         "name": "Netflix Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "META",
       {
         "total": 102354276.0,
-        "count": 52,
+        "count": 51,
         "name": "Meta Platforms Inc"
       }
     ],
