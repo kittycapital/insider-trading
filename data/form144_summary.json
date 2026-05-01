@@ -1,10 +1,10 @@
 {
-  "updated": "2026-04-30T23:52:13Z",
-  "totalFilings": 949,
-  "filings7d": 25,
-  "filings30d": 98,
-  "filings90d": 506,
-  "totalValue": 3633849486.11,
+  "updated": "2026-05-01T23:50:19Z",
+  "totalFilings": 959,
+  "filings7d": 32,
+  "filings30d": 104,
+  "filings90d": 508,
+  "totalValue": 3653547528.7,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "PLTR",
       {
-        "total": 426958849.09,
+        "total": 426900213.09,
         "count": 19,
         "name": "Palantir Technologies"
       }
@@ -34,8 +34,8 @@
     [
       "TMUS",
       {
-        "total": 250402634.73,
-        "count": 16,
+        "total": 251381668.07,
+        "count": 17,
         "name": "T-Mobile US"
       }
     ],
@@ -48,19 +48,19 @@
       }
     ],
     [
-      "CVX",
-      {
-        "total": 135365837.99,
-        "count": 29,
-        "name": "Chevron Corp"
-      }
-    ],
-    [
       "NFLX",
       {
         "total": 126763772.35000001,
-        "count": 22,
+        "count": 23,
         "name": "Netflix Inc"
+      }
+    ],
+    [
+      "CVX",
+      {
+        "total": 122828909.53000003,
+        "count": 29,
+        "name": "Chevron Corp"
       }
     ],
     [
@@ -74,8 +74,8 @@
     [
       "META",
       {
-        "total": 102354276.0,
-        "count": 51,
+        "total": 102605619.0,
+        "count": 52,
         "name": "Meta Platforms Inc"
       }
     ],
