@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-01T23:50:19Z",
-  "totalFilings": 959,
-  "filings7d": 32,
+  "updated": "2026-05-04T23:24:40Z",
+  "totalFilings": 951,
+  "filings7d": 37,
   "filings30d": 104,
-  "filings90d": 508,
-  "totalValue": 3653547528.7,
+  "filings90d": 502,
+  "totalValue": 3578386041.03,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -48,17 +48,9 @@
       }
     ],
     [
-      "NFLX",
-      {
-        "total": 126763772.35000001,
-        "count": 23,
-        "name": "Netflix Inc"
-      }
-    ],
-    [
       "CVX",
       {
-        "total": 122828909.53000003,
+        "total": 114852065.65000004,
         "count": 29,
         "name": "Chevron Corp"
       }
@@ -74,17 +66,25 @@
     [
       "META",
       {
-        "total": 102605619.0,
-        "count": 52,
+        "total": 103181207.0,
+        "count": 51,
         "name": "Meta Platforms Inc"
       }
     ],
     [
-      "CAT",
+      "NFLX",
       {
-        "total": 99484350.85000001,
-        "count": 18,
-        "name": "Caterpillar Inc"
+        "total": 94068179.68,
+        "count": 17,
+        "name": "Netflix Inc"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 91850603.48000002,
+        "count": 56,
+        "name": "Airbnb Inc"
       }
     ]
   ],
@@ -126,15 +126,6 @@
       }
     ],
     [
-      "Reed Hastings",
-      {
-        "total": 112680665.3,
-        "count": 3,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
-      }
-    ],
-    [
       "Puri Ajay K",
       {
         "total": 109432191.0,
@@ -168,6 +159,15 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Reed Hastings",
+      {
+        "total": 79985072.63,
+        "count": 2,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
       }
     ],
     [
