@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-04T23:24:40Z",
-  "totalFilings": 951,
-  "filings7d": 37,
-  "filings30d": 104,
+  "updated": "2026-05-05T23:23:53Z",
+  "totalFilings": 955,
+  "filings7d": 41,
+  "filings30d": 113,
   "filings90d": 502,
-  "totalValue": 3578386041.03,
+  "totalValue": 3603672030.76,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -43,16 +43,8 @@
       "GOOGL",
       {
         "total": 247712253.49999997,
-        "count": 47,
+        "count": 45,
         "name": "Alphabet Inc"
-      }
-    ],
-    [
-      "CVX",
-      {
-        "total": 114852065.65000004,
-        "count": 29,
-        "name": "Chevron Corp"
       }
     ],
     [
@@ -64,9 +56,25 @@
       }
     ],
     [
+      "CVX",
+      {
+        "total": 109862449.09000003,
+        "count": 29,
+        "name": "Chevron Corp"
+      }
+    ],
+    [
+      "AMZN",
+      {
+        "total": 106963723.08999999,
+        "count": 22,
+        "name": "Amazon.com Inc"
+      }
+    ],
+    [
       "META",
       {
-        "total": 103181207.0,
+        "total": 102814274.0,
         "count": 51,
         "name": "Meta Platforms Inc"
       }
@@ -75,16 +83,8 @@
       "NFLX",
       {
         "total": 94068179.68,
-        "count": 17,
+        "count": 19,
         "name": "Netflix Inc"
-      }
-    ],
-    [
-      "ABNB",
-      {
-        "total": 91850603.48000002,
-        "count": 56,
-        "name": "Airbnb Inc"
       }
     ]
   ],
@@ -262,6 +262,16 @@
       "relationship": "Officer"
     },
     {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "insiderName": "Day 1 Academies",
+      "shares": 220200,
+      "approxPrice": 275.27,
+      "totalValue": 60614189.76,
+      "fileDate": "2026-05-05",
+      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
+    },
+    {
       "ticker": "BLK",
       "company": "BlackRock Inc",
       "insiderName": "Goldstein Robert L.",
@@ -369,16 +379,6 @@
       "approxPrice": 95.49,
       "totalValue": 40156458.15,
       "fileDate": "2026-04-01",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings",
-      "shares": 410550,
-      "approxPrice": 97.01,
-      "totalValue": 39828614.48,
-      "fileDate": "2026-03-02",
       "relationship": "Director"
     }
   ]
