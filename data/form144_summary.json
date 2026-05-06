@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-05T23:23:53Z",
-  "totalFilings": 955,
-  "filings7d": 41,
-  "filings30d": 113,
-  "filings90d": 502,
-  "totalValue": 3603672030.76,
+  "updated": "2026-05-06T23:23:31Z",
+  "totalFilings": 956,
+  "filings7d": 42,
+  "filings30d": 119,
+  "filings90d": 497,
+  "totalValue": 3999200042.98,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -32,6 +32,14 @@
       }
     ],
     [
+      "LLY",
+      {
+        "total": 296661000.0,
+        "count": 7,
+        "name": "Eli Lilly"
+      }
+    ],
+    [
       "TMUS",
       {
         "total": 251381668.07,
@@ -56,35 +64,27 @@
       }
     ],
     [
+      "CAT",
+      {
+        "total": 109962163.9,
+        "count": 21,
+        "name": "Caterpillar Inc"
+      }
+    ],
+    [
       "CVX",
       {
         "total": 109862449.09000003,
-        "count": 29,
+        "count": 30,
         "name": "Chevron Corp"
       }
     ],
     [
-      "AMZN",
+      "AAPL",
       {
-        "total": 106963723.08999999,
-        "count": 22,
-        "name": "Amazon.com Inc"
-      }
-    ],
-    [
-      "META",
-      {
-        "total": 102814274.0,
-        "count": 51,
-        "name": "Meta Platforms Inc"
-      }
-    ],
-    [
-      "NFLX",
-      {
-        "total": 94068179.68,
-        "count": 19,
-        "name": "Netflix Inc"
+        "total": 107821739.28999999,
+        "count": 5,
+        "name": "Apple Inc"
       }
     ]
   ],
@@ -96,6 +96,15 @@
         "count": 1,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
+      }
+    ],
+    [
+      "Lilly Endowment, Inc.",
+      {
+        "total": 296661000.0,
+        "count": 1,
+        "ticker": "LLY",
+        "company": "Eli Lilly"
       }
     ],
     [
@@ -169,15 +178,6 @@
         "ticker": "NFLX",
         "company": "Netflix Inc"
       }
-    ],
-    [
-      "Samueli Foundation",
-      {
-        "total": 76786822.76,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
-      }
     ]
   ],
   "topFilings": [
@@ -190,6 +190,16 @@
       "totalValue": 303552000.0,
       "fileDate": "2026-03-20",
       "relationship": "Director"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 300000,
+      "approxPrice": 988.87,
+      "totalValue": 296661000.0,
+      "fileDate": "2026-05-06",
+      "relationship": "Shareholder"
     },
     {
       "ticker": "PLTR",
@@ -240,6 +250,16 @@
       "totalValue": 76786822.76,
       "fileDate": "2026-03-25",
       "relationship": "Affiliate"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc",
+      "insiderName": "Levinson Arthur D",
+      "shares": 250000,
+      "approxPrice": 284.76,
+      "totalValue": 71190164.0,
+      "fileDate": "2026-05-06",
+      "relationship": "Director"
     },
     {
       "ticker": "GOOGL",
@@ -359,26 +379,6 @@
       "approxPrice": 133.23,
       "totalValue": 46364040.0,
       "fileDate": "2026-03-09",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "PLTR",
-      "company": "Palantir Technologies",
-      "insiderName": "Stephen A Cohen",
-      "shares": 327088,
-      "approxPrice": 133.72,
-      "totalValue": 43737684.02,
-      "fileDate": "2026-02-20",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "NFLX",
-      "company": "Netflix Inc",
-      "insiderName": "Reed Hastings",
-      "shares": 420550,
-      "approxPrice": 95.49,
-      "totalValue": 40156458.15,
-      "fileDate": "2026-04-01",
       "relationship": "Director"
     }
   ]
