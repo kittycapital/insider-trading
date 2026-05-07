@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-06T23:23:31Z",
-  "totalFilings": 956,
-  "filings7d": 42,
-  "filings30d": 119,
-  "filings90d": 497,
-  "totalValue": 3999200042.98,
+  "updated": "2026-05-07T23:23:55Z",
+  "totalFilings": 951,
+  "filings7d": 45,
+  "filings30d": 120,
+  "filings90d": 494,
+  "totalValue": 3993263855.75,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -50,7 +50,7 @@
     [
       "GOOGL",
       {
-        "total": 247712253.49999997,
+        "total": 235276703.49999997,
         "count": 45,
         "name": "Alphabet Inc"
       }
@@ -61,14 +61,6 @@
         "total": 114670694.39,
         "count": 11,
         "name": "BlackRock Inc"
-      }
-    ],
-    [
-      "CAT",
-      {
-        "total": 109962163.9,
-        "count": 21,
-        "name": "Caterpillar Inc"
       }
     ],
     [
@@ -85,6 +77,14 @@
         "total": 107821739.28999999,
         "count": 5,
         "name": "Apple Inc"
+      }
+    ],
+    [
+      "AMZN",
+      {
+        "total": 106963723.08999999,
+        "count": 22,
+        "name": "Amazon.com Inc"
       }
     ]
   ],
