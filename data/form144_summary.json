@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-08T23:24:48Z",
-  "totalFilings": 957,
-  "filings7d": 44,
-  "filings30d": 125,
-  "filings90d": 488,
-  "totalValue": 3978811514.24,
+  "updated": "2026-05-11T23:24:43Z",
+  "totalFilings": 952,
+  "filings7d": 42,
+  "filings30d": 124,
+  "filings90d": 482,
+  "totalValue": 3936127244.86,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -35,7 +35,7 @@
       "LLY",
       {
         "total": 296661000.0,
-        "count": 7,
+        "count": 6,
         "name": "Eli Lilly"
       }
     ],
@@ -64,6 +64,14 @@
       }
     ],
     [
+      "CAT",
+      {
+        "total": 113561669.98,
+        "count": 21,
+        "name": "Caterpillar Inc"
+      }
+    ],
+    [
       "CVX",
       {
         "total": 109862449.09000003,
@@ -77,14 +85,6 @@
         "total": 107821739.28999999,
         "count": 5,
         "name": "Apple Inc"
-      }
-    ],
-    [
-      "AMZN",
-      {
-        "total": 106963723.08999999,
-        "count": 22,
-        "name": "Amazon.com Inc"
       }
     ]
   ],
@@ -302,16 +302,6 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "COIN",
-      "company": "Coinbase Global",
-      "insiderName": "Alesia Haas",
-      "shares": 364600,
-      "approxPrice": 152.21,
-      "totalValue": 55495799.51,
-      "fileDate": "2026-02-06",
-      "relationship": "Officer"
-    },
-    {
       "ticker": "NVDA",
       "company": "NVIDIA Corp",
       "insiderName": "Puri Ajay K",
@@ -380,6 +370,16 @@
       "totalValue": 46364040.0,
       "fileDate": "2026-03-09",
       "relationship": "Director"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Stephen A Cohen",
+      "shares": 327088,
+      "approxPrice": 133.72,
+      "totalValue": 43737684.02,
+      "fileDate": "2026-02-20",
+      "relationship": "Officer"
     }
   ]
 }
