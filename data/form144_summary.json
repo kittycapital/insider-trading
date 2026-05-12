@@ -1,12 +1,20 @@
 {
-  "updated": "2026-05-11T23:24:43Z",
-  "totalFilings": 952,
-  "filings7d": 42,
-  "filings30d": 124,
-  "filings90d": 482,
-  "totalValue": 3936127244.86,
+  "updated": "2026-05-12T23:29:15Z",
+  "totalFilings": 935,
+  "filings7d": 37,
+  "filings30d": 128,
+  "filings90d": 476,
+  "totalValue": 4227704106.83,
   "uniqueCompanies": 64,
   "topCompanies": [
+    [
+      "GOOGL",
+      {
+        "total": 549378069.5,
+        "count": 43,
+        "name": "Alphabet Inc"
+      }
+    ],
     [
       "AVGO",
       {
@@ -35,7 +43,7 @@
       "LLY",
       {
         "total": 296661000.0,
-        "count": 6,
+        "count": 5,
         "name": "Eli Lilly"
       }
     ],
@@ -43,16 +51,8 @@
       "TMUS",
       {
         "total": 251381668.07,
-        "count": 17,
+        "count": 16,
         "name": "T-Mobile US"
-      }
-    ],
-    [
-      "GOOGL",
-      {
-        "total": 235276703.49999997,
-        "count": 45,
-        "name": "Alphabet Inc"
       }
     ],
     [
@@ -61,14 +61,6 @@
         "total": 114670694.39,
         "count": 11,
         "name": "BlackRock Inc"
-      }
-    ],
-    [
-      "CAT",
-      {
-        "total": 113561669.98,
-        "count": 21,
-        "name": "Caterpillar Inc"
       }
     ],
     [
@@ -86,9 +78,26 @@
         "count": 5,
         "name": "Apple Inc"
       }
+    ],
+    [
+      "AMZN",
+      {
+        "total": 106963723.08999999,
+        "count": 21,
+        "name": "Amazon.com Inc"
+      }
     ]
   ],
   "topInsiders": [
+    [
+      "Mdc Trust I",
+      {
+        "total": 420150391.20000005,
+        "count": 4,
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc"
+      }
+    ],
     [
       "Mark A Stevens",
       {
@@ -141,15 +150,6 @@
         "count": 2,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
-      }
-    ],
-    [
-      "Mdc Trust I",
-      {
-        "total": 106049025.2,
-        "count": 2,
-        "ticker": "GOOGL",
-        "company": "Alphabet Inc"
       }
     ],
     [
@@ -229,6 +229,26 @@
       "approxPrice": 319.7,
       "totalValue": 170000150.06,
       "fileDate": "2026-03-25",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "Mdc Trust I",
+      "shares": 409000,
+      "approxPrice": 385.59,
+      "totalValue": 157704960.3,
+      "fileDate": "2026-05-12",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "Mdc Trust I",
+      "shares": 409000,
+      "approxPrice": 382.39,
+      "totalValue": 156396405.7,
+      "fileDate": "2026-05-12",
       "relationship": "Affiliate"
     },
     {
@@ -360,26 +380,6 @@
       "totalValue": 47032569.0,
       "fileDate": "2026-02-19",
       "relationship": "Holder of more than 10% of voting power"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Joseph Gebbia",
-      "shares": 348000,
-      "approxPrice": 133.23,
-      "totalValue": 46364040.0,
-      "fileDate": "2026-03-09",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "PLTR",
-      "company": "Palantir Technologies",
-      "insiderName": "Stephen A Cohen",
-      "shares": 327088,
-      "approxPrice": 133.72,
-      "totalValue": 43737684.02,
-      "fileDate": "2026-02-20",
-      "relationship": "Officer"
     }
   ]
 }
