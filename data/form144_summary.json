@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-12T23:29:15Z",
-  "totalFilings": 935,
-  "filings7d": 37,
-  "filings30d": 128,
-  "filings90d": 476,
-  "totalValue": 4227704106.83,
+  "updated": "2026-05-13T23:29:18Z",
+  "totalFilings": 929,
+  "filings7d": 33,
+  "filings30d": 133,
+  "filings90d": 470,
+  "totalValue": 4261817620.33,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "GOOGL",
       {
         "total": 549378069.5,
-        "count": 43,
+        "count": 39,
         "name": "Alphabet Inc"
       }
     ],
@@ -43,7 +43,7 @@
       "LLY",
       {
         "total": 296661000.0,
-        "count": 5,
+        "count": 4,
         "name": "Eli Lilly"
       }
     ],
@@ -53,6 +53,14 @@
         "total": 251381668.07,
         "count": 16,
         "name": "T-Mobile US"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 142107367.18,
+        "count": 19,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -77,14 +85,6 @@
         "total": 107821739.28999999,
         "count": 5,
         "name": "Apple Inc"
-      }
-    ],
-    [
-      "AMZN",
-      {
-        "total": 106963723.08999999,
-        "count": 21,
-        "name": "Amazon.com Inc"
       }
     ]
   ],
@@ -153,6 +153,15 @@
       }
     ],
     [
+      "Lisa Su",
+      {
+        "total": 100143050.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
+      }
+    ],
+    [
       "Li Susan J",
       {
         "total": 83977168.0,
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Reed Hastings",
-      {
-        "total": 79985072.63,
-        "count": 2,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
       }
     ]
   ],
@@ -322,6 +322,16 @@
       "relationship": "Officer"
     },
     {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Lisa Su",
+      "shares": 125000,
+      "approxPrice": 448.29,
+      "totalValue": 56036250.0,
+      "fileDate": "2026-05-13",
+      "relationship": "Director"
+    },
+    {
       "ticker": "NVDA",
       "company": "NVIDIA Corp",
       "insiderName": "Puri Ajay K",
@@ -370,16 +380,6 @@
       "totalValue": 52986801.6,
       "fileDate": "2026-02-27",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "QCOM",
-      "company": "Qualcomm",
-      "insiderName": "Qualcomm Inc",
-      "shares": 4526715,
-      "approxPrice": 10.39,
-      "totalValue": 47032569.0,
-      "fileDate": "2026-02-19",
-      "relationship": "Holder of more than 10% of voting power"
     }
   ]
 }
