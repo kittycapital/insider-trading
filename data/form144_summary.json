@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-13T23:29:18Z",
-  "totalFilings": 929,
-  "filings7d": 33,
-  "filings30d": 133,
-  "filings90d": 470,
-  "totalValue": 4261817620.33,
+  "updated": "2026-05-14T23:24:19Z",
+  "totalFilings": 932,
+  "filings7d": 34,
+  "filings30d": 136,
+  "filings90d": 467,
+  "totalValue": 4254351180.55,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -19,7 +19,7 @@
       "AVGO",
       {
         "total": 435952390.01,
-        "count": 32,
+        "count": 31,
         "name": "Broadcom Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "AMD",
       {
         "total": 142107367.18,
-        "count": 19,
+        "count": 18,
         "name": "AMD Inc"
       }
     ],
@@ -72,19 +72,19 @@
       }
     ],
     [
+      "CAT",
+      {
+        "total": 110297530.82,
+        "count": 23,
+        "name": "Caterpillar Inc"
+      }
+    ],
+    [
       "CVX",
       {
         "total": 109862449.09000003,
         "count": 30,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "AAPL",
-      {
-        "total": 107821739.28999999,
-        "count": 5,
-        "name": "Apple Inc"
       }
     ]
   ],
