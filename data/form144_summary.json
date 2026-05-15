@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-14T23:24:19Z",
-  "totalFilings": 932,
-  "filings7d": 34,
-  "filings30d": 136,
-  "filings90d": 467,
-  "totalValue": 4254351180.55,
+  "updated": "2026-05-15T23:25:07Z",
+  "totalFilings": 949,
+  "filings7d": 47,
+  "filings30d": 150,
+  "filings90d": 475,
+  "totalValue": 4173024594.17,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "GOOGL",
       {
-        "total": 549378069.5,
-        "count": 39,
+        "total": 549790945.25,
+        "count": 40,
         "name": "Alphabet Inc"
       }
     ],
@@ -58,17 +58,17 @@
     [
       "AMD",
       {
-        "total": 142107367.18,
-        "count": 18,
+        "total": 144710107.18,
+        "count": 19,
         "name": "AMD Inc"
       }
     ],
     [
-      "BLK",
+      "AMZN",
       {
-        "total": 114670694.39,
-        "count": 11,
-        "name": "BlackRock Inc"
+        "total": 113481484.61,
+        "count": 23,
+        "name": "Amazon.com Inc"
       }
     ],
     [
@@ -312,16 +312,6 @@
       "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     },
     {
-      "ticker": "BLK",
-      "company": "BlackRock Inc",
-      "insiderName": "Goldstein Robert L.",
-      "shares": 54190,
-      "approxPrice": 1087.29,
-      "totalValue": 58920187.96,
-      "fileDate": "2026-02-10",
-      "relationship": "Officer"
-    },
-    {
       "ticker": "AMD",
       "company": "AMD Inc",
       "insiderName": "Lisa Su",
@@ -380,6 +370,16 @@
       "totalValue": 52986801.6,
       "fileDate": "2026-02-27",
       "relationship": "Affiliate"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "insiderName": "Qualcomm Inc",
+      "shares": 4526715,
+      "approxPrice": 10.39,
+      "totalValue": 47032569.0,
+      "fileDate": "2026-02-19",
+      "relationship": "Holder of more than 10% of voting power"
     }
   ]
 }
