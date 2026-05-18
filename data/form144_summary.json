@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-15T23:25:07Z",
-  "totalFilings": 949,
+  "updated": "2026-05-18T23:28:41Z",
+  "totalFilings": 928,
   "filings7d": 47,
-  "filings30d": 150,
-  "filings90d": 475,
-  "totalValue": 4173024594.17,
+  "filings30d": 128,
+  "filings90d": 481,
+  "totalValue": 4127710834.62,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -51,14 +51,22 @@
       "TMUS",
       {
         "total": 251381668.07,
-        "count": 16,
+        "count": 13,
         "name": "T-Mobile US"
+      }
+    ],
+    [
+      "META",
+      {
+        "total": 114314537.0,
+        "count": 49,
+        "name": "Meta Platforms Inc"
       }
     ],
     [
       "AMD",
       {
-        "total": 144710107.18,
+        "total": 113796957.36,
         "count": 19,
         "name": "AMD Inc"
       }
@@ -66,17 +74,9 @@
     [
       "AMZN",
       {
-        "total": 113481484.61,
-        "count": 23,
+        "total": 110248976.37,
+        "count": 22,
         "name": "Amazon.com Inc"
-      }
-    ],
-    [
-      "CAT",
-      {
-        "total": 110297530.82,
-        "count": 23,
-        "name": "Caterpillar Inc"
       }
     ],
     [
@@ -153,19 +153,10 @@
       }
     ],
     [
-      "Lisa Su",
-      {
-        "total": 100143050.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
-      }
-    ],
-    [
       "Li Susan J",
       {
-        "total": 83977168.0,
-        "count": 3,
+        "total": 89566301.0,
+        "count": 4,
         "ticker": "META",
         "company": "Meta Platforms Inc"
       }
@@ -177,6 +168,15 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Reed Hastings",
+      {
+        "total": 79985072.63,
+        "count": 2,
+        "ticker": "NFLX",
+        "company": "Netflix Inc"
       }
     ]
   ],
