@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-18T23:28:41Z",
-  "totalFilings": 928,
-  "filings7d": 47,
-  "filings30d": 128,
-  "filings90d": 481,
-  "totalValue": 4127710834.62,
+  "updated": "2026-05-19T23:30:30Z",
+  "totalFilings": 925,
+  "filings7d": 45,
+  "filings30d": 134,
+  "filings90d": 462,
+  "totalValue": 3949677279.34,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "GOOGL",
       {
         "total": 549790945.25,
-        "count": 40,
+        "count": 38,
         "name": "Alphabet Inc"
       }
     ],
@@ -43,16 +43,8 @@
       "LLY",
       {
         "total": 296661000.0,
-        "count": 4,
+        "count": 3,
         "name": "Eli Lilly"
-      }
-    ],
-    [
-      "TMUS",
-      {
-        "total": 251381668.07,
-        "count": 13,
-        "name": "T-Mobile US"
       }
     ],
     [
@@ -67,7 +59,7 @@
       "AMD",
       {
         "total": 113796957.36,
-        "count": 19,
+        "count": 18,
         "name": "AMD Inc"
       }
     ],
@@ -85,6 +77,14 @@
         "total": 109862449.09000003,
         "count": 30,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "AAPL",
+      {
+        "total": 107821739.28999999,
+        "count": 5,
+        "name": "Apple Inc"
       }
     ]
   ],
@@ -123,15 +123,6 @@
         "count": 1,
         "ticker": "PLTR",
         "company": "Palantir Technologies"
-      }
-    ],
-    [
-      "Claure Mobile Llc",
-      {
-        "total": 219000000.0,
-        "count": 1,
-        "ticker": "TMUS",
-        "company": "T-Mobile US"
       }
     ],
     [
@@ -178,6 +169,15 @@
         "ticker": "NFLX",
         "company": "Netflix Inc"
       }
+    ],
+    [
+      "Samueli Foundation",
+      {
+        "total": 76786822.76,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
     ]
   ],
   "topFilings": [
@@ -210,16 +210,6 @@
       "totalValue": 280000000.0,
       "fileDate": "2026-03-02",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "TMUS",
-      "company": "T-Mobile US",
-      "insiderName": "Claure Mobile Llc",
-      "shares": 1000000,
-      "approxPrice": 219.0,
-      "totalValue": 219000000.0,
-      "fileDate": "2026-02-12",
-      "relationship": "Director"
     },
     {
       "ticker": "AVGO",
@@ -380,6 +370,16 @@
       "totalValue": 47032569.0,
       "fileDate": "2026-02-19",
       "relationship": "Holder of more than 10% of voting power"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Joseph Gebbia",
+      "shares": 348000,
+      "approxPrice": 133.23,
+      "totalValue": 46364040.0,
+      "fileDate": "2026-03-09",
+      "relationship": "Director"
     }
   ]
 }
