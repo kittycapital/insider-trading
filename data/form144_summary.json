@@ -1,16 +1,32 @@
 {
-  "updated": "2026-05-19T23:30:30Z",
-  "totalFilings": 925,
-  "filings7d": 45,
-  "filings30d": 134,
-  "filings90d": 462,
-  "totalValue": 3949677279.34,
-  "uniqueCompanies": 64,
+  "updated": "2026-05-20T23:33:11Z",
+  "totalFilings": 933,
+  "filings7d": 59,
+  "filings30d": 152,
+  "filings90d": 461,
+  "totalValue": 4670072716.79,
+  "uniqueCompanies": 65,
   "topCompanies": [
+    [
+      "LLY",
+      {
+        "total": 608191050.0,
+        "count": 4,
+        "name": "Eli Lilly"
+      }
+    ],
+    [
+      "PLTR",
+      {
+        "total": 552056496.33,
+        "count": 19,
+        "name": "Palantir Technologies"
+      }
+    ],
     [
       "GOOGL",
       {
-        "total": 549790945.25,
+        "total": 549606310.25,
         "count": 38,
         "name": "Alphabet Inc"
       }
@@ -24,14 +40,6 @@
       }
     ],
     [
-      "PLTR",
-      {
-        "total": 426900213.09,
-        "count": 19,
-        "name": "Palantir Technologies"
-      }
-    ],
-    [
       "NVDA",
       {
         "total": 417860689.76,
@@ -40,11 +48,19 @@
       }
     ],
     [
-      "LLY",
+      "XOM",
       {
-        "total": 296661000.0,
-        "count": 3,
-        "name": "Eli Lilly"
+        "total": 296974000.0,
+        "count": 1,
+        "name": "Exxon Mobil"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 122203759.14,
+        "count": 19,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -56,27 +72,11 @@
       }
     ],
     [
-      "AMD",
-      {
-        "total": 113796957.36,
-        "count": 18,
-        "name": "AMD Inc"
-      }
-    ],
-    [
       "AMZN",
       {
-        "total": 110248976.37,
-        "count": 22,
+        "total": 110065484.37,
+        "count": 21,
         "name": "Amazon.com Inc"
-      }
-    ],
-    [
-      "CVX",
-      {
-        "total": 109862449.09000003,
-        "count": 30,
-        "name": "Chevron Corp"
       }
     ],
     [
@@ -89,6 +89,15 @@
     ]
   ],
   "topInsiders": [
+    [
+      "Lilly Endowment, Inc.",
+      {
+        "total": 608191050.0,
+        "count": 2,
+        "ticker": "LLY",
+        "company": "Eli Lilly"
+      }
+    ],
     [
       "Mdc Trust I",
       {
@@ -108,12 +117,12 @@
       }
     ],
     [
-      "Lilly Endowment, Inc.",
+      "Exxon Mobil Corp",
       {
-        "total": 296661000.0,
+        "total": 296974000.0,
         "count": 1,
-        "ticker": "LLY",
-        "company": "Eli Lilly"
+        "ticker": "XOM",
+        "company": "Exxon Mobil"
       }
     ],
     [
@@ -135,6 +144,15 @@
       }
     ],
     [
+      "Alexander Karp",
+      {
+        "total": 120141887.18,
+        "count": 3,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
+      }
+    ],
+    [
       "Puri Ajay K",
       {
         "total": 109432191.0,
@@ -153,34 +171,26 @@
       }
     ],
     [
-      "D95Gt, Llc",
+      "Stephen A Cohen",
       {
-        "total": 80000154.82,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Reed Hastings",
-      {
-        "total": 79985072.63,
+        "total": 87262177.24000001,
         "count": 2,
-        "ticker": "NFLX",
-        "company": "Netflix Inc"
-      }
-    ],
-    [
-      "Samueli Foundation",
-      {
-        "total": 76786822.76,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
       }
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 305000,
+      "approxPrice": 1021.41,
+      "totalValue": 311530050.0,
+      "fileDate": "2026-05-20",
+      "relationship": "Shareholder"
+    },
     {
       "ticker": "NVDA",
       "company": "NVIDIA Corp",
@@ -190,6 +200,16 @@
       "totalValue": 303552000.0,
       "fileDate": "2026-03-20",
       "relationship": "Director"
+    },
+    {
+      "ticker": "XOM",
+      "company": "Exxon Mobil",
+      "insiderName": "Exxon Mobil Corp",
+      "shares": 16600000,
+      "approxPrice": 17.89,
+      "totalValue": 296974000.0,
+      "fileDate": "2026-05-20",
+      "relationship": "10% Stockholder"
     },
     {
       "ticker": "LLY",
@@ -335,6 +355,16 @@
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Alexander Karp",
+      "shares": 397744,
+      "approxPrice": 136.04,
+      "totalValue": 54109929.02,
+      "fileDate": "2026-05-20",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Alexander Karp",
       "shares": 403025,
       "approxPrice": 133.72,
       "totalValue": 53891858.16,
@@ -350,36 +380,6 @@
       "totalValue": 53062223.6,
       "fileDate": "2026-02-27",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "Mdc Trust I",
-      "shares": 172000,
-      "approxPrice": 308.06,
-      "totalValue": 52986801.6,
-      "fileDate": "2026-02-27",
-      "relationship": "Affiliate"
-    },
-    {
-      "ticker": "QCOM",
-      "company": "Qualcomm",
-      "insiderName": "Qualcomm Inc",
-      "shares": 4526715,
-      "approxPrice": 10.39,
-      "totalValue": 47032569.0,
-      "fileDate": "2026-02-19",
-      "relationship": "Holder of more than 10% of voting power"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Joseph Gebbia",
-      "shares": 348000,
-      "approxPrice": 133.23,
-      "totalValue": 46364040.0,
-      "fileDate": "2026-03-09",
-      "relationship": "Director"
     }
   ]
 }
