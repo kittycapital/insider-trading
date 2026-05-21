@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-20T23:33:11Z",
-  "totalFilings": 933,
-  "filings7d": 59,
-  "filings30d": 152,
-  "filings90d": 461,
-  "totalValue": 4670072716.79,
+  "updated": "2026-05-21T23:28:19Z",
+  "totalFilings": 932,
+  "filings7d": 64,
+  "filings30d": 157,
+  "filings90d": 458,
+  "totalValue": 4635343727.45,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -56,9 +56,17 @@
       }
     ],
     [
+      "AMZN",
+      {
+        "total": 121183369.29999998,
+        "count": 21,
+        "name": "Amazon.com Inc"
+      }
+    ],
+    [
       "AMD",
       {
-        "total": 122203759.14,
+        "total": 118180188.51,
         "count": 19,
         "name": "AMD Inc"
       }
@@ -69,14 +77,6 @@
         "total": 114314537.0,
         "count": 49,
         "name": "Meta Platforms Inc"
-      }
-    ],
-    [
-      "AMZN",
-      {
-        "total": 110065484.37,
-        "count": 21,
-        "name": "Amazon.com Inc"
       }
     ],
     [
