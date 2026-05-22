@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-21T23:28:19Z",
-  "totalFilings": 932,
-  "filings7d": 64,
-  "filings30d": 157,
-  "filings90d": 458,
-  "totalValue": 4635343727.45,
+  "updated": "2026-05-22T23:29:07Z",
+  "totalFilings": 938,
+  "filings7d": 63,
+  "filings30d": 160,
+  "filings90d": 450,
+  "totalValue": 4951364808.53,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "LLY",
       {
-        "total": 608191050.0,
-        "count": 4,
+        "total": 920686050.0,
+        "count": 5,
         "name": "Eli Lilly"
       }
     ],
@@ -58,8 +58,8 @@
     [
       "AMZN",
       {
-        "total": 121183369.29999998,
-        "count": 21,
+        "total": 123672642.4,
+        "count": 22,
         "name": "Amazon.com Inc"
       }
     ],
@@ -92,8 +92,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 608191050.0,
-        "count": 2,
+        "total": 920686050.0,
+        "count": 3,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -181,6 +181,16 @@
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 300000,
+      "approxPrice": 1041.65,
+      "totalValue": 312495000.0,
+      "fileDate": "2026-05-22",
+      "relationship": "Shareholder"
+    },
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
@@ -370,16 +380,6 @@
       "totalValue": 53891858.16,
       "fileDate": "2026-02-20",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "Mdc Trust I",
-      "shares": 172000,
-      "approxPrice": 308.5,
-      "totalValue": 53062223.6,
-      "fileDate": "2026-02-27",
-      "relationship": "Affiliate"
     }
   ]
 }
