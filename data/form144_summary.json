@@ -1,9 +1,9 @@
 {
-  "updated": "2026-05-22T23:29:07Z",
-  "totalFilings": 938,
-  "filings7d": 63,
-  "filings30d": 160,
-  "filings90d": 450,
+  "updated": "2026-05-25T23:30:23Z",
+  "totalFilings": 923,
+  "filings7d": 46,
+  "filings30d": 149,
+  "filings90d": 434,
   "totalValue": 4951364808.53,
   "uniqueCompanies": 65,
   "topCompanies": [
@@ -11,7 +11,7 @@
       "LLY",
       {
         "total": 920686050.0,
-        "count": 5,
+        "count": 4,
         "name": "Eli Lilly"
       }
     ],
@@ -19,7 +19,7 @@
       "PLTR",
       {
         "total": 552056496.33,
-        "count": 19,
+        "count": 18,
         "name": "Palantir Technologies"
       }
     ],
@@ -43,7 +43,7 @@
       "NVDA",
       {
         "total": 417860689.76,
-        "count": 17,
+        "count": 16,
         "name": "NVIDIA Corp"
       }
     ],
@@ -59,7 +59,7 @@
       "AMZN",
       {
         "total": 123672642.4,
-        "count": 22,
+        "count": 21,
         "name": "Amazon.com Inc"
       }
     ],
@@ -67,7 +67,7 @@
       "AMD",
       {
         "total": 118180188.51,
-        "count": 19,
+        "count": 18,
         "name": "AMD Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "META",
       {
         "total": 114314537.0,
-        "count": 49,
+        "count": 47,
         "name": "Meta Platforms Inc"
       }
     ],
