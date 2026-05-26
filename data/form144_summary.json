@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-25T23:30:23Z",
+  "updated": "2026-05-26T23:31:37Z",
   "totalFilings": 923,
   "filings7d": 46,
-  "filings30d": 149,
-  "filings90d": 434,
-  "totalValue": 4951364808.53,
+  "filings30d": 155,
+  "filings90d": 428,
+  "totalValue": 4949107817.29,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "GOOGL",
       {
-        "total": 549606310.25,
+        "total": 535047714.77000004,
         "count": 38,
         "name": "Alphabet Inc"
       }
@@ -74,8 +74,8 @@
     [
       "META",
       {
-        "total": 114314537.0,
-        "count": 47,
+        "total": 114324595.0,
+        "count": 48,
         "name": "Meta Platforms Inc"
       }
     ],
