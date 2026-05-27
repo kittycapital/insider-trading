@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-26T23:31:37Z",
-  "totalFilings": 923,
-  "filings7d": 46,
-  "filings30d": 155,
-  "filings90d": 428,
-  "totalValue": 4949107817.29,
+  "updated": "2026-05-27T23:32:49Z",
+  "totalFilings": 930,
+  "filings7d": 47,
+  "filings30d": 162,
+  "filings90d": 425,
+  "totalValue": 4987594777.86,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -42,8 +42,8 @@
     [
       "NVDA",
       {
-        "total": 417860689.76,
-        "count": 16,
+        "total": 417994439.76,
+        "count": 17,
         "name": "NVIDIA Corp"
       }
     ],
@@ -56,6 +56,14 @@
       }
     ],
     [
+      "ABNB",
+      {
+        "total": 149157780.32000002,
+        "count": 59,
+        "name": "Airbnb Inc"
+      }
+    ],
+    [
       "AMZN",
       {
         "total": 123672642.4,
@@ -64,27 +72,19 @@
       }
     ],
     [
+      "AAPL",
+      {
+        "total": 123372824.28999999,
+        "count": 6,
+        "name": "Apple Inc"
+      }
+    ],
+    [
       "AMD",
       {
         "total": 118180188.51,
         "count": 18,
         "name": "AMD Inc"
-      }
-    ],
-    [
-      "META",
-      {
-        "total": 114324595.0,
-        "count": 48,
-        "name": "Meta Platforms Inc"
-      }
-    ],
-    [
-      "AAPL",
-      {
-        "total": 107821739.28999999,
-        "count": 5,
-        "name": "Apple Inc"
       }
     ]
   ],
