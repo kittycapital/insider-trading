@@ -1,17 +1,17 @@
 {
-  "updated": "2026-05-27T23:32:49Z",
+  "updated": "2026-05-28T23:34:38Z",
   "totalFilings": 930,
-  "filings7d": 47,
-  "filings30d": 162,
-  "filings90d": 425,
-  "totalValue": 4987594777.86,
+  "filings7d": 39,
+  "filings30d": 167,
+  "filings90d": 433,
+  "totalValue": 5428558008.41,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "LLY",
       {
-        "total": 920686050.0,
-        "count": 4,
+        "total": 1256391250.0,
+        "count": 5,
         "name": "Eli Lilly"
       }
     ],
@@ -26,7 +26,7 @@
     [
       "GOOGL",
       {
-        "total": 535047714.77000004,
+        "total": 523994784.77000004,
         "count": 38,
         "name": "Alphabet Inc"
       }
@@ -58,9 +58,17 @@
     [
       "ABNB",
       {
-        "total": 149157780.32000002,
-        "count": 59,
+        "total": 184295371.16,
+        "count": 58,
         "name": "Airbnb Inc"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 177215464.69000006,
+        "count": 38,
+        "name": "Snowflake Inc"
       }
     ],
     [
@@ -78,22 +86,14 @@
         "count": 6,
         "name": "Apple Inc"
       }
-    ],
-    [
-      "AMD",
-      {
-        "total": 118180188.51,
-        "count": 18,
-        "name": "AMD Inc"
-      }
     ]
   ],
   "topInsiders": [
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 920686050.0,
-        "count": 3,
+        "total": 1256391250.0,
+        "count": 4,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -144,6 +144,15 @@
       }
     ],
     [
+      "Slootman Frank",
+      {
+        "total": 147853808.26999998,
+        "count": 7,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "Alexander Karp",
       {
         "total": 120141887.18,
@@ -169,18 +178,19 @@
         "ticker": "META",
         "company": "Meta Platforms Inc"
       }
-    ],
-    [
-      "Stephen A Cohen",
-      {
-        "total": 87262177.24000001,
-        "count": 2,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
-      }
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 310000,
+      "approxPrice": 1082.92,
+      "totalValue": 335705200.0,
+      "fileDate": "2026-05-28",
+      "relationship": "Shareholder"
+    },
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
@@ -272,6 +282,16 @@
       "relationship": "Affiliate"
     },
     {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 400000,
+      "approxPrice": 233.42,
+      "totalValue": 93366558.2,
+      "fileDate": "2026-05-28",
+      "relationship": "Director"
+    },
+    {
       "ticker": "AVGO",
       "company": "Broadcom Inc",
       "insiderName": "D95Gt, Llc",
@@ -359,26 +379,6 @@
       "approxPrice": 182.25,
       "totalValue": 54676153.0,
       "fileDate": "2026-03-18",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "PLTR",
-      "company": "Palantir Technologies",
-      "insiderName": "Alexander Karp",
-      "shares": 397744,
-      "approxPrice": 136.04,
-      "totalValue": 54109929.02,
-      "fileDate": "2026-05-20",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "PLTR",
-      "company": "Palantir Technologies",
-      "insiderName": "Alexander Karp",
-      "shares": 403025,
-      "approxPrice": 133.72,
-      "totalValue": 53891858.16,
-      "fileDate": "2026-02-20",
       "relationship": "Officer"
     }
   ]
