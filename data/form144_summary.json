@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-28T23:34:38Z",
-  "totalFilings": 930,
-  "filings7d": 39,
-  "filings30d": 167,
-  "filings90d": 433,
-  "totalValue": 5428558008.41,
+  "updated": "2026-05-29T23:34:07Z",
+  "totalFilings": 942,
+  "filings7d": 41,
+  "filings30d": 174,
+  "filings90d": 424,
+  "totalValue": 5465728462.68,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -18,16 +18,16 @@
     [
       "PLTR",
       {
-        "total": 552056496.33,
-        "count": 18,
+        "total": 552295444.11,
+        "count": 19,
         "name": "Palantir Technologies"
       }
     ],
     [
       "GOOGL",
       {
-        "total": 523994784.77000004,
-        "count": 38,
+        "total": 524033646.77000004,
+        "count": 39,
         "name": "Alphabet Inc"
       }
     ],
@@ -48,6 +48,14 @@
       }
     ],
     [
+      "SNOW",
+      {
+        "total": 312548501.75000006,
+        "count": 40,
+        "name": "Snowflake Inc"
+      }
+    ],
+    [
       "XOM",
       {
         "total": 296974000.0,
@@ -58,17 +66,9 @@
     [
       "ABNB",
       {
-        "total": 184295371.16,
-        "count": 58,
+        "total": 201270372.73,
+        "count": 59,
         "name": "Airbnb Inc"
-      }
-    ],
-    [
-      "SNOW",
-      {
-        "total": 177215464.69000006,
-        "count": 38,
-        "name": "Snowflake Inc"
       }
     ],
     [
@@ -135,21 +135,21 @@
       }
     ],
     [
+      "Slootman Frank",
+      {
+        "total": 258186647.0,
+        "count": 8,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "H&Amp;S Investments I Lp",
       {
         "total": 170000150.06,
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Slootman Frank",
-      {
-        "total": 147853808.26999998,
-        "count": 7,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
       }
     ],
     [
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Li Susan J",
+      "Chesky Brian",
       {
-        "total": 89566301.0,
-        "count": 4,
-        "ticker": "META",
-        "company": "Meta Platforms Inc"
+        "total": 95327340.56,
+        "count": 3,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ]
   ],
@@ -285,6 +285,16 @@
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
+      "shares": 437076,
+      "approxPrice": 252.43,
+      "totalValue": 110332838.73,
+      "fileDate": "2026-05-29",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
       "shares": 400000,
       "approxPrice": 233.42,
       "totalValue": 93366558.2,
@@ -369,16 +379,6 @@
       "approxPrice": 182.52,
       "totalValue": 54756038.0,
       "fileDate": "2026-03-10",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Puri Ajay K",
-      "shares": 300000,
-      "approxPrice": 182.25,
-      "totalValue": 54676153.0,
-      "fileDate": "2026-03-18",
       "relationship": "Officer"
     }
   ]
