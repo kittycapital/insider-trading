@@ -1,10 +1,10 @@
 {
-  "updated": "2026-05-29T23:34:07Z",
-  "totalFilings": 942,
-  "filings7d": 41,
-  "filings30d": 174,
-  "filings90d": 424,
-  "totalValue": 5465728462.68,
+  "updated": "2026-06-01T23:43:19Z",
+  "totalFilings": 931,
+  "filings7d": 47,
+  "filings30d": 168,
+  "filings90d": 412,
+  "totalValue": 5419361464.13,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -16,18 +16,10 @@
       }
     ],
     [
-      "PLTR",
-      {
-        "total": 552295444.11,
-        "count": 19,
-        "name": "Palantir Technologies"
-      }
-    ],
-    [
       "GOOGL",
       {
         "total": 524033646.77000004,
-        "count": 39,
+        "count": 38,
         "name": "Alphabet Inc"
       }
     ],
@@ -43,15 +35,23 @@
       "NVDA",
       {
         "total": 417994439.76,
-        "count": 17,
+        "count": 16,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "PLTR",
+      {
+        "total": 415306181.94,
+        "count": 20,
+        "name": "Palantir Technologies"
       }
     ],
     [
       "SNOW",
       {
-        "total": 312548501.75000006,
-        "count": 40,
+        "total": 358231264.73,
+        "count": 41,
         "name": "Snowflake Inc"
       }
     ],
@@ -66,8 +66,8 @@
     [
       "ABNB",
       {
-        "total": 201270372.73,
-        "count": 59,
+        "total": 235735840.17000005,
+        "count": 57,
         "name": "Airbnb Inc"
       }
     ],
@@ -117,6 +117,15 @@
       }
     ],
     [
+      "Slootman Frank",
+      {
+        "total": 301149409.9800001,
+        "count": 9,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "Exxon Mobil Corp",
       {
         "total": 296974000.0,
@@ -135,15 +144,6 @@
       }
     ],
     [
-      "Slootman Frank",
-      {
-        "total": 258186647.0,
-        "count": 8,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
-      }
-    ],
-    [
       "H&Amp;S Investments I Lp",
       {
         "total": 170000150.06,
@@ -153,12 +153,12 @@
       }
     ],
     [
-      "Alexander Karp",
+      "Chesky Brian",
       {
-        "total": 120141887.18,
-        "count": 3,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
+        "total": 130326543.4,
+        "count": 4,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ],
     [
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Chesky Brian",
+      "Li Susan J",
       {
-        "total": 95327340.56,
-        "count": 3,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
+        "total": 89566301.0,
+        "count": 4,
+        "ticker": "META",
+        "company": "Meta Platforms Inc"
       }
     ]
   ],
