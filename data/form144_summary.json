@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-01T23:43:19Z",
-  "totalFilings": 931,
-  "filings7d": 47,
-  "filings30d": 168,
-  "filings90d": 412,
-  "totalValue": 5419361464.13,
+  "updated": "2026-06-02T23:38:54Z",
+  "totalFilings": 929,
+  "filings7d": 51,
+  "filings30d": 172,
+  "filings90d": 407,
+  "totalValue": 5422331496.93,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -19,7 +19,7 @@
       "GOOGL",
       {
         "total": 524033646.77000004,
-        "count": 38,
+        "count": 36,
         "name": "Alphabet Inc"
       }
     ],
@@ -50,8 +50,8 @@
     [
       "SNOW",
       {
-        "total": 358231264.73,
-        "count": 41,
+        "total": 361017631.57000005,
+        "count": 42,
         "name": "Snowflake Inc"
       }
     ],
@@ -66,9 +66,17 @@
     [
       "ABNB",
       {
-        "total": 235735840.17000005,
-        "count": 57,
+        "total": 245159096.00000003,
+        "count": 58,
         "name": "Airbnb Inc"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 125701005.89,
+        "count": 21,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -77,14 +85,6 @@
         "total": 123672642.4,
         "count": 21,
         "name": "Amazon.com Inc"
-      }
-    ],
-    [
-      "AAPL",
-      {
-        "total": 123372824.28999999,
-        "count": 6,
-        "name": "Apple Inc"
       }
     ]
   ],
@@ -155,8 +155,8 @@
     [
       "Chesky Brian",
       {
-        "total": 130326543.4,
-        "count": 4,
+        "total": 138737127.31,
+        "count": 5,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Li Susan J",
+      "Levinson Arthur D",
       {
-        "total": 89566301.0,
-        "count": 4,
-        "ticker": "META",
-        "company": "Meta Platforms Inc"
+        "total": 86741249.0,
+        "count": 2,
+        "ticker": "AAPL",
+        "company": "Apple Inc"
       }
     ]
   ],
