@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-02T23:38:54Z",
-  "totalFilings": 929,
-  "filings7d": 51,
-  "filings30d": 172,
-  "filings90d": 407,
-  "totalValue": 5422331496.93,
+  "updated": "2026-06-03T23:38:19Z",
+  "totalFilings": 931,
+  "filings7d": 52,
+  "filings30d": 179,
+  "filings90d": 403,
+  "totalValue": 5590997818.29,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -34,8 +34,8 @@
     [
       "NVDA",
       {
-        "total": 417994439.76,
-        "count": 16,
+        "total": 421338302.81,
+        "count": 17,
         "name": "NVIDIA Corp"
       }
     ],
@@ -64,10 +64,18 @@
       }
     ],
     [
+      "HOOD",
+      {
+        "total": 259307046.89000002,
+        "count": 21,
+        "name": "Robinhood Markets"
+      }
+    ],
+    [
       "ABNB",
       {
         "total": 245159096.00000003,
-        "count": 58,
+        "count": 57,
         "name": "Airbnb Inc"
       }
     ],
@@ -75,16 +83,8 @@
       "AMD",
       {
         "total": 125701005.89,
-        "count": 21,
+        "count": 20,
         "name": "AMD Inc"
-      }
-    ],
-    [
-      "AMZN",
-      {
-        "total": 123672642.4,
-        "count": 21,
-        "name": "Amazon.com Inc"
       }
     ]
   ],
@@ -144,6 +144,15 @@
       }
     ],
     [
+      "Robinhood Markets, Inc.",
+      {
+        "total": 170200000.0,
+        "count": 1,
+        "ticker": "HOOD",
+        "company": "Robinhood Markets"
+      }
+    ],
+    [
       "H&Amp;S Investments I Lp",
       {
         "total": 170000150.06,
@@ -168,15 +177,6 @@
         "count": 2,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
-      }
-    ],
-    [
-      "Levinson Arthur D",
-      {
-        "total": 86741249.0,
-        "count": 2,
-        "ticker": "AAPL",
-        "company": "Apple Inc"
       }
     ]
   ],
@@ -250,6 +250,16 @@
       "totalValue": 280000000.0,
       "fileDate": "2026-03-02",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "insiderName": "Robinhood Markets, Inc.",
+      "shares": 3700000,
+      "approxPrice": 46.0,
+      "totalValue": 170200000.0,
+      "fileDate": "2026-06-03",
+      "relationship": "Parent Company / 10% Stockholder"
     },
     {
       "ticker": "AVGO",
@@ -370,16 +380,6 @@
       "totalValue": 56036250.0,
       "fileDate": "2026-05-13",
       "relationship": "Director"
-    },
-    {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Puri Ajay K",
-      "shares": 300000,
-      "approxPrice": 182.52,
-      "totalValue": 54756038.0,
-      "fileDate": "2026-03-10",
-      "relationship": "Officer"
     }
   ]
 }
