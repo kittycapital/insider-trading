@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-04T23:30:49Z",
-  "totalFilings": 927,
-  "filings7d": 48,
-  "filings30d": 173,
-  "filings90d": 401,
-  "totalValue": 5598281393.03,
+  "updated": "2026-06-05T23:31:49Z",
+  "totalFilings": 935,
+  "filings7d": 46,
+  "filings30d": 172,
+  "filings90d": 400,
+  "totalValue": 5659463033.08,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -50,8 +50,8 @@
     [
       "SNOW",
       {
-        "total": 361017631.57000005,
-        "count": 41,
+        "total": 373459619.07000005,
+        "count": 42,
         "name": "Snowflake Inc"
       }
     ],
@@ -74,8 +74,8 @@
     [
       "ABNB",
       {
-        "total": 253917168.86,
-        "count": 55,
+        "total": 257695749.63000003,
+        "count": 57,
         "name": "Airbnb Inc"
       }
     ],
@@ -164,8 +164,8 @@
     [
       "Chesky Brian",
       {
-        "total": 147495200.17000002,
-        "count": 6,
+        "total": 149727458.18,
+        "count": 7,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
