@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-05T23:31:49Z",
-  "totalFilings": 935,
-  "filings7d": 46,
-  "filings30d": 172,
-  "filings90d": 400,
-  "totalValue": 5659463033.08,
+  "updated": "2026-06-08T23:32:37Z",
+  "totalFilings": 922,
+  "filings7d": 39,
+  "filings30d": 161,
+  "filings90d": 397,
+  "totalValue": 5671002763.65,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "AVGO",
       {
         "total": 435952390.01,
-        "count": 31,
+        "count": 29,
         "name": "Broadcom Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "NVDA",
       {
         "total": 421338302.81,
-        "count": 17,
+        "count": 16,
         "name": "NVIDIA Corp"
       }
     ],
@@ -51,7 +51,7 @@
       "SNOW",
       {
         "total": 373459619.07000005,
-        "count": 42,
+        "count": 39,
         "name": "Snowflake Inc"
       }
     ],
@@ -64,6 +64,14 @@
       }
     ],
     [
+      "ABNB",
+      {
+        "total": 262798588.3,
+        "count": 54,
+        "name": "Airbnb Inc"
+      }
+    ],
+    [
       "HOOD",
       {
         "total": 259307046.89000002,
@@ -72,19 +80,11 @@
       }
     ],
     [
-      "ABNB",
+      "KO",
       {
-        "total": 257695749.63000003,
-        "count": 57,
-        "name": "Airbnb Inc"
-      }
-    ],
-    [
-      "AMD",
-      {
-        "total": 125701005.89,
-        "count": 20,
-        "name": "AMD Inc"
+        "total": 127220546.94999999,
+        "count": 19,
+        "name": "Coca-Cola Co"
       }
     ]
   ],
@@ -164,8 +164,8 @@
     [
       "Chesky Brian",
       {
-        "total": 149727458.18,
-        "count": 7,
+        "total": 154830296.85000002,
+        "count": 8,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
