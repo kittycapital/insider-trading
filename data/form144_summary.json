@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-08T23:32:37Z",
-  "totalFilings": 922,
-  "filings7d": 39,
-  "filings30d": 161,
-  "filings90d": 397,
-  "totalValue": 5671002763.65,
+  "updated": "2026-06-09T23:33:25Z",
+  "totalFilings": 926,
+  "filings7d": 32,
+  "filings30d": 166,
+  "filings90d": 396,
+  "totalValue": 5640768575.88,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -50,8 +50,8 @@
     [
       "SNOW",
       {
-        "total": 373459619.07000005,
-        "count": 39,
+        "total": 374111850.07000005,
+        "count": 40,
         "name": "Snowflake Inc"
       }
     ],
@@ -66,8 +66,8 @@
     [
       "ABNB",
       {
-        "total": 262798588.3,
-        "count": 54,
+        "total": 263367877.55,
+        "count": 55,
         "name": "Airbnb Inc"
       }
     ],
@@ -82,8 +82,8 @@
     [
       "KO",
       {
-        "total": 127220546.94999999,
-        "count": 19,
+        "total": 135174546.95,
+        "count": 20,
         "name": "Coca-Cola Co"
       }
     ]
@@ -164,8 +164,8 @@
     [
       "Chesky Brian",
       {
-        "total": 154830296.85000002,
-        "count": 8,
+        "total": 155399586.10000002,
+        "count": 9,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
