@@ -1,17 +1,17 @@
 {
-  "updated": "2026-06-09T23:33:25Z",
-  "totalFilings": 926,
-  "filings7d": 32,
-  "filings30d": 166,
-  "filings90d": 396,
-  "totalValue": 5640768575.88,
+  "updated": "2026-06-10T23:37:28Z",
+  "totalFilings": 927,
+  "filings7d": 34,
+  "filings30d": 172,
+  "filings90d": 398,
+  "totalValue": 5689746722.67,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "LLY",
       {
-        "total": 1256391250.0,
-        "count": 5,
+        "total": 1259268175.0,
+        "count": 6,
         "name": "Eli Lilly"
       }
     ],
@@ -80,11 +80,11 @@
       }
     ],
     [
-      "KO",
+      "AMD",
       {
-        "total": 135174546.95,
+        "total": 185139130.89000002,
         "count": 20,
-        "name": "Coca-Cola Co"
+        "name": "AMD Inc"
       }
     ]
   ],
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Puri Ajay K",
+      "Lisa Su",
       {
-        "total": 109432191.0,
-        "count": 2,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
+        "total": 132884925.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
       }
     ]
   ],
@@ -376,9 +376,9 @@
       "company": "AMD Inc",
       "insiderName": "Lisa Su",
       "shares": 125000,
-      "approxPrice": 448.29,
-      "totalValue": 56036250.0,
-      "fileDate": "2026-05-13",
+      "approxPrice": 475.5,
+      "totalValue": 59438125.0,
+      "fileDate": "2026-06-10",
       "relationship": "Director"
     }
   ]
