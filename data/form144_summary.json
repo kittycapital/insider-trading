@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-10T23:37:28Z",
-  "totalFilings": 927,
-  "filings7d": 34,
-  "filings30d": 172,
-  "filings90d": 398,
-  "totalValue": 5689746722.67,
+  "updated": "2026-06-11T23:36:04Z",
+  "totalFilings": 922,
+  "filings7d": 30,
+  "filings30d": 167,
+  "filings90d": 389,
+  "totalValue": 5681888152.53,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -35,7 +35,7 @@
       "NVDA",
       {
         "total": 421338302.81,
-        "count": 16,
+        "count": 15,
         "name": "NVIDIA Corp"
       }
     ],
@@ -43,7 +43,7 @@
       "PLTR",
       {
         "total": 415306181.94,
-        "count": 20,
+        "count": 19,
         "name": "Palantir Technologies"
       }
     ],
@@ -64,19 +64,19 @@
       }
     ],
     [
-      "ABNB",
+      "HOOD",
       {
-        "total": 263367877.55,
-        "count": 55,
-        "name": "Airbnb Inc"
+        "total": 264980380.73000002,
+        "count": 21,
+        "name": "Robinhood Markets"
       }
     ],
     [
-      "HOOD",
+      "ABNB",
       {
-        "total": 259307046.89000002,
-        "count": 20,
-        "name": "Robinhood Markets"
+        "total": 263367877.55,
+        "count": 52,
+        "name": "Airbnb Inc"
       }
     ],
     [

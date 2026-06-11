@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-10T23:33:29Z",
+  "updated": "2026-06-11T23:33:09Z",
   "buyCount": 34,
-  "sellCount": 1904,
+  "sellCount": 1914,
   "buyVal": 25204391.64,
-  "sellVal": 6543171299.74,
-  "uniqueSymbols": 71,
+  "sellVal": 6554126371.6,
+  "uniqueSymbols": 72,
   "topBuyStocks": [
     [
       "NKE",
@@ -353,21 +353,21 @@
       "Consumer",
       {
         "buys": 7282881.38,
-        "sells": 2598113037.985299
+        "sells": 2607551918.873699
       }
     ],
     [
       "Technology",
       {
         "buys": 7604753.709,
-        "sells": 1816969661.0499036
+        "sells": 1818000786.0499036
       }
     ],
     [
       "Healthcare",
       {
         "buys": 4229135.322000001,
-        "sells": 594308197.2465997
+        "sells": 594558357.2165997
       }
     ],
     [
@@ -381,7 +381,7 @@
       "Energy",
       {
         "buys": 0,
-        "sells": 489534894.0977
+        "sells": 489769800.0977
       }
     ],
     [
