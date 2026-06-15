@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-12T23:35:12Z",
-  "totalFilings": 923,
-  "filings7d": 28,
-  "filings30d": 164,
-  "filings90d": 384,
-  "totalValue": 5682529449.76,
-  "uniqueCompanies": 65,
+  "updated": "2026-06-15T23:38:05Z",
+  "totalFilings": 908,
+  "filings7d": 31,
+  "filings30d": 146,
+  "filings90d": 381,
+  "totalValue": 5667168305.72,
+  "uniqueCompanies": 66,
   "topCompanies": [
     [
       "LLY",
@@ -18,7 +18,7 @@
     [
       "GOOGL",
       {
-        "total": 524033646.77000004,
+        "total": 524417936.27000004,
         "count": 36,
         "name": "Alphabet Inc"
       }
@@ -27,7 +27,7 @@
       "AVGO",
       {
         "total": 435952390.01,
-        "count": 29,
+        "count": 25,
         "name": "Broadcom Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "NVDA",
       {
         "total": 421338302.81,
-        "count": 15,
+        "count": 14,
         "name": "NVIDIA Corp"
       }
     ],
@@ -51,7 +51,7 @@
       "SNOW",
       {
         "total": 374111850.07000005,
-        "count": 40,
+        "count": 37,
         "name": "Snowflake Inc"
       }
     ],
@@ -66,15 +66,15 @@
     [
       "HOOD",
       {
-        "total": 264980380.73000002,
-        "count": 21,
+        "total": 266093814.85000002,
+        "count": 22,
         "name": "Robinhood Markets"
       }
     ],
     [
       "ABNB",
       {
-        "total": 263367877.55,
+        "total": 266074372.79000002,
         "count": 52,
         "name": "Airbnb Inc"
       }
@@ -82,8 +82,8 @@
     [
       "AMD",
       {
-        "total": 185139130.89000002,
-        "count": 20,
+        "total": 188357110.89000002,
+        "count": 21,
         "name": "AMD Inc"
       }
     ]
@@ -164,8 +164,8 @@
     [
       "Chesky Brian",
       {
-        "total": 155399586.10000002,
-        "count": 9,
+        "total": 159654365.56,
+        "count": 10,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
