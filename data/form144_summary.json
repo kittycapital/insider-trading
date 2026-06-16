@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-15T23:38:05Z",
-  "totalFilings": 908,
-  "filings7d": 31,
-  "filings30d": 146,
-  "filings90d": 381,
-  "totalValue": 5667168305.72,
+  "updated": "2026-06-16T23:35:53Z",
+  "totalFilings": 913,
+  "filings7d": 38,
+  "filings30d": 158,
+  "filings90d": 380,
+  "totalValue": 5522468684.21,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -16,18 +16,10 @@
       }
     ],
     [
-      "GOOGL",
-      {
-        "total": 524417936.27000004,
-        "count": 36,
-        "name": "Alphabet Inc"
-      }
-    ],
-    [
       "AVGO",
       {
-        "total": 435952390.01,
-        "count": 25,
+        "total": 438005121.01,
+        "count": 24,
         "name": "Broadcom Inc"
       }
     ],
@@ -37,6 +29,14 @@
         "total": 421338302.81,
         "count": 14,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "GOOGL",
+      {
+        "total": 418368911.07,
+        "count": 34,
+        "name": "Alphabet Inc"
       }
     ],
     [
@@ -50,8 +50,8 @@
     [
       "SNOW",
       {
-        "total": 374111850.07000005,
-        "count": 37,
+        "total": 377694570.07000005,
+        "count": 40,
         "name": "Snowflake Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "ABNB",
       {
         "total": 266074372.79000002,
-        "count": 52,
+        "count": 51,
         "name": "Airbnb Inc"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Mdc Trust I",
       {
-        "total": 420150391.20000005,
-        "count": 4,
+        "total": 314101366.0,
+        "count": 2,
         "ticker": "GOOGL",
         "company": "Alphabet Inc"
       }
@@ -119,8 +119,8 @@
     [
       "Slootman Frank",
       {
-        "total": 301149409.9800001,
-        "count": 9,
+        "total": 303085249.9800001,
+        "count": 10,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
