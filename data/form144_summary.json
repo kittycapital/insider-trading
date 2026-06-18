@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-17T23:37:00Z",
-  "totalFilings": 912,
-  "filings7d": 38,
-  "filings30d": 163,
+  "updated": "2026-06-18T23:38:37Z",
+  "totalFilings": 909,
+  "filings7d": 36,
+  "filings30d": 161,
   "filings90d": 380,
-  "totalValue": 5520055551.23,
+  "totalValue": 5557150130.37,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -27,8 +27,16 @@
       "NVDA",
       {
         "total": 421338302.81,
-        "count": 14,
+        "count": 13,
         "name": "NVIDIA Corp"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 420898478.54999995,
+        "count": 40,
+        "name": "Snowflake Inc"
       }
     ],
     [
@@ -48,14 +56,6 @@
       }
     ],
     [
-      "SNOW",
-      {
-        "total": 376044470.07000005,
-        "count": 39,
-        "name": "Snowflake Inc"
-      }
-    ],
-    [
       "XOM",
       {
         "total": 296974000.0,
@@ -64,19 +64,19 @@
       }
     ],
     [
+      "ABNB",
+      {
+        "total": 267218230.61,
+        "count": 49,
+        "name": "Airbnb Inc"
+      }
+    ],
+    [
       "HOOD",
       {
         "total": 266093814.85000002,
         "count": 22,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "ABNB",
-      {
-        "total": 265586872.79000002,
-        "count": 51,
-        "name": "Airbnb Inc"
       }
     ],
     [
@@ -99,6 +99,15 @@
       }
     ],
     [
+      "Slootman Frank",
+      {
+        "total": 347939258.46,
+        "count": 11,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "Mdc Trust I",
       {
         "total": 314101366.0,
@@ -114,15 +123,6 @@
         "count": 1,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
-      }
-    ],
-    [
-      "Slootman Frank",
-      {
-        "total": 303085249.9800001,
-        "count": 10,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
       }
     ],
     [
