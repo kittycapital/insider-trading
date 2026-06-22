@@ -1,22 +1,22 @@
 {
-  "updated": "2026-06-19T23:24:38Z",
-  "buyCount": 33,
-  "sellCount": 1838,
-  "buyVal": 24752110.44,
-  "sellVal": 6273814758.97,
+  "updated": "2026-06-22T23:32:21Z",
+  "buyCount": 31,
+  "sellCount": 1819,
+  "buyVal": 21303530.3,
+  "sellVal": 6231785098.47,
   "uniqueSymbols": 72,
   "topBuyStocks": [
-    [
-      "NKE",
-      {
-        "total": 7184090.78,
-        "count": 7
-      }
-    ],
     [
       "ABT",
       {
         "total": 4229135.322000001,
+        "count": 5
+      }
+    ],
+    [
+      "NKE",
+      {
+        "total": 3735510.6400000006,
         "count": 5
       }
     ],
@@ -60,15 +60,15 @@
     [
       "AVGO",
       {
-        "total": 445275459.14830035,
-        "count": 115
+        "total": 410710651.7023002,
+        "count": 103
       }
     ],
     [
       "LLY",
       {
-        "total": 349532217.00100005,
-        "count": 37
+        "total": 346418888.06400007,
+        "count": 35
       }
     ],
     [
@@ -80,25 +80,6 @@
     ]
   ],
   "topBuyInsiders": [
-    [
-      "COOK TIMOTHY D",
-      {
-        "total": 4009250.0,
-        "sym": "NKE",
-        "txs": [
-          {
-            "sym": "NKE",
-            "date": "2025-12-22",
-            "val": 2948500.0
-          },
-          {
-            "sym": "NKE",
-            "date": "2026-04-10",
-            "val": 1060750.0
-          }
-        ]
-      }
-    ],
     [
       "McDermott William R",
       {
@@ -174,6 +155,20 @@
           }
         ]
       }
+    ],
+    [
+      "STANTON JOHN W",
+      {
+        "total": 1986750.0,
+        "sym": "MSFT",
+        "txs": [
+          {
+            "sym": "MSFT",
+            "date": "2026-02-18",
+            "val": 1986750.0
+          }
+        ]
+      }
     ]
   ],
   "topSellInsiders": [
@@ -214,7 +209,7 @@
     [
       "LILLY ENDOWMENT INC",
       {
-        "total": 346655292.00100005,
+        "total": 343541963.06400007,
         "sym": "LLY",
         "txs": [
           {
@@ -352,22 +347,22 @@
     [
       "Consumer",
       {
-        "buys": 7282881.38,
-        "sells": 2487201346.792199
+        "buys": 3834301.24,
+        "sells": 2486924212.792199
       }
     ],
     [
       "Technology",
       {
         "buys": 7152472.509,
-        "sells": 1699993334.8631024
+        "sells": 1661354137.2971025
       }
     ],
     [
       "Healthcare",
       {
         "buys": 4229135.322000001,
-        "sells": 599628077.8605998
+        "sells": 596514748.9235997
       }
     ],
     [

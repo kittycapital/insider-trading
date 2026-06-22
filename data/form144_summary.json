@@ -1,17 +1,17 @@
 {
-  "updated": "2026-06-19T23:28:09Z",
-  "totalFilings": 909,
-  "filings7d": 33,
-  "filings30d": 155,
-  "filings90d": 374,
-  "totalValue": 5561399290.52,
+  "updated": "2026-06-22T23:35:22Z",
+  "totalFilings": 900,
+  "filings7d": 36,
+  "filings30d": 125,
+  "filings90d": 373,
+  "totalValue": 5237278581.21,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
       "LLY",
       {
         "total": 1259268175.0,
-        "count": 6,
+        "count": 5,
         "name": "Eli Lilly"
       }
     ],
@@ -19,24 +19,24 @@
       "AVGO",
       {
         "total": 441083148.01,
-        "count": 26,
+        "count": 25,
         "name": "Broadcom Inc"
-      }
-    ],
-    [
-      "NVDA",
-      {
-        "total": 421338302.81,
-        "count": 13,
-        "name": "NVIDIA Corp"
       }
     ],
     [
       "SNOW",
       {
-        "total": 420898478.54999995,
-        "count": 40,
+        "total": 423071435.21000004,
+        "count": 38,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "NVDA",
+      {
+        "total": 422306212.67,
+        "count": 14,
+        "name": "NVIDIA Corp"
       }
     ],
     [
@@ -45,14 +45,6 @@
         "total": 418368911.07,
         "count": 34,
         "name": "Alphabet Inc"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 415306181.94,
-        "count": 19,
-        "name": "Palantir Technologies"
       }
     ],
     [
@@ -85,6 +77,14 @@
         "total": 188357110.89000002,
         "count": 21,
         "name": "AMD Inc"
+      }
+    ],
+    [
+      "PLTR",
+      {
+        "total": 135306181.94,
+        "count": 19,
+        "name": "Palantir Technologies"
       }
     ]
   ],
@@ -135,15 +135,6 @@
       }
     ],
     [
-      "Peter Thiel",
-      {
-        "total": 280000000.0,
-        "count": 1,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
-      }
-    ],
-    [
       "Robinhood Markets, Inc.",
       {
         "total": 170200000.0,
@@ -177,6 +168,15 @@
         "count": 3,
         "ticker": "AMD",
         "company": "AMD Inc"
+      }
+    ],
+    [
+      "Puri Ajay K",
+      {
+        "total": 109432191.0,
+        "count": 2,
+        "ticker": "NVDA",
+        "company": "NVIDIA Corp"
       }
     ]
   ],
@@ -240,16 +240,6 @@
       "totalValue": 296661000.0,
       "fileDate": "2026-05-06",
       "relationship": "Shareholder"
-    },
-    {
-      "ticker": "PLTR",
-      "company": "Palantir Technologies",
-      "insiderName": "Peter Thiel",
-      "shares": 2000000,
-      "approxPrice": 140.0,
-      "totalValue": 280000000.0,
-      "fileDate": "2026-03-02",
-      "relationship": "Officer"
     },
     {
       "ticker": "HOOD",
@@ -379,6 +369,16 @@
       "approxPrice": 475.5,
       "totalValue": 59438125.0,
       "fileDate": "2026-06-10",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Lisa Su",
+      "shares": 125000,
+      "approxPrice": 448.29,
+      "totalValue": 56036250.0,
+      "fileDate": "2026-05-13",
       "relationship": "Director"
     }
   ]
