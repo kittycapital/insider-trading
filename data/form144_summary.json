@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-22T23:35:22Z",
-  "totalFilings": 900,
-  "filings7d": 36,
-  "filings30d": 125,
-  "filings90d": 373,
-  "totalValue": 5237278581.21,
+  "updated": "2026-06-23T23:30:26Z",
+  "totalFilings": 904,
+  "filings7d": 29,
+  "filings30d": 129,
+  "filings90d": 374,
+  "totalValue": 5187117943.54,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 423071435.21000004,
-        "count": 38,
+        "total": 423670202.65999997,
+        "count": 39,
         "name": "Snowflake Inc"
       }
     ],
