@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-23T23:30:26Z",
-  "totalFilings": 904,
-  "filings7d": 29,
-  "filings30d": 129,
-  "filings90d": 374,
-  "totalValue": 5187117943.54,
+  "updated": "2026-06-24T23:30:44Z",
+  "totalFilings": 907,
+  "filings7d": 20,
+  "filings30d": 132,
+  "filings90d": 371,
+  "totalValue": 5222994493.45,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -58,8 +58,8 @@
     [
       "ABNB",
       {
-        "total": 267218230.61,
-        "count": 49,
+        "total": 285121480.52,
+        "count": 51,
         "name": "Airbnb Inc"
       }
     ],
@@ -342,6 +342,16 @@
       "relationship": "Affiliate"
     },
     {
+      "ticker": "ORCL",
+      "company": "Oracle Corp",
+      "insiderName": "Jeffrey O. Henley",
+      "shares": 400000,
+      "approxPrice": 165.16,
+      "totalValue": 66064000.0,
+      "fileDate": "2026-06-24",
+      "relationship": "Director"
+    },
+    {
       "ticker": "COP",
       "company": "ConocoPhillips",
       "insiderName": "Lance Ryan Michael",
@@ -369,16 +379,6 @@
       "approxPrice": 475.5,
       "totalValue": 59438125.0,
       "fileDate": "2026-06-10",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "AMD",
-      "company": "AMD Inc",
-      "insiderName": "Lisa Su",
-      "shares": 125000,
-      "approxPrice": 448.29,
-      "totalValue": 56036250.0,
-      "fileDate": "2026-05-13",
       "relationship": "Director"
     }
   ]
