@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-24T23:30:44Z",
-  "totalFilings": 907,
-  "filings7d": 20,
-  "filings30d": 132,
-  "filings90d": 371,
-  "totalValue": 5222994493.45,
+  "updated": "2026-06-25T23:34:16Z",
+  "totalFilings": 915,
+  "filings7d": 23,
+  "filings30d": 140,
+  "filings90d": 376,
+  "totalValue": 5549581935.26,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -18,8 +18,8 @@
     [
       "AVGO",
       {
-        "total": 441083148.01,
-        "count": 25,
+        "total": 778010426.4,
+        "count": 30,
         "name": "Broadcom Inc"
       }
     ],
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 418368911.07,
+        "total": 418334976.07,
         "count": 34,
         "name": "Alphabet Inc"
       }
@@ -58,15 +58,15 @@
     [
       "ABNB",
       {
-        "total": 285121480.52,
-        "count": 51,
+        "total": 285428050.27,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 266093814.85000002,
+        "total": 263730414.85000002,
         "count": 22,
         "name": "Robinhood Markets"
       }
@@ -135,21 +135,30 @@
       }
     ],
     [
+      "H&Amp;S Investments I Lp",
+      {
+        "total": 290002899.29,
+        "count": 2,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "D95Gt, Llc",
+      {
+        "total": 210003123.42,
+        "count": 2,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
       "Robinhood Markets, Inc.",
       {
         "total": 170200000.0,
         "count": 1,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
-      }
-    ],
-    [
-      "H&Amp;S Investments I Lp",
-      {
-        "total": 170000150.06,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
       }
     ],
     [
@@ -162,21 +171,12 @@
       }
     ],
     [
-      "Lisa Su",
+      "Samueli Foundation",
       {
-        "total": 132884925.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
-      }
-    ],
-    [
-      "Puri Ajay K",
-      {
-        "total": 109432191.0,
+        "total": 147993648.35000002,
         "count": 2,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
@@ -282,6 +282,26 @@
       "relationship": "Affiliate"
     },
     {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "D95Gt, Llc",
+      "shares": 340208,
+      "approxPrice": 382.13,
+      "totalValue": 130002968.6,
+      "fileDate": "2026-06-24",
+      "relationship": "Affiliate"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "H&Amp;S Investments I Lp",
+      "shares": 314033,
+      "approxPrice": 382.13,
+      "totalValue": 120002749.23,
+      "fileDate": "2026-06-24",
+      "relationship": "Chairman of the Board of Broadcom"
+    },
+    {
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
@@ -322,6 +342,16 @@
       "relationship": "Affiliate"
     },
     {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "Samueli Foundation",
+      "shares": 186089,
+      "approxPrice": 382.65,
+      "totalValue": 71206825.59,
+      "fileDate": "2026-06-24",
+      "relationship": "Affiliate"
+    },
+    {
       "ticker": "AAPL",
       "company": "Apple Inc",
       "insiderName": "Levinson Arthur D",
@@ -349,36 +379,6 @@
       "approxPrice": 165.16,
       "totalValue": 66064000.0,
       "fileDate": "2026-06-24",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "COP",
-      "company": "ConocoPhillips",
-      "insiderName": "Lance Ryan Michael",
-      "shares": 506800,
-      "approxPrice": 127.26,
-      "totalValue": 64493598.52,
-      "fileDate": "2026-03-20",
-      "relationship": "Officer"
-    },
-    {
-      "ticker": "AMZN",
-      "company": "Amazon.com Inc",
-      "insiderName": "Day 1 Academies",
-      "shares": 220200,
-      "approxPrice": 275.27,
-      "totalValue": 60614189.76,
-      "fileDate": "2026-05-05",
-      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
-    },
-    {
-      "ticker": "AMD",
-      "company": "AMD Inc",
-      "insiderName": "Lisa Su",
-      "shares": 125000,
-      "approxPrice": 475.5,
-      "totalValue": 59438125.0,
-      "fileDate": "2026-06-10",
       "relationship": "Director"
     }
   ]
