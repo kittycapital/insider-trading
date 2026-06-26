@@ -1,17 +1,17 @@
 {
-  "updated": "2026-06-25T23:34:16Z",
-  "totalFilings": 915,
-  "filings7d": 23,
-  "filings30d": 140,
-  "filings90d": 376,
-  "totalValue": 5549581935.26,
+  "updated": "2026-06-26T23:31:15Z",
+  "totalFilings": 920,
+  "filings7d": 24,
+  "filings30d": 139,
+  "filings90d": 378,
+  "totalValue": 5890383684.35,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
       "LLY",
       {
-        "total": 1259268175.0,
-        "count": 5,
+        "total": 1603213625.0,
+        "count": 6,
         "name": "Eli Lilly"
       }
     ],
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 423670202.65999997,
-        "count": 39,
+        "total": 423695202.65999997,
+        "count": 40,
         "name": "Snowflake Inc"
       }
     ],
@@ -42,8 +42,8 @@
     [
       "GOOGL",
       {
-        "total": 418334976.07,
-        "count": 34,
+        "total": 418488619.38,
+        "count": 35,
         "name": "Alphabet Inc"
       }
     ],
@@ -58,8 +58,8 @@
     [
       "ABNB",
       {
-        "total": 285428050.27,
-        "count": 52,
+        "total": 289972182.34,
+        "count": 53,
         "name": "Airbnb Inc"
       }
     ],
@@ -92,8 +92,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1256391250.0,
-        "count": 4,
+        "total": 1600336700.0,
+        "count": 5,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -101,8 +101,8 @@
     [
       "Slootman Frank",
       {
-        "total": 347939258.46,
-        "count": 11,
+        "total": 347964258.46,
+        "count": 12,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -181,6 +181,16 @@
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 305000,
+      "approxPrice": 1127.69,
+      "totalValue": 343945450.0,
+      "fileDate": "2026-06-26",
+      "relationship": "Shareholder"
+    },
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
@@ -370,16 +380,6 @@
       "totalValue": 69568632.0,
       "fileDate": "2026-03-12",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "ORCL",
-      "company": "Oracle Corp",
-      "insiderName": "Jeffrey O. Henley",
-      "shares": 400000,
-      "approxPrice": 165.16,
-      "totalValue": 66064000.0,
-      "fileDate": "2026-06-24",
-      "relationship": "Director"
     }
   ]
 }
