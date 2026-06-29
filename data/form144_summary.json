@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-26T23:31:15Z",
-  "totalFilings": 920,
-  "filings7d": 24,
-  "filings30d": 139,
-  "filings90d": 378,
-  "totalValue": 5890383684.35,
+  "updated": "2026-06-29T23:27:04Z",
+  "totalFilings": 913,
+  "filings7d": 29,
+  "filings30d": 115,
+  "filings90d": 379,
+  "totalValue": 5915259723.43,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "AVGO",
       {
-        "total": 778010426.4,
+        "total": 778609342.4,
         "count": 30,
         "name": "Broadcom Inc"
       }
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 423695202.65999997,
-        "count": 40,
+        "total": 448842772.82000005,
+        "count": 41,
         "name": "Snowflake Inc"
       }
     ],
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 418488619.38,
+        "total": 421500160.0,
         "count": 35,
         "name": "Alphabet Inc"
       }
@@ -58,7 +58,7 @@
     [
       "ABNB",
       {
-        "total": 289972182.34,
+        "total": 291224082.34,
         "count": 53,
         "name": "Airbnb Inc"
       }
@@ -101,8 +101,8 @@
     [
       "Slootman Frank",
       {
-        "total": 347964258.46,
-        "count": 12,
+        "total": 373111828.62000006,
+        "count": 13,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
