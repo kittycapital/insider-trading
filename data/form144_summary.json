@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-29T23:27:04Z",
-  "totalFilings": 913,
-  "filings7d": 29,
-  "filings30d": 115,
-  "filings90d": 379,
-  "totalValue": 5915259723.43,
+  "updated": "2026-06-30T23:33:13Z",
+  "totalFilings": 909,
+  "filings7d": 26,
+  "filings30d": 116,
+  "filings90d": 376,
+  "totalValue": 5914358396.42,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -19,7 +19,7 @@
       "AVGO",
       {
         "total": 778609342.4,
-        "count": 30,
+        "count": 29,
         "name": "Broadcom Inc"
       }
     ],
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 448842772.82000005,
-        "count": 41,
+        "count": 40,
         "name": "Snowflake Inc"
       }
     ],
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 421500160.0,
+        "total": 421539503.0,
         "count": 35,
         "name": "Alphabet Inc"
       }
