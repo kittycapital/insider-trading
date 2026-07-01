@@ -1,10 +1,10 @@
 {
-  "updated": "2026-06-30T23:33:13Z",
-  "totalFilings": 909,
-  "filings7d": 26,
-  "filings30d": 116,
-  "filings90d": 376,
-  "totalValue": 5914358396.42,
+  "updated": "2026-07-01T23:34:08Z",
+  "totalFilings": 917,
+  "filings7d": 30,
+  "filings30d": 124,
+  "filings90d": 379,
+  "totalValue": 5913176550.59,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 448842772.82000005,
-        "count": 40,
+        "total": 449489172.82000005,
+        "count": 41,
         "name": "Snowflake Inc"
       }
     ],
@@ -42,7 +42,7 @@
     [
       "GOOGL",
       {
-        "total": 421539503.0,
+        "total": 410459563.0,
         "count": 35,
         "name": "Alphabet Inc"
       }
@@ -58,7 +58,7 @@
     [
       "ABNB",
       {
-        "total": 291224082.34,
+        "total": 290639357.5,
         "count": 53,
         "name": "Airbnb Inc"
       }
@@ -66,7 +66,7 @@
     [
       "HOOD",
       {
-        "total": 263730414.85000002,
+        "total": 261811551.24,
         "count": 22,
         "name": "Robinhood Markets"
       }
@@ -74,7 +74,7 @@
     [
       "AMD",
       {
-        "total": 188357110.89000002,
+        "total": 187750310.89000002,
         "count": 21,
         "name": "AMD Inc"
       }
