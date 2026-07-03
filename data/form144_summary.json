@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-01T23:34:08Z",
-  "totalFilings": 917,
-  "filings7d": 30,
-  "filings30d": 124,
-  "filings90d": 379,
-  "totalValue": 5913176550.59,
+  "updated": "2026-07-03T00:05:47Z",
+  "totalFilings": 912,
+  "filings7d": 29,
+  "filings30d": 118,
+  "filings90d": 385,
+  "totalValue": 5964454346.9,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 449489172.82000005,
+        "total": 489277603.34999996,
         "count": 41,
         "name": "Snowflake Inc"
       }
@@ -35,7 +35,7 @@
       "NVDA",
       {
         "total": 422306212.67,
-        "count": 14,
+        "count": 13,
         "name": "NVIDIA Corp"
       }
     ],
@@ -58,16 +58,16 @@
     [
       "ABNB",
       {
-        "total": 290639357.5,
-        "count": 53,
+        "total": 294609873.76,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 261811551.24,
-        "count": 22,
+        "total": 265230006.19000003,
+        "count": 25,
         "name": "Robinhood Markets"
       }
     ],
@@ -82,8 +82,8 @@
     [
       "PLTR",
       {
-        "total": 135306181.94,
-        "count": 19,
+        "total": 159356181.94,
+        "count": 17,
         "name": "Palantir Technologies"
       }
     ]
