@@ -1,17 +1,17 @@
 {
-  "updated": "2026-07-07T00:07:44Z",
-  "totalFilings": 905,
-  "filings7d": 26,
-  "filings30d": 107,
-  "filings90d": 388,
-  "totalValue": 5976831932.7,
+  "updated": "2026-07-07T23:58:52Z",
+  "totalFilings": 906,
+  "filings7d": 27,
+  "filings30d": 108,
+  "filings90d": 389,
+  "totalValue": 6347863200.7,
   "uniqueCompanies": 66,
   "topCompanies": [
     [
       "LLY",
       {
-        "total": 1603213625.0,
-        "count": 6,
+        "total": 1975232225.0,
+        "count": 7,
         "name": "Eli Lilly"
       }
     ],
@@ -92,8 +92,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1600336700.0,
-        "count": 5,
+        "total": 1972355300.0,
+        "count": 6,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -181,6 +181,16 @@
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 310000,
+      "approxPrice": 1200.06,
+      "totalValue": 372018600.0,
+      "fileDate": "2026-07-07",
+      "relationship": "Shareholder"
+    },
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
@@ -370,16 +380,6 @@
       "totalValue": 71190164.0,
       "fileDate": "2026-05-06",
       "relationship": "Director"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "The Lawrence Page Trust",
-      "shares": 225360,
-      "approxPrice": 308.7,
-      "totalValue": 69568632.0,
-      "fileDate": "2026-03-12",
-      "relationship": "Affiliate"
     }
   ]
 }
