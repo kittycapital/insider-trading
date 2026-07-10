@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-09T00:09:31Z",
-  "totalFilings": 906,
-  "filings7d": 21,
-  "filings30d": 106,
+  "updated": "2026-07-10T00:05:11Z",
+  "totalFilings": 908,
+  "filings7d": 14,
+  "filings30d": 104,
   "filings90d": 385,
-  "totalValue": 6357093180.39,
-  "uniqueCompanies": 66,
+  "totalValue": 6059849065.54,
+  "uniqueCompanies": 65,
   "topCompanies": [
     [
       "LLY",
@@ -43,7 +43,7 @@
       "GOOGL",
       {
         "total": 410459563.0,
-        "count": 33,
+        "count": 36,
         "name": "Alphabet Inc"
       }
     ],
@@ -53,14 +53,6 @@
         "total": 307503756.18999994,
         "count": 25,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "XOM",
-      {
-        "total": 296974000.0,
-        "count": 1,
-        "name": "Exxon Mobil"
       }
     ],
     [
@@ -85,6 +77,14 @@
         "total": 159356181.94,
         "count": 17,
         "name": "Palantir Technologies"
+      }
+    ],
+    [
+      "AAPL",
+      {
+        "total": 123372824.28999999,
+        "count": 6,
+        "name": "Apple Inc"
       }
     ]
   ],
@@ -123,15 +123,6 @@
         "count": 1,
         "ticker": "NVDA",
         "company": "NVIDIA Corp"
-      }
-    ],
-    [
-      "Exxon Mobil Corp",
-      {
-        "total": 296974000.0,
-        "count": 1,
-        "ticker": "XOM",
-        "company": "Exxon Mobil"
       }
     ],
     [
@@ -177,6 +168,15 @@
         "count": 2,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Lisa Su",
+      {
+        "total": 132884925.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
       }
     ]
   ],
@@ -240,16 +240,6 @@
       "totalValue": 303552000.0,
       "fileDate": "2026-03-20",
       "relationship": "Director"
-    },
-    {
-      "ticker": "XOM",
-      "company": "Exxon Mobil",
-      "insiderName": "Exxon Mobil Corp",
-      "shares": 16600000,
-      "approxPrice": 17.89,
-      "totalValue": 296974000.0,
-      "fileDate": "2026-05-20",
-      "relationship": "10% Stockholder"
     },
     {
       "ticker": "LLY",
@@ -380,6 +370,16 @@
       "totalValue": 71190164.0,
       "fileDate": "2026-05-06",
       "relationship": "Director"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "insiderName": "The Lawrence Page Trust",
+      "shares": 225360,
+      "approxPrice": 308.7,
+      "totalValue": 69568632.0,
+      "fileDate": "2026-03-12",
+      "relationship": "Affiliate"
     }
   ]
 }
