@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-10T00:05:11Z",
-  "totalFilings": 908,
-  "filings7d": 14,
-  "filings30d": 104,
-  "filings90d": 385,
-  "totalValue": 6059849065.54,
+  "updated": "2026-07-10T23:59:15Z",
+  "totalFilings": 909,
+  "filings7d": 15,
+  "filings30d": 105,
+  "filings90d": 386,
+  "totalValue": 6015126249.54,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -18,8 +18,8 @@
     [
       "AVGO",
       {
-        "total": 788817421.7900001,
-        "count": 29,
+        "total": 798850643.7900001,
+        "count": 30,
         "name": "Broadcom Inc"
       }
     ],
@@ -32,19 +32,19 @@
       }
     ],
     [
-      "NVDA",
-      {
-        "total": 422306212.67,
-        "count": 12,
-        "name": "NVIDIA Corp"
-      }
-    ],
-    [
       "GOOGL",
       {
         "total": 410459563.0,
         "count": 36,
         "name": "Alphabet Inc"
+      }
+    ],
+    [
+      "NVDA",
+      {
+        "total": 367550174.67,
+        "count": 12,
+        "name": "NVIDIA Corp"
       }
     ],
     [
