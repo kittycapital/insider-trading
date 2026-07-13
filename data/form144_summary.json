@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-10T23:59:15Z",
-  "totalFilings": 909,
-  "filings7d": 15,
-  "filings30d": 105,
-  "filings90d": 386,
-  "totalValue": 6015126249.54,
+  "updated": "2026-07-13T23:54:03Z",
+  "totalFilings": 907,
+  "filings7d": 16,
+  "filings30d": 96,
+  "filings90d": 383,
+  "totalValue": 6015390766.54,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -35,7 +35,7 @@
       "GOOGL",
       {
         "total": 410459563.0,
-        "count": 36,
+        "count": 35,
         "name": "Alphabet Inc"
       }
     ],
