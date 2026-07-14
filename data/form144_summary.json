@@ -1,11 +1,11 @@
 {
-  "updated": "2026-07-13T23:54:03Z",
-  "totalFilings": 907,
-  "filings7d": 16,
-  "filings30d": 96,
-  "filings90d": 383,
-  "totalValue": 6015390766.54,
-  "uniqueCompanies": 65,
+  "updated": "2026-07-14T23:52:28Z",
+  "totalFilings": 901,
+  "filings7d": 11,
+  "filings30d": 98,
+  "filings90d": 382,
+  "totalValue": 6015167878.92,
+  "uniqueCompanies": 63,
   "topCompanies": [
     [
       "LLY",
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 501215502.08,
-        "count": 43,
+        "total": 501903002.08,
+        "count": 44,
         "name": "Snowflake Inc"
       }
     ],
