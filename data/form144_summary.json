@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-14T23:52:28Z",
-  "totalFilings": 901,
-  "filings7d": 11,
-  "filings30d": 98,
-  "filings90d": 382,
-  "totalValue": 6015167878.92,
+  "updated": "2026-07-15T23:58:59Z",
+  "totalFilings": 900,
+  "filings7d": 19,
+  "filings30d": 107,
+  "filings90d": 373,
+  "totalValue": 6082190910.22,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 501903002.08,
-        "count": 44,
+        "total": 515729502.08,
+        "count": 45,
         "name": "Snowflake Inc"
       }
     ],
@@ -50,7 +50,7 @@
     [
       "HOOD",
       {
-        "total": 307503756.18999994,
+        "total": 349253356.19000006,
         "count": 25,
         "name": "Robinhood Markets"
       }
@@ -66,8 +66,8 @@
     [
       "AMD",
       {
-        "total": 187750310.89000002,
-        "count": 21,
+        "total": 189552329.14000002,
+        "count": 22,
         "name": "AMD Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "PLTR",
       {
         "total": 159356181.94,
-        "count": 17,
+        "count": 18,
         "name": "Palantir Technologies"
       }
     ],
