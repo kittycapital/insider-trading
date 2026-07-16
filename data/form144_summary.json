@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-15T23:58:59Z",
-  "totalFilings": 900,
+  "updated": "2026-07-16T23:58:11Z",
+  "totalFilings": 888,
   "filings7d": 19,
-  "filings30d": 107,
-  "filings90d": 373,
-  "totalValue": 6082190910.22,
+  "filings30d": 99,
+  "filings90d": 368,
+  "totalValue": 6003178339.7,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -32,14 +32,6 @@
       }
     ],
     [
-      "GOOGL",
-      {
-        "total": 410459563.0,
-        "count": 35,
-        "name": "Alphabet Inc"
-      }
-    ],
-    [
       "NVDA",
       {
         "total": 367550174.67,
@@ -56,18 +48,26 @@
       }
     ],
     [
+      "GOOGL",
+      {
+        "total": 337902715.0,
+        "count": 35,
+        "name": "Alphabet Inc"
+      }
+    ],
+    [
       "ABNB",
       {
         "total": 250265927.72000003,
-        "count": 52,
+        "count": 50,
         "name": "Airbnb Inc"
       }
     ],
     [
       "AMD",
       {
-        "total": 189552329.14000002,
-        "count": 22,
+        "total": 172141779.14000002,
+        "count": 21,
         "name": "AMD Inc"
       }
     ],
@@ -173,8 +173,8 @@
     [
       "Lisa Su",
       {
-        "total": 132884925.0,
-        "count": 3,
+        "total": 115474375.0,
+        "count": 2,
         "ticker": "AMD",
         "company": "AMD Inc"
       }
@@ -372,14 +372,14 @@
       "relationship": "Director"
     },
     {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "The Lawrence Page Trust",
-      "shares": 225360,
-      "approxPrice": 308.7,
-      "totalValue": 69568632.0,
-      "fileDate": "2026-03-12",
-      "relationship": "Affiliate"
+      "ticker": "ORCL",
+      "company": "Oracle Corp",
+      "insiderName": "Jeffrey O. Henley",
+      "shares": 400000,
+      "approxPrice": 165.16,
+      "totalValue": 66064000.0,
+      "fileDate": "2026-06-24",
+      "relationship": "Director"
     }
   ]
 }
