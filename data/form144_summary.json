@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-17T23:52:09Z",
-  "totalFilings": 892,
-  "filings7d": 20,
-  "filings30d": 91,
+  "updated": "2026-07-20T23:57:27Z",
+  "totalFilings": 884,
+  "filings7d": 24,
+  "filings30d": 87,
   "filings90d": 370,
-  "totalValue": 6021223068.14,
+  "totalValue": 6106959891.41,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 515729502.08,
+        "total": 595215567.3299999,
         "count": 45,
         "name": "Snowflake Inc"
       }
@@ -34,7 +34,7 @@
     [
       "NVDA",
       {
-        "total": 367550174.67,
+        "total": 366994734.67,
         "count": 12,
         "name": "NVIDIA Corp"
       }
@@ -58,8 +58,8 @@
     [
       "ABNB",
       {
-        "total": 252174197.54000002,
-        "count": 51,
+        "total": 254154272.59,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Slootman Frank",
       {
-        "total": 372739286.14000005,
-        "count": 12,
+        "total": 452225351.3899999,
+        "count": 13,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -342,6 +342,16 @@
       "relationship": "Affiliate"
     },
     {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 289685,
+      "approxPrice": 274.39,
+      "totalValue": 79486065.25,
+      "fileDate": "2026-07-20",
+      "relationship": "Director"
+    },
+    {
       "ticker": "AVGO",
       "company": "Broadcom Inc",
       "insiderName": "Samueli Foundation",
@@ -369,16 +379,6 @@
       "approxPrice": 284.76,
       "totalValue": 71190164.0,
       "fileDate": "2026-05-06",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "ORCL",
-      "company": "Oracle Corp",
-      "insiderName": "Jeffrey O. Henley",
-      "shares": 400000,
-      "approxPrice": 165.16,
-      "totalValue": 66064000.0,
-      "fileDate": "2026-06-24",
       "relationship": "Director"
     }
   ]
