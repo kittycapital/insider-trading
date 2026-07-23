@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-23T00:01:49Z",
-  "totalFilings": 875,
-  "filings7d": 15,
-  "filings30d": 86,
-  "filings90d": 363,
-  "totalValue": 6104425403.72,
+  "updated": "2026-07-23T23:59:30Z",
+  "totalFilings": 868,
+  "filings7d": 17,
+  "filings30d": 88,
+  "filings90d": 365,
+  "totalValue": 6099032480.69,
   "uniqueCompanies": 62,
   "topCompanies": [
     [
@@ -59,7 +59,7 @@
       "ABNB",
       {
         "total": 254154272.59,
-        "count": 51,
+        "count": 50,
         "name": "Airbnb Inc"
       }
     ],
@@ -74,7 +74,7 @@
     [
       "PLTR",
       {
-        "total": 159356181.94,
+        "total": 149695381.94,
         "count": 18,
         "name": "Palantir Technologies"
       }
