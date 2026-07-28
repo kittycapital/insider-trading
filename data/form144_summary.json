@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-25T00:02:27Z",
-  "totalFilings": 873,
-  "filings7d": 15,
-  "filings30d": 82,
-  "filings90d": 366,
-  "totalValue": 6081550003.28,
+  "updated": "2026-07-28T00:01:52Z",
+  "totalFilings": 867,
+  "filings7d": 14,
+  "filings30d": 77,
+  "filings90d": 360,
+  "totalValue": 6071770094.7,
   "uniqueCompanies": 62,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "AVGO",
       {
-        "total": 771858063.7900001,
+        "total": 763530232.7900001,
         "count": 30,
         "name": "Broadcom Inc"
       }
@@ -50,7 +50,7 @@
     [
       "GOOGL",
       {
-        "total": 332691859.0,
+        "total": 332373079.0,
         "count": 33,
         "name": "Alphabet Inc"
       }
