@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-30T00:02:05Z",
-  "totalFilings": 869,
+  "updated": "2026-07-31T00:01:58Z",
+  "totalFilings": 863,
   "filings7d": 22,
-  "filings30d": 83,
-  "filings90d": 363,
-  "totalValue": 6082008668.24,
+  "filings30d": 84,
+  "filings90d": 355,
+  "totalValue": 6085677837.59,
   "uniqueCompanies": 62,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 609812508.7800001,
+        "total": 594207116.2700001,
         "count": 47,
         "name": "Snowflake Inc"
       }
@@ -50,8 +50,8 @@
     [
       "GOOGL",
       {
-        "total": 332522416.40000004,
-        "count": 33,
+        "total": 332549754.40000004,
+        "count": 34,
         "name": "Alphabet Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "ABNB",
       {
         "total": 254154272.59,
-        "count": 51,
+        "count": 49,
         "name": "Airbnb Inc"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Slootman Frank",
       {
-        "total": 453682335.53999996,
-        "count": 13,
+        "total": 438076943.03,
+        "count": 12,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
