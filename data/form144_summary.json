@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-31T00:01:58Z",
-  "totalFilings": 863,
+  "updated": "2026-08-01T00:01:05Z",
+  "totalFilings": 868,
   "filings7d": 22,
-  "filings30d": 84,
-  "filings90d": 355,
-  "totalValue": 6085677837.59,
+  "filings30d": 81,
+  "filings90d": 360,
+  "totalValue": 6052788357.98,
   "uniqueCompanies": 62,
   "topCompanies": [
     [
@@ -26,17 +26,9 @@
     [
       "SNOW",
       {
-        "total": 594207116.2700001,
-        "count": 47,
+        "total": 601222747.9100001,
+        "count": 48,
         "name": "Snowflake Inc"
-      }
-    ],
-    [
-      "NVDA",
-      {
-        "total": 366994734.67,
-        "count": 11,
-        "name": "NVIDIA Corp"
       }
     ],
     [
@@ -50,16 +42,24 @@
     [
       "GOOGL",
       {
-        "total": 332549754.40000004,
+        "total": 321256289.40000004,
         "count": 34,
         "name": "Alphabet Inc"
       }
     ],
     [
+      "NVDA",
+      {
+        "total": 312318581.67,
+        "count": 11,
+        "name": "NVIDIA Corp"
+      }
+    ],
+    [
       "ABNB",
       {
-        "total": 254154272.59,
-        "count": 49,
+        "total": 257635517.95000002,
+        "count": 50,
         "name": "Airbnb Inc"
       }
     ],
@@ -72,19 +72,19 @@
       }
     ],
     [
+      "KO",
+      {
+        "total": 155491738.36,
+        "count": 25,
+        "name": "Coca-Cola Co"
+      }
+    ],
+    [
       "PLTR",
       {
         "total": 149695381.94,
         "count": 18,
         "name": "Palantir Technologies"
-      }
-    ],
-    [
-      "KO",
-      {
-        "total": 142178157.91,
-        "count": 24,
-        "name": "Coca-Cola Co"
       }
     ]
   ],
@@ -101,8 +101,8 @@
     [
       "Slootman Frank",
       {
-        "total": 438076943.03,
-        "count": 12,
+        "total": 436096774.66999996,
+        "count": 11,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
