@@ -1,12 +1,20 @@
 {
-  "updated": "2026-08-01T00:01:05Z",
-  "totalFilings": 868,
-  "filings7d": 22,
-  "filings30d": 81,
-  "filings90d": 360,
-  "totalValue": 6052788357.98,
-  "uniqueCompanies": 62,
+  "updated": "2026-08-04T00:08:19Z",
+  "totalFilings": 850,
+  "filings7d": 35,
+  "filings30d": 88,
+  "filings90d": 359,
+  "totalValue": 9901220253.34,
+  "uniqueCompanies": 63,
   "topCompanies": [
+    [
+      "AMZN",
+      {
+        "total": 4184929738.99,
+        "count": 22,
+        "name": "Amazon.com Inc"
+      }
+    ],
     [
       "LLY",
       {
@@ -26,7 +34,7 @@
     [
       "SNOW",
       {
-        "total": 601222747.9100001,
+        "total": 603598512.9599999,
         "count": 48,
         "name": "Snowflake Inc"
       }
@@ -34,8 +42,8 @@
     [
       "HOOD",
       {
-        "total": 354253428.53000003,
-        "count": 26,
+        "total": 349253413.01000005,
+        "count": 25,
         "name": "Robinhood Markets"
       }
     ],
@@ -43,23 +51,15 @@
       "GOOGL",
       {
         "total": 321256289.40000004,
-        "count": 34,
+        "count": 32,
         "name": "Alphabet Inc"
-      }
-    ],
-    [
-      "NVDA",
-      {
-        "total": 312318581.67,
-        "count": 11,
-        "name": "NVIDIA Corp"
       }
     ],
     [
       "ABNB",
       {
-        "total": 257635517.95000002,
-        "count": 50,
+        "total": 260277039.29000002,
+        "count": 51,
         "name": "Airbnb Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "KO",
       {
         "total": 155491738.36,
-        "count": 25,
+        "count": 24,
         "name": "Coca-Cola Co"
       }
     ],
@@ -83,12 +83,21 @@
       "PLTR",
       {
         "total": 149695381.94,
-        "count": 18,
+        "count": 17,
         "name": "Palantir Technologies"
       }
     ]
   ],
   "topInsiders": [
+    [
+      "Jeffrey P. Bezos",
+      {
+        "total": 4073700000.0,
+        "count": 1,
+        "ticker": "AMZN",
+        "company": "Amazon.com Inc"
+      }
+    ],
     [
       "Lilly Endowment, Inc.",
       {
@@ -114,15 +123,6 @@
         "count": 2,
         "ticker": "GOOGL",
         "company": "Alphabet Inc"
-      }
-    ],
-    [
-      "Mark A Stevens",
-      {
-        "total": 303552000.0,
-        "count": 1,
-        "ticker": "NVDA",
-        "company": "NVIDIA Corp"
       }
     ],
     [
@@ -171,16 +171,26 @@
       }
     ],
     [
-      "Lisa Su",
+      "John B Hess",
       {
-        "total": 115474375.0,
-        "count": 2,
-        "ticker": "AMD",
-        "company": "AMD Inc"
+        "total": 137942705.96,
+        "count": 1,
+        "ticker": "CVX",
+        "company": "Chevron Corp"
       }
     ]
   ],
   "topFilings": [
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "insiderName": "Jeffrey P. Bezos",
+      "shares": 15000000,
+      "approxPrice": 271.58,
+      "totalValue": 4073700000.0,
+      "fileDate": "2026-08-03",
+      "relationship": "Director"
+    },
     {
       "ticker": "LLY",
       "company": "Eli Lilly",
@@ -232,16 +242,6 @@
       "relationship": "Shareholder"
     },
     {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corp",
-      "insiderName": "Mark A Stevens",
-      "shares": 1700000,
-      "approxPrice": 178.56,
-      "totalValue": 303552000.0,
-      "fileDate": "2026-03-20",
-      "relationship": "Director"
-    },
-    {
       "ticker": "LLY",
       "company": "Eli Lilly",
       "insiderName": "Lilly Endowment, Inc.",
@@ -290,6 +290,16 @@
       "totalValue": 156396405.7,
       "fileDate": "2026-05-12",
       "relationship": "Affiliate"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corp",
+      "insiderName": "John B Hess",
+      "shares": 710665,
+      "approxPrice": 194.1,
+      "totalValue": 137942705.96,
+      "fileDate": "2026-08-03",
+      "relationship": "Director"
     },
     {
       "ticker": "AVGO",
@@ -370,16 +380,6 @@
       "totalValue": 71206825.59,
       "fileDate": "2026-06-24",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "AAPL",
-      "company": "Apple Inc",
-      "insiderName": "Levinson Arthur D",
-      "shares": 250000,
-      "approxPrice": 284.76,
-      "totalValue": 71190164.0,
-      "fileDate": "2026-05-06",
-      "relationship": "Director"
     }
   ]
 }
