@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-05T23:59:35Z",
-  "totalFilings": 859,
-  "filings7d": 45,
+  "updated": "2026-08-07T01:45:06Z",
+  "totalFilings": 855,
+  "filings7d": 46,
   "filings30d": 104,
-  "filings90d": 369,
-  "totalValue": 9568796367.25,
+  "filings90d": 367,
+  "totalValue": 9542800090.57,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 603598512.9599999,
-        "count": 48,
+        "total": 603006260.16,
+        "count": 47,
         "name": "Snowflake Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "ABNB",
       {
         "total": 258786098.93,
-        "count": 51,
+        "count": 50,
         "name": "Airbnb Inc"
       }
     ],
@@ -74,16 +74,16 @@
     [
       "KO",
       {
-        "total": 155491738.36,
-        "count": 24,
+        "total": 160319632.63,
+        "count": 25,
         "name": "Coca-Cola Co"
       }
     ],
     [
       "PLTR",
       {
-        "total": 150188567.06,
-        "count": 18,
+        "total": 155644017.06,
+        "count": 19,
         "name": "Palantir Technologies"
       }
     ]
