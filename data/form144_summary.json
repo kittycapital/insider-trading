@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-07T01:45:06Z",
-  "totalFilings": 855,
-  "filings7d": 46,
-  "filings30d": 104,
-  "filings90d": 367,
-  "totalValue": 9542800090.57,
+  "updated": "2026-08-07T23:32:50Z",
+  "totalFilings": 862,
+  "filings7d": 53,
+  "filings30d": 111,
+  "filings90d": 374,
+  "totalValue": 9665805585.28,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -18,17 +18,25 @@
     [
       "LLY",
       {
-        "total": 1975232225.0,
-        "count": 7,
+        "total": 1987132225.0,
+        "count": 8,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 603006260.16,
-        "count": 47,
+        "total": 621679323.47,
+        "count": 49,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 404327113.60999995,
+        "count": 53,
+        "name": "Airbnb Inc"
       }
     ],
     [
@@ -42,7 +50,7 @@
     [
       "HOOD",
       {
-        "total": 349253413.01000005,
+        "total": 323415913.01000005,
         "count": 25,
         "name": "Robinhood Markets"
       }
@@ -56,17 +64,9 @@
       }
     ],
     [
-      "ABNB",
-      {
-        "total": 258786098.93,
-        "count": 50,
-        "name": "Airbnb Inc"
-      }
-    ],
-    [
       "AMD",
       {
-        "total": 172141779.14000002,
+        "total": 171400854.14000002,
         "count": 21,
         "name": "AMD Inc"
       }
@@ -126,21 +126,30 @@
       }
     ],
     [
+      "Chesky Brian",
+      {
+        "total": 211162498.94,
+        "count": 11,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
+      }
+    ],
+    [
+      "Blecharczyk Nathan",
+      {
+        "total": 187324004.42999995,
+        "count": 23,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
+      }
+    ],
+    [
       "Robinhood Markets, Inc.",
       {
         "total": 170200000.0,
         "count": 1,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
-      }
-    ],
-    [
-      "Chesky Brian",
-      {
-        "total": 159654365.56,
-        "count": 10,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
       }
     ],
     [
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Lisa Su",
-      {
-        "total": 115474375.0,
-        "count": 2,
-        "ticker": "AMD",
-        "company": "AMD Inc"
       }
     ]
   ],
@@ -332,6 +332,16 @@
       "relationship": "Director"
     },
     {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Blecharczyk Nathan",
+      "shares": 531000,
+      "approxPrice": 174.41,
+      "totalValue": 92614061.3,
+      "fileDate": "2026-08-07",
+      "relationship": "Officer"
+    },
+    {
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
@@ -370,16 +380,6 @@
       "totalValue": 66064000.0,
       "fileDate": "2026-06-24",
       "relationship": "Director"
-    },
-    {
-      "ticker": "AMZN",
-      "company": "Amazon.com Inc",
-      "insiderName": "Day 1 Academies",
-      "shares": 220200,
-      "approxPrice": 275.27,
-      "totalValue": 60614189.76,
-      "fileDate": "2026-05-05",
-      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     }
   ]
 }
