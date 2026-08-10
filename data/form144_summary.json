@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-07T23:32:50Z",
-  "totalFilings": 862,
-  "filings7d": 53,
+  "updated": "2026-08-10T23:33:16Z",
+  "totalFilings": 845,
+  "filings7d": 55,
   "filings30d": 111,
-  "filings90d": 374,
-  "totalValue": 9665805585.28,
+  "filings90d": 373,
+  "totalValue": 9658258980.6,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -18,8 +18,8 @@
     [
       "LLY",
       {
-        "total": 1987132225.0,
-        "count": 8,
+        "total": 1989503645.0,
+        "count": 9,
         "name": "Eli Lilly"
       }
     ],
@@ -34,7 +34,7 @@
     [
       "ABNB",
       {
-        "total": 404327113.60999995,
+        "total": 403835901.10999995,
         "count": 53,
         "name": "Airbnb Inc"
       }
@@ -42,7 +42,7 @@
     [
       "AVGO",
       {
-        "total": 380748714.9700001,
+        "total": 366220742.7800001,
         "count": 30,
         "name": "Broadcom Inc"
       }
@@ -51,7 +51,7 @@
       "HOOD",
       {
         "total": 323415913.01000005,
-        "count": 25,
+        "count": 24,
         "name": "Robinhood Markets"
       }
     ],
@@ -74,8 +74,8 @@
     [
       "KO",
       {
-        "total": 160319632.63,
-        "count": 25,
+        "total": 161180999.63,
+        "count": 26,
         "name": "Coca-Cola Co"
       }
     ],
