@@ -1,11 +1,11 @@
 {
-  "updated": "2026-08-13T23:39:35Z",
-  "totalFilings": 830,
-  "filings7d": 37,
-  "filings30d": 125,
-  "filings90d": 372,
-  "totalValue": 9721354754.5,
-  "uniqueCompanies": 63,
+  "updated": "2026-08-14T23:20:44Z",
+  "totalFilings": 836,
+  "filings7d": 35,
+  "filings30d": 129,
+  "filings90d": 361,
+  "totalValue": 9775306534.52,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
@@ -34,8 +34,8 @@
     [
       "ABNB",
       {
-        "total": 402343345.42999995,
-        "count": 51,
+        "total": 406612405.42999995,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
@@ -48,14 +48,6 @@
       }
     ],
     [
-      "HOOD",
-      {
-        "total": 323415913.01000005,
-        "count": 24,
-        "name": "Robinhood Markets"
-      }
-    ],
-    [
       "GOOGL",
       {
         "total": 318703525.58000004,
@@ -64,10 +56,26 @@
       }
     ],
     [
+      "HOOD",
+      {
+        "total": 298534117.38000005,
+        "count": 25,
+        "name": "Robinhood Markets"
+      }
+    ],
+    [
+      "CVX",
+      {
+        "total": 205284687.23000002,
+        "count": 19,
+        "name": "Chevron Corp"
+      }
+    ],
+    [
       "AMD",
       {
-        "total": 171468743.39000002,
-        "count": 20,
+        "total": 173526711.85000002,
+        "count": 21,
         "name": "AMD Inc"
       }
     ],
@@ -77,14 +85,6 @@
         "total": 161180999.63,
         "count": 26,
         "name": "Coca-Cola Co"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 155644017.06,
-        "count": 19,
-        "name": "Palantir Technologies"
       }
     ]
   ],
@@ -137,8 +137,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 185831448.74999994,
-        "count": 22,
+        "total": 190100508.74999994,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
