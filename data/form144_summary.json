@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-14T23:20:44Z",
-  "totalFilings": 836,
-  "filings7d": 35,
-  "filings30d": 129,
-  "filings90d": 361,
-  "totalValue": 9775306534.52,
+  "updated": "2026-08-17T23:21:04Z",
+  "totalFilings": 820,
+  "filings7d": 37,
+  "filings30d": 122,
+  "filings90d": 364,
+  "totalValue": 9790329662.18,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4177106446.31,
-        "count": 20,
+        "total": 4181530522.91,
+        "count": 21,
         "name": "Amazon.com Inc"
       }
     ],
@@ -19,7 +19,7 @@
       "LLY",
       {
         "total": 1989503645.0,
-        "count": 9,
+        "count": 10,
         "name": "Eli Lilly"
       }
     ],
@@ -34,8 +34,8 @@
     [
       "ABNB",
       {
-        "total": 406612405.42999995,
-        "count": 52,
+        "total": 409118382.3299999,
+        "count": 53,
         "name": "Airbnb Inc"
       }
     ],
@@ -50,31 +50,31 @@
     [
       "GOOGL",
       {
-        "total": 318703525.58000004,
-        "count": 31,
+        "total": 318356437.58000004,
+        "count": 30,
         "name": "Alphabet Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 298534117.38000005,
-        "count": 25,
+        "total": 297858688.78000003,
+        "count": 24,
         "name": "Robinhood Markets"
       }
     ],
     [
       "CVX",
       {
-        "total": 205284687.23000002,
-        "count": 19,
+        "total": 208662520.43,
+        "count": 20,
         "name": "Chevron Corp"
       }
     ],
     [
       "AMD",
       {
-        "total": 173526711.85000002,
+        "total": 173795424.35000002,
         "count": 21,
         "name": "AMD Inc"
       }
@@ -137,8 +137,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 190100508.74999994,
-        "count": 23,
+        "total": 192606485.64999995,
+        "count": 24,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
