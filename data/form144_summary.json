@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-17T23:21:04Z",
-  "totalFilings": 820,
-  "filings7d": 37,
-  "filings30d": 122,
-  "filings90d": 364,
-  "totalValue": 9790329662.18,
+  "updated": "2026-08-18T23:20:21Z",
+  "totalFilings": 827,
+  "filings7d": 56,
+  "filings30d": 148,
+  "filings90d": 384,
+  "totalValue": 9834860126.54,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4181530522.91,
+        "total": 4173625522.91,
         "count": 21,
         "name": "Amazon.com Inc"
       }
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 638464323.47,
+        "total": 736606323.4700003,
         "count": 50,
         "name": "Snowflake Inc"
       }
@@ -34,7 +34,7 @@
     [
       "ABNB",
       {
-        "total": 409118382.3299999,
+        "total": 373877245.30999994,
         "count": 53,
         "name": "Airbnb Inc"
       }
@@ -51,14 +51,14 @@
       "GOOGL",
       {
         "total": 318356437.58000004,
-        "count": 30,
+        "count": 28,
         "name": "Alphabet Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 297858688.78000003,
+        "total": 292858658.26000005,
         "count": 24,
         "name": "Robinhood Markets"
       }
@@ -67,15 +67,15 @@
       "CVX",
       {
         "total": 208662520.43,
-        "count": 20,
+        "count": 19,
         "name": "Chevron Corp"
       }
     ],
     [
       "AMD",
       {
-        "total": 173795424.35000002,
-        "count": 21,
+        "total": 171886073.52,
+        "count": 22,
         "name": "AMD Inc"
       }
     ],
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 436096774.66999996,
-        "count": 11,
+        "total": 534238774.66999996,
+        "count": 12,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -135,21 +135,21 @@
       }
     ],
     [
-      "Blecharczyk Nathan",
-      {
-        "total": 192606485.64999995,
-        "count": 24,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
-      }
-    ],
-    [
       "Robinhood Markets, Inc.",
       {
         "total": 170200000.0,
         "count": 1,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
+      }
+    ],
+    [
+      "Blecharczyk Nathan",
+      {
+        "total": 157365348.62999994,
+        "count": 20,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ],
     [
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "H&Amp;S Investments I Lp",
+      "Lisa Su",
       {
-        "total": 120002749.23,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
+        "total": 123064375.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
       }
     ]
   ],
@@ -325,6 +325,16 @@
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
+      "shares": 300000,
+      "approxPrice": 327.14,
+      "totalValue": 98142000.0,
+      "fileDate": "2026-08-18",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
       "shares": 400000,
       "approxPrice": 233.42,
       "totalValue": 93366558.2,
@@ -369,16 +379,6 @@
       "approxPrice": 284.76,
       "totalValue": 71190164.0,
       "fileDate": "2026-05-06",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "ORCL",
-      "company": "Oracle Corp",
-      "insiderName": "Jeffrey O. Henley",
-      "shares": 400000,
-      "approxPrice": 165.16,
-      "totalValue": 66064000.0,
-      "fileDate": "2026-06-24",
       "relationship": "Director"
     }
   ]
