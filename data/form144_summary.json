@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-18T23:20:21Z",
-  "totalFilings": 827,
-  "filings7d": 56,
-  "filings30d": 148,
-  "filings90d": 384,
-  "totalValue": 9834860126.54,
+  "updated": "2026-08-19T23:21:49Z",
+  "totalFilings": 818,
+  "filings7d": 53,
+  "filings30d": 152,
+  "filings90d": 371,
+  "totalValue": 9827030235.2,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4173625522.91,
+        "total": 4172624782.91,
         "count": 21,
         "name": "Amazon.com Inc"
       }
@@ -82,8 +82,8 @@
     [
       "KO",
       {
-        "total": 161180999.63,
-        "count": 26,
+        "total": 165700259.63,
+        "count": 27,
         "name": "Coca-Cola Co"
       }
     ]
