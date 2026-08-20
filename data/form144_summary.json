@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-19T23:21:49Z",
-  "totalFilings": 818,
-  "filings7d": 53,
-  "filings30d": 152,
+  "updated": "2026-08-20T23:25:01Z",
+  "totalFilings": 814,
+  "filings7d": 59,
+  "filings30d": 157,
   "filings90d": 371,
-  "totalValue": 9827030235.2,
+  "totalValue": 9861447725.11,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -34,7 +34,7 @@
     [
       "ABNB",
       {
-        "total": 373877245.30999994,
+        "total": 374382187.27,
         "count": 53,
         "name": "Airbnb Inc"
       }
@@ -64,6 +64,14 @@
       }
     ],
     [
+      "PLTR",
+      {
+        "total": 241752652.26000005,
+        "count": 15,
+        "name": "Palantir Technologies"
+      }
+    ],
+    [
       "CVX",
       {
         "total": 208662520.43,
@@ -74,17 +82,9 @@
     [
       "AMD",
       {
-        "total": 171886073.52,
-        "count": 22,
+        "total": 185481065.35000002,
+        "count": 23,
         "name": "AMD Inc"
-      }
-    ],
-    [
-      "KO",
-      {
-        "total": 165700259.63,
-        "count": 27,
-        "name": "Coca-Cola Co"
       }
     ]
   ],
@@ -146,10 +146,19 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 157365348.62999994,
-        "count": 20,
+        "total": 157870290.58999994,
+        "count": 21,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
+      }
+    ],
+    [
+      "Alexander Karp",
+      {
+        "total": 140218564.22,
+        "count": 3,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
       }
     ],
     [
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Lisa Su",
-      {
-        "total": 123064375.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
       }
     ]
   ],
