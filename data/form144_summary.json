@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-20T23:25:01Z",
-  "totalFilings": 814,
-  "filings7d": 59,
-  "filings30d": 157,
-  "filings90d": 371,
-  "totalValue": 9861447725.11,
+  "updated": "2026-08-21T23:22:24Z",
+  "totalFilings": 826,
+  "filings7d": 67,
+  "filings30d": 167,
+  "filings90d": 377,
+  "totalValue": 9850381979.65,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4172624782.91,
-        "count": 21,
+        "total": 4182778829.09,
+        "count": 26,
         "name": "Amazon.com Inc"
       }
     ],
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 736606323.4700003,
+        "total": 729421633.8100003,
         "count": 50,
         "name": "Snowflake Inc"
       }
@@ -50,7 +50,7 @@
     [
       "GOOGL",
       {
-        "total": 318356437.58000004,
+        "total": 318318595.58000004,
         "count": 28,
         "name": "Alphabet Inc"
       }
