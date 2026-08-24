@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-21T23:22:24Z",
-  "totalFilings": 826,
-  "filings7d": 67,
-  "filings30d": 167,
-  "filings90d": 377,
-  "totalValue": 9850381979.65,
-  "uniqueCompanies": 64,
+  "updated": "2026-08-24T23:21:56Z",
+  "totalFilings": 807,
+  "filings7d": 70,
+  "filings30d": 168,
+  "filings90d": 386,
+  "totalValue": 9894192463.56,
+  "uniqueCompanies": 63,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4182778829.09,
-        "count": 26,
+        "total": 4185183779.75,
+        "count": 22,
         "name": "Amazon.com Inc"
       }
     ],
@@ -34,8 +34,8 @@
     [
       "ABNB",
       {
-        "total": 374382187.27,
-        "count": 53,
+        "total": 402609673.67999995,
+        "count": 54,
         "name": "Airbnb Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "HOOD",
       {
         "total": 292858658.26000005,
-        "count": 24,
+        "count": 23,
         "name": "Robinhood Markets"
       }
     ],
@@ -82,8 +82,8 @@
     [
       "AMD",
       {
-        "total": 185481065.35000002,
-        "count": 23,
+        "total": 193420195.08,
+        "count": 24,
         "name": "AMD Inc"
       }
     ]
@@ -135,21 +135,21 @@
       }
     ],
     [
+      "Blecharczyk Nathan",
+      {
+        "total": 186634026.99999994,
+        "count": 22,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
+      }
+    ],
+    [
       "Robinhood Markets, Inc.",
       {
         "total": 170200000.0,
         "count": 1,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
-      }
-    ],
-    [
-      "Blecharczyk Nathan",
-      {
-        "total": 157870290.58999994,
-        "count": 21,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
       }
     ],
     [
