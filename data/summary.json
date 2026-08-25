@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-24T23:19:05Z",
+  "updated": "2026-08-25T23:21:09Z",
   "buyCount": 27,
-  "sellCount": 1331,
+  "sellCount": 1326,
   "buyVal": 18946820.03,
-  "sellVal": 5884503241.68,
+  "sellVal": 5856781077.93,
   "uniqueSymbols": 68,
   "topBuyStocks": [
     [
@@ -46,8 +46,8 @@
     [
       "WMT",
       {
-        "total": 2173037240.7188,
-        "count": 52
+        "total": 2167809746.5716,
+        "count": 50
       }
     ],
     [
@@ -165,7 +165,7 @@
     [
       "Walton Family Holdings Trust",
       {
-        "total": 2150253001.1415,
+        "total": 2147485624.8655,
         "sym": "WMT",
         "txs": [
           {
@@ -318,7 +318,7 @@
       "Consumer",
       {
         "buys": 2734203.8400000003,
-        "sells": 2980874668.585801
+        "sells": 2973925099.938601
       }
     ],
     [
@@ -346,7 +346,7 @@
       "Healthcare",
       {
         "buys": 4261586.9,
-        "sells": 223456658.09229997
+        "sells": 202684062.99069995
       }
     ],
     [

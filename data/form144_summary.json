@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-24T23:21:56Z",
-  "totalFilings": 807,
-  "filings7d": 70,
-  "filings30d": 168,
-  "filings90d": 386,
-  "totalValue": 9894192463.56,
+  "updated": "2026-08-25T23:23:51Z",
+  "totalFilings": 804,
+  "filings7d": 68,
+  "filings30d": 175,
+  "filings90d": 387,
+  "totalValue": 9986727812.23,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4185183779.75,
+        "total": 4172433994.87,
         "count": 22,
         "name": "Amazon.com Inc"
       }
@@ -34,8 +34,8 @@
     [
       "ABNB",
       {
-        "total": 402609673.67999995,
-        "count": 54,
+        "total": 441170078.94000006,
+        "count": 55,
         "name": "Airbnb Inc"
       }
     ],
@@ -64,6 +64,14 @@
       }
     ],
     [
+      "AMD",
+      {
+        "total": 264643199.58,
+        "count": 26,
+        "name": "AMD Inc"
+      }
+    ],
+    [
       "PLTR",
       {
         "total": 241752652.26000005,
@@ -77,14 +85,6 @@
         "total": 208662520.43,
         "count": 19,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "AMD",
-      {
-        "total": 193420195.08,
-        "count": 24,
-        "name": "AMD Inc"
       }
     ]
   ],
@@ -126,19 +126,19 @@
       }
     ],
     [
-      "Chesky Brian",
+      "Blecharczyk Nathan",
       {
-        "total": 211162498.94,
-        "count": 11,
+        "total": 225194432.25999996,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
     ],
     [
-      "Blecharczyk Nathan",
+      "Chesky Brian",
       {
-        "total": 186634026.99999994,
-        "count": 22,
+        "total": 211162498.94,
+        "count": 11,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
