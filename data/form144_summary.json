@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-25T23:23:51Z",
-  "totalFilings": 804,
-  "filings7d": 68,
-  "filings30d": 175,
-  "filings90d": 387,
-  "totalValue": 9986727812.23,
+  "updated": "2026-08-27T04:16:06Z",
+  "totalFilings": 786,
+  "filings7d": 43,
+  "filings30d": 176,
+  "filings90d": 375,
+  "totalValue": 9941308946.16,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4172433994.87,
+        "total": 4111819805.1099997,
         "count": 22,
         "name": "Amazon.com Inc"
       }
@@ -26,15 +26,15 @@
     [
       "SNOW",
       {
-        "total": 729421633.8100003,
-        "count": 50,
+        "total": 744893633.8100003,
+        "count": 51,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 441170078.94000006,
+        "total": 444919689.83000004,
         "count": 55,
         "name": "Airbnb Inc"
       }
@@ -51,7 +51,7 @@
       "GOOGL",
       {
         "total": 318318595.58000004,
-        "count": 28,
+        "count": 26,
         "name": "Alphabet Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "CVX",
       {
         "total": 208662520.43,
-        "count": 19,
+        "count": 16,
         "name": "Chevron Corp"
       }
     ]
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 225194432.25999996,
-        "count": 23,
+        "total": 228944043.14999998,
+        "count": 24,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
