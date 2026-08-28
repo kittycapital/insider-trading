@@ -1,24 +1,24 @@
 {
-  "updated": "2026-08-27T04:16:06Z",
-  "totalFilings": 786,
-  "filings7d": 43,
+  "updated": "2026-08-28T06:32:38Z",
+  "totalFilings": 792,
+  "filings7d": 39,
   "filings30d": 176,
-  "filings90d": 375,
-  "totalValue": 9941308946.16,
-  "uniqueCompanies": 63,
+  "filings90d": 369,
+  "totalValue": 9591889276.68,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4111819805.1099997,
-        "count": 22,
+        "total": 4170994432.45,
+        "count": 23,
         "name": "Amazon.com Inc"
       }
     ],
     [
       "LLY",
       {
-        "total": 1989503645.0,
+        "total": 1692842645.0,
         "count": 10,
         "name": "Eli Lilly"
       }
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1972355300.0,
-        "count": 6,
+        "total": 1675694300.0,
+        "count": 5,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -242,16 +242,6 @@
       "relationship": "Shareholder"
     },
     {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 300000,
-      "approxPrice": 988.87,
-      "totalValue": 296661000.0,
-      "fileDate": "2026-05-06",
-      "relationship": "Shareholder"
-    },
-    {
       "ticker": "HOOD",
       "company": "Robinhood Markets",
       "insiderName": "Robinhood Markets, Inc.",
@@ -372,13 +362,23 @@
       "relationship": "Affiliate"
     },
     {
-      "ticker": "AAPL",
-      "company": "Apple Inc",
-      "insiderName": "Levinson Arthur D",
-      "shares": 250000,
-      "approxPrice": 284.76,
-      "totalValue": 71190164.0,
-      "fileDate": "2026-05-06",
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Alexander Karp",
+      "shares": 402348,
+      "approxPrice": 174.83,
+      "totalValue": 70341535.2,
+      "fileDate": "2026-08-20",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "ORCL",
+      "company": "Oracle Corp",
+      "insiderName": "Jeffrey O. Henley",
+      "shares": 400000,
+      "approxPrice": 165.16,
+      "totalValue": 66064000.0,
+      "fileDate": "2026-06-24",
       "relationship": "Director"
     }
   ]
