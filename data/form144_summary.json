@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-28T06:32:38Z",
-  "totalFilings": 792,
-  "filings7d": 39,
-  "filings30d": 176,
-  "filings90d": 369,
-  "totalValue": 9591889276.68,
+  "updated": "2026-08-29T04:04:23Z",
+  "totalFilings": 799,
+  "filings7d": 34,
+  "filings30d": 178,
+  "filings90d": 376,
+  "totalValue": 9607164675.82,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -34,8 +34,8 @@
     [
       "ABNB",
       {
-        "total": 444919689.83000004,
-        "count": 55,
+        "total": 450888920.36,
+        "count": 56,
         "name": "Airbnb Inc"
       }
     ],
@@ -50,8 +50,8 @@
     [
       "GOOGL",
       {
-        "total": 318318595.58000004,
-        "count": 26,
+        "total": 318346287.58000004,
+        "count": 27,
         "name": "Alphabet Inc"
       }
     ],
@@ -128,7 +128,7 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 228944043.14999998,
+        "total": 234913273.67999998,
         "count": 24,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
