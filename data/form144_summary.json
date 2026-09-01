@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-29T04:04:23Z",
-  "totalFilings": 799,
-  "filings7d": 34,
+  "updated": "2026-09-01T01:37:54Z",
+  "totalFilings": 762,
+  "filings7d": 32,
   "filings30d": 178,
-  "filings90d": 376,
-  "totalValue": 9607164675.82,
+  "filings90d": 367,
+  "totalValue": 9600054578.05,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,14 +27,14 @@
       "SNOW",
       {
         "total": 744893633.8100003,
-        "count": 51,
+        "count": 50,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 450888920.36,
+        "total": 444585181.77,
         "count": 56,
         "name": "Airbnb Inc"
       }
@@ -51,7 +51,7 @@
       "GOOGL",
       {
         "total": 318346287.58000004,
-        "count": 27,
+        "count": 24,
         "name": "Alphabet Inc"
       }
     ],
@@ -59,15 +59,15 @@
       "HOOD",
       {
         "total": 292858658.26000005,
-        "count": 23,
+        "count": 22,
         "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 264643199.58,
-        "count": 26,
+        "total": 253810668.5,
+        "count": 25,
         "name": "AMD Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "PLTR",
       {
         "total": 241752652.26000005,
-        "count": 15,
+        "count": 14,
         "name": "Palantir Technologies"
       }
     ],
@@ -83,7 +83,7 @@
       "CVX",
       {
         "total": 208662520.43,
-        "count": 16,
+        "count": 11,
         "name": "Chevron Corp"
       }
     ]
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 234913273.67999998,
-        "count": 24,
+        "total": 228609535.08999997,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
