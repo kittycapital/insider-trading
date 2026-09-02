@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-01T01:37:54Z",
-  "totalFilings": 762,
-  "filings7d": 32,
-  "filings30d": 178,
-  "filings90d": 367,
-  "totalValue": 9600054578.05,
+  "updated": "2026-09-02T00:50:16Z",
+  "totalFilings": 767,
+  "filings7d": 35,
+  "filings30d": 188,
+  "filings90d": 370,
+  "totalValue": 9336103587.62,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,15 +26,15 @@
     [
       "SNOW",
       {
-        "total": 744893633.8100003,
-        "count": 50,
+        "total": 749777183.8100003,
+        "count": 51,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 444585181.77,
+        "total": 445538509.53,
         "count": 56,
         "name": "Airbnb Inc"
       }
@@ -48,17 +48,9 @@
       }
     ],
     [
-      "GOOGL",
-      {
-        "total": 318346287.58000004,
-        "count": 24,
-        "name": "Alphabet Inc"
-      }
-    ],
-    [
       "HOOD",
       {
-        "total": 292858658.26000005,
+        "total": 319608249.31000006,
         "count": 22,
         "name": "Robinhood Markets"
       }
@@ -74,8 +66,8 @@
     [
       "PLTR",
       {
-        "total": 241752652.26000005,
-        "count": 14,
+        "total": 242002774.22000003,
+        "count": 15,
         "name": "Palantir Technologies"
       }
     ],
@@ -85,6 +77,14 @@
         "total": 208662520.43,
         "count": 11,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "KO",
+      {
+        "total": 160156712.49,
+        "count": 18,
+        "name": "Coca-Cola Co"
       }
     ]
   ],
@@ -117,15 +117,6 @@
       }
     ],
     [
-      "Mdc Trust I",
-      {
-        "total": 314101366.0,
-        "count": 2,
-        "ticker": "GOOGL",
-        "company": "Alphabet Inc"
-      }
-    ],
-    [
       "Blecharczyk Nathan",
       {
         "total": 228609535.08999997,
@@ -146,8 +137,8 @@
     [
       "Robinhood Markets, Inc.",
       {
-        "total": 170200000.0,
-        "count": 1,
+        "total": 196949591.05,
+        "count": 2,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
       }
@@ -177,6 +168,15 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Lisa Su",
+      {
+        "total": 123064375.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
       }
     ]
   ],
@@ -250,26 +250,6 @@
       "totalValue": 170200000.0,
       "fileDate": "2026-06-03",
       "relationship": "Parent Company / 10% Stockholder"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "Mdc Trust I",
-      "shares": 409000,
-      "approxPrice": 385.59,
-      "totalValue": 157704960.3,
-      "fileDate": "2026-05-12",
-      "relationship": "Affiliate"
-    },
-    {
-      "ticker": "GOOGL",
-      "company": "Alphabet Inc",
-      "insiderName": "Mdc Trust I",
-      "shares": 409000,
-      "approxPrice": 382.39,
-      "totalValue": 156396405.7,
-      "fileDate": "2026-05-12",
-      "relationship": "Affiliate"
     },
     {
       "ticker": "CVX",
@@ -380,6 +360,26 @@
       "totalValue": 66064000.0,
       "fileDate": "2026-06-24",
       "relationship": "Director"
+    },
+    {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Joseph A Householder",
+      "shares": 135000,
+      "approxPrice": 474.9,
+      "totalValue": 64111851.0,
+      "fileDate": "2026-08-25",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corp",
+      "insiderName": "Michael Wirth",
+      "shares": 317100,
+      "approxPrice": 200.46,
+      "totalValue": 63566849.01,
+      "fileDate": "2026-08-14",
+      "relationship": "Officer"
     }
   ]
 }
