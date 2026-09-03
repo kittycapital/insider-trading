@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-02T00:50:16Z",
-  "totalFilings": 767,
-  "filings7d": 35,
-  "filings30d": 188,
+  "updated": "2026-09-03T00:58:29Z",
+  "totalFilings": 761,
+  "filings7d": 33,
+  "filings30d": 174,
   "filings90d": 370,
-  "totalValue": 9336103587.62,
+  "totalValue": 9284258236.82,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 749777183.8100003,
-        "count": 51,
+        "count": 50,
         "name": "Snowflake Inc"
       }
     ],
@@ -56,14 +56,6 @@
       }
     ],
     [
-      "AMD",
-      {
-        "total": 253810668.5,
-        "count": 25,
-        "name": "AMD Inc"
-      }
-    ],
-    [
       "PLTR",
       {
         "total": 242002774.22000003,
@@ -75,8 +67,16 @@
       "CVX",
       {
         "total": 208662520.43,
-        "count": 11,
+        "count": 10,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 197774418.5,
+        "count": 25,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Lisa Su",
+      "H&Amp;S Investments I Lp",
       {
-        "total": 123064375.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
+        "total": 120002749.23,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
