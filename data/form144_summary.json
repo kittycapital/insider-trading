@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-03T00:58:29Z",
-  "totalFilings": 761,
-  "filings7d": 33,
-  "filings30d": 174,
-  "filings90d": 370,
-  "totalValue": 9284258236.82,
+  "updated": "2026-09-04T00:42:25Z",
+  "totalFilings": 765,
+  "filings7d": 31,
+  "filings30d": 173,
+  "filings90d": 366,
+  "totalValue": 9294571396.5,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 749777183.8100003,
-        "count": 50,
+        "total": 753577183.8100003,
+        "count": 51,
         "name": "Snowflake Inc"
       }
     ],
@@ -50,8 +50,8 @@
     [
       "HOOD",
       {
-        "total": 319608249.31000006,
-        "count": 22,
+        "total": 325430217.15,
+        "count": 24,
         "name": "Robinhood Markets"
       }
     ],
