@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-05T00:38:08Z",
-  "totalFilings": 770,
-  "filings7d": 29,
-  "filings30d": 167,
-  "filings90d": 371,
+  "updated": "2026-09-08T00:56:04Z",
+  "totalFilings": 752,
+  "filings7d": 22,
+  "filings30d": 152,
+  "filings90d": 361,
   "totalValue": 9315966396.01,
   "uniqueCompanies": 64,
   "topCompanies": [
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 789032967.4400003,
-        "count": 53,
+        "count": 50,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "ABNB",
       {
         "total": 445538509.53,
-        "count": 56,
+        "count": 55,
         "name": "Airbnb Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "AMD",
       {
         "total": 197774418.5,
-        "count": 25,
+        "count": 24,
         "name": "AMD Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "KO",
       {
         "total": 160156712.49,
-        "count": 18,
+        "count": 17,
         "name": "Coca-Cola Co"
       }
     ]
