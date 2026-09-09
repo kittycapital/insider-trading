@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-08T00:53:26Z",
+  "updated": "2026-09-09T01:00:04Z",
   "buyCount": 24,
-  "sellCount": 1232,
+  "sellCount": 1226,
   "buyVal": 15452592.76,
-  "sellVal": 4911869184.82,
-  "uniqueSymbols": 67,
+  "sellVal": 4906403472.18,
+  "uniqueSymbols": 66,
   "topBuyStocks": [
     [
       "PFE",
@@ -60,8 +60,8 @@
     [
       "NVDA",
       {
-        "total": 519466545.8733999,
-        "count": 42
+        "total": 518911106.2733999,
+        "count": 41
       }
     ],
     [
@@ -315,21 +315,21 @@
       "Technology",
       {
         "buys": 3860809.54,
-        "sells": 1627351158.523902
+        "sells": 1626795718.923902
       }
     ],
     [
       "Energy",
       {
         "buys": 0,
-        "sells": 383173335.35160005
+        "sells": 378726744.6316
       }
     ],
     [
       "Financials",
       {
         "buys": 2576775.02,
-        "sells": 289294248.18779993
+        "sells": 289289427.86779994
       }
     ],
     [
@@ -357,7 +357,7 @@
       "Utilities",
       {
         "buys": 0,
-        "sells": 8010200.61
+        "sells": 7551338.61
       }
     ],
     [

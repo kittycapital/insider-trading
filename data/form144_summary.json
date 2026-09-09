@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-08T00:56:04Z",
-  "totalFilings": 752,
-  "filings7d": 22,
-  "filings30d": 152,
-  "filings90d": 361,
-  "totalValue": 9315966396.01,
+  "updated": "2026-09-09T01:03:23Z",
+  "totalFilings": 748,
+  "filings7d": 20,
+  "filings30d": 160,
+  "filings90d": 363,
+  "totalValue": 9307344252.35,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -50,8 +50,8 @@
     [
       "HOOD",
       {
-        "total": 325430217.15,
-        "count": 24,
+        "total": 325659173.4,
+        "count": 25,
         "name": "Robinhood Markets"
       }
     ],
@@ -74,15 +74,15 @@
     [
       "AMD",
       {
-        "total": 197774418.5,
-        "count": 24,
+        "total": 195171678.5,
+        "count": 23,
         "name": "AMD Inc"
       }
     ],
     [
       "KO",
       {
-        "total": 160156712.49,
+        "total": 157597193.71,
         "count": 17,
         "name": "Coca-Cola Co"
       }
