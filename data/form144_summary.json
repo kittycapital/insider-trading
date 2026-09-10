@@ -1,16 +1,16 @@
 {
-  "updated": "2026-09-09T01:03:23Z",
+  "updated": "2026-09-10T00:50:22Z",
   "totalFilings": 748,
-  "filings7d": 20,
-  "filings30d": 160,
-  "filings90d": 363,
-  "totalValue": 9307344252.35,
+  "filings7d": 23,
+  "filings30d": 159,
+  "filings90d": 366,
+  "totalValue": 9332625770.14,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4170994432.45,
+        "total": 4164476670.93,
         "count": 23,
         "name": "Amazon.com Inc"
       }
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 789032967.4400003,
-        "count": 50,
+        "total": 806735483.0400003,
+        "count": 52,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "ABNB",
       {
         "total": 445538509.53,
-        "count": 55,
+        "count": 54,
         "name": "Airbnb Inc"
       }
     ],
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "H&Amp;S Investments I Lp",
+      "Dageville Benoit",
       {
-        "total": 120002749.23,
-        "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
+        "total": 125459650.16,
+        "count": 6,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
       }
     ]
   ],
