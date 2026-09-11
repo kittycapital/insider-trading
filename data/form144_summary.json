@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-10T00:50:22Z",
-  "totalFilings": 748,
-  "filings7d": 23,
+  "updated": "2026-09-11T00:50:39Z",
+  "totalFilings": 755,
+  "filings7d": 26,
   "filings30d": 159,
-  "filings90d": 366,
-  "totalValue": 9332625770.14,
+  "filings90d": 372,
+  "totalValue": 9373382608.81,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -50,9 +50,17 @@
     [
       "HOOD",
       {
-        "total": 325659173.4,
-        "count": 25,
+        "total": 330659212.84000003,
+        "count": 26,
         "name": "Robinhood Markets"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 244675703.5,
+        "count": 25,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -69,14 +77,6 @@
         "total": 208662520.43,
         "count": 10,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "AMD",
-      {
-        "total": 195171678.5,
-        "count": 23,
-        "name": "AMD Inc"
       }
     ],
     [
