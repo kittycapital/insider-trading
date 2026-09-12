@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-11T00:50:39Z",
-  "totalFilings": 755,
-  "filings7d": 26,
+  "updated": "2026-09-12T00:55:23Z",
+  "totalFilings": 759,
+  "filings7d": 25,
   "filings30d": 159,
-  "filings90d": 372,
-  "totalValue": 9373382608.81,
+  "filings90d": 376,
+  "totalValue": 9347905679.23,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 806735483.0400003,
+        "total": 781357051.3200003,
         "count": 52,
         "name": "Snowflake Inc"
       }
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 534238774.66999996,
-        "count": 12,
+        "total": 508860342.95,
+        "count": 11,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
