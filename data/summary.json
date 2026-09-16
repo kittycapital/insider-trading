@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-15T01:09:06Z",
+  "updated": "2026-09-16T01:00:13Z",
   "buyCount": 21,
-  "sellCount": 1118,
+  "sellCount": 1087,
   "buyVal": 14452148.35,
-  "sellVal": 4742126490.3,
+  "sellVal": 4626954180.3,
   "uniqueSymbols": 64,
   "topBuyStocks": [
     [
@@ -58,17 +58,17 @@
       }
     ],
     [
-      "NVDA",
-      {
-        "total": 460877417.5363999,
-        "count": 35
-      }
-    ],
-    [
       "AMZN",
       {
         "total": 415398708.5221001,
         "count": 60
+      }
+    ],
+    [
+      "NVDA",
+      {
+        "total": 410580151.38,
+        "count": 7
       }
     ],
     [
@@ -223,7 +223,7 @@
     [
       "STEVENS MARK A",
       {
-        "total": 445605062.547,
+        "total": 407102538.33,
         "sym": "NVDA",
         "txs": [
           {
@@ -315,14 +315,14 @@
       "Technology",
       {
         "buys": 2860365.125,
-        "sells": 1467955083.091901
+        "sells": 1417276367.2972012
       }
     ],
     [
       "Energy",
       {
         "buys": 0,
-        "sells": 377976103.5916
+        "sells": 313482509.3916
       }
     ],
     [

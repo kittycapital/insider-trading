@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-15T01:11:48Z",
-  "totalFilings": 730,
-  "filings7d": 28,
-  "filings30d": 152,
-  "filings90d": 356,
-  "totalValue": 9328887627.3,
+  "updated": "2026-09-16T01:03:16Z",
+  "totalFilings": 739,
+  "filings7d": 33,
+  "filings30d": 165,
+  "filings90d": 364,
+  "totalValue": 9214133285.66,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,15 +27,15 @@
       "SNOW",
       {
         "total": 781357051.3200003,
-        "count": 48,
+        "count": 47,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 447885239.07000005,
-        "count": 55,
+        "total": 447776871.24,
+        "count": 56,
         "name": "Airbnb Inc"
       }
     ],
@@ -50,25 +50,17 @@
     [
       "HOOD",
       {
-        "total": 330659212.84000003,
-        "count": 26,
+        "total": 326969307.88,
+        "count": 27,
         "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 244675703.5,
-        "count": 25,
+        "total": 253358832.12,
+        "count": 26,
         "name": "AMD Inc"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 242002774.22000003,
-        "count": 14,
-        "name": "Palantir Technologies"
       }
     ],
     [
@@ -85,6 +77,14 @@
         "total": 144621302.24,
         "count": 17,
         "name": "Coca-Cola Co"
+      }
+    ],
+    [
+      "PLTR",
+      {
+        "total": 116846490.98,
+        "count": 14,
+        "name": "Palantir Technologies"
       }
     ]
   ],
@@ -119,8 +119,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 230956264.63,
-        "count": 24,
+        "total": 230596360.03,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -141,15 +141,6 @@
         "count": 2,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
-      }
-    ],
-    [
-      "Alexander Karp",
-      {
-        "total": 140218564.22,
-        "count": 3,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
       }
     ],
     [
@@ -177,6 +168,15 @@
         "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
+      }
+    ],
+    [
+      "H&Amp;S Investments I Lp",
+      {
+        "total": 120002749.23,
+        "count": 1,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
