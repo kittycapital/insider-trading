@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-16T01:03:16Z",
-  "totalFilings": 739,
-  "filings7d": 33,
-  "filings30d": 165,
-  "filings90d": 364,
-  "totalValue": 9214133285.66,
+  "updated": "2026-09-17T01:07:10Z",
+  "totalFilings": 740,
+  "filings7d": 34,
+  "filings30d": 163,
+  "filings90d": 367,
+  "totalValue": 8934794281.71,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "LLY",
       {
-        "total": 1692842645.0,
+        "total": 1381312595.0,
         "count": 10,
         "name": "Eli Lilly"
       }
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 781357051.3200003,
-        "count": 47,
+        "total": 790283212.8100003,
+        "count": 51,
         "name": "Snowflake Inc"
       }
     ],
@@ -51,14 +51,14 @@
       "HOOD",
       {
         "total": 326969307.88,
-        "count": 27,
+        "count": 26,
         "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 253358832.12,
+        "total": 244952030.34,
         "count": 26,
         "name": "AMD Inc"
       }
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1675694300.0,
-        "count": 5,
+        "total": 1364164250.0,
+        "count": 4,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 508860342.95,
-        "count": 11,
+        "total": 511469258.35999995,
+        "count": 12,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -229,16 +229,6 @@
       "approxPrice": 1041.65,
       "totalValue": 312495000.0,
       "fileDate": "2026-05-22",
-      "relationship": "Shareholder"
-    },
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 305000,
-      "approxPrice": 1021.41,
-      "totalValue": 311530050.0,
-      "fileDate": "2026-05-20",
       "relationship": "Shareholder"
     },
     {
@@ -380,6 +370,16 @@
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Lisa Su",
+      "shares": 125000,
+      "approxPrice": 475.5,
+      "totalValue": 59438125.0,
+      "fileDate": "2026-06-10",
+      "relationship": "Director"
     }
   ]
 }
