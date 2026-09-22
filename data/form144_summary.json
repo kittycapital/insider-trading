@@ -1,16 +1,16 @@
 {
-  "updated": "2026-09-19T00:58:15Z",
-  "totalFilings": 744,
-  "filings7d": 27,
-  "filings30d": 137,
-  "filings90d": 371,
-  "totalValue": 8995050071.26,
+  "updated": "2026-09-22T01:28:00Z",
+  "totalFilings": 742,
+  "filings7d": 36,
+  "filings30d": 127,
+  "filings90d": 375,
+  "totalValue": 8763283348.47,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4158772686.43,
+        "total": 4150869512.9,
         "count": 23,
         "name": "Amazon.com Inc"
       }
@@ -18,7 +18,7 @@
     [
       "LLY",
       {
-        "total": 1381312595.0,
+        "total": 1068817595.0,
         "count": 10,
         "name": "Eli Lilly"
       }
@@ -26,15 +26,15 @@
     [
       "SNOW",
       {
-        "total": 856486416.5800003,
-        "count": 53,
+        "total": 881173600.7800002,
+        "count": 52,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 447776871.24,
+        "total": 446224664.1,
         "count": 56,
         "name": "Airbnb Inc"
       }
@@ -43,15 +43,15 @@
       "AVGO",
       {
         "total": 362898253.7800001,
-        "count": 22,
+        "count": 18,
         "name": "Broadcom Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 326969307.88,
-        "count": 26,
+        "total": 358022578.0,
+        "count": 27,
         "name": "Robinhood Markets"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1364164250.0,
-        "count": 4,
+        "total": 1051669250.0,
+        "count": 3,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -110,7 +110,7 @@
     [
       "Slootman Frank",
       {
-        "total": 577357529.8800001,
+        "total": 602044714.08,
         "count": 13,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
@@ -119,8 +119,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 230596360.03,
-        "count": 23,
+        "total": 229044152.89000002,
+        "count": 22,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -219,16 +219,6 @@
       "approxPrice": 1082.92,
       "totalValue": 335705200.0,
       "fileDate": "2026-05-28",
-      "relationship": "Shareholder"
-    },
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 300000,
-      "approxPrice": 1041.65,
-      "totalValue": 312495000.0,
-      "fileDate": "2026-05-22",
       "relationship": "Shareholder"
     },
     {
@@ -380,6 +370,16 @@
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Lisa Su",
+      "shares": 125000,
+      "approxPrice": 475.5,
+      "totalValue": 59438125.0,
+      "fileDate": "2026-06-10",
+      "relationship": "Director"
     }
   ]
 }
