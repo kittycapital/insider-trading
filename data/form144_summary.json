@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-22T01:28:00Z",
-  "totalFilings": 742,
-  "filings7d": 36,
-  "filings30d": 127,
+  "updated": "2026-09-23T01:14:45Z",
+  "totalFilings": 746,
+  "filings7d": 30,
+  "filings30d": 134,
   "filings90d": 375,
-  "totalValue": 8763283348.47,
+  "totalValue": 8760246942.26,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,17 +26,25 @@
     [
       "SNOW",
       {
-        "total": 881173600.7800002,
-        "count": 52,
+        "total": 882076879.7800002,
+        "count": 53,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 446224664.1,
+        "total": 403009915.95000005,
         "count": 56,
         "name": "Airbnb Inc"
+      }
+    ],
+    [
+      "HOOD",
+      {
+        "total": 387717410.20000005,
+        "count": 28,
+        "name": "Robinhood Markets"
       }
     ],
     [
@@ -45,14 +53,6 @@
         "total": 362898253.7800001,
         "count": 18,
         "name": "Broadcom Inc"
-      }
-    ],
-    [
-      "HOOD",
-      {
-        "total": 358022578.0,
-        "count": 27,
-        "name": "Robinhood Markets"
       }
     ],
     [
@@ -126,21 +126,21 @@
       }
     ],
     [
-      "Chesky Brian",
-      {
-        "total": 211162498.94,
-        "count": 11,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
-      }
-    ],
-    [
       "Robinhood Markets, Inc.",
       {
         "total": 196949591.05,
         "count": 2,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
+      }
+    ],
+    [
+      "Chesky Brian",
+      {
+        "total": 167947750.79,
+        "count": 10,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ],
     [

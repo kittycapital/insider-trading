@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-22T01:25:02Z",
+  "updated": "2026-09-23T01:11:17Z",
   "buyCount": 21,
-  "sellCount": 1056,
+  "sellCount": 1050,
   "buyVal": 14452148.35,
-  "sellVal": 3967067750.8,
+  "sellVal": 3963218471.85,
   "uniqueSymbols": 64,
   "topBuyStocks": [
     [
@@ -315,7 +315,7 @@
       "Technology",
       {
         "buys": 2860365.125,
-        "sells": 1166384340.9572008
+        "sells": 1163903224.0072007
       }
     ],
     [
@@ -336,7 +336,7 @@
       "Healthcare",
       {
         "buys": 4261586.9,
-        "sells": 241416089.02680007
+        "sells": 240047927.02680007
       }
     ],
     [
