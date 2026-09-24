@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-23T01:14:45Z",
-  "totalFilings": 746,
-  "filings7d": 30,
-  "filings30d": 134,
-  "filings90d": 375,
-  "totalValue": 8760246942.26,
+  "updated": "2026-09-24T01:04:45Z",
+  "totalFilings": 748,
+  "filings7d": 28,
+  "filings30d": 130,
+  "filings90d": 376,
+  "totalValue": 9035722387.37,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,16 +26,24 @@
     [
       "SNOW",
       {
-        "total": 882076879.7800002,
-        "count": 53,
+        "total": 899284833.0900003,
+        "count": 55,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "AVGO",
+      {
+        "total": 638700883.6,
+        "count": 21,
+        "name": "Broadcom Inc"
       }
     ],
     [
       "ABNB",
       {
         "total": 403009915.95000005,
-        "count": 56,
+        "count": 55,
         "name": "Airbnb Inc"
       }
     ],
@@ -45,14 +53,6 @@
         "total": 387717410.20000005,
         "count": 28,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "AVGO",
-      {
-        "total": 362898253.7800001,
-        "count": 18,
-        "name": "Broadcom Inc"
       }
     ],
     [
@@ -117,6 +117,15 @@
       }
     ],
     [
+      "D95Gt, Llc",
+      {
+        "total": 355007941.18,
+        "count": 2,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
+      }
+    ],
+    [
       "Blecharczyk Nathan",
       {
         "total": 229044152.89000002,
@@ -144,19 +153,10 @@
       }
     ],
     [
-      "John B Hess",
+      "H&Amp;S Investments I Lp",
       {
-        "total": 137942705.96,
-        "count": 1,
-        "ticker": "CVX",
-        "company": "Chevron Corp"
-      }
-    ],
-    [
-      "D95Gt, Llc",
-      {
-        "total": 130002968.6,
-        "count": 1,
+        "total": 145002807.84,
+        "count": 2,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
       }
@@ -164,19 +164,19 @@
     [
       "Dageville Benoit",
       {
-        "total": 125459650.16,
-        "count": 6,
+        "total": 142413650.16,
+        "count": 7,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
     ],
     [
-      "H&Amp;S Investments I Lp",
+      "John B Hess",
       {
-        "total": 120002749.23,
+        "total": 137942705.96,
         "count": 1,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
+        "ticker": "CVX",
+        "company": "Chevron Corp"
       }
     ]
   ],
@@ -220,6 +220,16 @@
       "totalValue": 335705200.0,
       "fileDate": "2026-05-28",
       "relationship": "Shareholder"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "insiderName": "D95Gt, Llc",
+      "shares": 631972,
+      "approxPrice": 356.04,
+      "totalValue": 225004972.58,
+      "fileDate": "2026-09-23",
+      "relationship": "Affiliate"
     },
     {
       "ticker": "HOOD",
@@ -370,16 +380,6 @@
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "AMD",
-      "company": "AMD Inc",
-      "insiderName": "Lisa Su",
-      "shares": 125000,
-      "approxPrice": 475.5,
-      "totalValue": 59438125.0,
-      "fileDate": "2026-06-10",
-      "relationship": "Director"
     }
   ]
 }
