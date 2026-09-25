@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-24T01:04:45Z",
-  "totalFilings": 748,
-  "filings7d": 28,
-  "filings30d": 130,
-  "filings90d": 376,
-  "totalValue": 9035722387.37,
+  "updated": "2026-09-25T01:11:18Z",
+  "totalFilings": 749,
+  "filings7d": 26,
+  "filings30d": 124,
+  "filings90d": 372,
+  "totalValue": 9021944250.53,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -40,19 +40,19 @@
       }
     ],
     [
-      "ABNB",
-      {
-        "total": 403009915.95000005,
-        "count": 55,
-        "name": "Airbnb Inc"
-      }
-    ],
-    [
       "HOOD",
       {
         "total": 387717410.20000005,
         "count": 28,
         "name": "Robinhood Markets"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 367872325.1100001,
+        "count": 55,
+        "name": "Airbnb Inc"
       }
     ],
     [
@@ -144,15 +144,6 @@
       }
     ],
     [
-      "Chesky Brian",
-      {
-        "total": 167947750.79,
-        "count": 10,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
-      }
-    ],
-    [
       "H&Amp;S Investments I Lp",
       {
         "total": 145002807.84,
@@ -177,6 +168,15 @@
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Chesky Brian",
+      {
+        "total": 132810159.94999999,
+        "count": 9,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ]
   ],
