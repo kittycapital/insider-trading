@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-25T01:11:18Z",
-  "totalFilings": 749,
-  "filings7d": 26,
-  "filings30d": 124,
-  "filings90d": 372,
-  "totalValue": 9021944250.53,
+  "updated": "2026-09-26T01:12:08Z",
+  "totalFilings": 751,
+  "filings7d": 27,
+  "filings30d": 121,
+  "filings90d": 374,
+  "totalValue": 8928641139.12,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 899284833.0900003,
+        "total": 804710747.8900002,
         "count": 55,
         "name": "Snowflake Inc"
       }
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 602044714.08,
-        "count": 13,
+        "total": 508678155.88000005,
+        "count": 12,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -292,16 +292,6 @@
       "relationship": "Director"
     },
     {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Slootman Frank",
-      "shares": 400000,
-      "approxPrice": 233.42,
-      "totalValue": 93366558.2,
-      "fileDate": "2026-05-28",
-      "relationship": "Director"
-    },
-    {
       "ticker": "ABNB",
       "company": "Airbnb Inc",
       "insiderName": "Blecharczyk Nathan",
@@ -380,6 +370,16 @@
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "AMD",
+      "company": "AMD Inc",
+      "insiderName": "Lisa Su",
+      "shares": 125000,
+      "approxPrice": 475.5,
+      "totalValue": 59438125.0,
+      "fileDate": "2026-06-10",
+      "relationship": "Director"
     }
   ]
 }
