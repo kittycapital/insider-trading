@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-26T01:12:08Z",
-  "totalFilings": 751,
-  "filings7d": 27,
-  "filings30d": 121,
-  "filings90d": 374,
-  "totalValue": 8928641139.12,
+  "updated": "2026-09-29T02:32:23Z",
+  "totalFilings": 741,
+  "filings7d": 18,
+  "filings30d": 111,
+  "filings90d": 371,
+  "totalValue": 8944518247.29,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 804710747.8900002,
-        "count": 55,
+        "count": 54,
         "name": "Snowflake Inc"
       }
     ],
@@ -50,15 +50,15 @@
     [
       "ABNB",
       {
-        "total": 367872325.1100001,
-        "count": 55,
+        "total": 370007497.29,
+        "count": 56,
         "name": "Airbnb Inc"
       }
     ],
     [
       "AMD",
       {
-        "total": 244952030.34,
+        "total": 242827733.06,
         "count": 26,
         "name": "AMD Inc"
       }
@@ -67,15 +67,15 @@
       "CVX",
       {
         "total": 208662520.43,
-        "count": 10,
+        "count": 9,
         "name": "Chevron Corp"
       }
     ],
     [
       "KO",
       {
-        "total": 144621302.24,
-        "count": 17,
+        "total": 160788616.01,
+        "count": 18,
         "name": "Coca-Cola Co"
       }
     ],
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 229044152.89000002,
-        "count": 22,
+        "total": 231179325.07,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
