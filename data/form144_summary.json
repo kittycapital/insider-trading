@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-29T02:32:23Z",
-  "totalFilings": 741,
-  "filings7d": 18,
-  "filings30d": 111,
-  "filings90d": 371,
-  "totalValue": 8944518247.29,
+  "updated": "2026-09-30T01:52:05Z",
+  "totalFilings": 740,
+  "filings7d": 14,
+  "filings30d": 114,
+  "filings90d": 366,
+  "totalValue": 8609152280.87,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -16,19 +16,19 @@
       }
     ],
     [
-      "LLY",
-      {
-        "total": 1068817595.0,
-        "count": 10,
-        "name": "Eli Lilly"
-      }
-    ],
-    [
       "SNOW",
       {
         "total": 804710747.8900002,
         "count": 54,
         "name": "Snowflake Inc"
+      }
+    ],
+    [
+      "LLY",
+      {
+        "total": 733112395.0,
+        "count": 10,
+        "name": "Eli Lilly"
       }
     ],
     [
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1051669250.0,
-        "count": 3,
+        "total": 715964050.0,
+        "count": 2,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -209,16 +209,6 @@
       "approxPrice": 1127.69,
       "totalValue": 343945450.0,
       "fileDate": "2026-06-26",
-      "relationship": "Shareholder"
-    },
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 310000,
-      "approxPrice": 1082.92,
-      "totalValue": 335705200.0,
-      "fileDate": "2026-05-28",
       "relationship": "Shareholder"
     },
     {
@@ -380,6 +370,16 @@
       "totalValue": 59438125.0,
       "fileDate": "2026-06-10",
       "relationship": "Director"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "insiderName": "Day 1 Academies",
+      "shares": 230637,
+      "approxPrice": 256.57,
+      "totalValue": 59174627.34,
+      "fileDate": "2026-08-27",
+      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     }
   ]
 }
