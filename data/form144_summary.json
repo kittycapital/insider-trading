@@ -1,10 +1,10 @@
 {
-  "updated": "2026-09-30T01:52:05Z",
-  "totalFilings": 740,
-  "filings7d": 14,
-  "filings30d": 114,
-  "filings90d": 366,
-  "totalValue": 8609152280.87,
+  "updated": "2026-10-01T01:49:30Z",
+  "totalFilings": 741,
+  "filings7d": 10,
+  "filings30d": 108,
+  "filings90d": 357,
+  "totalValue": 8592205536.3,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -50,7 +50,7 @@
     [
       "ABNB",
       {
-        "total": 370007497.29,
+        "total": 353032495.72,
         "count": 56,
         "name": "Airbnb Inc"
       }
@@ -173,8 +173,8 @@
     [
       "Chesky Brian",
       {
-        "total": 132810159.94999999,
-        "count": 9,
+        "total": 115835158.38,
+        "count": 8,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
