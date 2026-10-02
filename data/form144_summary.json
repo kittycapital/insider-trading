@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-01T01:49:30Z",
-  "totalFilings": 741,
-  "filings7d": 10,
+  "updated": "2026-10-02T02:00:10Z",
+  "totalFilings": 751,
+  "filings7d": 19,
   "filings30d": 108,
-  "filings90d": 357,
-  "totalValue": 8592205536.3,
+  "filings90d": 367,
+  "totalValue": 8450472363.67,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -16,19 +16,19 @@
       }
     ],
     [
-      "SNOW",
-      {
-        "total": 804710747.8900002,
-        "count": 54,
-        "name": "Snowflake Inc"
-      }
-    ],
-    [
       "LLY",
       {
         "total": 733112395.0,
         "count": 10,
         "name": "Eli Lilly"
+      }
+    ],
+    [
+      "SNOW",
+      {
+        "total": 674501260.8300002,
+        "count": 55,
+        "name": "Snowflake Inc"
       }
     ],
     [
@@ -42,7 +42,7 @@
     [
       "HOOD",
       {
-        "total": 387717410.20000005,
+        "total": 377112410.20000005,
         "count": 28,
         "name": "Robinhood Markets"
       }
@@ -58,7 +58,7 @@
     [
       "AMD",
       {
-        "total": 242827733.06,
+        "total": 241877171.06,
         "count": 26,
         "name": "AMD Inc"
       }
@@ -82,8 +82,8 @@
     [
       "PLTR",
       {
-        "total": 116846490.98,
-        "count": 14,
+        "total": 116857629.05000001,
+        "count": 15,
         "name": "Palantir Technologies"
       }
     ]
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 508678155.88000005,
-        "count": 12,
+        "total": 398345317.15000004,
+        "count": 11,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -265,16 +265,6 @@
       "ticker": "SNOW",
       "company": "Snowflake Inc",
       "insiderName": "Slootman Frank",
-      "shares": 437076,
-      "approxPrice": 252.43,
-      "totalValue": 110332838.73,
-      "fileDate": "2026-05-29",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Slootman Frank",
       "shares": 300000,
       "approxPrice": 327.14,
       "totalValue": 98142000.0,
@@ -380,6 +370,16 @@
       "totalValue": 59174627.34,
       "fileDate": "2026-08-27",
       "relationship": "Nonprofit founded by Jeffrey P. Bezos"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Chesky Brian",
+      "shares": 295000,
+      "approxPrice": 174.6,
+      "totalValue": 51508133.38,
+      "fileDate": "2026-08-07",
+      "relationship": "Officer"
     }
   ]
 }
