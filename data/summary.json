@@ -1,15 +1,22 @@
 {
-  "updated": "2026-10-02T01:57:26Z",
-  "buyCount": 24,
-  "sellCount": 1357,
-  "buyVal": 25499495.69,
-  "sellVal": 5356380630.3,
+  "updated": "2026-10-03T01:40:22Z",
+  "buyCount": 25,
+  "sellCount": 1358,
+  "buyVal": 28983295.69,
+  "sellVal": 5356454474.12,
   "uniqueSymbols": 67,
   "topBuyStocks": [
     [
       "INTC",
       {
         "total": 9999985,
+        "count": 1
+      }
+    ],
+    [
+      "ORCL",
+      {
+        "total": 3483800.0,
         "count": 1
       }
     ],
@@ -32,13 +39,6 @@
       {
         "total": 2576775.02,
         "count": 3
-      }
-    ],
-    [
-      "ADBE",
-      {
-        "total": 1945130.0,
-        "count": 1
       }
     ]
   ],
@@ -95,6 +95,20 @@
       }
     ],
     [
+      "RUSCKOWSKI STEPHEN H",
+      {
+        "total": 3483800.0,
+        "sym": "ORCL",
+        "txs": [
+          {
+            "sym": "ORCL",
+            "date": "2026-09-29",
+            "val": 3483800.0
+          }
+        ]
+      }
+    ],
+    [
       "Ricks David A",
       {
         "total": 1945130.0,
@@ -132,20 +146,6 @@
             "sym": "NKE",
             "date": "2026-04-10",
             "val": 1060750.0
-          }
-        ]
-      }
-    ],
-    [
-      "BOURLA ALBERT",
-      {
-        "total": 1000920.0,
-        "sym": "PFE",
-        "txs": [
-          {
-            "sym": "PFE",
-            "date": "2026-08-12",
-            "val": 1000920.0
           }
         ]
       }
@@ -307,8 +307,8 @@
     [
       "Technology",
       {
-        "buys": 13859800.9746,
-        "sells": 2443841200.588201
+        "buys": 17343600.974600002,
+        "sells": 2443906771.408201
       }
     ],
     [
@@ -371,7 +371,7 @@
       "Utilities",
       {
         "buys": 0,
-        "sells": 3787759.6
+        "sells": 3796032.6
       }
     ]
   ]
