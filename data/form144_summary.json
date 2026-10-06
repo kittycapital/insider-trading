@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-03T01:43:14Z",
-  "totalFilings": 757,
-  "filings7d": 23,
-  "filings30d": 111,
-  "filings90d": 373,
-  "totalValue": 8400336046.14,
+  "updated": "2026-10-06T02:43:25Z",
+  "totalFilings": 750,
+  "filings7d": 22,
+  "filings30d": 104,
+  "filings90d": 367,
+  "totalValue": 8443510121.22,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 646273401.8500001,
-        "count": 56,
+        "count": 55,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,14 +35,14 @@
       "AVGO",
       {
         "total": 638700883.6,
-        "count": 21,
+        "count": 18,
         "name": "Broadcom Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 377112410.20000005,
+        "total": 419389910.20000005,
         "count": 28,
         "name": "Robinhood Markets"
       }
@@ -51,7 +51,7 @@
       "ABNB",
       {
         "total": 318033292.88000005,
-        "count": 56,
+        "count": 55,
         "name": "Airbnb Inc"
       }
     ],
@@ -59,7 +59,7 @@
       "AMD",
       {
         "total": 241877171.06,
-        "count": 26,
+        "count": 25,
         "name": "AMD Inc"
       }
     ],
@@ -82,7 +82,7 @@
     [
       "PLTR",
       {
-        "total": 116857629.05000001,
+        "total": 116607478.13000001,
         "count": 15,
         "name": "Palantir Technologies"
       }
@@ -144,6 +144,15 @@
       }
     ],
     [
+      "Vladimir Tenev",
+      {
+        "total": 145299352.32,
+        "count": 4,
+        "ticker": "HOOD",
+        "company": "Robinhood Markets"
+      }
+    ],
+    [
       "H&Amp;S Investments I Lp",
       {
         "total": 145002807.84,
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
-      }
-    ],
-    [
-      "Lisa Su",
-      {
-        "total": 103504775.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
       }
     ]
   ],
