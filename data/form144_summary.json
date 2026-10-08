@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-07T02:02:54Z",
-  "totalFilings": 749,
-  "filings7d": 20,
-  "filings30d": 105,
+  "updated": "2026-10-08T02:28:52Z",
+  "totalFilings": 750,
+  "filings7d": 22,
+  "filings30d": 108,
   "filings90d": 365,
-  "totalValue": 8443243284.22,
+  "totalValue": 8802582347.8,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,16 +18,16 @@
     [
       "LLY",
       {
-        "total": 733112395.0,
-        "count": 10,
+        "total": 1080359395.0,
+        "count": 11,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 646273401.8500001,
-        "count": 55,
+        "total": 662944401.8500001,
+        "count": 56,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "AVGO",
       {
         "total": 638700883.6,
-        "count": 17,
+        "count": 16,
         "name": "Broadcom Inc"
       }
     ],
@@ -50,8 +50,8 @@
     [
       "ABNB",
       {
-        "total": 318033292.88000005,
-        "count": 55,
+        "total": 317020620.96000004,
+        "count": 54,
         "name": "Airbnb Inc"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 715964050.0,
-        "count": 2,
+        "total": 1063211050.0,
+        "count": 3,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -144,6 +144,15 @@
       }
     ],
     [
+      "Dageville Benoit",
+      {
+        "total": 159084650.16,
+        "count": 8,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "Vladimir Tenev",
       {
         "total": 145299352.32,
@@ -159,15 +168,6 @@
         "count": 2,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Dageville Benoit",
-      {
-        "total": 142413650.16,
-        "count": 7,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
       }
     ],
     [
@@ -199,6 +199,16 @@
       "approxPrice": 1200.06,
       "totalValue": 372018600.0,
       "fileDate": "2026-07-07",
+      "relationship": "Shareholder"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 300000,
+      "approxPrice": 1157.49,
+      "totalValue": 347247000.0,
+      "fileDate": "2026-10-07",
       "relationship": "Shareholder"
     },
     {
@@ -370,16 +380,6 @@
       "totalValue": 59174627.34,
       "fileDate": "2026-08-27",
       "relationship": "Nonprofit founded by Jeffrey P. Bezos"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Chesky Brian",
-      "shares": 295000,
-      "approxPrice": 174.6,
-      "totalValue": 51508133.38,
-      "fileDate": "2026-08-07",
-      "relationship": "Officer"
     }
   ]
 }
