@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08T02:28:52Z",
-  "totalFilings": 750,
-  "filings7d": 22,
-  "filings30d": 108,
-  "filings90d": 365,
-  "totalValue": 8802582347.8,
+  "updated": "2026-10-09T02:46:32Z",
+  "totalFilings": 753,
+  "filings7d": 15,
+  "filings30d": 103,
+  "filings90d": 367,
+  "totalValue": 8791563845.17,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 662944401.8500001,
+        "total": 660158035.0100001,
         "count": 56,
         "name": "Snowflake Inc"
       }
@@ -50,7 +50,7 @@
     [
       "ABNB",
       {
-        "total": 317020620.96000004,
+        "total": 308610037.05,
         "count": 54,
         "name": "Airbnb Inc"
       }
@@ -58,7 +58,7 @@
     [
       "AMD",
       {
-        "total": 241877171.06,
+        "total": 237374399.06,
         "count": 25,
         "name": "AMD Inc"
       }
@@ -82,8 +82,8 @@
     [
       "PLTR",
       {
-        "total": 116607478.13000001,
-        "count": 15,
+        "total": 121077285.25,
+        "count": 17,
         "name": "Palantir Technologies"
       }
     ]
