@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-09T02:43:15Z",
-  "buyCount": 22,
-  "sellCount": 1376,
-  "buyVal": 27249200.05,
-  "sellVal": 5432711723.93,
+  "updated": "2026-10-10T02:03:10Z",
+  "buyCount": 21,
+  "sellCount": 1356,
+  "buyVal": 26249091.85,
+  "sellVal": 5430400666.92,
   "uniqueSymbols": 67,
   "topBuyStocks": [
     [
@@ -308,13 +308,13 @@
       "Technology",
       {
         "buys": 17343600.974600002,
-        "sells": 2514688713.345901
+        "sells": 2512377656.3414
       }
     ],
     [
       "Consumer",
       {
-        "buys": 1000108.2000000001,
+        "buys": 0,
         "sells": 1776937624.6097007
       }
     ],

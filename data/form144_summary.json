@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-09T02:46:32Z",
-  "totalFilings": 753,
-  "filings7d": 15,
-  "filings30d": 103,
-  "filings90d": 367,
-  "totalValue": 8791563845.17,
+  "updated": "2026-10-10T02:06:48Z",
+  "totalFilings": 756,
+  "filings7d": 12,
+  "filings30d": 100,
+  "filings90d": 370,
+  "totalValue": 8620886886.71,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -40,19 +40,19 @@
       }
     ],
     [
-      "HOOD",
-      {
-        "total": 419389910.20000005,
-        "count": 28,
-        "name": "Robinhood Markets"
-      }
-    ],
-    [
       "ABNB",
       {
         "total": 308610037.05,
         "count": 54,
         "name": "Airbnb Inc"
+      }
+    ],
+    [
+      "HOOD",
+      {
+        "total": 248234520.28000006,
+        "count": 28,
+        "name": "Robinhood Markets"
       }
     ],
     [
@@ -82,8 +82,8 @@
     [
       "PLTR",
       {
-        "total": 121077285.25,
-        "count": 17,
+        "total": 121276065.25,
+        "count": 18,
         "name": "Palantir Technologies"
       }
     ]
@@ -135,15 +135,6 @@
       }
     ],
     [
-      "Robinhood Markets, Inc.",
-      {
-        "total": 196949591.05,
-        "count": 2,
-        "ticker": "HOOD",
-        "company": "Robinhood Markets"
-      }
-    ],
-    [
       "Dageville Benoit",
       {
         "total": 159084650.16,
@@ -177,6 +168,15 @@
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Lisa Su",
+      {
+        "total": 103504775.0,
+        "count": 3,
+        "ticker": "AMD",
+        "company": "AMD Inc"
       }
     ]
   ],
@@ -230,16 +230,6 @@
       "totalValue": 225004972.58,
       "fileDate": "2026-09-23",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "insiderName": "Robinhood Markets, Inc.",
-      "shares": 3700000,
-      "approxPrice": 46.0,
-      "totalValue": 170200000.0,
-      "fileDate": "2026-06-03",
-      "relationship": "Parent Company / 10% Stockholder"
     },
     {
       "ticker": "CVX",
@@ -380,6 +370,16 @@
       "totalValue": 59174627.34,
       "fileDate": "2026-08-27",
       "relationship": "Nonprofit founded by Jeffrey P. Bezos"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Chesky Brian",
+      "shares": 295000,
+      "approxPrice": 174.6,
+      "totalValue": 51508133.38,
+      "fileDate": "2026-08-07",
+      "relationship": "Officer"
     }
   ]
 }
