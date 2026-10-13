@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-10T02:06:48Z",
-  "totalFilings": 756,
-  "filings7d": 12,
-  "filings30d": 100,
-  "filings90d": 370,
+  "updated": "2026-10-13T03:24:29Z",
+  "totalFilings": 731,
+  "filings7d": 10,
+  "filings30d": 89,
+  "filings90d": 367,
   "totalValue": 8620886886.71,
   "uniqueCompanies": 64,
   "topCompanies": [
@@ -11,7 +11,7 @@
       "AMZN",
       {
         "total": 4150869512.9,
-        "count": 23,
+        "count": 22,
         "name": "Amazon.com Inc"
       }
     ],
@@ -51,7 +51,7 @@
       "HOOD",
       {
         "total": 248234520.28000006,
-        "count": 28,
+        "count": 25,
         "name": "Robinhood Markets"
       }
     ],
@@ -59,7 +59,7 @@
       "AMD",
       {
         "total": 237374399.06,
-        "count": 25,
+        "count": 24,
         "name": "AMD Inc"
       }
     ],
