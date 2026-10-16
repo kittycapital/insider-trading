@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-15T01:15:35Z",
-  "totalFilings": 727,
-  "filings7d": 12,
-  "filings30d": 92,
-  "filings90d": 359,
-  "totalValue": 8605782552.49,
+  "updated": "2026-10-16T01:03:27Z",
+  "totalFilings": 737,
+  "filings7d": 19,
+  "filings30d": 89,
+  "filings90d": 367,
+  "totalValue": 8946337150.83,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,15 +18,15 @@
     [
       "LLY",
       {
-        "total": 1080359395.0,
-        "count": 11,
+        "total": 1449025095.0,
+        "count": 12,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 660158035.0100001,
+        "total": 647716047.5100001,
         "count": 56,
         "name": "Snowflake Inc"
       }
@@ -42,24 +42,24 @@
     [
       "ABNB",
       {
-        "total": 302100944.40000004,
-        "count": 55,
+        "total": 293449530.65000004,
+        "count": 56,
         "name": "Airbnb Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 245589720.28000006,
-        "count": 24,
+        "total": 282787160.28,
+        "count": 26,
         "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 237374399.06,
-        "count": 23,
+        "total": 246707971.70999998,
+        "count": 24,
         "name": "AMD Inc"
       }
     ],
@@ -72,19 +72,19 @@
       }
     ],
     [
-      "KO",
-      {
-        "total": 160158536.01,
-        "count": 18,
-        "name": "Coca-Cola Co"
-      }
-    ],
-    [
       "PLTR",
       {
         "total": 121276065.25,
-        "count": 18,
+        "count": 19,
         "name": "Palantir Technologies"
+      }
+    ],
+    [
+      "KO",
+      {
+        "total": 118960277.28999999,
+        "count": 18,
+        "name": "Coca-Cola Co"
       }
     ]
   ],
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1063211050.0,
-        "count": 3,
+        "total": 1431876750.0,
+        "count": 4,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 233428305.28,
-        "count": 24,
+        "total": 231881982.52,
+        "count": 23,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -199,6 +199,16 @@
       "approxPrice": 1200.06,
       "totalValue": 372018600.0,
       "fileDate": "2026-07-07",
+      "relationship": "Shareholder"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 305000,
+      "approxPrice": 1208.74,
+      "totalValue": 368665700.0,
+      "fileDate": "2026-10-15",
       "relationship": "Shareholder"
     },
     {
@@ -370,16 +380,6 @@
       "totalValue": 59174627.34,
       "fileDate": "2026-08-27",
       "relationship": "Nonprofit founded by Jeffrey P. Bezos"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Chesky Brian",
-      "shares": 295000,
-      "approxPrice": 174.6,
-      "totalValue": 51508133.38,
-      "fileDate": "2026-08-07",
-      "relationship": "Officer"
     }
   ]
 }
