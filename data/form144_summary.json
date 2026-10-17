@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-16T01:03:27Z",
-  "totalFilings": 737,
-  "filings7d": 19,
-  "filings30d": 89,
-  "filings90d": 367,
-  "totalValue": 8946337150.83,
+  "updated": "2026-10-17T01:02:28Z",
+  "totalFilings": 741,
+  "filings7d": 20,
+  "filings30d": 86,
+  "filings90d": 371,
+  "totalValue": 8940713824.7,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -82,7 +82,7 @@
     [
       "KO",
       {
-        "total": 118960277.28999999,
+        "total": 111012277.28999999,
         "count": 18,
         "name": "Coca-Cola Co"
       }
