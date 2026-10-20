@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-17T01:02:28Z",
-  "totalFilings": 741,
-  "filings7d": 20,
-  "filings30d": 86,
-  "filings90d": 371,
-  "totalValue": 8940713824.7,
+  "updated": "2026-10-20T01:31:57Z",
+  "totalFilings": 732,
+  "filings7d": 23,
+  "filings30d": 85,
+  "filings90d": 367,
+  "totalValue": 9044960411.49,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 647716047.5100001,
-        "count": 56,
+        "total": 742646213.48,
+        "count": 57,
         "name": "Snowflake Inc"
       }
     ],
@@ -42,8 +42,8 @@
     [
       "ABNB",
       {
-        "total": 293449530.65000004,
-        "count": 56,
+        "total": 292880241.40000004,
+        "count": 53,
         "name": "Airbnb Inc"
       }
     ],
@@ -66,8 +66,8 @@
     [
       "CVX",
       {
-        "total": 208662520.43,
-        "count": 9,
+        "total": 218359589.43,
+        "count": 10,
         "name": "Chevron Corp"
       }
     ],
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 355382554.17,
-        "count": 10,
+        "total": 450312720.14000005,
+        "count": 11,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -282,6 +282,16 @@
       "relationship": "Director"
     },
     {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 300000,
+      "approxPrice": 316.43,
+      "totalValue": 94930165.97,
+      "fileDate": "2026-10-19",
+      "relationship": "Director"
+    },
+    {
       "ticker": "ABNB",
       "company": "Airbnb Inc",
       "insiderName": "Blecharczyk Nathan",
@@ -370,16 +380,6 @@
       "totalValue": 59438125.0,
       "fileDate": "2026-06-10",
       "relationship": "Director"
-    },
-    {
-      "ticker": "AMZN",
-      "company": "Amazon.com Inc",
-      "insiderName": "Day 1 Academies",
-      "shares": 230637,
-      "approxPrice": 256.57,
-      "totalValue": 59174627.34,
-      "fileDate": "2026-08-27",
-      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     }
   ]
 }
