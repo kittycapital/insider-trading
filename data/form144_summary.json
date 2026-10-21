@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-20T01:31:57Z",
-  "totalFilings": 732,
-  "filings7d": 23,
-  "filings30d": 85,
-  "filings90d": 367,
-  "totalValue": 9044960411.49,
+  "updated": "2026-10-21T01:17:39Z",
+  "totalFilings": 731,
+  "filings7d": 20,
+  "filings30d": 87,
+  "filings90d": 368,
+  "totalValue": 9036403108.49,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 742646213.48,
+        "total": 741993982.48,
         "count": 57,
         "name": "Snowflake Inc"
       }
@@ -80,11 +80,11 @@
       }
     ],
     [
-      "KO",
+      "META",
       {
-        "total": 111012277.28999999,
-        "count": 18,
-        "name": "Coca-Cola Co"
+        "total": 105333756.0,
+        "count": 34,
+        "name": "Meta Platforms Inc"
       }
     ]
   ],
