@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-21T01:17:39Z",
-  "totalFilings": 731,
-  "filings7d": 20,
-  "filings30d": 87,
-  "filings90d": 368,
-  "totalValue": 9036403108.49,
+  "updated": "2026-10-22T01:13:22Z",
+  "totalFilings": 730,
+  "filings7d": 22,
+  "filings30d": 78,
+  "filings90d": 369,
+  "totalValue": 9059406183.86,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
         "total": 4150869512.9,
-        "count": 21,
+        "count": 20,
         "name": "Amazon.com Inc"
       }
     ],
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 741993982.48,
-        "count": 57,
+        "total": 758080982.48,
+        "count": 58,
         "name": "Snowflake Inc"
       }
     ],
@@ -43,15 +43,15 @@
       "ABNB",
       {
         "total": 292880241.40000004,
-        "count": 53,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 282787160.28,
-        "count": 26,
+        "total": 287787227.79999995,
+        "count": 27,
         "name": "Robinhood Markets"
       }
     ],
@@ -59,7 +59,7 @@
       "AMD",
       {
         "total": 246707971.70999998,
-        "count": 24,
+        "count": 23,
         "name": "AMD Inc"
       }
     ],
@@ -137,8 +137,8 @@
     [
       "Dageville Benoit",
       {
-        "total": 159084650.16,
-        "count": 8,
+        "total": 175171650.16,
+        "count": 9,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
