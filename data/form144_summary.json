@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-22T01:13:22Z",
-  "totalFilings": 730,
-  "filings7d": 22,
-  "filings30d": 78,
-  "filings90d": 369,
-  "totalValue": 9059406183.86,
+  "updated": "2026-10-23T01:13:50Z",
+  "totalFilings": 736,
+  "filings7d": 18,
+  "filings30d": 77,
+  "filings90d": 370,
+  "totalValue": 9003006388.17,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "LLY",
       {
-        "total": 1449025095.0,
+        "total": 1446148170.0,
         "count": 12,
         "name": "Eli Lilly"
       }
@@ -50,17 +50,9 @@
     [
       "HOOD",
       {
-        "total": 287787227.79999995,
+        "total": 282113893.96,
         "count": 27,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "AMD",
-      {
-        "total": 246707971.70999998,
-        "count": 23,
-        "name": "AMD Inc"
       }
     ],
     [
@@ -69,6 +61,14 @@
         "total": 218359589.43,
         "count": 10,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "AMD",
+      {
+        "total": 187269846.70999998,
+        "count": 23,
+        "name": "AMD Inc"
       }
     ],
     [
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Lisa Su",
+      "Samueli Foundation",
       {
-        "total": 103504775.0,
-        "count": 3,
-        "ticker": "AMD",
-        "company": "AMD Inc"
+        "total": 97004424.22,
+        "count": 2,
+        "ticker": "AVGO",
+        "company": "Broadcom Inc"
       }
     ]
   ],
@@ -372,14 +372,14 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "AMD",
-      "company": "AMD Inc",
-      "insiderName": "Lisa Su",
-      "shares": 125000,
-      "approxPrice": 475.5,
-      "totalValue": 59438125.0,
-      "fileDate": "2026-06-10",
-      "relationship": "Director"
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "insiderName": "Day 1 Academies",
+      "shares": 230637,
+      "approxPrice": 256.57,
+      "totalValue": 59174627.34,
+      "fileDate": "2026-08-27",
+      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     }
   ]
 }
