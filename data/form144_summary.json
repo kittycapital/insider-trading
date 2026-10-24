@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-23T01:13:50Z",
-  "totalFilings": 736,
+  "updated": "2026-10-24T01:24:28Z",
+  "totalFilings": 740,
   "filings7d": 18,
-  "filings30d": 77,
-  "filings90d": 370,
-  "totalValue": 9003006388.17,
+  "filings30d": 76,
+  "filings90d": 374,
+  "totalValue": 9011778531.63,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -42,7 +42,7 @@
     [
       "ABNB",
       {
-        "total": 292880241.40000004,
+        "total": 288625461.94000006,
         "count": 52,
         "name": "Airbnb Inc"
       }
@@ -50,7 +50,7 @@
     [
       "HOOD",
       {
-        "total": 282113893.96,
+        "total": 281000459.84,
         "count": 27,
         "name": "Robinhood Markets"
       }
