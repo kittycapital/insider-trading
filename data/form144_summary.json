@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-24T01:24:28Z",
-  "totalFilings": 740,
-  "filings7d": 18,
-  "filings30d": 76,
-  "filings90d": 374,
-  "totalValue": 9011778531.63,
-  "uniqueCompanies": 64,
+  "updated": "2026-10-27T01:51:50Z",
+  "totalFilings": 734,
+  "filings7d": 20,
+  "filings30d": 78,
+  "filings90d": 369,
+  "totalValue": 9010531086.08,
+  "uniqueCompanies": 63,
   "topCompanies": [
     [
       "AMZN",
@@ -42,8 +42,8 @@
     [
       "ABNB",
       {
-        "total": 288625461.94000006,
-        "count": 52,
+        "total": 290951083.12,
+        "count": 53,
         "name": "Airbnb Inc"
       }
     ],
@@ -66,7 +66,7 @@
     [
       "AMD",
       {
-        "total": 187269846.70999998,
+        "total": 184051866.70999998,
         "count": 23,
         "name": "AMD Inc"
       }
@@ -82,8 +82,8 @@
     [
       "META",
       {
-        "total": 105333756.0,
-        "count": 34,
+        "total": 106591356.0,
+        "count": 35,
         "name": "Meta Platforms Inc"
       }
     ]
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 231881982.52,
-        "count": 23,
+        "total": 234207603.70000002,
+        "count": 24,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
