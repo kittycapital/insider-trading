@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T02:03:24Z",
-  "totalFilings": 729,
-  "filings7d": 20,
-  "filings30d": 80,
-  "filings90d": 366,
-  "totalValue": 9020292981.53,
+  "updated": "2026-10-29T02:07:56Z",
+  "totalFilings": 720,
+  "filings7d": 18,
+  "filings30d": 78,
+  "filings90d": 365,
+  "totalValue": 9020198775.77,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 758080982.48,
-        "count": 58,
+        "count": 57,
         "name": "Snowflake Inc"
       }
     ],
@@ -83,7 +83,7 @@
       "META",
       {
         "total": 105752556.0,
-        "count": 35,
+        "count": 34,
         "name": "Meta Platforms Inc"
       }
     ]

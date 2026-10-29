@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-28T02:00:23Z",
+  "updated": "2026-10-29T02:04:28Z",
   "buyCount": 20,
-  "sellCount": 1291,
+  "sellCount": 1297,
   "buyVal": 39464301.77,
-  "sellVal": 5214477235.73,
+  "sellVal": 5226557123.18,
   "uniqueSymbols": 65,
   "topBuyStocks": [
     [
@@ -325,7 +325,7 @@
       "Consumer",
       {
         "buys": 17904167.880000003,
-        "sells": 1724030212.5701008
+        "sells": 1725181405.5101008
       }
     ],
     [
@@ -346,7 +346,7 @@
       "Financials",
       {
         "buys": 0,
-        "sells": 165113892.80679992
+        "sells": 176042587.31679994
       }
     ],
     [
