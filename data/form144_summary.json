@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-30T02:25:10Z",
-  "totalFilings": 722,
-  "filings7d": 14,
-  "filings30d": 77,
-  "filings90d": 362,
-  "totalValue": 9021926943.99,
+  "updated": "2026-10-31T02:02:17Z",
+  "totalFilings": 732,
+  "filings7d": 20,
+  "filings30d": 86,
+  "filings90d": 372,
+  "totalValue": 9447713149.64,
   "uniqueCompanies": 63,
   "topCompanies": [
     [
@@ -18,15 +18,15 @@
     [
       "LLY",
       {
-        "total": 1446148170.0,
-        "count": 12,
+        "total": 1851389670.0,
+        "count": 13,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 758080982.48,
+        "total": 754498262.48,
         "count": 57,
         "name": "Snowflake Inc"
       }
@@ -34,7 +34,7 @@
     [
       "AVGO",
       {
-        "total": 638700883.6,
+        "total": 636648152.6,
         "count": 16,
         "name": "Broadcom Inc"
       }
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1431876750.0,
-        "count": 4,
+        "total": 1837118250.0,
+        "count": 5,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 450312720.14000005,
-        "count": 11,
+        "total": 448376880.14000005,
+        "count": 10,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -190,6 +190,16 @@
       "totalValue": 4073700000.0,
       "fileDate": "2026-08-03",
       "relationship": "Director"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "insiderName": "Lilly Endowment, Inc.",
+      "shares": 295000,
+      "approxPrice": 1373.7,
+      "totalValue": 405241500.0,
+      "fileDate": "2026-10-30",
+      "relationship": "Shareholder"
     },
     {
       "ticker": "LLY",
@@ -370,16 +380,6 @@
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "AMZN",
-      "company": "Amazon.com Inc",
-      "insiderName": "Day 1 Academies",
-      "shares": 230637,
-      "approxPrice": 256.57,
-      "totalValue": 59174627.34,
-      "fileDate": "2026-08-27",
-      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
     }
   ]
 }
