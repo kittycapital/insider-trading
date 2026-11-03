@@ -1,17 +1,17 @@
 {
-  "updated": "2026-10-31T02:02:17Z",
-  "totalFilings": 732,
-  "filings7d": 20,
-  "filings30d": 86,
-  "filings90d": 372,
-  "totalValue": 9447713149.64,
-  "uniqueCompanies": 63,
+  "updated": "2026-11-03T03:53:09Z",
+  "totalFilings": 727,
+  "filings7d": 34,
+  "filings30d": 89,
+  "filings90d": 369,
+  "totalValue": 9471560812.76,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
         "total": 4150869512.9,
-        "count": 19,
+        "count": 16,
         "name": "Amazon.com Inc"
       }
     ],
@@ -19,46 +19,46 @@
       "LLY",
       {
         "total": 1851389670.0,
-        "count": 13,
+        "count": 12,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 754498262.48,
-        "count": 57,
+        "total": 709932629.89,
+        "count": 58,
         "name": "Snowflake Inc"
       }
     ],
     [
       "AVGO",
       {
-        "total": 636648152.6,
+        "total": 633570125.6,
         "count": 16,
         "name": "Broadcom Inc"
       }
     ],
     [
+      "HOOD",
+      {
+        "total": 281380620.10999995,
+        "count": 28,
+        "name": "Robinhood Markets"
+      }
+    ],
+    [
       "ABNB",
       {
-        "total": 290951083.12,
+        "total": 271710394.67,
         "count": 53,
         "name": "Airbnb Inc"
       }
     ],
     [
-      "HOOD",
-      {
-        "total": 281000459.84,
-        "count": 27,
-        "name": "Robinhood Markets"
-      }
-    ],
-    [
       "CVX",
       {
-        "total": 218359589.43,
+        "total": 223997864.69,
         "count": 10,
         "name": "Chevron Corp"
       }
@@ -74,16 +74,16 @@
     [
       "PLTR",
       {
-        "total": 121276065.25,
-        "count": 19,
+        "total": 121526086.63000001,
+        "count": 20,
         "name": "Palantir Technologies"
       }
     ],
     [
       "META",
       {
-        "total": 105752556.0,
-        "count": 34,
+        "total": 119499952.0,
+        "count": 35,
         "name": "Meta Platforms Inc"
       }
     ]
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 448376880.14000005,
-        "count": 10,
+        "total": 403522871.66,
+        "count": 9,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 234207603.70000002,
-        "count": 24,
+        "total": 214672995.97000003,
+        "count": 21,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
