@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-03T03:53:09Z",
-  "totalFilings": 727,
+  "updated": "2026-11-04T02:57:04Z",
+  "totalFilings": 725,
   "filings7d": 34,
-  "filings30d": 89,
-  "filings90d": 369,
-  "totalValue": 9471560812.76,
+  "filings30d": 91,
+  "filings90d": 360,
+  "totalValue": 9334468494.27,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -34,7 +34,7 @@
     [
       "AVGO",
       {
-        "total": 633570125.6,
+        "total": 562363300.01,
         "count": 16,
         "name": "Broadcom Inc"
       }
@@ -171,12 +171,12 @@
       }
     ],
     [
-      "Samueli Foundation",
+      "Alexander Karp",
       {
-        "total": 97004424.22,
+        "total": 86108635.2,
         "count": 2,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
       }
     ]
   ],
@@ -322,16 +322,6 @@
       "relationship": "Director"
     },
     {
-      "ticker": "AVGO",
-      "company": "Broadcom Inc",
-      "insiderName": "Samueli Foundation",
-      "shares": 186089,
-      "approxPrice": 382.65,
-      "totalValue": 71206825.59,
-      "fileDate": "2026-06-24",
-      "relationship": "Affiliate"
-    },
-    {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Alexander Karp",
@@ -340,16 +330,6 @@
       "totalValue": 70341535.2,
       "fileDate": "2026-08-20",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "ORCL",
-      "company": "Oracle Corp",
-      "insiderName": "Jeffrey O. Henley",
-      "shares": 400000,
-      "approxPrice": 165.16,
-      "totalValue": 66064000.0,
-      "fileDate": "2026-06-24",
-      "relationship": "Director"
     },
     {
       "ticker": "SNOW",
@@ -379,6 +359,26 @@
       "approxPrice": 200.46,
       "totalValue": 63566849.01,
       "fileDate": "2026-08-14",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "insiderName": "Day 1 Academies",
+      "shares": 230637,
+      "approxPrice": 256.57,
+      "totalValue": 59174627.34,
+      "fileDate": "2026-08-27",
+      "relationship": "Nonprofit founded by Jeffrey P. Bezos"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Chesky Brian",
+      "shares": 295000,
+      "approxPrice": 174.6,
+      "totalValue": 51508133.38,
+      "fileDate": "2026-08-07",
       "relationship": "Officer"
     }
   ]
