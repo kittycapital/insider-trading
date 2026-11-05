@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-04T02:57:04Z",
-  "totalFilings": 725,
-  "filings7d": 34,
-  "filings30d": 91,
-  "filings90d": 360,
-  "totalValue": 9334468494.27,
+  "updated": "2026-11-05T03:06:03Z",
+  "totalFilings": 729,
+  "filings7d": 43,
+  "filings30d": 99,
+  "filings90d": 362,
+  "totalValue": 9213483104.45,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4150869512.9,
-        "count": 16,
+        "total": 4151107985.9,
+        "count": 17,
         "name": "Amazon.com Inc"
       }
     ],
@@ -26,15 +26,15 @@
     [
       "SNOW",
       {
-        "total": 709932629.89,
-        "count": 58,
+        "total": 724525129.8899999,
+        "count": 59,
         "name": "Snowflake Inc"
       }
     ],
     [
       "AVGO",
       {
-        "total": 562363300.01,
+        "total": 296642847.21,
         "count": 16,
         "name": "Broadcom Inc"
       }
@@ -50,8 +50,8 @@
     [
       "ABNB",
       {
-        "total": 271710394.67,
-        "count": 53,
+        "total": 266859692.85000002,
+        "count": 51,
         "name": "Airbnb Inc"
       }
     ],
@@ -67,8 +67,16 @@
       "AMD",
       {
         "total": 184051866.70999998,
-        "count": 23,
+        "count": 22,
         "name": "AMD Inc"
+      }
+    ],
+    [
+      "AXP",
+      {
+        "total": 140042040.12,
+        "count": 5,
+        "name": "American Express"
       }
     ],
     [
@@ -77,14 +85,6 @@
         "total": 121526086.63000001,
         "count": 20,
         "name": "Palantir Technologies"
-      }
-    ],
-    [
-      "META",
-      {
-        "total": 119499952.0,
-        "count": 35,
-        "name": "Meta Platforms Inc"
       }
     ]
   ],
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 403522871.66,
-        "count": 9,
+        "total": 403497871.66,
+        "count": 8,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -119,8 +119,8 @@
     [
       "D95Gt, Llc",
       {
-        "total": 355007941.18,
-        "count": 2,
+        "total": 225004972.58,
+        "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
       }
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 214672995.97000003,
-        "count": 21,
+        "total": 209822294.15000004,
+        "count": 19,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -137,8 +137,8 @@
     [
       "Dageville Benoit",
       {
-        "total": 175171650.16,
-        "count": 9,
+        "total": 189789150.16,
+        "count": 10,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -153,21 +153,21 @@
       }
     ],
     [
-      "H&Amp;S Investments I Lp",
-      {
-        "total": 145002807.84,
-        "count": 2,
-        "ticker": "AVGO",
-        "company": "Broadcom Inc"
-      }
-    ],
-    [
       "John B Hess",
       {
         "total": 137942705.96,
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Stephen J Squeri",
+      {
+        "total": 99448587.06,
+        "count": 1,
+        "ticker": "AXP",
+        "company": "American Express"
       }
     ],
     [
@@ -262,24 +262,14 @@
       "relationship": "Director"
     },
     {
-      "ticker": "AVGO",
-      "company": "Broadcom Inc",
-      "insiderName": "D95Gt, Llc",
-      "shares": 340208,
-      "approxPrice": 382.13,
-      "totalValue": 130002968.6,
-      "fileDate": "2026-06-24",
-      "relationship": "Affiliate"
-    },
-    {
-      "ticker": "AVGO",
-      "company": "Broadcom Inc",
-      "insiderName": "H&Amp;S Investments I Lp",
-      "shares": 314033,
-      "approxPrice": 382.13,
-      "totalValue": 120002749.23,
-      "fileDate": "2026-06-24",
-      "relationship": "Chairman of the Board of Broadcom"
+      "ticker": "AXP",
+      "company": "American Express",
+      "insiderName": "Stephen J Squeri",
+      "shares": 299401,
+      "approxPrice": 332.16,
+      "totalValue": 99448587.06,
+      "fileDate": "2026-11-04",
+      "relationship": "Officer"
     },
     {
       "ticker": "SNOW",
@@ -379,6 +369,16 @@
       "approxPrice": 174.6,
       "totalValue": 51508133.38,
       "fileDate": "2026-08-07",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Dageville Benoit",
+      "shares": 190819,
+      "approxPrice": 254.64,
+      "totalValue": 48590150.16,
+      "fileDate": "2026-07-02",
       "relationship": "Officer"
     }
   ]
