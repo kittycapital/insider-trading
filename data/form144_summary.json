@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-05T03:06:03Z",
-  "totalFilings": 729,
-  "filings7d": 43,
-  "filings30d": 99,
-  "filings90d": 362,
-  "totalValue": 9213483104.45,
+  "updated": "2026-11-06T03:07:01Z",
+  "totalFilings": 732,
+  "filings7d": 44,
+  "filings30d": 101,
+  "filings90d": 358,
+  "totalValue": 8881299068.57,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "LLY",
       {
-        "total": 1851389670.0,
+        "total": 1507444220.0,
         "count": 12,
         "name": "Eli Lilly"
       }
@@ -50,7 +50,7 @@
     [
       "ABNB",
       {
-        "total": 266859692.85000002,
+        "total": 265607792.85000002,
         "count": 51,
         "name": "Airbnb Inc"
       }
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1837118250.0,
-        "count": 5,
+        "total": 1493172800.0,
+        "count": 4,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -229,16 +229,6 @@
       "approxPrice": 1157.49,
       "totalValue": 347247000.0,
       "fileDate": "2026-10-07",
-      "relationship": "Shareholder"
-    },
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 305000,
-      "approxPrice": 1127.69,
-      "totalValue": 343945450.0,
-      "fileDate": "2026-06-26",
       "relationship": "Shareholder"
     },
     {
@@ -380,6 +370,16 @@
       "totalValue": 48590150.16,
       "fileDate": "2026-07-02",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp",
+      "insiderName": "Satya Nadella",
+      "shares": 86525,
+      "approxPrice": 507.29,
+      "totalValue": 43893267.25,
+      "fileDate": "2026-09-01",
+      "relationship": "Director"
     }
   ]
 }
