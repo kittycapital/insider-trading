@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-06T03:07:01Z",
-  "totalFilings": 732,
-  "filings7d": 44,
-  "filings30d": 101,
-  "filings90d": 358,
-  "totalValue": 8881299068.57,
+  "updated": "2026-11-07T02:35:00Z",
+  "totalFilings": 739,
+  "filings7d": 41,
+  "filings30d": 105,
+  "filings90d": 365,
+  "totalValue": 8877788223.77,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -26,17 +26,25 @@
     [
       "SNOW",
       {
-        "total": 724525129.8899999,
-        "count": 59,
+        "total": 712731976.7099999,
+        "count": 60,
         "name": "Snowflake Inc"
       }
     ],
     [
       "AVGO",
       {
-        "total": 296642847.21,
+        "total": 296043931.21,
         "count": 16,
         "name": "Broadcom Inc"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 284860309.40999997,
+        "count": 52,
+        "name": "Airbnb Inc"
       }
     ],
     [
@@ -45,14 +53,6 @@
         "total": 281380620.10999995,
         "count": 28,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "ABNB",
-      {
-        "total": 265607792.85000002,
-        "count": 51,
-        "name": "Airbnb Inc"
       }
     ],
     [
@@ -110,10 +110,19 @@
     [
       "Slootman Frank",
       {
-        "total": 403497871.66,
-        "count": 8,
+        "total": 378350301.5,
+        "count": 7,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
+      }
+    ],
+    [
+      "Blecharczyk Nathan",
+      {
+        "total": 229074810.71,
+        "count": 20,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ],
     [
@@ -123,15 +132,6 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Blecharczyk Nathan",
-      {
-        "total": 209822294.15000004,
-        "count": 19,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
       }
     ],
     [
