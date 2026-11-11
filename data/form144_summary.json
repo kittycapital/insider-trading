@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-10T04:32:31Z",
+  "updated": "2026-11-11T02:33:46Z",
   "totalFilings": 731,
-  "filings7d": 31,
-  "filings30d": 108,
-  "filings90d": 360,
-  "totalValue": 8878063525.48,
+  "filings7d": 36,
+  "filings30d": 115,
+  "filings90d": 363,
+  "totalValue": 8884248116.88,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 712731976.7099999,
+        "total": 664054230.39,
         "count": 60,
         "name": "Snowflake Inc"
       }
@@ -42,7 +42,7 @@
     [
       "ABNB",
       {
-        "total": 287508577.55999994,
+        "total": 283538061.29999995,
         "count": 52,
         "name": "Airbnb Inc"
       }
@@ -58,8 +58,8 @@
     [
       "CVX",
       {
-        "total": 223997864.69,
-        "count": 10,
+        "total": 247571168.43,
+        "count": 11,
         "name": "Chevron Corp"
       }
     ],
@@ -72,19 +72,19 @@
       }
     ],
     [
+      "PLTR",
+      {
+        "total": 148236086.63,
+        "count": 21,
+        "name": "Palantir Technologies"
+      }
+    ],
+    [
       "AXP",
       {
         "total": 140042040.12,
         "count": 5,
         "name": "American Express"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 121526086.63000001,
-        "count": 20,
-        "name": "Palantir Technologies"
       }
     ]
   ],
@@ -119,8 +119,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 231723078.86,
-        "count": 21,
+        "total": 228307600.10000002,
+        "count": 20,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -135,21 +135,21 @@
       }
     ],
     [
-      "Dageville Benoit",
-      {
-        "total": 189789150.16,
-        "count": 10,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
-      }
-    ],
-    [
       "Vladimir Tenev",
       {
         "total": 145299352.32,
         "count": 4,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
+      }
+    ],
+    [
+      "Dageville Benoit",
+      {
+        "total": 141199000.0,
+        "count": 9,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
       }
     ],
     [
@@ -362,13 +362,13 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Dageville Benoit",
-      "shares": 190819,
-      "approxPrice": 254.64,
-      "totalValue": 48590150.16,
-      "fileDate": "2026-07-02",
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Shyam Sankar",
+      "shares": 300000,
+      "approxPrice": 169.2,
+      "totalValue": 50760000.0,
+      "fileDate": "2026-11-10",
       "relationship": "Officer"
     },
     {
