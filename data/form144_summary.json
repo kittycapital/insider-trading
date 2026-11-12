@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-11T02:33:46Z",
-  "totalFilings": 731,
-  "filings7d": 36,
+  "updated": "2026-11-12T03:37:53Z",
+  "totalFilings": 714,
+  "filings7d": 26,
   "filings30d": 115,
-  "filings90d": 363,
+  "filings90d": 359,
   "totalValue": 8884248116.88,
   "uniqueCompanies": 65,
   "topCompanies": [
@@ -11,7 +11,7 @@
       "AMZN",
       {
         "total": 4151107985.9,
-        "count": 17,
+        "count": 15,
         "name": "Amazon.com Inc"
       }
     ],
@@ -67,7 +67,7 @@
       "AMD",
       {
         "total": 184051866.70999998,
-        "count": 21,
+        "count": 20,
         "name": "AMD Inc"
       }
     ],
