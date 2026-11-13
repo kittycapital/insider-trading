@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-12T03:37:53Z",
-  "totalFilings": 714,
-  "filings7d": 26,
-  "filings30d": 115,
-  "filings90d": 359,
-  "totalValue": 8884248116.88,
+  "updated": "2026-11-13T03:10:21Z",
+  "totalFilings": 730,
+  "filings7d": 39,
+  "filings30d": 126,
+  "filings90d": 369,
+  "totalValue": 8472696847.4,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -18,7 +18,7 @@
     [
       "LLY",
       {
-        "total": 1507444220.0,
+        "total": 1135425620.0,
         "count": 12,
         "name": "Eli Lilly"
       }
@@ -26,56 +26,56 @@
     [
       "SNOW",
       {
-        "total": 664054230.39,
+        "total": 650880300.66,
         "count": 60,
         "name": "Snowflake Inc"
       }
     ],
     [
-      "AVGO",
-      {
-        "total": 296043931.21,
-        "count": 16,
-        "name": "Broadcom Inc"
-      }
-    ],
-    [
       "ABNB",
       {
-        "total": 283538061.29999995,
+        "total": 281517967.34,
         "count": 52,
         "name": "Airbnb Inc"
       }
     ],
     [
-      "HOOD",
+      "AVGO",
       {
-        "total": 277962165.15999997,
-        "count": 28,
-        "name": "Robinhood Markets"
+        "total": 275802629.82,
+        "count": 16,
+        "name": "Broadcom Inc"
       }
     ],
     [
       "CVX",
       {
-        "total": 247571168.43,
-        "count": 11,
+        "total": 248843990.43,
+        "count": 12,
         "name": "Chevron Corp"
+      }
+    ],
+    [
+      "HOOD",
+      {
+        "total": 235688415.16,
+        "count": 28,
+        "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 184051866.70999998,
-        "count": 20,
+        "total": 189135747.11,
+        "count": 21,
         "name": "AMD Inc"
       }
     ],
     [
       "PLTR",
       {
-        "total": 148236086.63,
-        "count": 21,
+        "total": 162531764.23000002,
+        "count": 22,
         "name": "Palantir Technologies"
       }
     ],
@@ -101,8 +101,8 @@
     [
       "Lilly Endowment, Inc.",
       {
-        "total": 1493172800.0,
-        "count": 4,
+        "total": 1121154200.0,
+        "count": 3,
         "ticker": "LLY",
         "company": "Eli Lilly"
       }
@@ -119,8 +119,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 228307600.10000002,
-        "count": 20,
+        "total": 226287506.14000002,
+        "count": 19,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -132,15 +132,6 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
-      }
-    ],
-    [
-      "Vladimir Tenev",
-      {
-        "total": 145299352.32,
-        "count": 4,
-        "ticker": "HOOD",
-        "company": "Robinhood Markets"
       }
     ],
     [
@@ -159,6 +150,15 @@
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Vladimir Tenev",
+      {
+        "total": 103025602.32000001,
+        "count": 3,
+        "ticker": "HOOD",
+        "company": "Robinhood Markets"
       }
     ],
     [
@@ -199,16 +199,6 @@
       "approxPrice": 1373.7,
       "totalValue": 405241500.0,
       "fileDate": "2026-10-30",
-      "relationship": "Shareholder"
-    },
-    {
-      "ticker": "LLY",
-      "company": "Eli Lilly",
-      "insiderName": "Lilly Endowment, Inc.",
-      "shares": 310000,
-      "approxPrice": 1200.06,
-      "totalValue": 372018600.0,
-      "fileDate": "2026-07-07",
       "relationship": "Shareholder"
     },
     {
@@ -379,6 +369,16 @@
       "approxPrice": 507.29,
       "totalValue": 43893267.25,
       "fileDate": "2026-09-01",
+      "relationship": "Director"
+    },
+    {
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "insiderName": "Vladimir Tenev",
+      "shares": 375000,
+      "approxPrice": 112.74,
+      "totalValue": 42277500.0,
+      "fileDate": "2026-10-05",
       "relationship": "Director"
     }
   ]
