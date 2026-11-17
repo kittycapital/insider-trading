@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-14T02:57:06Z",
-  "totalFilings": 731,
-  "filings7d": 33,
-  "filings30d": 126,
-  "filings90d": 370,
-  "totalValue": 8473964390.91,
+  "updated": "2026-11-17T05:01:22Z",
+  "totalFilings": 713,
+  "filings7d": 35,
+  "filings30d": 123,
+  "filings90d": 346,
+  "totalValue": 8507167249.78,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4151107985.9,
-        "count": 15,
+        "total": 4176427999.85,
+        "count": 16,
         "name": "Amazon.com Inc"
       }
     ],
@@ -19,22 +19,22 @@
       "LLY",
       {
         "total": 1135425620.0,
-        "count": 12,
+        "count": 11,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 650192800.66,
-        "count": 60,
+        "total": 636366300.66,
+        "count": 59,
         "name": "Snowflake Inc"
       }
     ],
     [
       "ABNB",
       {
-        "total": 281517967.34,
+        "total": 281839341.68,
         "count": 52,
         "name": "Airbnb Inc"
       }
@@ -51,31 +51,31 @@
       "CVX",
       {
         "total": 248843990.43,
-        "count": 12,
+        "count": 11,
         "name": "Chevron Corp"
-      }
-    ],
-    [
-      "HOOD",
-      {
-        "total": 235688415.16,
-        "count": 28,
-        "name": "Robinhood Markets"
       }
     ],
     [
       "AMD",
       {
-        "total": 189135747.11,
-        "count": 21,
+        "total": 228242031.60999998,
+        "count": 22,
         "name": "AMD Inc"
+      }
+    ],
+    [
+      "HOOD",
+      {
+        "total": 193938815.16,
+        "count": 27,
+        "name": "Robinhood Markets"
       }
     ],
     [
       "PLTR",
       {
         "total": 162531764.23000002,
-        "count": 22,
+        "count": 17,
         "name": "Palantir Technologies"
       }
     ],
@@ -135,21 +135,21 @@
       }
     ],
     [
-      "Dageville Benoit",
-      {
-        "total": 141199000.0,
-        "count": 9,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
-      }
-    ],
-    [
       "John B Hess",
       {
         "total": 137942705.96,
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Dageville Benoit",
+      {
+        "total": 127372500.0,
+        "count": 8,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
       }
     ],
     [
