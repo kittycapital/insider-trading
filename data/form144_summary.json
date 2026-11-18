@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-17T05:01:22Z",
+  "updated": "2026-11-18T04:04:06Z",
   "totalFilings": 713,
-  "filings7d": 35,
-  "filings30d": 123,
-  "filings90d": 346,
-  "totalValue": 8507167249.78,
+  "filings7d": 38,
+  "filings30d": 133,
+  "filings90d": 352,
+  "totalValue": 8408793766.86,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "AMZN",
       {
         "total": 4176427999.85,
-        "count": 16,
+        "count": 12,
         "name": "Amazon.com Inc"
       }
     ],
@@ -26,7 +26,7 @@
     [
       "SNOW",
       {
-        "total": 636366300.66,
+        "total": 556880235.41,
         "count": 59,
         "name": "Snowflake Inc"
       }
@@ -34,7 +34,7 @@
     [
       "ABNB",
       {
-        "total": 281839341.68,
+        "total": 276475632.75,
         "count": 52,
         "name": "Airbnb Inc"
       }
@@ -58,16 +58,16 @@
     [
       "AMD",
       {
-        "total": 228242031.60999998,
-        "count": 22,
+        "total": 228259405.60999998,
+        "count": 23,
         "name": "AMD Inc"
       }
     ],
     [
       "HOOD",
       {
-        "total": 193938815.16,
-        "count": 27,
+        "total": 198938842.38,
+        "count": 28,
         "name": "Robinhood Markets"
       }
     ],
@@ -110,19 +110,10 @@
     [
       "Slootman Frank",
       {
-        "total": 378350301.5,
-        "count": 7,
+        "total": 298864236.25,
+        "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
-      }
-    ],
-    [
-      "Blecharczyk Nathan",
-      {
-        "total": 226287506.14000002,
-        "count": 19,
-        "ticker": "ABNB",
-        "company": "Airbnb Inc"
       }
     ],
     [
@@ -132,6 +123,15 @@
         "count": 1,
         "ticker": "AVGO",
         "company": "Broadcom Inc"
+      }
+    ],
+    [
+      "Blecharczyk Nathan",
+      {
+        "total": 220923797.21,
+        "count": 17,
+        "ticker": "ABNB",
+        "company": "Airbnb Inc"
       }
     ],
     [
@@ -282,16 +282,6 @@
       "relationship": "Officer"
     },
     {
-      "ticker": "SNOW",
-      "company": "Snowflake Inc",
-      "insiderName": "Slootman Frank",
-      "shares": 289685,
-      "approxPrice": 274.39,
-      "totalValue": 79486065.25,
-      "fileDate": "2026-07-20",
-      "relationship": "Director"
-    },
-    {
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Alexander Karp",
@@ -380,6 +370,16 @@
       "totalValue": 42277500.0,
       "fileDate": "2026-10-05",
       "relationship": "Director"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb Inc",
+      "insiderName": "Blecharczyk Nathan",
+      "shares": 202652,
+      "approxPrice": 190.28,
+      "totalValue": 38560405.26,
+      "fileDate": "2026-08-25",
+      "relationship": "Officer"
     }
   ]
 }
