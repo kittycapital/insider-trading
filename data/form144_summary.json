@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-18T04:04:06Z",
-  "totalFilings": 713,
-  "filings7d": 38,
-  "filings30d": 133,
-  "filings90d": 352,
-  "totalValue": 8408793766.86,
+  "updated": "2026-11-19T04:01:00Z",
+  "totalFilings": 716,
+  "filings7d": 47,
+  "filings30d": 139,
+  "filings90d": 351,
+  "totalValue": 8510431884.22,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4176427999.85,
+        "total": 4176631290.14,
         "count": 12,
         "name": "Amazon.com Inc"
       }
@@ -19,15 +19,15 @@
       "LLY",
       {
         "total": 1135425620.0,
-        "count": 11,
+        "count": 10,
         "name": "Eli Lilly"
       }
     ],
     [
       "SNOW",
       {
-        "total": 556880235.41,
-        "count": 59,
+        "total": 630348560.54,
+        "count": 61,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "ABNB",
       {
         "total": 276475632.75,
-        "count": 52,
+        "count": 51,
         "name": "Airbnb Inc"
       }
     ],
@@ -66,7 +66,7 @@
     [
       "HOOD",
       {
-        "total": 198938842.38,
+        "total": 193938770.04,
         "count": 28,
         "name": "Robinhood Markets"
       }
@@ -110,7 +110,7 @@
     [
       "Slootman Frank",
       {
-        "total": 298864236.25,
+        "total": 358488061.38,
         "count": 6,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
@@ -135,21 +135,21 @@
       }
     ],
     [
+      "Dageville Benoit",
+      {
+        "total": 141217000.0,
+        "count": 9,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
+      }
+    ],
+    [
       "John B Hess",
       {
         "total": 137942705.96,
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
-      }
-    ],
-    [
-      "Dageville Benoit",
-      {
-        "total": 127372500.0,
-        "count": 8,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
       }
     ],
     [
@@ -322,6 +322,16 @@
       "relationship": "Officer"
     },
     {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc",
+      "insiderName": "Slootman Frank",
+      "shares": 225353,
+      "approxPrice": 277.17,
+      "totalValue": 62461436.44,
+      "fileDate": "2026-11-18",
+      "relationship": "Director"
+    },
+    {
       "ticker": "AMZN",
       "company": "Amazon.com Inc",
       "insiderName": "Day 1 Academies",
@@ -370,16 +380,6 @@
       "totalValue": 42277500.0,
       "fileDate": "2026-10-05",
       "relationship": "Director"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb Inc",
-      "insiderName": "Blecharczyk Nathan",
-      "shares": 202652,
-      "approxPrice": 190.28,
-      "totalValue": 38560405.26,
-      "fileDate": "2026-08-25",
-      "relationship": "Officer"
     }
   ]
 }
