@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-19T04:01:00Z",
-  "totalFilings": 716,
-  "filings7d": 47,
-  "filings30d": 139,
-  "filings90d": 351,
-  "totalValue": 8510431884.22,
+  "updated": "2026-11-20T03:54:43Z",
+  "totalFilings": 721,
+  "filings7d": 36,
+  "filings30d": 142,
+  "filings90d": 344,
+  "totalValue": 8581958251.67,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 630348560.54,
-        "count": 61,
+        "total": 652252478.8199999,
+        "count": 62,
         "name": "Snowflake Inc"
       }
     ],
@@ -64,19 +64,19 @@
       }
     ],
     [
+      "PLTR",
+      {
+        "total": 209532764.23,
+        "count": 18,
+        "name": "Palantir Technologies"
+      }
+    ],
+    [
       "HOOD",
       {
         "total": 193938770.04,
         "count": 28,
         "name": "Robinhood Markets"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 162531764.23000002,
-        "count": 17,
-        "name": "Palantir Technologies"
       }
     ],
     [
@@ -110,8 +110,8 @@
     [
       "Slootman Frank",
       {
-        "total": 358488061.38,
-        "count": 6,
+        "total": 380391979.66,
+        "count": 7,
         "ticker": "SNOW",
         "company": "Snowflake Inc"
       }
@@ -153,6 +153,15 @@
       }
     ],
     [
+      "Shyam Sankar",
+      {
+        "total": 112056677.6,
+        "count": 3,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
+      }
+    ],
+    [
       "Vladimir Tenev",
       {
         "total": 103025602.32000001,
@@ -168,15 +177,6 @@
         "count": 1,
         "ticker": "AXP",
         "company": "American Express"
-      }
-    ],
-    [
-      "Alexander Karp",
-      {
-        "total": 86108635.2,
-        "count": 2,
-        "ticker": "PLTR",
-        "company": "Palantir Technologies"
       }
     ]
   ],
@@ -362,6 +362,16 @@
       "relationship": "Officer"
     },
     {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Shyam Sankar",
+      "shares": 300000,
+      "approxPrice": 156.67,
+      "totalValue": 47001000.0,
+      "fileDate": "2026-11-19",
+      "relationship": "Officer"
+    },
+    {
       "ticker": "MSFT",
       "company": "Microsoft Corp",
       "insiderName": "Satya Nadella",
@@ -369,16 +379,6 @@
       "approxPrice": 507.29,
       "totalValue": 43893267.25,
       "fileDate": "2026-09-01",
-      "relationship": "Director"
-    },
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "insiderName": "Vladimir Tenev",
-      "shares": 375000,
-      "approxPrice": 112.74,
-      "totalValue": 42277500.0,
-      "fileDate": "2026-10-05",
       "relationship": "Director"
     }
   ]
