@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-20T03:54:43Z",
-  "totalFilings": 721,
-  "filings7d": 36,
-  "filings30d": 142,
-  "filings90d": 344,
-  "totalValue": 8581958251.67,
+  "updated": "2026-11-21T03:47:29Z",
+  "totalFilings": 727,
+  "filings7d": 41,
+  "filings30d": 145,
+  "filings90d": 350,
+  "totalValue": 8671167309.42,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
@@ -32,10 +32,18 @@
       }
     ],
     [
+      "PLTR",
+      {
+        "total": 338076715.49,
+        "count": 23,
+        "name": "Palantir Technologies"
+      }
+    ],
+    [
       "ABNB",
       {
-        "total": 276475632.75,
-        "count": 51,
+        "total": 276951342.27,
+        "count": 52,
         "name": "Airbnb Inc"
       }
     ],
@@ -61,14 +69,6 @@
         "total": 228259405.60999998,
         "count": 23,
         "name": "AMD Inc"
-      }
-    ],
-    [
-      "PLTR",
-      {
-        "total": 209532764.23,
-        "count": 18,
-        "name": "Palantir Technologies"
       }
     ],
     [
@@ -128,10 +128,19 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 220923797.21,
-        "count": 17,
+        "total": 221399506.73000002,
+        "count": 18,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
+      }
+    ],
+    [
+      "Alexander Karp",
+      {
+        "total": 185840591.7,
+        "count": 4,
+        "ticker": "PLTR",
+        "company": "Palantir Technologies"
       }
     ],
     [
@@ -155,8 +164,8 @@
     [
       "Shyam Sankar",
       {
-        "total": 112056677.6,
-        "count": 3,
+        "total": 124497603.39999999,
+        "count": 4,
         "ticker": "PLTR",
         "company": "Palantir Technologies"
       }
@@ -168,15 +177,6 @@
         "count": 3,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
-      }
-    ],
-    [
-      "Stephen J Squeri",
-      {
-        "total": 99448587.06,
-        "count": 1,
-        "ticker": "AXP",
-        "company": "American Express"
       }
     ]
   ],
@@ -285,6 +285,16 @@
       "ticker": "PLTR",
       "company": "Palantir Technologies",
       "insiderName": "Alexander Karp",
+      "shares": 585000,
+      "approxPrice": 146.84,
+      "totalValue": 85900756.5,
+      "fileDate": "2026-11-20",
+      "relationship": "Officer"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies",
+      "insiderName": "Alexander Karp",
       "shares": 402348,
       "approxPrice": 174.83,
       "totalValue": 70341535.2,
@@ -370,16 +380,6 @@
       "totalValue": 47001000.0,
       "fileDate": "2026-11-19",
       "relationship": "Officer"
-    },
-    {
-      "ticker": "MSFT",
-      "company": "Microsoft Corp",
-      "insiderName": "Satya Nadella",
-      "shares": 86525,
-      "approxPrice": 507.29,
-      "totalValue": 43893267.25,
-      "fileDate": "2026-09-01",
-      "relationship": "Director"
     }
   ]
 }

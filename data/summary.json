@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-20T03:51:23Z",
-  "buyCount": 25,
-  "sellCount": 1299,
-  "buyVal": 54133807.85,
-  "sellVal": 5139834106.58,
+  "updated": "2026-11-21T03:44:03Z",
+  "buyCount": 26,
+  "sellCount": 1320,
+  "buyVal": 54721157.45,
+  "sellVal": 5152744891.15,
   "uniqueSymbols": 68,
   "topBuyStocks": [
     [
@@ -333,7 +333,7 @@
       "Technology",
       {
         "buys": 29867362.3496,
-        "sells": 2450365219.8452997
+        "sells": 2463276004.4154997
       }
     ],
     [
@@ -381,7 +381,7 @@
     [
       "Real Estate",
       {
-        "buys": 516316.51999999996,
+        "buys": 1103666.1199999999,
         "sells": 9642224.74
       }
     ],
