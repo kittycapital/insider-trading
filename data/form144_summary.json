@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-21T03:47:29Z",
-  "totalFilings": 727,
-  "filings7d": 41,
-  "filings30d": 145,
-  "filings90d": 350,
-  "totalValue": 8671167309.42,
+  "updated": "2026-11-24T06:45:37Z",
+  "totalFilings": 728,
+  "filings7d": 44,
+  "filings30d": 149,
+  "filings90d": 348,
+  "totalValue": 8603530173.12,
   "uniqueCompanies": 65,
   "topCompanies": [
     [
       "AMZN",
       {
-        "total": 4176631290.14,
-        "count": 12,
+        "total": 4189465523.53,
+        "count": 18,
         "name": "Amazon.com Inc"
       }
     ],
@@ -26,8 +26,8 @@
     [
       "SNOW",
       {
-        "total": 652252478.8199999,
-        "count": 62,
+        "total": 629256678.8199999,
+        "count": 61,
         "name": "Snowflake Inc"
       }
     ],
@@ -40,19 +40,19 @@
       }
     ],
     [
-      "ABNB",
-      {
-        "total": 276951342.27,
-        "count": 52,
-        "name": "Airbnb Inc"
-      }
-    ],
-    [
       "AVGO",
       {
         "total": 275802629.82,
         "count": 16,
         "name": "Broadcom Inc"
+      }
+    ],
+    [
+      "ABNB",
+      {
+        "total": 273470096.90999997,
+        "count": 50,
+        "name": "Airbnb Inc"
       }
     ],
     [
@@ -128,8 +128,8 @@
     [
       "Blecharczyk Nathan",
       {
-        "total": 221399506.73000002,
-        "count": 18,
+        "total": 217918261.37,
+        "count": 17,
         "ticker": "ABNB",
         "company": "Airbnb Inc"
       }
@@ -144,21 +144,21 @@
       }
     ],
     [
-      "Dageville Benoit",
-      {
-        "total": 141217000.0,
-        "count": 9,
-        "ticker": "SNOW",
-        "company": "Snowflake Inc"
-      }
-    ],
-    [
       "John B Hess",
       {
         "total": 137942705.96,
         "count": 1,
         "ticker": "CVX",
         "company": "Chevron Corp"
+      }
+    ],
+    [
+      "Dageville Benoit",
+      {
+        "total": 127217000.0,
+        "count": 8,
+        "ticker": "SNOW",
+        "company": "Snowflake Inc"
       }
     ],
     [
