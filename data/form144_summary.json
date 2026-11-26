@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-25T05:15:55Z",
-  "totalFilings": 723,
-  "filings7d": 39,
-  "filings30d": 154,
-  "filings90d": 348,
-  "totalValue": 8600140228.38,
-  "uniqueCompanies": 65,
+  "updated": "2026-11-26T04:43:38Z",
+  "totalFilings": 714,
+  "filings7d": 33,
+  "filings30d": 152,
+  "filings90d": 345,
+  "totalValue": 8611521532.27,
+  "uniqueCompanies": 64,
   "topCompanies": [
     [
       "AMZN",
@@ -27,7 +27,7 @@
       "SNOW",
       {
         "total": 626286728.8199999,
-        "count": 59,
+        "count": 57,
         "name": "Snowflake Inc"
       }
     ],
@@ -35,7 +35,7 @@
       "PLTR",
       {
         "total": 338076715.49,
-        "count": 23,
+        "count": 22,
         "name": "Palantir Technologies"
       }
     ],
@@ -51,7 +51,7 @@
       "ABNB",
       {
         "total": 270828575.57,
-        "count": 49,
+        "count": 48,
         "name": "Airbnb Inc"
       }
     ],
@@ -67,7 +67,7 @@
       "AMD",
       {
         "total": 228259405.60999998,
-        "count": 22,
+        "count": 21,
         "name": "AMD Inc"
       }
     ],
@@ -75,7 +75,7 @@
       "HOOD",
       {
         "total": 193938770.04,
-        "count": 28,
+        "count": 27,
         "name": "Robinhood Markets"
       }
     ],
