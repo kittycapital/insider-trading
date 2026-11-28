@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-27T04:47:45Z",
-  "totalFilings": 714,
-  "filings7d": 28,
-  "filings30d": 150,
-  "filings90d": 338,
-  "totalValue": 8611521532.27,
+  "updated": "2026-11-28T04:33:39Z",
+  "totalFilings": 719,
+  "filings7d": 27,
+  "filings30d": 154,
+  "filings90d": 343,
+  "totalValue": 8497701151.22,
   "uniqueCompanies": 64,
   "topCompanies": [
     [
@@ -56,14 +56,6 @@
       }
     ],
     [
-      "CVX",
-      {
-        "total": 248843990.43,
-        "count": 11,
-        "name": "Chevron Corp"
-      }
-    ],
-    [
       "AMD",
       {
         "total": 228259405.60999998,
@@ -85,6 +77,14 @@
         "total": 140042040.12,
         "count": 5,
         "name": "American Express"
+      }
+    ],
+    [
+      "META",
+      {
+        "total": 127468054.0,
+        "count": 35,
+        "name": "Meta Platforms Inc"
       }
     ]
   ],
@@ -144,15 +144,6 @@
       }
     ],
     [
-      "John B Hess",
-      {
-        "total": 137942705.96,
-        "count": 1,
-        "ticker": "CVX",
-        "company": "Chevron Corp"
-      }
-    ],
-    [
       "Dageville Benoit",
       {
         "total": 127217000.0,
@@ -177,6 +168,15 @@
         "count": 3,
         "ticker": "HOOD",
         "company": "Robinhood Markets"
+      }
+    ],
+    [
+      "Stephen J Squeri",
+      {
+        "total": 99448587.06,
+        "count": 1,
+        "ticker": "AXP",
+        "company": "American Express"
       }
     ]
   ],
@@ -230,16 +230,6 @@
       "totalValue": 225004972.58,
       "fileDate": "2026-09-23",
       "relationship": "Affiliate"
-    },
-    {
-      "ticker": "CVX",
-      "company": "Chevron Corp",
-      "insiderName": "John B Hess",
-      "shares": 710665,
-      "approxPrice": 194.1,
-      "totalValue": 137942705.96,
-      "fileDate": "2026-08-03",
-      "relationship": "Director"
     },
     {
       "ticker": "AXP",
@@ -380,6 +370,16 @@
       "totalValue": 47001000.0,
       "fileDate": "2026-11-19",
       "relationship": "Officer"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp",
+      "insiderName": "Satya Nadella",
+      "shares": 86525,
+      "approxPrice": 507.29,
+      "totalValue": 43893267.25,
+      "fileDate": "2026-09-01",
+      "relationship": "Director"
     }
   ]
 }
